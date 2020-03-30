@@ -1,0 +1,21 @@
+{
+  "name": "FoundryVTT ES",
+  "title": "Spanish Translation",
+  "description": "Add Spanish language to FoundryVTT.",
+  "version": "0.1",
+  "minimumCoreVersion" : "0.5.1",
+  "author": "Cosmo Corban#4840",
+  "scripts": [],
+  "styles": [],
+  "packs": [],
+    
+  "languages": [{
+  	"lang": "es",
+    "name": "Spanish",
+    "path": "es.json"
+  }],
+    
+  "url": "https://gitlab.com/cosmocorban/foundryvtt-lang-es",
+  "manifest": "https://gitlab.com/riccisi/foundryvtt-lang-it-it/raw/master/it-IT/module.json",
+  "download": "https://gitlab.com/riccisi/foundryvtt-lang-it-it/-/jobs/artifacts/master/raw/it-IT.zip?job=build"
+}
