@@ -1,0 +1,29 @@
+image: python:3-alpine
+
+before_script:
+  - apk update
+  - apk add zip
+
+stages:
+  - test
+  - build
+
+test:
+  stage: test
+  script:
+    - python -mjson.tool 'es-ES/es.json' > /dev/null
+    - python -mjson.tool 'es-ES/module.json' > /dev/null
+
+build:
+  stage: build
+  script:
+    - zip es-ES.zip -r es-ES -x ".*"
+  artifacts:
+    name: es-ES
+    when: on_success
+    paths:
+      - es-ES.zip
+  when: on_success
+  only:
+    - tags
+    - master
