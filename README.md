@@ -9,7 +9,7 @@ Thanks to Simone Ricciardi for the base files
 Este módulo permite seleccionar el idioma *Español* en [FoundryVTT](http://foundryvtt.com/ "Foundry Virtual Tabletop").
 Incluye la traducción completa de la interfaz.
 
-No sé nada de programación ni de cómo funciona gitlab, pero me gustaría que si encuentras algún error, o tienes alguna recomendación en alguna parte de la traducción, házmelo saber enviandome un mensaje a **Cosmo Corban#4840** en Discord.
+No sé nada de programación ni de cómo funciona gitlab, pero me gustaría que si encuentras algún error, o tienes alguna recomendación en alguna parte de la traducción, házmelo saber enviandome un mensaje a **Cosmo Corban#4840** en Discord a través del servidor de FoundryVTT.
 
 ### Instalación
 
@@ -20,3 +20,22 @@ https://gitlab.com/carlosjrlu/foundryvtt-es/-/raw/master/es-ES/module.json
 Si no te funciona, puedes intentar descargar el archivo [es-ES.zip](https://gitlab.com/riccisi/foundryvtt-lang-it-it/-/jobs/artifacts/master/raw/it-IT.zip?job=build "es-ES.zip") y extrae su contenido a la carpeta "Data\modules".
 
 Además, dentro de tu mundo de juego, deberás habilitar el módulo, y luego cambiar el idioma en la configuración general del programa.
+
+
+
+## English
+
+This module allows to choose the *Spanish* in [FoundryVTT](http://foundryvtt.com/ "Foundry Virtual Tabletop").
+Includes the complete translation of the program interface.
+
+I don't know programming, neither how gitlab works, but I would like to know if you have any recommendation or if you find any errors in the translation. So please, let me know with a message to my discord **Cosmo Corban#4840** through the FoundryVTT discord server.
+
+### Installation
+
+In the 'Add-On Modules' tab of the main menu, click on 'Install Module' and write down this to the pop-up window:
+
+https://gitlab.com/carlosjrlu/foundryvtt-es/-/raw/master/es-ES/module.json
+
+If that doesn't work, you could try downloading the file [es-ES.zip](https://gitlab.com/riccisi/foundryvtt-lang-it-it/-/jobs/artifacts/master/raw/it-IT.zip?job=build "es-ES.zip") and unzip it in the 'Data\modules' folder.
+
+Also, you have to activate the module in your world, and then choose the language Spanish from the dropdown menu in the general settings.
