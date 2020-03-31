@@ -417,9 +417,9 @@
   "SETUP.SSLKeyLabel": "Clave Privada SSL",
   "SETUP.SSLHint": "Permite ejecutar el servidor mediante SSL proporcionando rutas a certificados y claves. Estas son absolutas o relativas al subdirectorio 'Config' en los datos de usuario.",
 
-  "SHEETS.EntitySheetHint": "Sostituisci la scheda che desideri utilizzare per questa specifica entità.",
-  "SHEETS.TypeSheetHint": "Impostare la scheda predefinita utilizzata per questo tipo di entità (Solo DM).",
-  "SHEETS.Save": "Salva Configurazione Scheda",
+  "SHEETS.EntitySheetHint": "Cambie la Hoja que desea usar para esta entidad en específico.",
+  "SHEETS.TypeSheetHint": "Determine la Hoja predeterminada utilizada para este tipo de entidad (Sólo GM).",
+  "SHEETS.Save": "Guardar Configuración de la Hoja",
 
   "SIDEBAR.CharArt": "Ver Imágen del Personaje",
   "SIDEBAR.CollapseToggle": "Contraer o Expandir",
