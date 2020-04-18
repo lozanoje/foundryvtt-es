@@ -395,7 +395,7 @@
     "SETUP.UpdateWarning": "Para actualizar Foundry Virtual Tabletop, deberá estar conectado a Internet y tener una licencia de software válida.",
     "SETUP.Uninstall": "Desinstalar",
     "SETUP.WorldCreate": "Crear Mundo de Juego",
-    "SETUP.WorldDelete": "Eliminar Mundo",
+    "SETUP.WorldDelete": "Borrar Mundo",
     "SETUP.WorldEdit": "Editar Mundo",
     "SETUP.WorldLaunch": "Lanzar Mundo",
     "SETUP.Worlds": "Mundos de Juego",
