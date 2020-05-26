@@ -2,7 +2,7 @@
   "name": "FoundryVTT-ES",
   "title": "Translation: Spanish [Core]",
   "description": "Agrega el idioma Español (Spanish) a las opciones de FoundryVTT. | No es necesaria la activación del módulo para su funcionamiento.",
-  "version": "0.6.0.1",
+  "version": "0.6.0.2",
   "minimumCoreVersion" : "0.6.0",
   "compatibleCoreVersion": "0.6.0",
   "author": "Cosmo Corban#4840",
