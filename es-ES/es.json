@@ -1,7 +1,7 @@
 {
     "I18N.LANGUAGE": "Spanish",
     "I18N.MAINTAINERS": ["Cosmo Corban"],
-
+    
     "Activate": "Activar",
     "Author": "Autor",
     "Cancel": "Cancelar",
@@ -720,5 +720,9 @@
     "NOTE.IconTint": "Tinte del Icono",
     "NOTE.TextLabel": "Etiqueta de Texto",
     "NOTE.Update": "Actualizar Mapa de Apuntes",
-    "SETUP.ForceUpdateHint": "Marcar la casilla Forzar Actualización forzará su versión al canal solicitado. No use esta opción a menos que sepa exactamente lo que está haciendo."
+    "SETUP.ForceUpdateHint": "Marcar la casilla Forzar Actualización forzará su versión al canal solicitado. No use esta opción a menos que sepa exactamente lo que está haciendo.",
+    "Distance": "Distancia",
+    "ERROR.LoadPackages": "La solicitud para explorar paquetes existentes no se pudo conectar con el servidor de Foundry. Asegúrese de que la aplicación tenga permitidas las conexiones salientes.",
+    "SETUP.InstallWorld": "Instalar Mundo",
+    "TOKEN.TintColor": "Color de Tinte"
 }
