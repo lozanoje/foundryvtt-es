@@ -724,5 +724,8 @@
     "Distance": "Distancia",
     "ERROR.LoadPackages": "La solicitud para explorar paquetes existentes no se pudo conectar con el servidor de Foundry. Asegúrese de que la aplicación tenga permitidas las conexiones salientes.",
     "SETUP.InstallWorld": "Instalar Mundo",
-    "TOKEN.TintColor": "Color de Tinte"
+    "TOKEN.TintColor": "Color de Tinte",
+    "JOURNAL.Title": "Diario",
+    "TOKEN.AssignWarn": "Debe seleccionar un token existente para asignarlo como la configuración de nuevo prototipo.",
+    "TOKEN.AssignSuccess": "Se actualizó la configuración del token prototipo para {name}"
 }
