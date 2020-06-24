@@ -1,7 +1,8 @@
 {
     "I18N.LANGUAGE": "Spanish",
-    "I18N.MAINTAINERS": ["Cosmo Corban"],
-    
+    "I18N.MAINTAINERS": [
+        "Cosmo Corban"
+    ],
     "Activate": "Activar",
     "Author": "Autor",
     "Cancel": "Cancelar",
@@ -727,5 +728,8 @@
     "TOKEN.TintColor": "Color de Tinte",
     "JOURNAL.Title": "Diario",
     "TOKEN.AssignWarn": "Debe seleccionar un token existente para asignarlo como la configuración de nuevo prototipo.",
-    "TOKEN.AssignSuccess": "Se actualizó la configuración del token prototipo para {name}"
+    "TOKEN.AssignSuccess": "Se actualizó la configuración del token prototipo para {name}",
+    "FILES.ErrorTooLarge": "El archivo que intenta subir es demasiado grande para que lo pueda manejar su servidor proxy.",
+    "FILES.ErrorSomethingWrong": "Algo salió mal con la solicitud de subida del archivo.",
+    "FILES.WarnUploadModules": "Ha subido archivos en el directorio de un módulo o sistema. Esto generalmente es <strong>inseguro</strong> porque las actualizaciones del sistema o módulo eliminarán dichos archivos."
 }
