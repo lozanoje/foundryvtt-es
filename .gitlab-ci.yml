@@ -24,6 +24,3 @@ build:
     paths:
       - es-ES.zip
   when: on_success
-  only:
-    - tags
-    - master
