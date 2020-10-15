@@ -202,7 +202,7 @@
     "HUD.ToggleLock": "Alternar Bloqueo",
     "HUD.ToFront": "Traer al Frente",
     "HUD.ToBack": "Enviar al Fondo",
-    "JOURNAL.Search": "Busca en el Diario",
+    "JOURNAL.Search": "Buscar en el Diario",
     "JOURNAL.Create": "Crear Entrada",
     "LIGHT.DarknessThreshold": "Umbral de Oscuridad",
     "LIGHT.DarknessThresholdHint": "Si se establece un umbral de oscuridad, la luz será visible solo cuando el nivel de oscuridad de la escena lo exceda.",
