@@ -2,7 +2,7 @@
   "name": "FoundryVTT-ES",
   "title": "Translation: Spanish [Core]",
   "description": "Agrega el idioma Español (Spanish) a las opciones de FoundryVTT.",
-  "version": "0.66.4",
+  "version": "0.66.5",
   "minimumCoreVersion" : "0.6.0",
   "compatibleCoreVersion": "0.6.6",
   "author": "Cosmo Corban#4840",
