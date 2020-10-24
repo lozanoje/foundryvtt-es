@@ -17,7 +17,7 @@ En la opción de "Add-On Modules" en el menú principal del programa, has clic e
 
 https://gitlab.com/carlosjrlu/foundryvtt-es/-/raw/master/es-ES/module.json
 
-Si no te funciona, puedes intentar descargar el archivo [es-ES.zip](https://gitlab.com/riccisi/foundryvtt-lang-it-it/-/jobs/artifacts/master/raw/it-IT.zip?job=build "es-ES.zip") y extrae su contenido a la carpeta "Data\modules".
+Si no te funciona, puedes intentar descargar el archivo [es-ES.zip](https://gitlab.com/carlosjrlu/foundryvtt-es/-/jobs/artifacts/master/raw/es.zip?job=build "es.zip") y extrae su contenido a la carpeta "Data\modules".
 
 Además, dentro de tu mundo de juego, deberás habilitar el módulo, y luego cambiar el idioma en la configuración general del programa.
 
