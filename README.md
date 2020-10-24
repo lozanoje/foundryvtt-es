@@ -17,7 +17,7 @@ En la opción de "Add-On Modules" en el menú principal del programa, has clic e
 
 https://gitlab.com/carlosjrlu/foundryvtt-es/-/raw/master/es/module.json
 
-Si no te funciona, puedes intentar descargar el archivo [es.zip](https://gitlab.com/carlosjrlu/foundryvtt-es/-/jobs/artifacts/master/raw/es.zip?job=build "es.zip") y extrae su contenido a la carpeta "Data\modules".
+Si no te funciona, puedes intentar descargar el archivo [es.zip](https://gitlab.com/carlosjrlu/foundryvtt-es/-/jobs/artifacts/master/raw/es.zip?job=build "es.zip") y extrae su contenido a la carpeta "Data\modules" y renombra el directorio a FoundryVTT-ES.
 
 Además, dentro de tu mundo de juego, deberás habilitar el módulo, y luego cambiar el idioma en la configuración general del programa.
 
@@ -36,6 +36,6 @@ In the 'Add-On Modules' tab of the main menu, click on 'Install Module' and writ
 
 https://gitlab.com/carlosjrlu/foundryvtt-es/-/raw/master/es/module.json
 
-If that doesn't work, you could try downloading the file [es-ES.zip](https://gitlab.com/carlosjrlu/foundryvtt-es/-/jobs/artifacts/master/raw/es.zip?job=build "es.zip") and unzip it in the 'Data\modules' folder.
+If that doesn't work, you could try downloading the file [es.zip](https://gitlab.com/carlosjrlu/foundryvtt-es/-/jobs/artifacts/master/raw/es.zip?job=build "es.zip") and unzip it in the 'Data\modules' folder and rename it to FoundryVTT-ES.
 
 Also, you have to activate the module in your world, and then choose the language Spanish from the dropdown menu in the general settings.
