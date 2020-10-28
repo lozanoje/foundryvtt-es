@@ -11,16 +11,16 @@ stages:
 test:
   stage: test
   script:
-    - python -mjson.tool 'ES/es.json' > /dev/null
-    - python -mjson.tool 'ES/module.json' > /dev/null
+    - python -mjson.tool 'es/es.json' > /dev/null
+    - python -mjson.tool 'es/module.json' > /dev/null
 
 build:
   stage: build
   script:
-    - zip ES.zip -r ES -x ".*"
+    - zip es.zip -r es -x ".*"
   artifacts:
-    name: es-ES
+    name: es
     when: on_success
     paths:
-      - ES.zip
+      - es.zip
   when: on_success
