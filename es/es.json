@@ -631,6 +631,8 @@
   "SETTINGS.AnimVisionL": "Animar visión de Iconos y cambios de luz durante las animaciones de movimiento de los Iconos. Al desactivarlo se mejorará el rendimiento en ordenadores con bajas especificaciones.",
   "SETTINGS.AnimLightN": "Animación de la Fuente de Luz",
   "SETTINGS.AnimLightL": "Permitir animaciones de fuentes de luz. Al desactivarlo se mejorará el rendimiento en ordenadores con bajas especificaciones.",
+  "SETTINGS.DevicePixN": "Renderizado de Píxeles de Alta Densidad",
+  "SETTINGS.DevicePixL": "Aumenta la resolución del lienzo de juego renderizado en monitores con alta densidad de píxeles. Esto incrementará sustancialmente el rendimiento de la GPU.",
   "SETTINGS.LangN": "Preferencia de Idioma",
   "SETTINGS.LangL": "Cambia el idioma en el que se muestra Foundry Virtual Tabletop.",
   "SETTINGS.LClickReleaseN": "Clic Izquierdo para Liberar Objetos",
