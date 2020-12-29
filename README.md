@@ -15,9 +15,9 @@ No sé nada de programación ni de cómo funciona gitlab, pero me gustaría que 
 
 En la opción de "Add-On Modules" en el menú principal del programa, has clic en "Install Module" y escribe lo siguiente en la ventana que te aparece:
 
-https://gitlab.com/carlosjrlu/foundryvtt-es/-/raw/master/es-ES/module.json
+https://gitlab.com/carlosjrlu/foundryvtt-es/-/raw/alpha/es/module.json
 
-Si no te funciona, puedes intentar descargar el archivo [es-ES.zip](https://gitlab.com/riccisi/foundryvtt-lang-it-it/-/jobs/artifacts/master/raw/it-IT.zip?job=build "es-ES.zip") y extrae su contenido a la carpeta "Data\modules".
+Si no te funciona, puedes intentar descargar el archivo [es.zip](https://gitlab.com/carlosjrlu/foundryvtt-es/-/jobs/artifacts/alpha/raw/es.zip?job=build "es.zip") y extrae su contenido a la carpeta "Data\modules" y renombra el directorio a FoundryVTT-ES.
 
 Además, dentro de tu mundo de juego, deberás habilitar el módulo, y luego cambiar el idioma en la configuración general del programa.
 
@@ -34,8 +34,8 @@ I don't know programming, neither how gitlab works, but I would like to know if 
 
 In the 'Add-On Modules' tab of the main menu, click on 'Install Module' and write down this to the pop-up window:
 
-https://gitlab.com/carlosjrlu/foundryvtt-es/-/raw/master/es-ES/module.json
+https://gitlab.com/carlosjrlu/foundryvtt-es/-/raw/alpha/es/module.json
 
-If that doesn't work, you could try downloading the file [es-ES.zip](https://gitlab.com/riccisi/foundryvtt-lang-it-it/-/jobs/artifacts/master/raw/it-IT.zip?job=build "es-ES.zip") and unzip it in the 'Data\modules' folder.
+If that doesn't work, you could try downloading the file [es.zip](https://gitlab.com/carlosjrlu/foundryvtt-es/-/jobs/artifacts/alpha/raw/es.zip?job=build "es.zip") and unzip it in the 'Data\modules' folder and rename it to FoundryVTT-ES.
 
 Also, you have to activate the module in your world, and then choose the language Spanish from the dropdown menu in the general settings.
