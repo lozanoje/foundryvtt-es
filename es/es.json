@@ -1,6 +1,7 @@
 {
   "I18N.LANGUAGE": "Español",
   "I18N.MAINTAINERS": "@Cosmo Corban#0001, @Viriato139ac#0342",
+  
   "Activate": "Activar",
   "Author": "Autor",
   "Cancel": "Cancelar",
@@ -45,10 +46,13 @@
   "XCoord": "Coordenada X",
   "YCoord": "Coordenada Y",
   "Yes": "Sí",
+  
   "ACTOR.Title": "Personajes",
   "ACTOR.Create": "Crear PJ/PNJ",
   "ACTOR.Search": "Buscar personaje",
+  
   "APP.NavigateBackConfirm": "¿Está seguro de que quiere salir de FoundryVTT?",
+  
   "CHAT.Clear": "Borrar chat",
   "CHAT.Export": "Exportar chat",
   "CHAT.FlushTitle": "Enviar chat",
@@ -65,6 +69,7 @@
   "CHAT.RollPrivate": "Tirada privada (GM)",
   "CHAT.RollSelf": "Tirada personal",
   "CHAT.RollTables": "Tablas dinámicas",
+  
   "COMBAT.Begin": "Comenzar combate",
   "COMBAT.Create": "Crear encuentro",
   "COMBAT.Delete": "Eliminar encuentro",
@@ -74,6 +79,8 @@
   "COMBAT.End": "Fin. combate",
   "COMBAT.InitiativeRoll": "Tirar iniciativa",
   "COMBAT.InitiativeReset": "Reiniciar iniciativa",
+  "COMBAT.EndTitle": "¿Finalizar combate?",
+  "COMBAT.EndConfirmation": "¿Finalizar combate y vaciar el asistente de combate?",
   "COMBAT.None": "Sin encuentro activo",
   "COMBAT.NoneActive": "No hay ningún encuentro de combate activo en la escena actual",
   "COMBAT.NoneRemaining": "No quedan combatientes no derrotados en este encuentro",
@@ -86,6 +93,7 @@
   "COMBAT.RoundNext": "Asalto siguiente",
   "COMBAT.RollNPC": "Tirar iniciativa para PNJ",
   "COMBAT.RollAll": "Tirar iniciativa para todos",
+  "COMBAT.RollsInitiative": "¡{name} tira iniciativa!",
   "COMBAT.Settings": "Opciones del asistente de combate",
   "COMBAT.SettingsSave": "Guardar configuración del asistente",
   "COMBAT.SkipDefeated": "¿Saltar actores derrotados?",
@@ -98,6 +106,8 @@
   "COMBAT.TurnNext": "Turno siguiente",
   "COMBAT.TurnPrev": "Turno anterior",
   "COMBAT.UnknownCombatant": "Contendiente desconocido",
+  
+  "COMBAT.CombatantActor": "Actor representado",
   "COMBAT.CombatantCreate": "Crear contendiente",
   "COMBAT.CombatantDefeated": "Derrotado",
   "COMBAT.CombatantHidden": "Oculto",
@@ -109,6 +119,7 @@
   "COMBAT.CombatantRemove": "Eliminar contendiente",
   "COMBAT.CombatantReroll": "Volver a tirar iniciativa",
   "COMBAT.CombatantToken": "Icono vinculado",
+  
   "COMPENDIUM.Name": "Nombre del compendio",
   "COMPENDIUM.Create": "Crear compendio",
   "COMPENDIUM.CreateHint": "Crea un nuevo compendio en el mundo de juego actual",
@@ -130,9 +141,10 @@
   "COMPENDIUM.ToggleVisibility": "Alternar visibilidad",
   "COMPENDIUM.ToggleLocked": "Alternar bloqueo de edición",
   "COMPENDIUM.ToggleLockedWarning": "Está intentando desbloquear la edición de un compendio que no pertenece a este mundo de juego. Cualquier cambio que realice en este compendio podría perderse si se actualiza el sistema o el módulo que lo contiene. Quizá prefiera duplicar el compendio en su mundo de juego en su lugar. ¿Desea continuar?",
+  
   "CONTROLS.Title": "Controles del juego",
   "CONTROLS.Instructions": "Este formulario describe los comandos principales del teclado y ratón utilizados para controlar varios aspectos de Foundry Virtual Tabletop",
-  "CONTROLS.GroupBasic": "Controles básicos",
+  "CONTROLS.GroupToken": "Controles de icono",
   "CONTROLS.BasicSelect": "Seleccionar iconos",
   "CONTROLS.TargetSelect": "Seleccionar objetivos",
   "CONTROLS.BasicMeasure": "Medir distancia",
@@ -249,8 +261,15 @@
   "CONTROLS.DrawingHeader": "Controles de la herramienta de dibujo",
   "CONTROLS.DrawingTextConfirm": "Confirmar texto dibujado",
   "CONTROLS.DrawingTextCancel": "Cancelar texto dibujado",
+  
   "DICE.ErrorNonNumeric": "La expresión de construcción de la tirada de dados {fórmula} no produjo un resultado numérico",
   "DICE.WarnMissingData": "No se ha encontrado el atributo {match} en los datos de la tirada proporcionados",
+
+  "DOCUMENT.Tile": "Baldosa",
+  "DOCUMENT.Create": "Crear nueva {type}",
+  "DOCUMENT.New": "Nueva {type}",
+  "DOCUMENT.Update": "Actualizar {type}",
+  
   "DRAWING.ConfigTitle": "Configuración de dibujo",
   "DRAWING.ConfigDefaultTitle": "Configuración de dibujo por defecto",
   "DRAWING.SubmitDefault": "Configurar valor por defecto",
@@ -289,6 +308,7 @@
   "DRAWING.FontSize": "Tamaño de la fuente",
   "DRAWING.TextColor": "Color del texto",
   "DRAWING.TextOpacity": "Opacidad del texto",
+  
   "EFFECT.MODE_CUSTOM": "Personalizado",
   "EFFECT.MODE_MULTIPLY": "Multiplicar",
   "EFFECT.MODE_ADD": "Añadir",
@@ -314,6 +334,7 @@
   "EFFECT.ChangeMode": "Cambiar modo",
   "EFFECT.ChangeValue": "Valor del efecto",
   "EFFECT.Submit": "Enviar cambios",
+  
   "EFFECT.StatusAsleep": "Dormido",
   "EFFECT.StatusDead": "Muerto",
   "EFFECT.StatusUnconscious": "Inconsciente",
@@ -346,6 +367,7 @@
   "EFFECT.StatusIceShield": "Escudo de hielo",
   "EFFECT.StatusMagicShield": "Escudo mágico",
   "EFFECT.StatusHolyShield": "Escudo sagrado",
+  
   "ENTITY.Actor": "Personaje",
   "ENTITY.ChatMessage": "Mensaje de chat",
   "ENTITY.Combat": "Combate",
@@ -360,6 +382,7 @@
   "ENTITY.Create": "Crear nuevo {entidad}",
   "ENTITY.New": "Nuevo {entidad}",
   "ENTITY.CreateNew": "Nuevo",
+  
   "ERROR.ChromiumVersion": "Foundry Virtual Tabletop utiliza características modernas de JavaScript que no son compatibles con versiones de Chromium inferior a {minimum}. Está utilizando la versión {version} de Chromium por lo que podría encontrar problemas",
   "ERROR.LowResolution": "Foundry Virtual Tabletop requiere una resolución de pantalla mínima de 1366x768px. Su pantalla es {width}x{height}px. Con su configuración de pantalla actual, muchas funciones del software podrían no funcionar correctamente",
   "ERROR.NoWebGL": "Su navegador actualmente no admite la renderización por WebGL requerida por Foundry Virtual Tabletop. Asegúrese de tener habilitado el renderizado por hardware y WebGL en su navegador",
@@ -368,10 +391,12 @@
   "ERROR.TokenCollide": "El movimiento del icono efectuado choca con al menos una pared",
   "ERROR.LoadPackages": "La solicitud para explorar los paquetes existentes no pudo conectar con el servidor de Foundry. Asegúrese de que la aplicación tenga permiso para realizar conexiones salientes",
   "WARNING.GridConfigNoBG": "Está utilizando la herramienta de configuración de rejilla para una escena sin imagen de fondo. Esto no es recomendable y puede producir resultados impredecibles",
+  
   "EULA.Acknowledge": "Agradecimientos",
   "EULA.Agree": "Aceptar",
   "EULA.AgreeHint": "Estoy de acuerdo con los términos",
   "EULA.Decline": "Declinar",
+  
   "FILES.CreateDirectory": "Crear directorio",
   "FILES.TogglePrivacy": "Alternar modo privado",
   "FILES.DisplayMode": "Forma de visualización",
@@ -399,21 +424,26 @@
   "FILES.SourceCore": "Datos básicos",
   "FILES.SourceS3": "Amazon S3",
   "FILES.BrowseTooltip": "Examinar archivos",
+  
   "GAME.Paused": "Juego en pausa",
   "GAME.PausedWarning": "No se puede realizar esta acción mientras el juego está en pausa",
+  
   "INVITATIONS.Copied": "Enlace de invitación al juego copiado al portapapeles",
   "INVITATIONS.Instructions": "Comparte los enlaces de invitación con los usuarios que desees que participen en el juego. Utilice el enlace marcado como 'Red Local' para los usuarios dentro de su red, caso contrario utilice el enlace 'Internet' para los usuarios que accedan por internet al puerto configurado",
   "INVITATIONS.Internet": "Internet",
   "INVITATIONS.Local": "Red local",
   "INVITATIONS.Title": "Enlaces de invitación al juego",
+  
   "ITEM.Create": "Crear objeto",
   "ITEM.Delete": "Eliminar objeto",
   "ITEM.Search": "Buscar objeto",
   "ITEM.ViewArt": "Ver imagen del objeto",
+  
   "HUD.ToggleVis": "Alternar visibilidad",
   "HUD.ToggleLock": "Alternar bloqueo",
   "HUD.ToFront": "Traer al frente",
   "HUD.ToBack": "Enviar al fondo",
+  
   "JOURNAL.Title": "Diario",
   "JOURNAL.Search": "Buscar en el diario",
   "JOURNAL.Create": "Crear entrada",
@@ -427,6 +457,7 @@
   "JOURNAL.AnchorTop": "Arriba",
   "JOURNAL.AnchorLeft": "Izquierda",
   "JOURNAL.AnchorRight": "Derecha",
+  
   "LIGHT.AnimationType": "Tipo de animación de luz",
   "LIGHT.AnimationSpeed": "Velocidad de animación",
   "LIGHT.AnimationIntensity": "Intensidad de animación",
@@ -459,6 +490,7 @@
   "LIGHT.TypeGlobal": "Luz global",
   "LIGHT.TypeUniversal": "Luz universal",
   "LIGHT.Update": "Actualizar fuente de luz",
+  
   "MACRO.Create": "Crear macro",
   "MACRO.Delete": "Eliminar macro",
   "MACRO.DeleteConfirm": "<p><strong>¿Estás seguro?<\/strong> Esta macro será eliminada permanentemente<\/p>",
@@ -467,10 +499,12 @@
   "MACRO.Remove": "Eliminar macro",
   "MACRO.Save": "Guardar macro",
   "MACRO.Search": "Buscar macro",
+  
   "MENU.Reload": "Recargar aplicación",
   "MENU.Logout": "Cerrar sesión",
   "MENU.Players": "Gestionar jugadores",
   "MENU.Setup": "Volver a la configuración",
+  
   "MODMANAGE.Bugs": "Informes de errores o problemas",
   "MODMANAGE.DeactivateAll": "Desactivar todos los módulos",
   "MODMANAGE.Readme": "Documentación del módulo",
@@ -487,6 +521,7 @@
   "MODMANAGE.FilterAll": "Todos los módulos",
   "MODMANAGE.FilterActive": "Módulos activos",
   "MODMANAGE.FilterInactive": "Módulos inactivos",
+  
   "NOTE.AnchorPoint": "Punto de anclaje del texto",
   "NOTE.ConfigTitle": "Configuración de las notas de mapa",
   "NOTE.EntryIcon": "Icono de la entrada",
@@ -497,8 +532,10 @@
   "NOTE.TextLabel": "Etiqueta de texto",
   "NOTE.TextColor": "Color del texto",
   "NOTE.Update": "Actualizar notas del mapa",
+  
   "PLAYERS.Title": "Jugadores",
   "PLAYERS.CharSelect": "Seleccionar personaje",
+  "PLAYERS.CharSelected": "Personaje seleccionado",
   "PLAYERS.CharRelease": "Liberar personaje",
   "PLAYERS.ConfigTitle": "Configuración del jugador",
   "PLAYERS.PlayerColor": "Color del jugador",
@@ -509,6 +546,7 @@
   "PLAYERS.Kick": "Expulsar jugador",
   "PLAYERS.Ban": "Bloquear jugador",
   "PLAYERS.UnBan": "Desbloquear jugador",
+  
   "PLAYLIST.Create": "Crear lista de reproducción",
   "PLAYLIST.Delete": "Eliminar lista de reproducción",
   "PLAYLIST.Edit": "Modificar lista de reproducción",
@@ -525,7 +563,7 @@
   "PLAYLIST.Name": "Nombre de la lista de reproducción",
   "PLAYLIST.Mode": "Modo de reproducción",
   "PLAYLIST.Update": "Actualizar lista de reproducción",
-  "PLAYLIST.SoundAdd": "Agregar audio",
+  "PLAYLIST.SoundCreate": "Crear audio",
   "PLAYLIST.SoundEdit": "Modificar audio",
   "PLAYLIST.SoundDelete": "Eliminar audio",
   "PLAYLIST.SoundLoop": "Repetir en bucle",
@@ -538,6 +576,7 @@
   "PLAYLIST.SoundPreload": "Precargar audio",
   "PLAYLIST.SoundVolume": "Volumen del audio",
   "PLAYLIST.SoundStop": "Detener audio",
+  
   "SCENES.Accessibility": "Accesibilidad",
   "SCENES.AccessibilityGM": "Sólo GM",
   "SCENES.AccessibilityAll": "Todos los jugadores",
@@ -609,6 +648,7 @@
   "SCENES.Units": "Unidades",
   "SCENES.WeatherEffect": "Efecto del clima",
   "SCENES.WeatherEffectHint": "Seleccione un efecto atmosférico para aplicar a la escena",
+  
   "SETTINGS.Configure": "Configurar ajustes",
   "SETTINGS.Controls": "Controles del juego",
   "SETTINGS.Docs": "Ver documentación",
@@ -637,6 +677,8 @@
   "SETTINGS.LangL": "Cambia el idioma en el que se muestra Foundry Virtual Tabletop",
   "SETTINGS.LClickReleaseN": "Clic izquierdo para liberar objetos",
   "SETTINGS.LClickReleaseL": "Activado: haga clic izquierdo en un espacio vacío del lienzo para liberar cualquier objeto controlado actualmente. Desactivado: Los objetos se liberan seleccionando un espacio vacío, haciendo un mayús-clic en el objeto o pulsando la tecla de escape",
+  "SETTINGS.NoCanvasN": "Deshabilitar lienzo de juego",
+  "SETTINGS.NoCanvasL": "Se puede desactivar el lienzo de juego, que proporciona de una representación visual de la mesa virtual. Esto permite que máquinas de bajos recursos usen ciertas características del programa",
   "SETTINGS.CBubN": "Habilitar burbujas de chat",
   "SETTINGS.CBubL": "Establece si se muestran burbujas de chat encima de los iconos para mensajes como personaje y reacciones",
   "SETTINGS.CBubPN": "Centrar vista en el icono que ha hablado",
@@ -652,6 +694,7 @@
   "SETTINGS.TabSystem": "Ajustes del sistema",
   "SETTINGS.TokenDragPreviewN": "Visión al arrastrar icono",
   "SETTINGS.TokenDragPreviewL": "Cuando se activa, la visión e iluminación de un icono se previsualiza en tiempo real cuando se arrastre con el botón izquierdo. Deshabilitado por defecto porque puede promover comportamientos de meta-juego no deseados",
+  
   "SETUP.CoreVersion": "Versión del programa principal",
   "SETUP.CoreVersionHint": "Si hay disponible una actualización del programa principal de Foundry Virtual Tabletop, puede aplicarla aquí. Actualmente está utilizando la versión {coreVersion}",
   "SETUP.DefaultLanguage": "Lenguaje por defecto",
@@ -677,7 +720,6 @@
   "SETUP.UpdateRelease": "Pública (estable)",
   "SETUP.UpdateKey": "Clave de actualización",
   "SETUP.ForceUpdateHint": "Marcar la casilla forzar actualización para forzar la actualización a la versión del canal solicitado. No use esta opción a menos que sepa exactamente lo que está haciendo",
-  "SETUP.UpdateWarning": "Para actualizar Foundry Virtual Tabletop, deberá estar conectado a Internet y tener una licencia de software válida",
   "SETUP.Uninstall": "Desinstalar",
   "SETUP.WorldCreate": "Crear mundo de juego",
   "SETUP.WorldDelete": "Borrar mundo",
@@ -688,6 +730,13 @@
   "SETUP.RequireSystem": "Requiere actualización del sistema",
   "SETUP.RequireDep": "Requiere dependencia",
   "SETUP.RequireCore": "Requiere actualización principal",
+  
+  "SETUP.ConfigSave": "Guardar configuración del programa",
+  "SETUP.ConfigSaveWarning": "Modificar de estas opciones hará que se detenga el servidor y requerirá que lo inicie manualmente. ¿Desea continuar?",
+  "SETUP.ConfigSaveRestart": "Se ha detenido el servidor The Foundry Virtual Tabletop con el fin de aplicar los cambios. Debe reiniciarlo manualmente",
+
+  "SETUP.CurrentVersion": "Versión actual",
+  "SETUP.ForceUpdate": "¿Forzar actualización?",
   "SETUP.CompatibilityUnknown": "Compatibilidad desconocida",
   "SETUP.CompatibilityRisk": "Riesgo de compatibilidad",
   "SETUP.ManifestURL": "Manifiesto URL",
@@ -710,17 +759,43 @@
   "SETUP.PackageVisAll": "Todos los módulos",
   "SETUP.PackageVisInst": "Solo instalados",
   "SETUP.PackageVisUnin": "Solo no instalados",
+  
   "SETUP.PackageHasDependencies": "El módulo que instaló tiene {number} dependencias que aún no se han instalado",
   "SETUP.PackageDependenciesTitle": "Instalar dependencias de módulos",
   "SETUP.PackageInstallDependencies": "Es posible que no pueda utilizar este módulo si las dependencias no están instaladas. ¿Quieres instalarlas automáticamente?",
   "SETUP.PackageDependenciesDecline": "Ha elegido no instalar las dependencias necesarias para {title}. Deberá instalarlos manualmente",
   "SETUP.PackageDependenciesSuccess": "Las dependencias de {title} y {number} se instalaron correctamente",
   "SETUP.PackageUpdateBlocked": "Existe una actualización disponible para {name} pero no puede ser instalada porque requiere una versión del programa principal {vreq} y usted actualmente está usando la versión {vcur}",
+  "SETUP.PackageDeleteTitle": "Borrar {type}: {title}",
+  "SETUP.PackageDeleteConfirm": "¿Está seguro de que quiere borrar el {type} <strong>{title}</strong>?",
+  "SETUP.WorldDeleteConfirm1": "<strong>Aviso:</strong> Esto eliminará permanente los contenidos del mundo y <strong>no podrán</strong> ser recuperados. <strong>¿Está seguro de que desea continuar?</strong>",
+  "SETUP.WorldDeleteConfirm2": "Escriba el título exacto del mundo <strong>{title}</strong> en el cuadro de más abajo para continuar",
+  "SETUP.PackageDeleteNoUndo": "<strong>Aviso:</strong> Esta operación no se podrá revertir",
+  "SETUP.PackageDeleteWorldConfirm": "Debe introducir el nombre exacto del mundo para confirmar su eliminación",
+  "SETUP.PackageStatusCheck": "Comprobar actualización",
+  "SETUP.PackageStatusBlocked": "Bloqueada",
+  "SETUP.PackageStatusUpdate": "Actualización",
+  "SETUP.PackageStatusCurrent": "Actual",
+
+  "SETUP.UpdateDownloadingS": "Descargando actualización",
+  "SETUP.UpdateDownloadingC": "Descarga completa",
+  "SETUP.UpdateExtractingS": "Extrayendo actualización",
+  "SETUP.UpdateExtractingC": "Extracción completa",
+  "SETUP.UpdateCleaningS": "Limpiando directorio",
+  "SETUP.UpdateCleaningC": "Limpieza completa",
+  "SETUP.UpdateInstallingS": "Instalando actualización",
+  "SETUP.UpdateInstallingC": "Instalación completa",
+
+  "SETUP.UpdateWarning": "Para actualizar Foundry Virtual Tabletop, deberá estar conectado a Internet y tener una licencia de software válida",
   "SETUP.UpdateWarningWillDisable": "Esta actualización supone la instalación de una nueva versión de Foundry Virtual Tabletop. Para instalar esta actualización será necesario desactivar algunos módulos que todavía no serán compatibles",
   "SETUP.UpdateButtonDownload": "Descargar actualización {version}",
   "SETUP.UpdateInfoAvailable": "¡Está disponible una actualización de Foundry Virtual Tabletop, versión {version}!",
+  "SETUP.UpdateNoupdateMode": "No puede actualizar esta instancia de Foundry Virtual Tabletop debido a que fue iniciada en modo --noupdate mode.",
+  "SETUP.UpdateNotAvailable": "No existe ninguna actualización disponible en el canal seleccionado",
+  
   "SETUP.WorldMigrationRequiredTitle": "Se requiere la migración de los datos del mundo",
   "SETUP.WorldMigrationRequired": "<p>Lanzar el mundo <strong>{world}<\/strong> migrará su modelo de datos de una versión de FoundryVTT antigua {oldVersion} a la versión instalada {newVersion}.<\/p><p>Como parte de este proceso, <strong>{nIncompatible} de {nModules} módulos instalados<\/strong> podrían no ser compatibles con la nueva versión y se deshabilitarán automáticamente. Puede volver a activarlos manualmente si así lo desea.<\/p><p>Por favor, compruebe si hay actualizaciones disponibles para sus sistemas de juego y sus módulos y asegúrese de hacer copias de seguridad periódicas de los datos sensibles de su mundo. ¿Desea continuar?<\/p>",
+  
   "SETUP.AdminAccess": "Foundry Virtual Tabletop &bull; Acceso de administrador",
   "SETUP.AdminKeyLabel": "Clave de acceso de administrador",
   "SETUP.AdminKeyHint": "Permite asignar una clave de acceso especial necesaria para acceder a esta pantalla de configuración",
@@ -737,18 +812,32 @@
   "SETUP.SSLCertLabel": "Certificado SSL",
   "SETUP.SSLKeyLabel": "Clave privada SSL",
   "SETUP.SSLHint": "Permite ejecutar el servidor mediante SSL proporcionando las rutas a certificados y claves. Estas son absolutas o relativas al subdirectorio 'Config' de datos de usuario",
+
+  "JOIN.CurrentPlayers": "Jugadores actuales",
+  "JOIN.HeaderJoin": "Unirse a la sesión de juego",
+  "JOIN.HeaderDetails": "Detalles de la partida",
+  "JOIN.HeaderSetup": "Volver a la configuración",
+  "JOIN.HeaderWorld": "Descripción del mundo",
+  "JOIN.NextSession": "Próxima sesión",
+  "JOIN.SelectUser": "Seleccionar usuario",
+  "JOIN.UserKey": "Clave de acceso de usuario",
+  "JOIN.AuthAdmin": "Te has autenticado como administrador del servidor",
+  "JOIN.AdminKey": "Clave de acceso de administrador",
+  
   "SHEETS.ThisSheet": "Esta hoja",
   "SHEETS.DefaultSheet": "Hoja por defecto",
   "SHEETS.EntitySheetHint": "Cambie la hoja que desea usar para esta entidad en concreto",
   "SHEETS.TypeSheetHint": "Determine la hoja por defecto que se usará para este tipo de entidad (Sólo GM)",
   "SHEETS.EntitySheetPrivate": "No tiene permisos suficientes para ver esta hoja de entidad",
   "SHEETS.Save": "Guardar configuración de la hoja",
+  
   "SIDEBAR.CharArt": "Ver imagen del personaje",
   "SIDEBAR.CollapseToggle": "Contraer o expandir",
   "SIDEBAR.Delete": "Eliminar",
   "SIDEBAR.DeleteConfirm": "<h3>¿Está Seguro?<\/h3><p>Esta entidad será <strong>eliminada permanentemente<\/strong><\/p>",
   "SIDEBAR.Duplicate": "Duplicar",
   "SIDEBAR.Export": "Exportar datos",
+  
   "SOUND.ConfigTitle": "Configuración de sonido ambiental",
   "SOUND.ConfigHint": "Configure el sonido ambiental, especificando qué archivo de audio debe reproducirse cuando los iconos entren dentro de su radio de alcance",
   "SOUND.Create": "Crear sonido ambiental",
@@ -761,6 +850,8 @@
   "SOUND.EasingHint": "Ajuste el nivel de volumen del audio a medida que los iconos se acercan al origen",
   "SOUND.MaxVol": "Volumen máximo",
   "SOUND.MaxVolHint": "Defina el volumen máximo del sonido en su punto de origen (si se usa la opción de mitigación) o en cualquier lugar del área",
+  "SOUND.New": "Nuevo sonido",
+  
   "FOLDER.Clear": "Eliminar carpeta",
   "FOLDER.Color": "Color de la carpeta",
   "FOLDER.Create": "Crear carpeta",
@@ -782,12 +873,14 @@
   "FOLDER.ExportWarningNone": "No hay ningún paquete de compendio no bloqueados disponible al que exportar las entidades {type}",
   "FOLDER.CreateTable": "Crear tabla dinámica",
   "FOLDER.CreateTableConfirm": "¿Crear una nueva tabla dinámica usando el contenido de esta carpeta como resultados de la misma?",
+  
   "PERMISSION.NONE": "Ninguno",
   "PERMISSION.LIMITED": "Limitado",
   "PERMISSION.OBSERVER": "Espectador",
   "PERMISSION.OWNER": "Propietario",
   "PERMISSION.DEFAULT": "Por defecto",
   "PERMISSION.NOCHANGE": "Sin cambios",
+  
   "PERMISSION.AllPlayers": "Todos los jugadores",
   "PERMISSION.Configure": "Configurar permisos",
   "PERMISSION.ConfigureLabel": "Abrir configuración de permisos",
@@ -834,6 +927,7 @@
   "PERMISSION.TokenConfigureHint": "Permitir a los jugadores con este rol configurar los ajustes de los iconos que poseen",
   "PERMISSION.WallDoors": "Abrir y cerrar puertas",
   "PERMISSION.WallDoorsHint": "Permitir que los jugadores con este rol interactúen con las puertas definidas en la capa de paredes",
+  
   "SIDEBAR.Import": "Importar datos",
   "SIDEBAR.SceneCreate": "Crear escena",
   "SIDEBAR.SceneSearch": "Buscar escenas",
@@ -849,6 +943,7 @@
   "SIDEBAR.TabTables": "Tablas",
   "SIDEBAR.TokenArt": "Ver imagen del icono",
   "SIDEBAR.JumpPin": "Ir a la chincheta",
+  
   "TABLE.AnimateSetting": "¿Animar tablas dinámicas?",
   "TABLE.AnimateSettingHint": "Establezca si desea mostrar una animación al estilo ruleta en las tablas dinámicas",
   "TABLE.Create": "Crear tabla",
@@ -869,10 +964,16 @@
   "TABLE.Roll": "Tirar",
   "TABLE.ToggleDrawn": "Activar/desactivar resultado",
   "TABLE.Update": "Actualizar",
+  
   "TEMPLATE.ConeTypeSetting": "Forma del borde de la plantilla cono",
   "TEMPLATE.ConeTypeSettingHint": "Define la forma en la que termina la plantilla de cono",
   "TEMPLATE.ConeTypeFlat": "Plana",
   "TEMPLATE.ConeTypeRound": "Redonda",
+  
+  "TILE.ConfigHint": "Configure el contenedor de baldosas que se mostrará sobre el fondo de la escena",
+  "TILE.ConfigTitle": "Configuración de baldosa",
+  "TILE.Image": "Imagen o vídeo de baldosa",
+
   "TOKEN.Assign": "Asignar icono",
   "TOKEN.AssignWarn": "Debe seleccionar un icono existente para asignarlo a la configuración de prototipo nuevo",
   "TOKEN.AssignSuccess": "Se actualizó la configuración del prototipo de icono para {name}",
@@ -907,6 +1008,8 @@
   "TOKEN.VisionBrightDist": "Luz brillante",
   "TOKEN.VisionDimDist": "Luz tenue",
   "TOKEN.VisionSightAngle": "Ángulo de visión",
+  "TOKEN.WarningNoActor": "Este icono hace referencia a un actor que no existe en el mundo",
+  "TOKEN.WarningNoVision": "No controla ningún icono con visión en esta escena",
   "TOKEN.HOSTILE": "Hostil",
   "TOKEN.NEUTRAL": "Neutral",
   "TOKEN.FRIENDLY": "Amigo",
@@ -916,6 +1019,7 @@
   "TOKEN.DISPLAY_HOVER": "Al pasar el ratón (cualquiera)",
   "TOKEN.DISPLAY_OWNER": "Siempre (propietario)",
   "TOKEN.DISPLAY_ALWAYS": "Siempre (todos)",
+  
   "USER.RoleNone": "Ninguno",
   "USER.RolePlayer": "Jugador",
   "USER.RoleTrusted": "Confianza",
@@ -931,6 +1035,7 @@
   "USERS.ManageTitle": "Gestión de usuarios",
   "USERS.UpdateSuccess": "Se actualizaron con éxito los usuarios del juego. Volviendo al mundo del juego",
   "USERS.NoGMError": "Debes tener al menos un usuario Gamemaster en tu mundo",
+  
   "WALLS.Title": "Configuración de pared",
   "WALLS.TitleMany": "Configuración de pared [múltiples]",
   "WALLS.Instructions": "Personalice la forma en que este segmento de pared limita el movimiento o la visibilidad",
@@ -941,8 +1046,10 @@
   "WALLS.Door": "¿Es una puerta?",
   "WALLS.DoorState": "Estado de la puerta",
   "WALLS.Submit": "Actualizar puerta",
+  
   "WORLD.DetailTab": "Detalles del mundo",
   "WORLD.DescTab": "Descripción del mundo",
+  
   "WEBRTC.Title": "Configuración de audio/vídeo",
   "WEBRTC.MenuLabel": "Configurar audio/vídeo",
   "WEBRTC.MenuHint": "Configure ajustes específicos del WebRTC integrado de audio/vídeo",
@@ -992,6 +1099,7 @@
   "WEBRTC.VoiceModeAlways": "Siempre activo",
   "WEBRTC.VoiceModeActivity": "Actividad de voz",
   "WEBRTC.VoiceModePtt": "Pulsar para hablar",
+  
   "WEBRTC.TooltipAllowUserVideo": "Permitir vídeo de usuario",
   "WEBRTC.TooltipBlockUserVideo": "Bloquear vídeo de usuario",
   "WEBRTC.TooltipAllowUserAudio": "Permitir audio de usuario",
@@ -1004,6 +1112,7 @@
   "WEBRTC.TooltipUnmutePeers": "Dejar de silenciar a los demás",
   "WEBRTC.TooltipShowPlayers": "Mostrar lista de jugadores",
   "WEBRTC.TooltipHidePlayers": "Ocultar lista de jugadores",
+  
   "WEBRTC.TooltipChangeSize": "Cambiar tamaño de vídeo",
   "WEBRTC.CaptureWarningVideo": "No se puede acceder a sus dispositivos de audio; compartiendo solo vídeo",
   "WEBRTC.CaptureWarningAudio": "No se puede acceder a sus dispositivos de vídeo; compartiendo solo audio",
@@ -1015,5 +1124,14 @@
   "WEBRTC.GenericError": "Error WebRTC : ",
   "WEBRTC.NoSSLError": "Las llamadas de audio/vídeo no se pueden usar a menos que el servidor VTT Foundry esté utilizando certificados SSL. Consulte la documentación en línea para obtener más información",
   "WEBRTC.WarningCannotEnableVideo": "No puede habilitar la cámara porque no tiene permisos para emitir video",
-  "WEBRTC.WarningCannotEnableAudio": "No puede activar el micrófono porque no tiene permisos para emitir su señal de audio"
+  "WEBRTC.WarningCannotEnableAudio": "No puede activar el micrófono porque no tiene permisos para emitir su señal de audio",
+
+  "WORLD.Title": "Título del mundo",
+  "WORLD.DataPath": "Ruta de datos",
+  "WORLD.GameSystem": "Sistema de juego",
+  "WORLD.BackgroundImage": "Imagen de fondo",
+  "WORLD.NextSession": "Próxima sesión",
+  "WORLD.ResetModules": "Reiniciar módulos activos",
+  "WORLD.ResetKeys": "Reiniciar claves de acceso de usuario",
+  "WORLD.Description": "Descripción del mundo"
 }
