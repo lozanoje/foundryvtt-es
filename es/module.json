@@ -2,10 +2,10 @@
   "name": "FoundryVTT-ES",
   "title": "Translation: Spanish [Core]",
   "description": "Agrega el idioma Español (Spanish) a las opciones de FoundryVTT.",
-  "version": "0.79.1",
+  "version": "0.79.3b",
   "minimumCoreVersion" : "0.7.6",
   "compatibleCoreVersion": "0.7.9",
-  "author": "Cosmo Corban#4840",
+  "author": "@Cosmo Corban#4840, @Viriato139ac#0342",
   "scripts": [],
   "styles": [],
   "packs": [],
@@ -17,6 +17,6 @@
   }],
     
   "url": "https://gitlab.com/carlosjrlu/foundryvtt-es",
-  "manifest": "https://gitlab.com/carlosjrlu/foundryvtt-es/-/raw/beta/es-ES/module.json",
-  "download": "https://gitlab.com/carlosjrlu/foundryvtt-es/-/jobs/artifacts/beta/raw/es-ES.zip?job=build"
+  "manifest": "https://gitlab.com/carlosjrlu/foundryvtt-es/-/raw/beta/es/module.json",
+  "download": "https://gitlab.com/carlosjrlu/foundryvtt-es/-/jobs/artifacts/beta/raw/es.zip?job=build"
 }
