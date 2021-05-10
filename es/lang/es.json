@@ -626,7 +626,7 @@
   "SETTINGS.SettingsHeader": "Opciones del juego",
   "SETTINGS.DocsHeader": "Documentación de ayuda",
   "SETTINGS.AccessHeader": "Acceso al juego",
-  "SETTINGS.Wiki": "Páginas de la Wiki de la comunidad",
+  "SETTINGS.Wiki": "Wiki de la comunidad",
   "SETTINGS.AnimVisionN": "Animación de visión de icono",
   "SETTINGS.AnimVisionL": "Animar visión de iconos y cambios de luz durante las animaciones de movimiento de los iconos. Al desactivarlo se mejorará el rendimiento en ordenadores con bajas especificaciones",
   "SETTINGS.AnimLightN": "Animación de la fuente de luz",
