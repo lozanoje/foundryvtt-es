@@ -4,6 +4,16 @@ Complete Translation to Spanish of the Foundry Virtual Tabletop
 
 Thanks to Simone Ricciardi for the base files
 
+## ¡¡¡IMPORTANTE!!!
+
+Si estás en la 0.7.10, debes usar el siguiente manifest para instalar la traducción:
+
+https://gitlab.com/carlosjrlu/foundryvtt-es/uploads/a1d0647cc8c4fae69bdadd26cec74ab3/module.json
+
+Si estás en la 0.8.6, puedes usar el manifest habitual:
+
+https://gitlab.com/carlosjrlu/foundryvtt-es/-/raw/master/es/module.json
+
 ## Español
 
 Este módulo permite seleccionar el idioma *Español* en [FoundryVTT](http://foundryvtt.com/ "Foundry Virtual Tabletop").
