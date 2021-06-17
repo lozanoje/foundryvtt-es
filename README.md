@@ -6,20 +6,21 @@ Thanks to Simone Ricciardi for the base files
 
 ## ¡¡¡IMPORTANTE!!!
 
-Si estás en la 0.7.10, debes usar el siguiente manifest para instalar la traducción:
+Direcciones de instalación (manifest) de las distintas versiones:
 
-https://gitlab.com/carlosjrlu/foundryvtt-es/uploads/a1d0647cc8c4fae69bdadd26cec74ab3/module.json
+* Última versión: https://gitlab.com/carlosjrlu/foundryvtt-es/-/raw/master/es/module.json
+* v0.8.7: https://gitlab.com/carlosjrlu/foundryvtt-es/uploads/4a14c5f1e0a99891d45ed6dc5170ba21/module.json
+* v0.8.6: https://gitlab.com/carlosjrlu/foundryvtt-es/uploads/9def857e68c8bae83d3290171f2c7809/module.json
+* v0.7.10: https://gitlab.com/carlosjrlu/foundryvtt-es/uploads/a1d0647cc8c4fae69bdadd26cec74ab3/module.json
 
-Si estás en la 0.8.6 o superior, puedes usar el manifest habitual:
-
-https://gitlab.com/carlosjrlu/foundryvtt-es/-/raw/master/es/module.json
+Si estás en la 0.7 deberás usar el manifest de la 0.7.10
 
 ## Español
 
 Este módulo permite seleccionar el idioma *Español* en [FoundryVTT](http://foundryvtt.com/ "Foundry Virtual Tabletop").
 Incluye la traducción completa de la interfaz.
 
-No sé nada de programación ni de cómo funciona gitlab, pero me gustaría que si encuentras algún error, o tienes alguna recomendación en alguna parte de la traducción, házmelo saber enviandome un mensaje a **Cosmo Corban#4840** en Discord a través del servidor de FoundryVTT.
+Si encuentra algún error, o tiene alguna recomendación, háganoslo saber enviando un mensaje a **Cosmo Corban#4840** en el discord official de FoundryVTT (https://discord.gg/foundryvtt) o bien a **Viriato139ac#0342** en el discord de FoundryVTT Español (https://discord.gg/MHCerwd).
 
 ### Instalación
 
