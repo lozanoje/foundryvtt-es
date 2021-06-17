@@ -10,7 +10,7 @@ Si estás en la 0.7.10, debes usar el siguiente manifest para instalar la traduc
 
 https://gitlab.com/carlosjrlu/foundryvtt-es/uploads/a1d0647cc8c4fae69bdadd26cec74ab3/module.json
 
-Si estás en la 0.8.6, puedes usar el manifest habitual:
+Si estás en la 0.8.6 o superior, puedes usar el manifest habitual:
 
 https://gitlab.com/carlosjrlu/foundryvtt-es/-/raw/master/es/module.json
 
