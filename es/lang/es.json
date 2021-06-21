@@ -814,7 +814,7 @@
 "SETUP.MinifyFiles": "Optimizar archivos estáticos",
 "SETUP.MinifyFilesHint": "Reduzca el tráfico de red usando archivos JavaScript y CSS estáticos simplificados. Se recomienda habilitar esta configuración para la mayoría de los usuarios, pero es posible que algunos desarrolladores de módulos deseen deshabilitarla",
 "SETUP.Modules": "Módulos",
-"SETUP.Systems": "Sistema de juego",
+"SETUP.Systems": "Sistemas",
 "SETUP.Title": "Configuración general",
 "SETUP.Update": "Actualizar",
 "SETUP.SystemUpdate": "Actualizar sistema",
@@ -1293,7 +1293,7 @@
 
 "WORLD.Title": "Título del mundo",
 "WORLD.DataPath": "Directorio de datos",
-"WORLD.GameSystem": "Sistemas",
+"WORLD.GameSystem": "Sistema de juego",
 "WORLD.BackgroundImage": "Imagen de fondo",
 "WORLD.NextSession": "Próxima sesión",
 "WORLD.ResetModules": "Reiniciar módulos activos",
