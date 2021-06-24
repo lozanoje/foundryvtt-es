@@ -752,6 +752,7 @@
 
 "SETTINGS.Configure": "Configurar ajustes",
 "SETTINGS.Controls": "Controles del juego",
+"SETTINGS.DemoMode": "Modo demo",
 "SETTINGS.Docs": "Ver documentación",
 "SETTINGS.Invite": "Enlaces de invitación",
 "SETTINGS.ManageModules": "Administrar módulos",
@@ -944,6 +945,7 @@
 "PACKAGE.TagLocalization": "Localización",
 "PACKAGE.TagVersion": "Versión",
 "PACKAGE.TagCoreVersion": "Versión del núcleo",
+"PACKAGE.UpdateCheckTimedOut": "Tiempo de espera agotado",
 
 "JOIN.CurrentPlayers": "Jugadores actuales",
 "JOIN.HeaderJoin": "Unirse a sesión de juego",

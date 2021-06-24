@@ -9,7 +9,7 @@ Thanks to Simone Ricciardi for the base files
 Direcciones de instalación (manifest) de las distintas versiones:
 
 * Última versión: https://gitlab.com/carlosjrlu/foundryvtt-es/-/raw/master/es/module.json
-* v0.8.7: https://gitlab.com/carlosjrlu/foundryvtt-es/uploads/4a14c5f1e0a99891d45ed6dc5170ba21/module.json
+* v0.8.7: https://gitlab.com/carlosjrlu/foundryvtt-es/uploads/2e69223edfec8ec413f07cbe0055b01e/module.json
 * v0.8.6: https://gitlab.com/carlosjrlu/foundryvtt-es/uploads/9def857e68c8bae83d3290171f2c7809/module.json
 * v0.7.10: https://gitlab.com/carlosjrlu/foundryvtt-es/uploads/a1d0647cc8c4fae69bdadd26cec74ab3/module.json
 
