@@ -749,7 +749,6 @@
 
 "SETTINGS.Configure": "Configure Settings",
 "SETTINGS.Controls": "Controls Reference",
-"SETTINGS.DemoMode": "Demo Mode",
 "SETTINGS.Docs": "View Documentation",
 "SETTINGS.Invite": "Invitation Links",
 "SETTINGS.ManageModules": "Manage Modules",
@@ -942,7 +941,6 @@
 "PACKAGE.TagLocalization": "Localization",
 "PACKAGE.TagVersion": "Version",
 "PACKAGE.TagCoreVersion": "Core Version",
-"PACKAGE.UpdateCheckTimedOut": "Timed Out",
 
 "JOIN.CurrentPlayers": "Current Players",
 "JOIN.HeaderJoin": "Join Game Session",
