@@ -295,7 +295,7 @@
 "CONTROLS.DrawingTextConfirm": "Confirmar texto dibujado",
 "CONTROLS.DrawingTextCancel": "Cancelar texto dibujado",
 
-"DICE.ErrorNonNumeric": "La expresión de construcción de la tirada de dados {fórmula} no produjo un resultado numérico",
+"DICE.ErrorNonNumeric": "La expresión de construcción de la tirada de dados {formula} no produjo un resultado numérico",
 "DICE.WarnMissingData": "No se ha encontrado el atributo {match} en los datos de la tirada proporcionados",
 
 "DOCUMENT.Create": "Crear nuevo {type}",
@@ -445,8 +445,8 @@
 "ENTITY.Scene": "Escena",
 "ENTITY.RollTable": "Tabla dinámica",
 "ENTITY.User": "Usuario",
-"ENTITY.Create": "Crear nuevo {entidad}",
-"ENTITY.New": "Nuevo {entidad}",
+"ENTITY.Create": "Crear nuevo {entity}",
+"ENTITY.New": "Nuevo {entity}",
 "ENTITY.CreateNew": "Nuevo",
 
 "ERROR.BrowserVersion": "Foundry Virtual Tabletop usa una serie de características JavaScript que requieren una versión {minimum} o superior de {browser}. Usted está usando {browser} versión {version}. Por favor, actualice su navegador o use otro",
@@ -808,7 +808,7 @@
 "SETUP.SettingsHeader": "Configuración del programa",
 "SETUP.YouMustInstallASystem": "Antes de crear un mundo nuevo debe instalar algún sistema",
 "SETUP.UpdateHeader": "Actualización del programa",
-"SETUP.UpdateAvailable": "¡Está disponible una actualización de software para {channel} versión {version}!",
+"SETUP.UpdateAvailable": "¡Está disponible una actualización de {type} para {channel} versión {version}!",
 "SETUP.Configuration": "Configuración",
 "SETUP.ConfigurationWarning": "Las siguientes opciones personalizan el comportamiento del servidor Foundry Virtual Tabletop. Tenga cuidado al hacer cambios. Deberá reiniciar el programa para que estos cambios surtan efecto",
 "SETUP.MinifyFiles": "Optimizar archivos estáticos",
@@ -843,8 +843,8 @@
 
 "SETUP.ManifestUpdate": "URL de instalación actualizada",
 "SETUP.ManifestUpdateAvailable": "La URL de instalación de \"{package}\" ha sido actualizada. Esto ocurre cuando cambia el autor o la ubicación del módulo",
-"SETUP.PriorManifestUrl": "URL manifiesto anterior",
-"SETUP.UpdatedManifestUrl": "URL manifiesto actualizada",
+"SETUP.PriorManifestUrl": "URL de manifiesto anterior (Versión {version})",
+"SETUP.UpdatedManifestUrl": "URL de manifiesto actualizada (Versión {version})",
 "SETUP.SwapToTheUpdatedManifest": "¿Quiere cambiar al nuevo URL manifiesto? (recomendado)",
 
 "SETUP.ConfigSave": "Guardar configuración de la aplicación",
