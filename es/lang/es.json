@@ -512,6 +512,8 @@
 "ITEM.Search": "Buscar objeto",
 "ITEM.ViewArt": "Ver imagen del objeto",
 
+"HUD.AssignStatusEffects": "Asignar efectos de estado",
+"HUD.ToggleCombatState": "Conmutar estado de combate",
 "HUD.ToggleVis": "Alternar visibilidad",
 "HUD.ToggleLock": "Alternar bloqueo",
 "HUD.ToFront": "Traer al frente",
@@ -752,6 +754,7 @@
 
 "SETTINGS.Configure": "Configurar ajustes",
 "SETTINGS.Controls": "Controles del juego",
+"SETTINGS.DemoMode": "Modo demostración",
 "SETTINGS.Docs": "Ver documentación",
 "SETTINGS.Invite": "Enlaces de invitación",
 "SETTINGS.ManageModules": "Administrar módulos",
@@ -944,6 +947,7 @@
 "PACKAGE.TagLocalization": "Localización",
 "PACKAGE.TagVersion": "Versión",
 "PACKAGE.TagCoreVersion": "Versión del núcleo",
+"PACKAGE.UpdateCheckTimedOut": "Tiempo de espera finalizado",
 
 "JOIN.CurrentPlayers": "Jugadores actuales",
 "JOIN.HeaderJoin": "Unirse a sesión de juego",
@@ -1259,6 +1263,7 @@
 "WEBRTC.TooltipPopout": "Nueva pestaña",
 "WEBRTC.PTTKey": "Tecla de pulsar-para-hablar/silenciar",
 "WEBRTC.PTTKeyNotes": "Asigna una tecla que, en modo PPH, habilita la captura de voz cuando se mantiene presionada. Si no se está en modo PPH, la misma tecla silenciará al usuario al ser presionada",
+"WEBRTC.PTTKeyWarn": "La tecla pulsar-para-hablar usa un valor antiguo y puede que no funcione correctamente. Por favor, vuelva a confugurarla",
 "WEBRTC.VoiceMode": "Modo de transmisión de voz",
 "WEBRTC.VoiceModeNotes": "Elija cómo se transmitirá su voz en las llamadas de A/V",
 "WEBRTC.VoiceModeAlways": "Siempre activo",
