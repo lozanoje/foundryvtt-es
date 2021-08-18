@@ -1263,7 +1263,7 @@
 "WEBRTC.TooltipPopout": "Nueva pestaña",
 "WEBRTC.PTTKey": "Tecla de pulsar-para-hablar/silenciar",
 "WEBRTC.PTTKeyNotes": "Asigna una tecla que, en modo PPH, habilita la captura de voz cuando se mantiene presionada. Si no se está en modo PPH, la misma tecla silenciará al usuario al ser presionada",
-"WEBRTC.PTTKeyWarn": "La tecla pulsar-para-hablar usa un valor antiguo y puede que no funcione correctamente. Por favor, vuelva a confugurarla",
+"WEBRTC.PTTKeyWarn": "La tecla pulsar-para-hablar usa un valor antiguo y puede que no funcione correctamente. Por favor, vuelva a configurarla",
 "WEBRTC.VoiceMode": "Modo de transmisión de voz",
 "WEBRTC.VoiceModeNotes": "Elija cómo se transmitirá su voz en las llamadas de A/V",
 "WEBRTC.VoiceModeAlways": "Siempre activo",
