@@ -1,8 +1,6 @@
-# FoundryVTT ES
+# foundryvtt-es
 
-Complete Translation to Spanish of the Foundry Virtual Tabletop
-
-Thanks to Simone Ricciardi for the base files
+Translation to Spanish of the core of Foundry Virtual Tabletop
 
 ## ¡¡¡IMPORTANTE!!!
 
@@ -14,40 +12,27 @@ Direcciones de instalación (manifest) de las distintas versiones:
 * v0.8.6: https://gitlab.com/carlosjrlu/foundryvtt-es/uploads/9def857e68c8bae83d3290171f2c7809/module.json
 * v0.7.10: https://gitlab.com/carlosjrlu/foundryvtt-es/uploads/a1d0647cc8c4fae69bdadd26cec74ab3/module.json
 
-Si estás en la 0.7 deberás usar el manifest de la 0.7.10
+Si está en la 0.7 deberá usar el manifest de la 0.7.10
 
 ## Español
 
-Este módulo permite seleccionar el idioma *Español* en [FoundryVTT](http://foundryvtt.com/ "Foundry Virtual Tabletop").
-Incluye la traducción completa de la interfaz.
+Este módulo traduce el núcleo de FoundryVTT y permite seleccionar el idioma *Español* en [FoundryVTT](http://foundryvtt.com/ "Foundry Virtual Tabletop").
 
-Si encuentra algún error, o tiene alguna recomendación, háganoslo saber enviando un mensaje a **Cosmo Corban#4840** en el discord official de FoundryVTT (https://discord.gg/foundryvtt) o bien a **Viriato139ac#0342** en el discord de FoundryVTT Español (https://discord.gg/MHCerwd).
+Si encuentra algún error, o tiene alguna recomendación, puede abrir un issue en github.
+
+Autores: 
+* **Viriato139ac#0342** en el discord de FoundryVTT Español (https://discord.gg/MHCerwd).
+* **Cosmo Corban#4840** en el discord official de FoundryVTT (https://discord.gg/foundryvtt).
 
 ### Instalación
 
-En la opción de "Add-On Modules" en el menú principal del programa, has clic en "Install Module" y escribe lo siguiente en la ventana que te aparece:
+En la opción de "Modules" del menú principal del programa, haga clic en "Install Module" y o bien busque el módulo *Translation: Spanish [Core]* e instálelo o bien copie y pegue en el cuadro URL manifest lo siguiente:
 
-https://gitlab.com/carlosjrlu/foundryvtt-es/-/raw/master/es/module.json
+https://raw.githubusercontent.com/lozalojo/foundryvtt-es/master/module.json
 
-Si no te funciona, puedes intentar descargar el archivo [es.zip](https://gitlab.com/carlosjrlu/foundryvtt-es/-/jobs/artifacts/master/raw/es.zip?job=build "es.zip") y extrae su contenido a la carpeta "Data\modules" y renombra el directorio a FoundryVTT-ES.
+Si no te funciona, puede intentar descargar el archivo [es.zip](https://github.com/lozalojo/foundryvtt-es/archive/master.zip "master.zip"), extraer su contenido a la carpeta "Data\modules" y renombrar el directorio a foundryvtt-es.
 
-Además, dentro de tu mundo de juego, deberás habilitar el módulo, y luego cambiar el idioma en la configuración general del programa.
+Dentro del mundo de juego, active el módulo que ha instalado y luego cambie el idioma en la configuración general del programa.
 
 
 
-## English
-
-This module allows to choose the *Spanish* in [FoundryVTT](http://foundryvtt.com/ "Foundry Virtual Tabletop").
-Includes the complete translation of the program interface.
-
-I don't know programming, neither how gitlab works, but I would like to know if you have any recommendation or if you find any errors in the translation. So please, let me know with a message to my discord **Cosmo Corban#4840** through the FoundryVTT discord server.
-
-### Installation
-
-In the 'Add-On Modules' tab of the main menu, click on 'Install Module' and write down this to the pop-up window:
-
-https://gitlab.com/carlosjrlu/foundryvtt-es/-/raw/master/es/module.json
-
-If that doesn't work, you could try downloading the file [es.zip](https://gitlab.com/carlosjrlu/foundryvtt-es/-/jobs/artifacts/master/raw/es.zip?job=build "es.zip") and unzip it in the 'Data\modules' folder and rename it to FoundryVTT-ES.
-
-Also, you have to activate the module in your world, and then choose the language Spanish from the dropdown menu in the general settings.
