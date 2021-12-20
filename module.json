@@ -1,0 +1,28 @@
+{
+  "name": "foundryvtt-es",
+  "title": "Translation: Spanish [Core]",
+  "description": "Traducción al Español (Spanish) del núcleo de FoundryVTT",
+  "version": "9.236.3",
+  "author": "@Viriato139ac#0342, @Cosmo Corban#4840",
+  "minimumCoreVersion" : "9.236",
+  "compatibleCoreVersion": "9.236",
+  "coreTranslation": true,
+  "scripts": [],
+  "styles": [],
+  "packs": [],    
+  "languages": [
+	{
+  	"lang": "es",
+    "name": "Español",
+    "path": "lang/es.json"
+  },
+	{
+  	"lang": "en",
+    "name": "English",
+    "path": "lang/en.json"
+  }
+	],    
+  "url": "https://github.com/lozalojo/foundryvtt-es",
+  "manifest": "https://raw.githubusercontent.com/lozalojo/foundryvtt-es/master/module.json",
+  "download": "https://github.com/lozalojo/foundryvtt-es/archive/master.zip"
+}
