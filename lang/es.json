@@ -785,7 +785,7 @@
 "MODMANAGE.FilterAll": "Todos los módulos",
 "MODMANAGE.FilterActive": "Módulos activos",
 "MODMANAGE.FilterInactive": "Módulos inactivos",
-"MODMANAGE.Build": "Construir",
+"MODMANAGE.Build": "Compilación",
 
 "NOTE.AnchorPoint": "Punto de anclaje del texto",
 "NOTE.ConfigTitle": "Configuración de las notas de mapa",
