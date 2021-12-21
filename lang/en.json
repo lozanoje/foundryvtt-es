@@ -115,6 +115,8 @@
 "CARDS.Shuffle": "Shuffle",
 "CARDS.SortMode": "Sort Mode",
 "CARDS.Reset": "Reset",
+"CARDS.ResetConfirm": "Are you sure you want to reset {name}? All dealt cards will be recalled.",
+"CARDS.ReturnConfirm": "Are you sure? All cards in {name} will be returned to their original decks.",
 
 "CARDS.NotifyShuffle": "Shuffled: {link}",
 "CARDS.NotifyPass": "Passed {number} cards to: {link}",
@@ -123,6 +125,7 @@
 "CARDS.NotifyDraw": "Drew {number} cards from: {link}",
 "CARDS.NotifyDeal": "Dealt {number} cards each to: {link}",
 "CARDS.NotifyReset": "Recalled all cards to: {link}",
+"CARDS.NotifyReturn": "Returned all cards from: {link}",
 
 "CARD.Create": "Create Card",
 "CARD.Delete": "Delete Card",
@@ -642,6 +645,7 @@
 "KEYBINDINGS.EditBinding": "Edit Binding",
 "KEYBINDINGS.SaveBinding": "Save Binding",
 "KEYBINDINGS.DeleteBinding": "Delete Binding",
+"KEYBINDINGS.Uneditable": "Uneditable Binding",
 "KEYBINDINGS.ActionFilter": "Action Filter",
 "KEYBINDINGS.ActionName": "Action Name",
 "KEYBINDINGS.ResetTitle": "Reset Default Keybindings",
@@ -1139,7 +1143,7 @@
 "SETUP.UpdateNoUpdateMode": "You are not allowed to update this instance of Foundry Virtual Tabletop because it was launched in --noupdate mode.",
 "SETUP.UpdateNotAvailable": "No software update is currently available on the requested update channel.",
 "SETUP.UpdateNoArchive": "No update archive exists to install",
-"SETUP.UpdateLicenseExpired": "Your Foundry Virtual Tabletop license has expired.",
+"SETUP.UpdateLicenseInvalid": "Your Foundry Virtual Tabletop license key is not valid.",
 "SETUP.UpdatedPackages": "Package Update Log",
 "SETUP.Package": "Package",
 "SETUP.VersionChange": "Version Change",

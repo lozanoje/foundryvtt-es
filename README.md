@@ -7,6 +7,7 @@ Translation to Spanish of the core of Foundry Virtual Tabletop
 Direcciones de instalación (manifest) de las distintas versiones:
 
 * Última versión: https://raw.githubusercontent.com/lozalojo/foundryvtt-es/master/module.json
+* v9.236: https://github.com/lozalojo/foundryvtt-es/releases/download/v9.236/module.json
 * v0.8.9: https://github.com/lozalojo/foundryvtt-es/releases/download/v0.8.9/module.json
 * v0.8.8: https://gitlab.com/carlosjrlu/foundryvtt-es/uploads/49fc6a8ea6934ae8258f048fec4113f3/module.json
 * v0.8.7: https://gitlab.com/carlosjrlu/foundryvtt-es/uploads/2e69223edfec8ec413f07cbe0055b01e/module.json
