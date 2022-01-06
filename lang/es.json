@@ -921,7 +921,7 @@
 "SCENES.HeaderAmbience": "Ambiente",
 "SCENES.HeaderDetails": "Detalles",
 "SCENES.HeaderGrid": "Rejilla",
-"SCENES.HeaderVision": "Iluminación",
+"SCENES.HeaderVision": "Visibilidad",
 "SCENES.InitialView": "Posición de la vista inicial",
 "SCENES.InitialViewButton": "Capturar vista actual",
 "SCENES.InitialViewHint": "Establezca la posición de la cámara por defecto al mostrar la escena por primera vez",
