@@ -6,9 +6,9 @@ Translation to Spanish of the core of Foundry Virtual Tabletop
 
 Direcciones de instalación (manifest) de las distintas versiones:
 
-* Última versión: https://raw.githubusercontent.com/lozalojo/foundryvtt-es/master/module.json
-* v9.236: https://github.com/lozalojo/foundryvtt-es/releases/download/v9.236/module.json
-* v0.8.9: https://github.com/lozalojo/foundryvtt-es/releases/download/v0.8.9/module.json
+* Última versión: https://raw.githubusercontent.com/lozanoje/foundryvtt-es/master/module.json
+* v9.236: https://github.com/lozanoje/foundryvtt-es/releases/download/v9.236/module.json
+* v0.8.9: https://github.com/lozanoje/foundryvtt-es/releases/download/v0.8.9/module.json
 * v0.8.8: https://gitlab.com/carlosjrlu/foundryvtt-es/uploads/49fc6a8ea6934ae8258f048fec4113f3/module.json
 * v0.8.7: https://gitlab.com/carlosjrlu/foundryvtt-es/uploads/2e69223edfec8ec413f07cbe0055b01e/module.json
 * v0.8.6: https://gitlab.com/carlosjrlu/foundryvtt-es/uploads/9def857e68c8bae83d3290171f2c7809/module.json
@@ -30,9 +30,9 @@ Autores:
 
 En la opción de "Modules" del menú principal del programa, haga clic en "Install Module" y o bien busque el módulo *Translation: Spanish [Core]* e instálelo o bien copie y pegue en el cuadro URL manifest lo siguiente:
 
-https://raw.githubusercontent.com/lozalojo/foundryvtt-es/master/module.json
+https://raw.githubusercontent.com/lozanoje/foundryvtt-es/master/module.json
 
-Si no te funciona, puede intentar descargar el archivo [es.zip](https://github.com/lozalojo/foundryvtt-es/archive/master.zip "master.zip"), extraer su contenido a la carpeta "Data\modules" y renombrar el directorio a foundryvtt-es.
+Si no te funciona, puede intentar descargar el archivo [es.zip](https://github.com/lozanoje/foundryvtt-es/archive/master.zip "master.zip"), extraer su contenido a la carpeta "Data\modules" y renombrar el directorio a foundryvtt-es.
 
 Dentro del mundo de juego, active el módulo que ha instalado y luego cambie el idioma en la configuración general del programa.
 
