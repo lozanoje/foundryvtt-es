@@ -2,7 +2,7 @@
   "name": "foundryvtt-es",
   "title": "Translation: Spanish [Core]",
   "description": "Traducción al Español (Spanish) del núcleo de FoundryVTT",
-  "version": "9.238.2",
+  "version": "9.238.3",
   "author": "@Viriato139ac#0342, @Cosmo Corban#4840",
   "minimumCoreVersion" : "9.238",
   "compatibleCoreVersion": "9.238",
