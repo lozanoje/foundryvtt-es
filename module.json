@@ -22,7 +22,7 @@
     "path": "lang/en.json"
   }
 	],    
-  "url": "https://github.com/lozalojo/foundryvtt-es",
-  "manifest": "https://raw.githubusercontent.com/lozalojo/foundryvtt-es/master/module.json",
-  "download": "https://github.com/lozalojo/foundryvtt-es/archive/master.zip"
+  "url": "https://github.com/lozanoje/foundryvtt-es",
+  "manifest": "https://raw.githubusercontent.com/lozanoje/foundryvtt-es/master/module.json",
+  "download": "https://github.com/lozanoje/foundryvtt-es/archive/master.zip"
 }
