@@ -766,7 +766,7 @@
 "MACRO.DeleteWarning": "Esta macro será borrada definitivamente para todos los usuarios",
 "MACRO.Edit": "Editar macro",
 "MACRO.Execute": "Ejecutar macro",
-"MACRO.Remove": "Eliminar macro",
+"MACRO.Remove": "Quitar macro",
 "MACRO.Save": "Guardar macro",
 
 "MENU.Reload": "Recargar aplicación",
