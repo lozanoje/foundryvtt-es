@@ -13,6 +13,7 @@
 "Character": "Personaje",
 "Configure": "Configurar",
 "Command": "Comando",
+"Collapse": "Colapsar",
 "Close": "Cerrar",
 "Degrees": "Grados",
 "Default": "Por defecto",
@@ -23,6 +24,7 @@
 "Documentation": "Documentación",
 "Duplicate": "Duplicar",
 "Error": "Error",
+"Expand": "Expandir",
 "GridUnits": "Rejilla",
 "Install": "Instalación",
 "Elevation": "Elevación",
@@ -161,6 +163,7 @@
 "CARD.Play": "Jugar carta",
 "CARD.PlayHint": "Juega esta carta pasándola a otra mano o pila",
 
+"CHAT.Chat": "Chat",
 "CHAT.Clear": "Borrar chat",
 "CHAT.Export": "Exportar chat",
 "CHAT.FlushTitle": "Enviar chat",
@@ -399,6 +402,7 @@
 "DOCUMENT.ImportDataHint1": "Puede impotar los datos de {document} desde un fichero JSON exportado",
 "DOCUMENT.ImportDataHint2": "Esta operación actualizará los datos de {name} y no se podrá deshacer",
 "DOCUMENT.ImportSource": "Fuente de datos",
+"DOCUMENT.Imported": "Los datos \"{name}\" del documento {document} han sido importado con éxito del JSON",
 "DOCUMENT.SheetPermissionWarn": "No tiene permisos para ver esta hoja {document}",
 "DOCUMENT.UsePermissionWarn": "No tiene permisos para usar {document}.",
 
