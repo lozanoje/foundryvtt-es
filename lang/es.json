@@ -1358,6 +1358,8 @@
 
 "TABLE.AnimateSetting": "¿Animar tablas dinámicas?",
 "TABLE.AnimateSettingHint": "Establezca si desea mostrar una animación al estilo ruleta en las tablas dinámicas",
+"TABLE.DrawFlavor": "Extraído resultado de la tabla {name}",
+"TABLE.DrawFlavorPlural": "Extraídos {number} resultados de la tabla {name}",
 "TABLE.Description": "Descripción de la tabla",
 "TABLE.DisplayRoll": "¿Mostrar tirada en el chat?",
 "TABLE.Formula": "Fórmula de la tirada de la tabla",
@@ -1402,6 +1404,13 @@
 "TILE.VideoLoop": "Vídeo en bucle",
 "TILE.VideoAutoplay": "Reproducir vídeo automáticamente",
 "TILE.VideoVolume": "Volumen de vídeo",
+
+"TIME.Now": "Ahora",
+"TIME.SecondsAbbreviation": "s",
+"TIME.MinutesAbbreviation": "m",
+"TIME.HoursAbbreviation": "h",
+"TIME.DaysAbbreviation": "d",
+"TIME.Since": "hace {since}",
 
 "TOKEN.HeaderIdentity": "Identidad",
 "TOKEN.HeaderAppearance": "Apariencia",
