@@ -89,7 +89,7 @@
 "CARDS.DealWarnNoTargets": "Debe crear una mano o pila a la que repartir cartas",
 "CARDS.DeleteCannot": "No se puede borrar",
 "CARDS.DeleteCannotHint": "Los mazos siguientes tienen cartas repartidas en la mesa y no se puede borrar, por favor reinicielos antes: {decks}",
-"CARDS.DeleteMustReset": "Este mazo debe ser reiniciado antes de borrarlo, ¿desea hacerlo ahora?",
+"CARDS.DeleteMustReset": "Este {type} debe ser reiniciado antes de borrarlo, ¿desea hacerlo ahora?",
 "CARDS.DeleteReset": "Reiniciar y borrar",
 "CARDS.Description": "Descripción de la baraja",
 "CARDS.Dimensions": "Dimensiones por defecto",

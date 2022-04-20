@@ -86,7 +86,7 @@
 "CARDS.DealWarnNoTargets": "You must create a hand or pile to deal cards to.",
 "CARDS.DeleteCannot": "Cannot Delete",
 "CARDS.DeleteCannotHint": "The following decks still have cards drawn and cannot be deleted, please reset them first: {decks}",
-"CARDS.DeleteMustReset": "This deck must be reset before it can be deleted, would you like to proceed?",
+"CARDS.DeleteMustReset": "This {type} must be reset before it can be deleted, would you like to proceed?",
 "CARDS.DeleteReset": "Reset & Delete",
 "CARDS.Description": "Card Stack Description",
 "CARDS.Dimensions": "Default Dimensions",
