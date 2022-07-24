@@ -168,7 +168,7 @@
 "CHAT.Clear": "Borrar chat",
 "CHAT.Export": "Exportar chat",
 "CHAT.FlushTitle": "Enviar chat",
-"CHAT.FlushWarning": "<h3>¿Está seguro?<\/h3><p>Todos los mensajes del chat serán eliminados<\/p>",
+"CHAT.FlushWarning": "Todos los mensajes del chat serán eliminados",
 "CHAT.InvalidCommand": "{command} no es un comando válido",
 "CHAT.Title": "Registro de chat",
 "CHAT.To": "Para",
