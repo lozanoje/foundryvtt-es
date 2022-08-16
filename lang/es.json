@@ -505,7 +505,7 @@
 "EFFECT.MODE_ADD": "Añadir",
 "EFFECT.MODE_DOWNGRADE": "Decrementar",
 "EFFECT.MODE_UPGRADE": "Incrementar",
-"EFFECT.MODE_OVERRIDE": "Anular",
+"EFFECT.MODE_OVERRIDE": "Sobrescribir",
 "EFFECT.ConfigTitle": "Configurar efecto activo",
 "EFFECT.TabDetails": "Detalles",
 "EFFECT.TabDuration": "Duración",
