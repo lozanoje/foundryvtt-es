@@ -100,6 +100,8 @@
 "ADVENTURE.ExportTabSummary": "Summary",
 "ADVENTURE.ExportTabContents": "Contents",
 "ADVENTURE.ExportDropZone": "Drag and drop content from your World to populate content into the Adventure.",
+"ADVENTURE.CreateSuccess": "Adventure \"{name}\" was successfully created!",
+"ADVENTURE.UpdateSuccess": "Adventure \"{name}\" was successfully updated!",
 
 "APP.NavigateBackConfirm": "Are you sure you want to exit the Foundry Virtual Tabletop game?",
 
@@ -209,6 +211,7 @@
 "CHAT.RollSelf": "Self Roll",
 "CHAT.RollTables": "Rollable Tables",
 "CHAT.PrivateRollContent": "{user} privately rolled some dice",
+"CHAT.UnknownUser": "Unknown User",
 
 "COMBAT.NavLabel": "Combat Encounters Navigation",
 "COMBAT.Begin": "Begin Combat",
@@ -1534,6 +1537,8 @@
 "PERMISSION.MessageWhisperHint": "Allow users with this role whisper private messages that the Game Master cannot see.",
 "PERMISSION.NoteCreate": "Create Map Notes",
 "PERMISSION.NoteCreateHint": "Allow users with this role to create Note objects from Journal Entries which they own.",
+"PERMISSION.PingCanvas": "Canvas Pings",
+"PERMISSION.PingCanvasHint": "Allow users with this role to bring attention to a point on the canvas with a pinging animation.",
 "PERMISSION.SettingsModify": "Modify Configuration Settings",
 "PERMISSION.SettingsModifyHint": "Allow users with this role to modify game settings and enable or disable modules.",
 "PERMISSION.ShowCursor": "Display Mouse Cursor",
