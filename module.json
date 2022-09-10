@@ -28,8 +28,11 @@
       "flags": {}
     }
   ],
+  "minimumCoreVersion": "10.285",
+  "compatibleCoreVersion": "10.285",
   "compatibility": {
-    "minimum": "10.285"
+    "minimum": "10",
+    "verified": "10"
   },
   "coreTranslation": true,
   "packs": []
