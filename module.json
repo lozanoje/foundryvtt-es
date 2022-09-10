@@ -28,11 +28,9 @@
       "flags": {}
     }
   ],
-  "minimumCoreVersion": "10.285",
-  "compatibleCoreVersion": "10.285",
   "compatibility": {
-    "minimum": "10",
-    "verified": "10"
+    "minimum": 10,
+    "verified": "10.285"
   },
   "coreTranslation": true,
   "packs": []
