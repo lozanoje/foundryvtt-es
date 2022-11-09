@@ -1,7 +1,7 @@
 {
   "title": "Translation: Spanish [Core]",
-  "description": "Traducción al Español (Spanish) del núcleo de FoundryVTT",
-  "version": "10.288.1",
+  "description": "Traducción al Español (Spanish) de FoundryVTT",
+  "version": "10.288.2",
   "languages": [{
       "lang": "es",
       "name": "Español",
