@@ -1201,6 +1201,8 @@
 "SETTINGS.FontConfigH": "Configurar fuentes adicionales que estarán disponibles para su uso en este mundo",
 "SETTINGS.FontSizeN": "Tamaño de fuente",
 "SETTINGS.FontSizeL": "Agranda o reduce el tamaño de fuente usado por la aplicación",
+"SETTINGS.PhotosensitiveModeN": "Modo de fotosensibilidad",
+"SETTINGS.PhotosensitiveModeL": "Al habilitarlo, se reduce la prevalencia y la intensidad del parpadeo, movimientos bruscos y animaciones y efectos repetitivos",
 "SETTINGS.MipMapN": "Antialias de texturas",
 "SETTINGS.MipMapL": "Computa mipmaps para antialias de texturas sprite en niveles más bajos de zoom. Es un ajuste de cliente, cada usuario puede preferir usar diferentes estilos visuales",
 "SETTINGS.PerformanceModeN": "Modo rendimiento",
