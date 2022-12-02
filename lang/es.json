@@ -74,6 +74,7 @@
 "Type": "Tipo",
 "Uninstall": "Desinstalar",
 "units": "unidades",
+"Unknown": "Desconocido",
 "Update": "Actualizar",
 "URL": "URL",
 "Vision": "Visión",
@@ -743,6 +744,7 @@
 "INVITATIONS.OpenConnection": "Su conexión parece estar abierta",
 "INVITATIONS.ClosedConnection": "Su conexión parece estar cerrada",
 "INVITATIONS.UnknownConnection": "No podemos detectar el estado de su conexión",
+"INVITATIONS.DiscoveryFailed": "Nuestro servicio de detección de IPs ha fallado en la detección de su IP correcta. O bien está usando IPv6 o bien no está conectado a Internet",
 
 "ITEM.ViewArt": "Ver imagen del objeto",
 

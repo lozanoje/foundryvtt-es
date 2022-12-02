@@ -71,6 +71,7 @@
 "Type": "Type",
 "Uninstall": "Uninstall",
 "units": "units",
+"Unknown": "Unknown",
 "Update": "Update",
 "URL": "URL",
 "Vision": "Vision",
@@ -740,6 +741,7 @@
 "INVITATIONS.OpenConnection": "Your connection appears to be open",
 "INVITATIONS.ClosedConnection": "Your connection appears to be closed",
 "INVITATIONS.UnknownConnection": "We couldn't detect your connection status",
+"INVITATIONS.DiscoveryFailed": "Our IP detection service failed to identify your correct IP address, you are using IPv6, or you are not currently connected to the Internet.",
 
 "ITEM.ViewArt": "View Item Artwork",
 
