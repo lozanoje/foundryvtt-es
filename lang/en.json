@@ -695,6 +695,7 @@
 "ERROR.LowResolution": "Foundry Virtual Tabletop requires a minimum screen resolution of {reqWidth}px by {reqHeight}px or greater. Your display currently has an effective resolution of {width}px by {height}px, as a result many features of the software may not work properly.",
 "ERROR.NoWebGL": "Your browser does not currently support WebGL rendering which is required by Foundry Virtual Tabletop. Ensure that you have hardware rendering and WebGL enabled in your browser.",
 "ERROR.NoWebGL2": "Your browser does not currently support WebGL Version 2 rendering which is essential for Foundry Virtual Tabletop to work properly. Errors or abnormal graphical behavior may occur.",
+"ERROR.NoReadPixelsR": "Your browser does not currently support reading pixels as RED/UNSIGNED_BYTE which is essential for Foundry Virtual Tabletop to work properly. Fog exploration progess cannot be saved.",
 "ERROR.BackgroundTextureSize": "You are using a Scene background texture with dimensions {width}px by {height}px. One or both of these dimensions exceeds the maximum texture size of {max}px supported by your device.",
 "ERROR.InvalidAdminKey": "The provided server administrator password is invalid. If you have forgotten your configured password you will need to manually delete the <strong>Config/admin.txt</strong> file from your user data location.",
 "ERROR.LoadPackages": "The request to browse existing packages failed to connect with the Foundry server. Make sure your application allows outbound connections.",
