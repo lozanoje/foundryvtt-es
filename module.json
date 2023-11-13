@@ -1,16 +1,11 @@
 {
   "title": "Translation: Spanish [Core]",
   "description": "Traducción al Español (Spanish) de FoundryVTT",
-  "version": "11.315.1",
+  "version": "11.315.2",
   "languages": [{
       "lang": "es",
       "name": "Español",
       "path": "lang/es.json",
-      "flags": {}
-    }, {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json",
       "flags": {}
     }
   ],
