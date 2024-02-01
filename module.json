@@ -1,7 +1,7 @@
 {
   "title": "Translation: Spanish [Core]",
   "description": "Traducción al Español (Spanish) de FoundryVTT",
-  "version": "11.315.2",
+  "version": "11.315.3",
   "languages": [{
       "lang": "es",
       "name": "Español",
@@ -16,10 +16,13 @@
   "download": "https://github.com/lozanoje/foundryvtt-es/archive/master.zip",
   "id": "foundryvtt-es",
   "authors": [{
-      "name": "@Viriato139ac#0342",
+      "name": "Viriato139ac",
       "flags": {}
     }, {
-      "name": "@Cosmo Corban#4840",
+      "name": "Cosmo Corban",
+      "flags": {}
+    }, {
+      "name": "zeedif",
       "flags": {}
     }
   ],

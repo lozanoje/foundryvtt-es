@@ -1,7 +1,4 @@
 {
-"I18N.LANGUAGE": "Español",
-"I18N.MAINTAINERS": "@Viriato139ac#0342, @Cosmo Corban#0001",
-
 "Activate": "Activar",
 "all": "todo",
 "Angle": "Ángulo",
@@ -152,7 +149,7 @@
 "CARDS.DrawFrom": "Robar de",
 "CARDS.DrawTitle": "Robar cartas",
 "CARDS.DrawHint": "Elige un mazo del cual robar un cierto número de cartas.",
-"CARDS.DrawMode": "Mondo de robo",
+"CARDS.DrawMode": "Modo de robo",
 "CARDS.DrawModeTop": "Por arriba (primera)",
 "CARDS.DrawModeBottom": "Por abajo (última)",
 "CARDS.DrawModeRandom": "Al azar",
@@ -1886,7 +1883,7 @@
 
 "FOLDER.Clear": "Borrar carpeta",
 "FOLDER.Color": "Color de la carpeta",
-"FOLDER.Create": "Crear Carpeta",
+"FOLDER.Create": "Crear carpeta",
 "FOLDER.Collapse": "Contraer todas las carpetas",
 "FOLDER.Delete": "Eliminar todo",
 "FOLDER.DeleteWarning": "Esta carpeta y su contenido será eliminada definitivamente y no se podrá recuperar.",
@@ -1933,7 +1930,7 @@
 "OWNERSHIP.Configure": "Configurar permisos",
 
 "PERMISSION.Title": "Configuración de permisos",
-"PERMISSION.Configure": "Guardar permisos",
+"PERMISSION.Configure": "Configurar permisos",
 "PERMISSION.ConfigureLabel": "Abrir configuración de permisos",
 "PERMISSION.ConfigureHint": "Determine las acciones permitidas a los usuarios en base a cada rol.",
 "PERMISSION.Instructions": "Configure qué rol de usuario tiene permiso para realizar cada acción. Tenga en cuenta que algunas acciones no se pueden deshabilitar para los usuarios \"Game Master\". Algunos cambios podrían no tener efecto hasta que el programa se vuelva a cargar.",
