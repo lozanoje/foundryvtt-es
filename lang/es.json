@@ -1,6 +1,7 @@
 {
 "Activate": "Activar",
 "all": "todo",
+"Anchor": "Anclaje",
 "Angle": "Ángulo",
 "Author": "Autor",
 "AuthorPl": "Autores",
@@ -14,6 +15,7 @@
 "Command": "Comando",
 "Collapse": "Contraer",
 "Close": "Cerrar",
+"Deactivate": "Desactivar",
 "Degrees": "Grados",
 "Default": "Predeterminado",
 "Delete": "Eliminar",
@@ -31,6 +33,7 @@
 "GridSpaces": "Espacios de rejilla",
 "Install": "Instalar",
 "Elevation": "Elevación",
+"Sort": "Ordenar",
 "Foundry Virtual Tabletop": "Foundry Virtual Tabletop",
 "File Path": "Ruta de archivo",
 "Height": "Altura",
@@ -127,6 +130,14 @@
 "ADVENTURE.DocumentRemove": "Este documento se quitará al construir la aventura.",
 
 "APP.NavigateBackConfirm": "¿Está seguro de que desea salir de FoundryVTT?",
+
+"APPLICATION": {
+  "TOOLS": {
+    "ControlsMenu": "Controles de la aplicación",
+    "ToggleControls": "Alternar controles",
+    "Close": "Cerrar ventana"
+  }
+},
 
 "CARDS.CardsDeck": "Mazo",
 "CARDS.CardsHand": "Mano",
@@ -254,8 +265,9 @@
 "COMBAT.NoneActive": "No hay encuentros de combate en la escena actual.",
 "COMBAT.NoneRemaining": "No hay contendientes en este encuentro que no estén derrotados.",
 "COMBAT.NotStarted": "No iniciado",
+"COMBAT.PanToCombatant": "Centrar en el contendiente",
 "COMBAT.PingCombatant": "Advertir a contendiente",
-"COMBAT.PingInvisibleToken": "No puede realizar una advertencia a una ficha que no puede ver.",
+"COMBAT.WarnNonVisibleToken": "Este contendiente no es visible para ti.",
 "COMBAT.Resource": "Recurso a mostrar",
 "COMBAT.ResourceHint": "Elige un atributo a mostrar para cada contendiente.",
 "COMBAT.Round": "Asalto de combate",
@@ -361,6 +373,7 @@
 "CONTROLS.DrawingText": "Dibujar cuadro de texto",
 "CONTROLS.DrawingClear": "Borrar dibujos",
 "CONTROLS.DrawingConfig": "Configurar dibujo",
+"CONTROLS.DrawingRole": "Alternar dibujos de información",
 "CONTROLS.GroupWall": "Controles de pared",
 "CONTROLS.WallDraw": "Dibujar pared básica",
 "CONTROLS.WallBasic": "Dibujar pared básica",
@@ -412,6 +425,8 @@
 "CONTROLS.NoteSelect": "Seleccionar nota",
 "CONTROLS.NoteToggle": "Alternar visibilidad de notas",
 "CONTROLS.NoteClear": "Borrar notas",
+"CONTROLS.GroupRegion": "Controles de región",
+"CONTROLS.RegionSelect": "Seleccionar regiones",
 "CONTROLS.ClearAll": "Borrar todos los objetos",
 "CONTROLS.ClearAllHint": "¿Eliminar definitivamente todos los objetos {type} de esta escena?",
 "CONTROLS.HeaderGame": "Controles generales del juego",
