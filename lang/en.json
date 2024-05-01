@@ -12,6 +12,7 @@
 "Cancel": "Cancel",
 "Character": "Character",
 "Configure": "Configure",
+"Confirm": "Confirm",
 "Command": "Command",
 "Collapse": "Collapse",
 "Close": "Close",
@@ -136,6 +137,23 @@
     "ControlsMenu": "Application Controls",
     "ToggleControls": "Toggle Controls",
     "Close": "Close Window"
+  }
+},
+
+"AUDIO": {
+  "CHANNELS": {
+    "MUSIC": {
+      "label": "Music",
+      "tooltip": "Controls the local volume of playlists and sounds which are classified as music."
+    },
+    "ENVIRONMENT": {
+      "label": "Environment",
+      "tooltip": "Controls the local volume of playlists and ambient sounds which are classified as environment."
+    },
+    "INTERFACE": {
+      "label": "Interface",
+      "tooltip": "Controls the local volume of sounds related to user interface or user interaction."
+    }
   }
 },
 
@@ -341,6 +359,7 @@
 "CONTROLS.NavLabel": "Canvas Controls Palette",
 "CONTROLS.Instructions": "This form describes common keyboard and mouse commands used to control various aspects of the Foundry Virtual Tabletop environment. Some controls are only available to a Game Master user, those are highlighted in light purple.",
 "CONTROLS.GroupToken": "Token Controls",
+"CONTROLS.CommonForceSnap": "Force Snap to Grid Vertices",
 "CONTROLS.BasicSelect": "Select Tokens",
 "CONTROLS.BasicSelectP": "Select any Tokens that you own to see their line of sight. When no tokens are selected you'll see what all of the Tokens you own can see.",
 "CONTROLS.TargetSelect": "Select Targets",
@@ -391,10 +410,8 @@
 "CONTROLS.WallSecretHiddenP": "Secret Doors can't be seen by players",
 "CONTROLS.WallSelect": "Rectangular Select Walls",
 "CONTROLS.CommonMoveWithoutSnapping": "Move Without Snapping",
-"CONTROLS.WallSelectEdit": "<span class=\"reference\">Double Click</span> on a Wall point",
-"CONTROLS.WallSnap": "Force Snap to Grid",
-"CONTROLS.WallSnapH": "Snap",
-"CONTROLS.WallSnapP": "Wall points snap to nearest grid corner when active",
+"CONTROLS.WallSelectEdit": "<span class=\"reference\">Double Click</span>",
+"CONTROLS.WallSnapP": "Wall points snap to nearest grid vertex when active",
 "CONTROLS.WallClone": "Clone Walls",
 "CONTROLS.WallCloseDoors": "Close all Doors",
 "CONTROLS.WallDoorsClosed": "Closed {number} doors",
@@ -427,6 +444,11 @@
 "CONTROLS.NoteClear": "Clear Notes",
 "CONTROLS.GroupRegion": "Region Controls",
 "CONTROLS.RegionSelect": "Select Regions",
+"CONTROLS.RegionRectangle": "Draw Rectangle",
+"CONTROLS.RegionEllipse": "Draw Ellipse",
+"CONTROLS.RegionPolygon": "Draw Polygon",
+"CONTROLS.RegionHole": "Create Holes",
+"CONTROLS.RegionClear": "Clear Regions",
 "CONTROLS.ClearAll": "Clear All Objects",
 "CONTROLS.ClearAllHint": "Permanently delete all {type} objects from this Scene?",
 "CONTROLS.HeaderGame": "General Game Controls",
@@ -462,19 +484,22 @@
 "CONTROLS.Double": "Double",
 "CONTROLS.RightClick": "Right-Click",
 "CONTROLS.MiddleClick": "Middle-Click",
-"CONTROLS.AltRightClick": "ALT + Right-Click",
+"CONTROLS.AltRightClick": "{alt} + Right-Click",
 "CONTROLS.Click": "Click",
 "CONTROLS.ClickDrag": "Click + Drag",
 "CONTROLS.ClickOrClickDrag": "<span class=\"reference\">Click</span> or <span class=\"reference\">Click + Drag</span>",
-"CONTROLS.CtrlClickDrag": "CTRL + Click + Drag",
-"CONTROLS.AltClick": "ALT + Click",
-"CONTROLS.CtrlClick": "CTRL + Click",
+"CONTROLS.Ctrl": "Control",
+"CONTROLS.CtrlAbbr": "CTRL",
+"CONTROLS.CtrlClickDrag": "{mod} + Click + Drag",
+"CONTROLS.Alt": "ALT",
+"CONTROLS.AltClick": "{alt} + Click",
+"CONTROLS.CtrlClick": "{mod} + Click",
 "CONTROLS.ShiftClick": "SHIFT + Click",
-"CONTROLS.ChainCtrlClick": "Hold <span class=\"reference\">CTRL</span> then <span class=\"reference\">Click</span>",
+"CONTROLS.ChainCtrlClick": "Hold <span class=\"reference\">{mod}</span> then <span class=\"reference\">Click</span>",
 "CONTROLS.DoubleClick": "Double Click",
 "CONTROLS.DoubleRightClick": "Double Right-Click",
 "CONTROLS.ShiftScroll": "SHIFT + Scroll",
-"CONTROLS.ShiftOrCtrlScroll": "<span class=\"reference\">SHIFT + Scroll</span> or <span class=\"reference\">CTRL + Scroll</span>",
+"CONTROLS.ShiftOrCtrlScroll": "<span class=\"reference\">SHIFT + Scroll</span> or <span class=\"reference\">{mod} + Scroll</span>",
 "CONTROLS.ShiftDrag": "SHIFT + Drag",
 "CONTROLS.Spacebar": "SPACEBAR",
 "CONTROLS.Delete": "DELETE",
@@ -806,6 +831,7 @@
 "EDITOR.Save": "Save Changes",
 "EDITOR.SaveAndClose": "Save and Close Editor",
 "EDITOR.DiscardHTML": "Discard HTML Changes",
+"EDITOR.EmbedFailed": "Failed to embed content from '{uuid}'.",
 "EDITOR.EditingHTMLWarning": "Another user has edited the same document. Any changes you have made to the HTML would erase their changes and so cannot be saved.",
 "EDITOR.Resync": "Your editor state has desynchronized from the server and must be reset. Your original editor contents have been copied to your clipboard.",
 "EDITOR.NoUploadPermission": "You must have file upload permissions to insert image content.",
@@ -1210,7 +1236,6 @@
 "PLAYERS.PlayerAvatar": "Player Avatar",
 "PLAYERS.PlayerPronouns": "Player Pronouns",
 "PLAYERS.PullToScene": "Pull To Scene",
-"PLAYERS.SaveConfig": "Save Configuration",
 "PLAYERS.ViewAvatar": "View Player Avatar",
 "PLAYERS.Kick": "Kick Player",
 "PLAYERS.Ban": "Ban Player",
@@ -1218,10 +1243,7 @@
 
 "PLAYLIST.Delete": "Delete Playlist",
 "PLAYLIST.Edit": "Edit Playlist",
-"PLAYLIST.GlobalVolume": "User Volume Controls",
-"PLAYLIST.PlaylistVolumeTooltip": "Adjusts the volume of all playlists, such as combat music, background music, and soundboards.",
-"PLAYLIST.AmbientVolumeTooltip": "Adjusts the volume of all ambient sounds placed on a Scene, such as a crackling fire or a waterfall.",
-"PLAYLIST.InterfaceVolumeTooltip": "Adjusts the volume of all sounds triggered through the interface, such as chat messages, dice rolls, and the combat theme.",
+"PLAYLIST.Channel": "Audio Channel",
 "PLAYLIST.CurrentlyPlaying": "Currently Playing",
 "PLAYLIST.ModeDisabled": "Soundboard Only",
 "PLAYLIST.ModeSequential": "Sequential Playback",
@@ -1262,7 +1284,10 @@
 "PLAYLIST.BulkImportWarning": "No valid Playlist Sounds were imported from the requested \"{path}\" directory",
 "PLAYLIST.PinToTop": "Pin to top",
 "PLAYLIST.PinToBottom": "Pin to bottom",
-"PLAYLIST.VolumeTooltip": "Volume: {volume}%",
+"PLAYLIST.VOLUME": {
+  "CONTROLS": "User Volume Controls",
+  "TOOLTIP": "Volume: {volume}%"
+},
 
 "SCENES.Accessibility" : "Permissions",
 "SCENES.AccessibilityGM" : "GM Only",
@@ -1326,6 +1351,7 @@
 "SCENES.GridStyle": "Grid Style",
 "SCENES.GridThickness": "Grid Thickness",
 "SCENES.HeaderAmbience": "Ambience",
+"SCENES.HeaderAmbienceBasic":"Basic Options",
 "SCENES.HeaderDetails": "Basics",
 "SCENES.HeaderGrid": "Grid",
 "SCENES.HeaderVision": "Lighting",
@@ -1363,8 +1389,6 @@
 "SCENES.FogExploredColorHint": "A color applied to all areas of the Scene which have been explored but are outside of the current vision area.",
 "SCENES.FogUnexploredColor": "Fog of War Unexplored Color",
 "SCENES.FogUnexploredColorHint": "A solid color applied to all unexplored areas of the Scene.",
-"SCENES.HeaderAmbienceBasic":"Basic Options",
-"SCENES.HeaderVision":"Lighting",
 
 "SCENES.ENVIRONMENT":{
 "HeaderLabel":"Environment Lighting",
@@ -1494,6 +1518,11 @@
 "SETTINGS.GridDiagonalsAlternating1": "Alternating (1/2/1)",
 "SETTINGS.GridDiagonalsAlternating2": "Alternating (2/1/2)",
 "SETTINGS.GridDiagonalsIllegal": "Illegal (∞)",
+"SETTINGS.ColorSchemeN": "Preferred Color Scheme",
+"SETTINGS.ColorSchemeH": "Specify whether you prefer user interface elements to render using a light theme or a dark theme. Not all interface elements support this preference.",
+"SETTINGS.ColorSchemeDefault": "Browser Default",
+"SETTINGS.ColorSchemeDark": "Dark",
+"SETTINGS.ColorSchemeLight": "Light",
 
 "SETUP.NavLabel": "Setup Configuration Tabs",
 "SETUP.CoreVersion": "Core Software Version",
@@ -1962,7 +1991,7 @@
   "LoginSuccess": "Login as {user} successful, joining game!"
 },
 
-
+"SHEETS.ConfigureSheet": "Configure Sheet",
 "SHEETS.ThisSheet": "This Sheet",
 "SHEETS.DefaultSheet": "Default Sheet",
 "SHEETS.DefaultDocumentSheet": "Default {document} Sheet",
@@ -1971,6 +2000,7 @@
 "SHEETS.DocumentSheetPrivate": "You do not have sufficient permission to view the sheet for this {type}.",
 "SHEETS.Save": "Save Sheet Configuration",
 "SHEETS.FormNavLabel": "Form Tab Navigation",
+"SHEETS.CopyId": "Copy Document ID",
 
 "SOUND": {
   "ConfigTitle": "Ambient Sound Configuration",
@@ -2096,6 +2126,8 @@
 "PERMISSION.NoteCreateHint": "Allow users with this role to create Note objects from Journal Entries which they own.",
 "PERMISSION.PingCanvas": "Canvas Pings",
 "PERMISSION.PingCanvasHint": "Allow users with this role to bring attention to a point on the canvas with a pinging animation.",
+"PERMISSION.PlaylistCreate": "Create Playlists",
+"PERMISSION.PlaylistCreateHint": "Allow users with this role to create new playlists in the World.",
 "PERMISSION.SettingsModify": "Modify Configuration Settings",
 "PERMISSION.SettingsModifyHint": "Allow users with this role to modify game settings and enable or disable modules.",
 "PERMISSION.ShowCursor": "Display Mouse Cursor",
@@ -2114,13 +2146,176 @@
 "PERMISSION.WallDoorsHint": "Allow users with this role interact with doors defined on the Walls Layer.",
 "PERMISSION.WarningNoCreate": "You do not have sufficient permission to create a {document}.",
 
-"REGION.ConfigTitle": "Region Configuration",
-"REGION.Name": "Name",
-"REGION.Color": "Color",
-"REGION.Shapes": "Shapes",
+"REGION": {
+  "SECTIONS": {
+    "identity": "Identity",
+    "shapes": "Shapes",
+    "behaviors": "Behaviors"
+  },
+  "FIELDS": {
+    "color": {
+      "label": "Color",
+      "hint": "The color applied to the visualization of the Region."
+    },
+    "shapes": {
+      "label": "Shapes",
+      "hint": "The shapes of the Region."
+    },
+    "elevation": {
+      "label": "Elevation",
+      "hint": "The elevation range of the Region.",
+      "FIELDS": {
+        "bottom": {
+          "label": "Bottom",
+          "hint": "The bottom of the elevation range."
+        },
+        "top": {
+          "label": "Top",
+          "hint": "The top of the elevation range."
+        }
+      }
+    },
+    "behaviors": {
+      "label": "Behaviors",
+      "hint": "The behaviors of the Region."
+    }
+  },
+  "ACTIONS": {
+    "create": "Create Region",
+    "update": "Update Region",
+    "delete": "Delete Region",
+    "shapeMakeHole": "Make Hole",
+    "shapeFillHole": "Fill Hole",
+    "shapeMoveUp": "Move Shape Up",
+    "shapeMoveDown": "Move Shape Down",
+    "shapeRemove": "Remove Shape",
+    "behaviorCreate": "Create Behavior",
+    "behaviorEdit": "Edit Behavior",
+    "behaviorDelete": "Delete Behavior",
+    "behaviorEnable": "Enable Behavior",
+    "behaviorDisable": "Disable Behavior"
+  },
+  "EVENTS": {
+    "regionBoundary": "Region Boundary Changed",
+    "behaviorStatus": "Behavior Status Changed",
+    "tokenEnter": "Token Enters",
+    "tokenExit": "Token Exits",
+    "tokenMove": "After Token Moved",
+    "tokenPreMove": "Before Token Moves",
+    "tokenTurnStart": "Token Starts Turn",
+    "tokenTurnEnd": "Token Ends Turn",
+    "tokenRoundStart": "Token Starts Round",
+    "tokenRoundEnd": "Token Ends Round"
+  },
+  "SHAPES": {
+    "rectangle": "Rectangle",
+    "circle": "Circle",
+    "ellipse": "Ellipse",
+    "polygon": "Polygon"
+  },
+  "Behavior": "Behavior",
+  "Shape": "Shape",
+  "LEGEND": {
+    "control": "Control Region",
+    "config": "Configure Region",
+    "create": "Create Region",
+    "delete": "Delete Region",
+    "empty": "Empty",
+    "filter": "Filter Regions",
+    "lock": "Lock Region",
+    "title": "Region Legend",
+    "unlock": "Unlock Region",
+    "elevationBottom": "Elevation (Bottom)",
+    "elevationTop": "Elevation (Top)"
+  },
+  "SHEET": {
+    "title": "Configure Region"
+  },
+  "ERRORS": {
+    "ControlledRegionIsLocked": "The controlled Region is locked!"
+  }
+},
+
+"BEHAVIOR": {
+  "SECTIONS": {
+    "identity": "Behavior Identity",
+    "status": "Behavior Status"
+  },
+  "FIELDS": {
+    "disabled": {
+      "label": "Disabled",
+      "hint": "Toggle whether this behavior is temporarily disabled."
+    }
+  },
+  "ACTIONS": {
+    "create": "Create Region Behavior",
+    "update": "Update Region Behavior",
+    "delete": "Delete Region Behavior"
+  },
+  "TYPES": {
+    "base": {
+      "SECTIONS": {
+        "events": "Subscribed Events"
+      },
+      "FIELDS": {
+        "events": {
+          "label": "Events",
+          "hint": "The events that this behavior subscribes to."
+        }
+      }
+    },
+    "executeMacro": {
+      "FIELDS": {
+        "uuid": {
+          "label": "Macro",
+          "hint": "The Macro that is executed when one of the events occurs."
+        }
+      }
+    },
+    "executeScript": {
+      "FIELDS": {
+        "source": {
+          "label": "Script",
+          "hint": "The script that is executed when one of the events occurs."
+        }
+      }
+    },
+    "pauseGame": {
+      "FIELDS": {
+        "once": {
+          "label": "Once",
+          "hint": "Disable the behavior once a player-controlled Token enters the Region."
+        }
+      }
+    },
+    "adjustDarknessLevel": {
+      "FIELDS": {
+        "mode": {
+          "label": "Mode",
+          "hint": "How the darkness level is modified within this region."
+        },
+        "modifier": {
+          "label": "Modifier",
+          "hint": "A numeric modifier which applies to the darkness level according to the mode."
+        },
+        "blur": {
+          "label": "Blur",
+          "hint": "Should darkness levels smoothly transition at the boundary of this shape, or change immediately?"
+        }
+      },
+      "MODES": {
+        "override": "Override",
+        "brighten": "Brighten",
+        "darken": "Darken"
+      }
+    }
+  }
+},
 
 "RULER.MovementNotAllowed": "The measured movement path is not allowed",
 "RULER.MovementCollision": "The attempted movement collides with at least one Wall.",
+"RULER.MovementNoPermission": "You do not have permission to move this Token.",
+"RULER.MovementLocked": "This Token cannot be moved because it is locked.",
 
 "SIDEBAR.Import": "Import Data",
 "SIDEBAR.NavLabel": "Sidebar Tabs",
@@ -2192,8 +2387,8 @@
 "TABLE.Update": "Update",
 
 "TEMPLATE.BorderColor": "Border Color",
-"TEMPLATE.ConeTypeSetting": "Cone Template Type",
-"TEMPLATE.ConeTypeSettingHint": "Choose how the area of effect for cone templates should be defined.",
+"TEMPLATE.ConeTypeSetting": "Cone Template Shape",
+"TEMPLATE.ConeTypeSettingHint": "Choose how the area of effect for cone templates should be defined. This setting has no effect if Grid-based Template Shapes is enabled.",
 "TEMPLATE.ConeTypeFlat": "Flat",
 "TEMPLATE.ConeTypeRound": "Round",
 "TEMPLATE.MeasuredConfig": "Measurement Template Configuration",
@@ -2201,6 +2396,9 @@
 "TEMPLATE.FillTexture": "Fill Texture",
 "TEMPLATE.SubmitCreate": "Create Measured Template",
 "TEMPLATE.SubmitUpdate": "Update Measured Template",
+"TEMPLATE.GridTemplatesSetting": "Grid-based Template Shapes",
+"TEMPLATE.GridTemplatesSettingHint": "Configure whether the area of effect of templates should be grid-based instead of Euclidean.",
+
 
 "TILE.ConfigTitle": "Tile Configuration",
 "TILE.SubmitCreate": "Create Tile",
@@ -2439,6 +2637,44 @@
 "TOKEN.DetectionAdd": "Add Detection Mode",
 "TOKEN.DetectionRemove": "Remove Detection Mode",
 
+"TOKEN.RING": {
+  "FIELDS": {
+    "colors": {
+      "ring": {
+        "label": "Ring Color",
+        "hint": "A color applied to the border of the ring."
+      },
+      "background": {
+        "label": "Background Color",
+        "hint": "A color applied to the background of the ring."
+      }
+    },
+    "effects": {
+      "label": "Ring Effects"
+    },
+    "enabled": {
+      "label": "Ring Enabled"
+    },
+    "subject": {
+      "scale": {
+        "label": "Subject Scale Correction"
+      },
+      "texture": {
+        "label": "Subject Texture",
+        "hint": "Explicitly specify a path for the artwork placed over the dynamic token ring. If not provided, the ring subject is the same as the standard token texture."
+      }
+    }
+  },
+  "EFFECTS": {
+    "BACKGROUND_WAVE": "Background Wave",
+    "RING_GRADIENT": "Ring Gradient",
+    "RING_PULSE": "Ring Pulse"
+  },
+  "SHEET": {
+    "legend": "Dynamic Token Ring"
+  }
+},
+
 "TYPES.Cards.deck": "Deck",
 "TYPES.Cards.hand": "Hand",
 "TYPES.Cards.pile": "Pile",
@@ -2449,11 +2685,14 @@
 "TYPES.JournalEntryPage.video": "Video",
 "TYPES.Macro.chat": "Chat",
 "TYPES.Macro.script": "Script",
-"TYPES.RegionBehavior.macro": "Macro",
-"TYPES.RegionBehavior.script": "Script",
+"TYPES.RegionBehavior.executeMacro": "Execute Macro",
+"TYPES.RegionBehavior.executeScript": "Execute Script",
+"TYPES.RegionBehavior.pauseGame": "Pause Game",
+"TYPES.RegionBehavior.suppressWeather": "Suppress Weather",
+"TYPES.RegionBehavior.adjustDarknessLevel": "Adjust Darkness Level",
 
 "DETECTION.LightPerception": "Light Perception",
-"DETECTION.BasicSight": "Basic Sight",
+"DETECTION.BasicSight": "Darkvision",
 "DETECTION.SeeInvisibility": "See Invisibility",
 "DETECTION.SenseInvisibility": "Sense Invisibility",
 "DETECTION.FeelTremor": "Feel Tremor",
@@ -2486,12 +2725,47 @@
 "TOURS.SuggestedTitle": "Suggested Next Tour",
 "TOURS.SuggestedDescription": "<p>You have completed the <strong>{currentTitle}</strong> Tour.</p><p>We suggest continuing on to the <strong>{nextTitle}</strong> Tour. Would you like to proceed?</p>",
 
-"USER.RoleNone": "None",
-"USER.RolePlayer": "Player",
-"USER.RoleTrusted": "Trusted Player",
-"USER.RoleAssistant": "Assistant GM",
-"USER.RoleGamemaster": "Game Master",
-"USER.GM": "GM",
+"USER": {
+  "FIELDS": {
+    "name": {
+      "label": "Player Name",
+      "hint": "Player names must be configured by the Gamemaster and can be changed in the User Management screen."
+    },
+    "avatar": {
+      "label": "Player Avatar",
+      "hint": "A player avatar is displayed when using built-in audio/video chat or may be displayed by modules."
+    },
+    "color": {
+      "label": "Player Color",
+      "hint": "Player color is used for cursors, rulers, templates, and other elements which differentiate between users."
+    },
+    "pronouns": {
+      "label": "Player Pronouns",
+      "hint": "Pronouns which inform how this player wishes to be referred to in third-person."
+    },
+    "character": {
+      "label": "Player Character",
+      "hint": "Select an Actor from the set which you have at least OBSERVER permission over which represents the main character for this User."
+    }
+  },
+  "SHEET": {
+    "HEADERS": {
+      "INFO": "Player Information",
+      "CHAR": "Player Character"
+    },
+    "BUTTONS": {
+      "SAVE": "Save Player Configuration",
+      "RELEASE": "Release Character"
+    }
+  },
+  "RoleNone": "None",
+  "RolePlayer": "Player",
+  "RoleTrusted": "Trusted Player",
+  "RoleAssistant": "Assistant GM",
+  "RoleGamemaster": "Game Master",
+  "GM": "GM"
+},
+
 "USERS.AccessKey": "Password",
 "USERS.Role": "User Role",
 "USERS.UserName": "User Name",
@@ -2504,6 +2778,7 @@
 "USERS.NoGMError": "You must have at least one Game Master user within your World.",
 "USERS.DeleteWarning": "This user will be permanently deleted from the game World.",
 "USERS.DeleteGMWarning": "You are about to delete a Game Master user!",
+
 
 "VISION.ModeBlindness": "Blindness",
 "VISION.ModeBasicVision": "Basic Vision",
@@ -2550,6 +2825,8 @@
 "WALLS.DoorSound.Industrial": "Industrial",
 "WALLS.DoorSound.IndustrialCreaky": "Industrial, Creaky",
 "WALLS.DoorSound.Jail": "Jail",
+"WALLS.DoorSound.MagicDoor": "Magical Door",
+"WALLS.DoorSound.MagicWall": "Magical Wall",
 "WALLS.DoorSound.Metal": "Metal",
 "WALLS.DoorSound.SlidingMetal": "Sliding, Metal",
 "WALLS.DoorSound.SlidingModern": "Sliding, Modern",
