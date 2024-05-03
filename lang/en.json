@@ -132,6 +132,85 @@
 
 "APP.NavigateBackConfirm": "Are you sure you want to exit the Foundry Virtual Tabletop game?",
 
+"AMBIENT_SOUND": {
+  "ACTIONS": {
+    "CREATE": "Create Ambient Sound",
+    "UPDATE": "Update Ambient Sound"
+  },
+  "FIELDS": {
+    "x": {
+      "label": "X"
+    },
+    "y": {
+      "label": "Y"
+    },
+    "elevation": {
+      "label": "Elevation"
+    },
+    "path": {
+      "label": "Source File Path",
+      "hint": "Configure the ambient sound to play an audio file when tokens move within its radius."
+    },
+    "radius": {
+      "label": "Effect Radius"
+    },
+    "volume": {
+      "label": "Maximum Volume",
+      "hint": "Define the maximum volume of the sound at its origin point (if easing) or everywhere in the area."
+    },
+    "easing": {
+      "label": "Volume Easing",
+      "hint": "Adjust the volume level of the sound as Tokens move closer to the origin."
+    },
+    "hidden": {
+      "label": "Hidden",
+      "hint": "Toggle whether this sound source is temporarily disabled."
+    },
+    "walls": {
+      "label": "Constrained By Walls",
+      "hint": "Configure whether area of effect for this audio source is constrained by nearby walls."
+    },
+    "darkness": {
+      "label": "Darkness Activation Range",
+      "hint": "You may specify a range of darkness levels during which this ambient sound will be audible.",
+      "min": {
+        "label": "Between"
+      },
+      "max": {
+        "label": "and"
+      }
+    },
+    "effects": {
+      "base": {
+        "type": {
+          "label": "Base Effect"
+        },
+        "intensity": {
+          "label": "Base Effect Intensity"
+        },
+        "hint": "Apply an audio effect to the sound which filters or transforms its sound."
+      },
+      "muffled": {
+        "type": {
+          "label": "Muffled Effect"
+        },
+        "intensity": {
+          "label": "Muffled Effect Intensity"
+        },
+        "hint": "Apply an audio effect to the sound which replaces the base effect when the sound is muffled by intervening walls. A sound can only be muffled if it is not constrained by walls."
+      }
+    }
+  },
+  "SECTIONS": {
+    "SOURCE": "Source",
+    "PLACEMENT": "Placement",
+    "PLACEMENT_HINT": "Configure the origin position, elevation, and radius of the audio source. Elevation is not yet used and is provided only for reference.",
+    "VOLUME": "Volume",
+    "ACTIVATION": "Activation",
+    "EFFECTS": "Special Effects"
+  }
+},
+
 "APPLICATION": {
   "TOOLS": {
     "ControlsMenu": "Application Controls",
@@ -1145,6 +1224,7 @@
 "LIGHT.AnimationSmokePatch": "Smoke Patch",
 "LIGHT.AnimationRevolving": "Revolving Light",
 "LIGHT.AnimationSiren": "Siren Light",
+"LIGHT.AnimationMagicalGloom": "Magical Gloom",
 
 "MACRO.Delete": "Delete Macro",
 "MACRO.DeleteWarning": "This Macro will be permanently deleted for all Users.",
@@ -1694,6 +1774,9 @@
 "SETUP.PackageProgressCleanup": "Package Cleanup",
 "SETUP.PackageProgressComplete": "Package Installation Complete",
 "SETUP.PackageProgressError": "Error",
+"SETUP.PackageIncompatibleSystemsPrompt": "This module update is incompatible with the following installed systems, do you want to continue?",
+"SETUP.PackageIncompatibleSystemsBulkPrompt": "The following modules were not updated because doing so would have made them incompatible with one or more installed systems. Do you want to update them regardless?",
+"SETUP.PackageIncompatibleWithSystems": "{module} <em>incompatible with</em> {systems}",
 "SETUP.ConfirmCodeLabel": "Type '{code}' exactly to proceed",
 
 "SETUP.WorldLaunchConnect": "Loading World Data",
@@ -2004,37 +2087,8 @@
 
 "SOUND": {
   "ConfigTitle": "Ambient Sound Configuration",
-  "Create": "Create Ambient Sound",
-  "Update": "Update Ambient Sound",
-  "Path": "Source File",
-  "PathHint": "Configure the ambient sound to play an audio file when tokens move within its radius.",
   "PathPlaceholder": "path/to/audio.mp3",
-  "Radius": "Effect Radius",
-  "Easing": "Volume Easing",
-  "EasingHint": "Adjust the volume level of the sound as Tokens move closer to the origin.",
-  "Hidden": "Disabled",
-  "HiddenHint": "Toggle whether this sound source is temporarily disabled.",
-  "MaxVol": "Maximum Volume",
-  "MaxVolHint": "Define the maximum volume of the sound at its origin point (if easing) or everywhere in the area.",
   "New": "New Sound",
-  "DarknessRange": "Darkness Activation Range",
-  "DarknessRangeHint": "You may specify a range of darkness levels during which this ambient sound will be audible.",
-  "PositionHint": "Configure the origin position, elevation, and radius of the audio source. Elevation is not yet used and is provided only for reference.",
-  "Walls": "Constrained By Walls",
-  "WallsHint": "Configure whether area of effect for this audio source is constrained by nearby walls.",
-  "BaseEffectType": "Base Effect",
-  "BaseEffectIntensity": "Base Intensity",
-  "BaseEffectHint": "Apply an audio effect to the sound which filters or transforms its sound.",
-  "MuffledEffectType": "Muffled Effect",
-  "MuffledEffectIntensity": "Muffled Intensity",
-  "MuffledEffectHint": "Apply an audio effect to the sound which replaces the base effect when the sound is muffled by intervening walls. A sound can only be muffled if it is not constrained by walls.",
-  "SECTIONS": {
-    "SOURCE": "Source",
-    "PLACEMENT": "Placement",
-    "VOLUME": "Volume",
-    "ACTIVATION": "Activation",
-    "EFFECTS": "Special Effects"
-  },
   "EFFECTS": {
     "LOWPASS": "Lowpass Filter",
     "HIGHPASS": "Highpass Filter",
@@ -2178,6 +2232,10 @@
     "behaviors": {
       "label": "Behaviors",
       "hint": "The behaviors of the Region."
+    },
+    "visibility": {
+      "label": "Visibility",
+      "hint": "Configure the visibility of the Region."
     }
   },
   "ACTIONS": {
@@ -2195,17 +2253,48 @@
     "behaviorEnable": "Enable Behavior",
     "behaviorDisable": "Disable Behavior"
   },
+  "VISIBILITY": {
+    "LAYER": {
+      "label": "Only on Region Layer"
+    },
+    "GAMEMASTER": {
+      "label": "Always for Gamemaster"
+    },
+    "ALWAYS": {
+      "label": "Always for Anyone"
+    }
+  },
   "EVENTS": {
-    "regionBoundary": "Region Boundary Changed",
-    "behaviorStatus": "Behavior Status Changed",
-    "tokenEnter": "Token Enters",
-    "tokenExit": "Token Exits",
-    "tokenMove": "After Token Moved",
-    "tokenPreMove": "Before Token Moves",
-    "tokenTurnStart": "Token Starts Turn",
-    "tokenTurnEnd": "Token Ends Turn",
-    "tokenRoundStart": "Token Starts Round",
-    "tokenRoundEnd": "Token Ends Round"
+    "regionBoundary": {
+      "label": "Region Boundary Changed"
+    },
+    "behaviorStatus": {
+      "label": "Behavior Status Changed"
+    },
+    "tokenEnter": {
+      "label": "Token Enters"
+    },
+    "tokenExit": {
+      "label": "Token Exits"
+    },
+    "tokenMove": {
+      "label": "After Token Moved"
+    },
+    "tokenPreMove": {
+      "label": "Before Token Moves"
+    },
+    "tokenTurnStart": {
+      "label": "Token Starts Turn"
+    },
+    "tokenTurnEnd": {
+      "label": "Token Ends Turn"
+    },
+    "tokenRoundStart": {
+      "label": "Token Starts Round"
+    },
+    "tokenRoundEnd": {
+      "label": "Token Ends Round"
+    }
   },
   "SHAPES": {
     "rectangle": "Rectangle",
@@ -2264,6 +2353,33 @@
         }
       }
     },
+    "adjustDarknessLevel": {
+      "FIELDS": {
+        "mode": {
+          "label": "Mode",
+          "hint": "How the darkness level is modified within this region."
+        },
+        "modifier": {
+          "label": "Modifier",
+          "hint": "A numeric modifier which applies to the darkness level according to the mode."
+        },
+        "blur": {
+          "label": "Blur",
+          "hint": "Should darkness levels smoothly transition at the boundary of this shape, or change immediately?"
+        }
+      },
+      "MODES": {
+        "OVERRIDE": {
+          "label": "Override"
+        },
+        "BRIGHTEN": {
+          "label": "Brighten"
+        },
+        "DARKEN": {
+          "label": "Darken"
+        }
+      }
+    },
     "executeMacro": {
       "FIELDS": {
         "uuid": {
@@ -2288,25 +2404,12 @@
         }
       }
     },
-    "adjustDarknessLevel": {
+    "teleportToken": {
       "FIELDS": {
-        "mode": {
-          "label": "Mode",
-          "hint": "How the darkness level is modified within this region."
-        },
-        "modifier": {
-          "label": "Modifier",
-          "hint": "A numeric modifier which applies to the darkness level according to the mode."
-        },
-        "blur": {
-          "label": "Blur",
-          "hint": "Should darkness levels smoothly transition at the boundary of this shape, or change immediately?"
+        "destination": {
+          "label": "Destination",
+          "hint": "The destination Region the Token is teleported to once it enters the Region."
         }
-      },
-      "MODES": {
-        "override": "Override",
-        "brighten": "Brighten",
-        "darken": "Darken"
       }
     }
   }
@@ -2685,11 +2788,12 @@
 "TYPES.JournalEntryPage.video": "Video",
 "TYPES.Macro.chat": "Chat",
 "TYPES.Macro.script": "Script",
+"TYPES.RegionBehavior.adjustDarknessLevel": "Adjust Darkness Level",
 "TYPES.RegionBehavior.executeMacro": "Execute Macro",
 "TYPES.RegionBehavior.executeScript": "Execute Script",
 "TYPES.RegionBehavior.pauseGame": "Pause Game",
 "TYPES.RegionBehavior.suppressWeather": "Suppress Weather",
-"TYPES.RegionBehavior.adjustDarknessLevel": "Adjust Darkness Level",
+"TYPES.RegionBehavior.teleportToken": "Teleport Token",
 
 "DETECTION.LightPerception": "Light Perception",
 "DETECTION.BasicSight": "Darkvision",
