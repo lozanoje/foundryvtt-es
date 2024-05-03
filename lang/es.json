@@ -140,6 +140,23 @@
   }
 },
 
+"AUDIO": {
+  "CHANNELS": {
+    "MUSIC": {
+      "label": "Música",
+      "tooltip": "Controla el volumen local de las listas de reproducción y los sonidos clasificados como música."
+    },
+    "ENVIRONMENT": {
+      "label": "Ambiente",
+      "tooltip": "Controla el volumen local de las listas de reproducción y sonidos clasificados como de ambiente."
+    },
+    "INTERFACE": {
+      "label": "Interfaz",
+      "tooltip": "Controla el volumen local de los sonidos relacionados con la interfaz o la interacción con los usuarios."
+    }
+  }
+},
+
 "CARDS.CardsDeck": "Mazo",
 "CARDS.CardsHand": "Mano",
 "CARDS.CardsPile": "Pila",
@@ -342,6 +359,7 @@
 "CONTROLS.NavLabel": "Paleta de controles del lienzo",
 "CONTROLS.Instructions": "Este formulario describe los comandos comunes del teclado y ratón utilizados para controlar varios aspectos de Foundry Virtual Tabletop. Algunos controles solo están disponibles para el usuario Game Master, estos se destacan en morado claro.",
 "CONTROLS.GroupToken": "Controles de ficha",
+"CONTROLS.CommonForceSnap": "Forjar ajuste a los vértices de la rejilla",
 "CONTROLS.BasicSelect": "Seleccionar fichas",
 "CONTROLS.BasicSelectP": "Seleccione cualquier ficha que posea para ver su línea de visión. Si no hay fichas seleccionadas verá lo que todas las fichas que posee pueden ver.",
 "CONTROLS.TargetSelect": "Seleccionar objetivos",
@@ -392,9 +410,7 @@
 "CONTROLS.WallSecretHiddenP": "Las puertas secretas no pueden ser vistas por los jugadores",
 "CONTROLS.WallSelect": "Seleccionar paredes",
 "CONTROLS.CommonMoveWithoutSnapping": "Mover sin ajustar a la rejilla",
-"CONTROLS.WallSelectEdit": "<span class=\"reference\">Doble clic</span> en un punto la pared",
-"CONTROLS.WallSnap": "Forzar ajuste a la rejilla",
-"CONTROLS.WallSnapH": "Ajustar",
+"CONTROLS.WallSelectEdit": "<span class=\"reference\">Doble clic</span>",
 "CONTROLS.WallSnapP": "Los puntos de la pared se ajustan a la esquina de la rejilla más cercana cuando se activa",
 "CONTROLS.WallClone": "Clonar paredes",
 "CONTROLS.WallCloseDoors": "Cerrar todas las puertas",
@@ -428,6 +444,11 @@
 "CONTROLS.NoteClear": "Borrar notas",
 "CONTROLS.GroupRegion": "Controles de región",
 "CONTROLS.RegionSelect": "Seleccionar regiones",
+"CONTROLS.RegionRectangle": "Dibujar rectángulo",
+"CONTROLS.RegionEllipse": "Dibujar elipse",
+"CONTROLS.RegionPolygon": "Dibujar polígono",
+"CONTROLS.RegionHole": "Crear huecos",
+"CONTROLS.RegionClear": "Limpiar regiones",
 "CONTROLS.ClearAll": "Borrar todos los objetos",
 "CONTROLS.ClearAllHint": "¿Eliminar definitivamente todos los objetos {type} de esta escena?",
 "CONTROLS.HeaderGame": "Controles generales del juego",
@@ -463,15 +484,18 @@
 "CONTROLS.Double": "Doble",
 "CONTROLS.RightClick": "Clic derecho",
 "CONTROLS.MiddleClick": "Clic medio",
-"CONTROLS.AltRightClick": "ALT + clic derecho",
+"CONTROLS.AltRightClick": "{alt} + clic derecho",
 "CONTROLS.Click": "Clic",
 "CONTROLS.ClickDrag": "Clic + arrastrar",
 "CONTROLS.ClickOrClickDrag": "<span class=\"reference\">Clic</span> o <span class=\"reference\">clic + arrastrar</span>",
-"CONTROLS.CtrlClickDrag": "CTRL + clic + arrastrar",
-"CONTROLS.AltClick": "ALT + clic",
-"CONTROLS.CtrlClick": "CTRL + clic",
+"CONTROLS.Ctrl": "Control",
+"CONTROLS.CtrlAbbr": "CTRL",
+"CONTROLS.CtrlClickDrag": "{mod} + clic + arrastrar",
+"CONTROLS.Alt": "ALT",
+"CONTROLS.AltClick": "{alt} + clic",
+"CONTROLS.CtrlClick": "{mod} + clic",
 "CONTROLS.ShiftClick": "MAYÚS + clic",
-"CONTROLS.ChainCtrlClick": "Mantener pulsado <span class=\"reference\">CTRL</span>, y entonces <span class=\"reference\">clic</span>",
+"CONTROLS.ChainCtrlClick": "Mantener pulsado <span class=\"reference\">{mod}</span>, y entonces <span class=\"reference\">clic</span>",
 "CONTROLS.DoubleClick": "Doble clic",
 "CONTROLS.DoubleRightClick": "Doble clic derecho",
 "CONTROLS.ShiftScroll": "MAYÚS + desplazar",
@@ -807,6 +831,7 @@
 "EDITOR.Save": "Guardar cambios",
 "EDITOR.SaveAndClose": "Guardar y cerrar el editor",
 "EDITOR.DiscardHTML": "Deshacer cambios HTML",
+"EDITOR.EmbedFailed": "Error al incrustar contenido de '{uuid}'.",
 "EDITOR.EditingHTMLWarning": "No se puede guardar ya que otro usuario ha editado el mismo documento  y se sobrescribirían sus cambios en el HTML.",
 "EDITOR.Resync": "El estado de su editor ha sido desincronizado del servidor y debe ser reiniciado. El contenido de su editor original ha sido copiado al portapapeles.",
 "EDITOR.NoUploadPermission": "Debe tener permisos de subida de archivos para insertar imágenes.",
@@ -1211,7 +1236,6 @@
 "PLAYERS.PlayerAvatar": "Avatar del jugador",
 "PLAYERS.PlayerPronouns": "Pronombres del jugador",
 "PLAYERS.PullToScene": "Traer a la escena actual",
-"PLAYERS.SaveConfig": "Guardar configuración",
 "PLAYERS.ViewAvatar": "Ver avatar del jugador",
 "PLAYERS.Kick": "Expulsar jugador",
 "PLAYERS.Ban": "Bloquear jugador",
@@ -1219,10 +1243,7 @@
 
 "PLAYLIST.Delete": "Eliminar lista de reproducción",
 "PLAYLIST.Edit": "Modificar lista de reproducción",
-"PLAYLIST.GlobalVolume": "Control de volumen de usuario",
-"PLAYLIST.PlaylistVolumeTooltip": "Ajusta el volumen de las listas de reproducción, como la música de combate, música de fondo y consolas de sonido.",
-"PLAYLIST.AmbientVolumeTooltip": "Ajusta el volumen de todos los audios ambientales colocados en la escena, como el fuego crepitante o una cascada.",
-"PLAYLIST.InterfaceVolumeTooltip": "Ajusta el volumen de todos los audios que se activan por la interfaz, como los mensajes en el chat, tiradas de dados y temas de combate.",
+"PLAYLIST.Channel": "Canal de audio",
 "PLAYLIST.CurrentlyPlaying": "Reproducción en curso",
 "PLAYLIST.ModeDisabled": "Solo consola de audio",
 "PLAYLIST.ModeSequential": "Reproducción secuencial",
@@ -1263,7 +1284,10 @@
 "PLAYLIST.BulkImportWarning": "No se ha importado ningún audio válido de la carpeta especificada \"{path}\"",
 "PLAYLIST.PinToTop": "Fijar arriba",
 "PLAYLIST.PinToBottom": "Fijar abajo",
-"PLAYLIST.VolumeTooltip": "Volumen: {volume}%",
+"PLAYLIST.VOLUME": {
+  "CONTROLS": "Controles de volumen de usuario",
+  "TOOLTIP": "Volumen: {volume}%"
+},
 
 "SCENES.Accessibility": "Accesibilidad",
 "SCENES.AccessibilityGM": "Solo GM",
@@ -1327,6 +1351,7 @@
 "SCENES.GridStyle": "Estilo de la rejilla",
 "SCENES.GridThickness": "Grosor de la rejilla",
 "SCENES.HeaderAmbience": "Ambiente",
+"SCENES.HeaderAmbienceBasic":"Opciones básicas",
 "SCENES.HeaderDetails": "Detalles",
 "SCENES.HeaderGrid": "Rejilla",
 "SCENES.HeaderVision": "Visibilidad",
@@ -1364,8 +1389,6 @@
 "SCENES.FogExploredColorHint": "Color que se aplicará a todas las áreas de la escena que han sido exploradas pero están fuera del área de visión.",
 "SCENES.FogUnexploredColor": "Color de la niebla de guerra no explorada",
 "SCENES.FogUnexploredColorHint": "Color sólido que se aplicará a todas las áreas sin explorar de la escena.",
-"SCENES.HeaderAmbienceBasic":"Opciones básicas",
-"SCENES.HeaderVision":"Iluminación",
 
 "SCENES.ENVIRONMENT":{
 "HeaderLabel":"Iluminación del entorno",
@@ -1495,6 +1518,11 @@
 "SETTINGS.GridDiagonalsAlternating1": "Alternado (Variante 1: 1/2/1)",
 "SETTINGS.GridDiagonalsAlternating2": "Alternado (Variente 2: 2/1/2)",
 "SETTINGS.GridDiagonalsIllegal": "Ilegal (∞)",
+"SETTINGS.ColorSchemeN": "Esquema de color preferido",
+"SETTINGS.ColorSchemeH": "Determina si prefiere que los elementos de la interfaz de usuario se generen con un tema claro u oscuro. No todos los elementos de la interfaz están soportados por este ajuste.",
+"SETTINGS.ColorSchemeDefault": "Navegador por defecto",
+"SETTINGS.ColorSchemeDark": "Oscuro",
+"SETTINGS.ColorSchemeLight": "Claro",
 
 "SETUP.NavLabel": "Pestaña de configuración de ajustes",
 "SETUP.CoreVersion": "Versión del programa base",
@@ -1963,7 +1991,7 @@
   "LoginSuccess": "¡Autenticación de {user} correcta, ¡uniéndose al juego!"
 },
 
-
+"SHEETS.ConfigureSheet": "Configurar hoja",
 "SHEETS.ThisSheet": "Esta hoja",
 "SHEETS.DefaultSheet": "Hoja por defecto",
 "SHEETS.DefaultDocumentSheet": "Hoja por defecto {document}",
@@ -1972,6 +2000,7 @@
 "SHEETS.DocumentSheetPrivate": "No tiene permisos suficientes para ver hojas del tipo {type}.",
 "SHEETS.Save": "Guardar configuración de la hoja",
 "SHEETS.FormNavLabel": "Navegación de pestañas de formularios",
+"SHEETS.CopyId": "Copiar ID del documento",
 
 "SOUND": {
   "ConfigTitle": "Configuración de audio ambiental",
@@ -2097,6 +2126,8 @@
 "PERMISSION.NoteCreateHint": "Permite a los usuarios con este rol crear objetos tipo notas de mapa desde entradas en el diario en las que tienen permisos de propietario.",
 "PERMISSION.PingCanvas": "Puntero en el lienzo",
 "PERMISSION.PingCanvasHint": "Permite que los usuarios con este rol marquen zonas en el lienzo mediante la animación de un puntero.",
+"PERMISSION.PlaylistCreate": "Crear lista de reproducción",
+"PERMISSION.PlaylistCreateHint": "Permite a los usuarios con este rol crear nuevas listas de reproducción en el mundo.",
 "PERMISSION.SettingsModify": "Modificar ajustes de configuración",
 "PERMISSION.SettingsModifyHint": "Permitir a los usuarios con este rol modificar los ajustes de la partida y habilitar o deshabilitar módulos.",
 "PERMISSION.ShowCursor": "Mostrar cursor del ratón",
@@ -2115,13 +2146,176 @@
 "PERMISSION.WallDoorsHint": "Permitir que los usuarios con este rol interactúen con las puertas definidas en la capa de paredes.",
 "PERMISSION.WarningNoCreate": "No tiene permisos para crear un {document}.",
 
-"REGION.ConfigTitle": "Configuración de la región",
-"REGION.Name": "Nombre",
-"REGION.Color": "Color",
-"REGION.Shapes": "Formas",
+"REGION": {
+  "SECTIONS": {
+    "identity": "Identidad",
+    "shapes": "Formas",
+    "behaviors": "Regla"
+  },
+  "FIELDS": {
+    "color": {
+      "label": "Color",
+      "hint": "El color que se aplica a la visualización de la Región."
+    },
+    "shapes": {
+      "label": "Formas",
+      "hint": "Las formas de la Región."
+    },
+    "elevation": {
+      "label": "Elevación",
+      "hint": "El rango de elevación de la Región.",
+      "FIELDS": {
+        "bottom": {
+          "label": "Inferior",
+          "hint": "Tope inferior del rango de elevación."
+        },
+        "top": {
+          "label": "Superior",
+          "hint": "Tope superior del rango de elevación."
+        }
+      }
+    },
+    "behaviors": {
+      "label": "Reglas",
+      "hint": "Las reglas de la Región."
+    }
+  },
+  "ACTIONS": {
+    "create": "Crear Región",
+    "update": "Actualizar Región",
+    "delete": "Borrar Región",
+    "shapeMakeHole": "Añadir Hueco",
+    "shapeFillHole": "Llenar Hueco",
+    "shapeMoveUp": "Subir Forma",
+    "shapeMoveDown": "Bajar Forma",
+    "shapeRemove": "Quitar Forma",
+    "behaviorCreate": "Crear Regla",
+    "behaviorEdit": "Editar Regla",
+    "behaviorDelete": "Borrar Regla",
+    "behaviorEnable": "Habilitar Regla",
+    "behaviorDisable": "Deshabilitar Regla"
+  },
+  "EVENTS": {
+    "regionBoundary": "Los límites de la Región han cambiado",
+    "behaviorStatus": "El estado de la Regla ha cambiado",
+    "tokenEnter": "Icono entra",
+    "tokenExit": "Icono sale",
+    "tokenMove": "Después de que el icono se mueva",
+    "tokenPreMove": "Antes de que el icono se mueva",
+    "tokenTurnStart": "El icono comienza el Turno",
+    "tokenTurnEnd": "El icono termina el Turno",
+    "tokenRoundStart": "El icono comienza el Asalto",
+    "tokenRoundEnd": "El icono termina el asalto"
+  },
+  "SHAPES": {
+    "rectangle": "Rectángulo",
+    "circle": "Círculo",
+    "ellipse": "Elipse",
+    "polygon": "Polígono"
+  },
+  "Behavior": "Regla",
+  "Shape": "Forma",
+  "LEGEND": {
+    "control": "Controlar Región",
+    "config": "Configurar Región",
+    "create": "Crear Región",
+    "delete": "Borrar Región",
+    "empty": "Vaciar",
+    "filter": "Filtrar Regiones",
+    "lock": "Bloquear Región",
+    "title": "Leyenda de la Región",
+    "unlock": "Desbloquear Región",
+    "elevationBottom": "Elevación (Superior)",
+    "elevationTop": "Elevación (Inferior)"
+  },
+  "SHEET": {
+    "title": "Configurar Región"
+  },
+  "ERRORS": {
+    "ControlledRegionIsLocked": "¡La Región controlada está bloqueada!"
+  }
+},
+
+"BEHAVIOR": {
+  "SECTIONS": {
+    "identity": "Identidad de la Regla",
+    "status": "Estado de la Regla"
+  },
+  "FIELDS": {
+    "disabled": {
+      "label": "Deshabilitada",
+      "hint": "Conmutar para deshabilitar temporalmente esta Regla."
+    }
+  },
+  "ACTIONS": {
+    "create": "Crear regla de la Región",
+    "update": "Actualizar regla de la Región",
+    "delete": "Borrar regla de la Región"
+  },
+  "TYPES": {
+    "base": {
+      "SECTIONS": {
+        "events": "Eventos subscritos"
+      },
+      "FIELDS": {
+        "events": {
+          "label": "Eventos",
+          "hint": "The events that this behavior subscribes to."
+        }
+      }
+    },
+    "executeMacro": {
+      "FIELDS": {
+        "uuid": {
+          "label": "Macro",
+          "hint": "Macro que se ejecuta cuando uno de los eventos occurre."
+        }
+      }
+    },
+    "executeScript": {
+      "FIELDS": {
+        "source": {
+          "label": "Script",
+          "hint": "Script que se corre cuando uno de los eventos ocurre."
+        }
+      }
+    },
+    "pauseGame": {
+      "FIELDS": {
+        "once": {
+          "label": "Una vez",
+          "hint": "Deshabilita la regla una vez un icono controlado por un juegador entra en la Región."
+        }
+      }
+    },
+    "adjustDarknessLevel": {
+      "FIELDS": {
+        "mode": {
+          "label": "Modo",
+          "hint": "Como se modifica el nivel de oscuridad en la Región."
+        },
+        "modifier": {
+          "label": "Modificador",
+          "hint": "Un modificador numérico que se aplica al nivel de oscuridad de acuerdo al modo."
+        },
+        "blur": {
+          "label": "Difuminar",
+          "hint": "¿Deben los niveles de oscuridad tener una transición suave en los límites de esta forma, o cambiar inmediatamente?"
+        }
+      },
+      "MODES": {
+        "override": "Sobrescribir",
+        "brighten": "Clarear",
+        "darken": "Oscurecer"
+      }
+    }
+  }
+},
 
 "RULER.MovementNotAllowed": "La ruta medida no está permitida",
 "RULER.MovementCollision": "El movimiento intentado colisiona con al menos una pared.",
+"RULER.MovementNoPermission": "No tiene permisos para mover este Icono.",
+"RULER.MovementLocked": "No se puede mover el Icono ya que está bloqueado.",
 
 "SIDEBAR.Import": "Importar datos",
 "SIDEBAR.NavLabel": "Pestañas de barra lateral",
@@ -2193,8 +2387,8 @@
 "TABLE.Update": "Actualizar",
 
 "TEMPLATE.BorderColor": "Color del borde",
-"TEMPLATE.ConeTypeSetting": "Forma del borde de la plantilla cono",
-"TEMPLATE.ConeTypeSettingHint": "Define la forma en la que termina la plantilla de cono.",
+"TEMPLATE.ConeTypeSetting": "Forma de la plantilla cono",
+"TEMPLATE.ConeTypeSettingHint": "Escoja cómo se define el área de efecto de la plantilla cono. No tiene efecto si se habilita las formas de plantilla basadas en rejilla.",
 "TEMPLATE.ConeTypeFlat": "Plana",
 "TEMPLATE.ConeTypeRound": "Redonda",
 "TEMPLATE.MeasuredConfig": "Configuración de medida de la plantilla",
@@ -2202,6 +2396,9 @@
 "TEMPLATE.FillTexture": "Textura del relleno",
 "TEMPLATE.SubmitCreate": "Crear plantilla de medida",
 "TEMPLATE.SubmitUpdate": "Actualizar plantilla de medida",
+"TEMPLATE.GridTemplatesSetting": "Formas de plantilla basadas en rejilla",
+"TEMPLATE.GridTemplatesSettingHint": "Configura si el área de efecto de las plantillas deben estar basados en la rejilla en lugar de ser euclidianos.",
+
 
 "TILE.ConfigTitle": "Configuración de baldosas",
 "TILE.SubmitCreate": "Crear baldosa",
@@ -2440,6 +2637,44 @@
 "TOKEN.DetectionAdd": "Añadir modo de detección",
 "TOKEN.DetectionRemove": "Quitar modo de detección",
 
+"TOKEN.RING": {
+  "FIELDS": {
+    "colors": {
+      "ring": {
+        "label": "Color del Anillo",
+        "hint": "Color aplicado al borde el anillo."
+      },
+      "background": {
+        "label": "Color de fondo",
+        "hint": "Color aplicado al fondo del anillo."
+      }
+    },
+    "effects": {
+      "label": "Efectos del Anillo"
+    },
+    "enabled": {
+      "label": "Anillo habilitado"
+    },
+    "subject": {
+      "scale": {
+        "label": "Corrección de escala del material"
+      },
+      "texture": {
+        "label": "Textura del material",
+        "hint": "Especifica explícitamente la ruta del arte que se sobrepone al anillo de icono dinámico. Si no se especifica, el material del anillo es el mismo que la textura estándar del icono."
+      }
+    }
+  },
+  "EFFECTS": {
+    "BACKGROUND_WAVE": "Ola de fondo",
+    "RING_GRADIENT": "Gradiente del Anillo",
+    "RING_PULSE": "Pulso del Anillo"
+  },
+  "SHEET": {
+    "legend": "Anillo de Icono dinámico"
+  }
+},
+
 "TYPES.Cards.deck": "Baraja",
 "TYPES.Cards.hand": "Mano",
 "TYPES.Cards.pile": "Pila",
@@ -2450,11 +2685,14 @@
 "TYPES.JournalEntryPage.video": "Vídeo",
 "TYPES.Macro.chat": "Chat",
 "TYPES.Macro.script": "Script",
-"TYPES.RegionBehavior.macro": "Macro",
-"TYPES.RegionBehavior.script": "Script",
+"TYPES.RegionBehavior.executeMacro": "Ejecutar Macro",
+"TYPES.RegionBehavior.executeScript": "Ejecutar Script",
+"TYPES.RegionBehavior.pauseGame": "Pausar juego",
+"TYPES.RegionBehavior.suppressWeather": "Parar clima",
+"TYPES.RegionBehavior.adjustDarknessLevel": "Ajustar nivel de oscuridad",
 
 "DETECTION.LightPerception": "Percepción de la luz",
-"DETECTION.BasicSight": "Visión básica",
+"DETECTION.BasicSight": "Visión en la oscuridad",
 "DETECTION.SeeInvisibility": "Ver invisibilidad",
 "DETECTION.SenseInvisibility": "Sentir invisibilidad",
 "DETECTION.FeelTremor": "Sentir temblor",
@@ -2487,12 +2725,47 @@
 "TOURS.SuggestedTitle": "Siguiente guía sugerida",
 "TOURS.SuggestedDescription": "<p>Ha completado <strong>{currentTitle}</strong> Tour.</p><p>Le sugerimos que continúe con <strong>{nextTitle}</strong>. ¿Quiere continuar?</p>",
 
-"USER.RoleNone": "Ninguno",
-"USER.RolePlayer": "Jugador",
-"USER.RoleTrusted": "Jugador de confianza",
-"USER.RoleAssistant": "Ayudante del GM",
-"USER.RoleGamemaster": "Gamemaster",
-"USER.GM": "GM",
+"USER": {
+  "FIELDS": {
+    "name": {
+      "label": "Nombre del jugador",
+      "hint": "Los nombres de los jugadores los configura el GM y se pueden modificar en la pantalla de gestión de usuarios."
+    },
+    "avatar": {
+      "label": "Avatar del jugador",
+      "hint": "El avatar del jugador se muestra cuando se usa el audio/vídeo interno, aunque algunos módulos también lo usan."
+    },
+    "color": {
+      "label": "Color del jugador",
+      "hint": "El color del jugador lo usan cursores, reglas, plantillas y otros elementos que necesitan diferenciar entre usuarios."
+    },
+    "pronouns": {
+      "label": "Pronombre del jugador",
+      "hint": "El pronombre que informa cómo quiere el jugador que se le nombre por una tercera persona."
+    },
+    "character": {
+      "label": "Personaje del jugador",
+      "hint": "Seleccione un Actor de la lista para el que tenga al menos el permiso de OBSERVADOR y que será el personaje principal de este Usuario."
+    }
+  },
+  "SHEET": {
+    "HEADERS": {
+      "INFO": "Información del jugador",
+      "CHAR": "Personaje del jugador"
+    },
+    "BUTTONS": {
+      "SAVE": "Guardar configuración del jugador",
+      "RELEASE": "Liberar Personaje"
+    }
+  },
+  "RoleNone": "Ninguno",
+  "RolePlayer": "Jugador",
+  "RoleTrusted": "Jugador de confianza",
+  "RoleAssistant": "Ayudante del GM",
+  "RoleGamemaster": "Game Master",
+  "GM": "GM"
+},
+
 "USERS.AccessKey": "Contraseña",
 "USERS.Role": "Rol del usuario",
 "USERS.UserName": "Nombre del usuario",
@@ -2505,6 +2778,7 @@
 "USERS.NoGMError": "Debes tener al menos un usuario Gamemaster en tu mundo.",
 "USERS.DeleteWarning": "Se eliminará definitivamente este usuario en este mundo.",
 "USERS.DeleteGMWarning": "¡Está a punto de eliminar un usuario con rol de GM!",
+
 
 "VISION.ModeBlindness": "Ceguera",
 "VISION.ModeBasicVision": "Visión básica",
@@ -2551,6 +2825,8 @@
 "WALLS.DoorSound.Industrial": "Industrial",
 "WALLS.DoorSound.IndustrialCreaky": "Industrial, chirriante",
 "WALLS.DoorSound.Jail": "Celda",
+"WALLS.DoorSound.MagicDoor": "Puerta mágica",
+"WALLS.DoorSound.MagicWall": "Muro mágico",
 "WALLS.DoorSound.Metal": "Metal",
 "WALLS.DoorSound.SlidingMetal": "Deslizante, metal",
 "WALLS.DoorSound.SlidingModern": "Deslizante, moderna",
