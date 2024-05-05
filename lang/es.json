@@ -132,6 +132,85 @@
 
 "APP.NavigateBackConfirm": "¿Está seguro de que desea salir de FoundryVTT?",
 
+"AMBIENT_SOUND": {
+  "ACTIONS": {
+    "CREATE": "Crear sonido ambiente",
+    "UPDATE": "Actualizar sonido ambiente"
+  },
+  "FIELDS": {
+    "x": {
+      "label": "X"
+    },
+    "y": {
+      "label": "Y"
+    },
+    "elevation": {
+      "label": "Elevación"
+    },
+    "path": {
+      "label": "Ruta al archivo",
+      "hint": "Configure qué fichero de audio reproducir como sonido de ambiente cuando los iconos entran en su radio."
+    },
+    "radius": {
+      "label": "Radio de efecto"
+    },
+    "volume": {
+      "label": "Volumen máximo",
+      "hint": "Define el volumen mácimo en su punto de origen (si se usa la atenuación) o en cualquier lugar del área de efecto."
+    },
+    "easing": {
+      "label": "Atenuación de volumen",
+      "hint": "Ajusta el nivel de volumen del sonido a medida que los iconos se acercan al origen."
+    },
+    "hidden": {
+      "label": "Oculto",
+      "hint": "Conmutar para deshabilitar el sonido temporalmente."
+    },
+    "walls": {
+      "label": "Bloqueado por muros",
+      "hint": "Configura si el área de efecto de esta fuente de audio está restringido por los muros cercanos."
+    },
+    "darkness": {
+      "label": "Rango de activación de oscuridad",
+      "hint": "Puede especificar un rango de nivel de oscuridad durante el cual se oirá este sonido ambiente.",
+      "min": {
+        "label": "Entre"
+      },
+      "max": {
+        "label": "y"
+      }
+    },
+    "effects": {
+      "base": {
+        "type": {
+          "label": "Efecto base"
+        },
+        "intensity": {
+          "label": "Intensidad del efecto base"
+        },
+        "hint": "Aplica un efecto de audio al sonido que lo filtra o lo transforma."
+      },
+      "muffled": {
+        "type": {
+          "label": "Efecto amortiguado"
+        },
+        "intensity": {
+          "label": "Intensidad del efecto amortiguado"
+        },
+        "hint": "Aplica un efecto de audio al sonido que reemplaza el efecto base cuando el sonido es amortiguado por la interposición de muros. Un sonido solo puede ser amortiguado si no está bloquead por muros."
+      }
+    }
+  },
+  "SECTIONS": {
+    "SOURCE": "Fuente",
+    "PLACEMENT": "Posicionamiento",
+    "PLACEMENT_HINT": "Configure la posición original, elevación y el radio de la fuente de audio. La elevación aún no se usa y se muestra aquí por referencia.",
+    "VOLUME": "Volumen",
+    "ACTIVATION": "Activación",
+    "EFFECTS": "Efectos especiales"
+  }
+},
+
 "APPLICATION": {
   "TOOLS": {
     "ControlsMenu": "Controles de la aplicación",
@@ -1145,6 +1224,7 @@
 "LIGHT.AnimationSmokePatch": "Parche de humo",
 "LIGHT.AnimationRevolving": "Luz rotativa",
 "LIGHT.AnimationSiren": "Luz de sirena",
+"LIGHT.AnimationMagicalGloom": "Oscurecimiento mágico",
 
 "MACRO.Delete": "Eliminar macro",
 "MACRO.DeleteWarning": "Esta macro será eliminará definitivamente para todos los usuarios.",
@@ -1694,6 +1774,9 @@
 "SETUP.PackageProgressCleanup": "Borrando paquete",
 "SETUP.PackageProgressComplete": "Instalación del paquete completada",
 "SETUP.PackageProgressError": "Error",
+"SETUP.PackageIncompatibleSystemsPrompt": "La actualización de este módulo es incompatible con los siguientes sistemas instalados, ¿desea continuar?",
+"SETUP.PackageIncompatibleSystemsBulkPrompt": "Los módulos siguientes no han sido actualizados porque serían incompatibles con sistemas actualmente instalados. ¿desea actualizarlos de todos modos?",
+"SETUP.PackageIncompatibleWithSystems": "{module} <em>incompatible con</em> {systems}",
 "SETUP.ConfirmCodeLabel": "Escriba '{code}' para continuar",
 
 "SETUP.WorldLaunchConnect": "Cargando datos del mundo",
@@ -2004,37 +2087,8 @@
 
 "SOUND": {
   "ConfigTitle": "Configuración de audio ambiental",
-  "Create": "Crear audio ambiental",
-  "Update": "Actualizar audio ambiental",
-  "Path": "Fichero fuente",
-  "PathHint": "Ajuste el sonido ambiental para reproducir un fichero de audio cuando los iconos se acercan a un determinada distancia.",
   "PathPlaceholder": "ruta/al/audio.mp3",
-  "Radius": "Radio de efecto",
-  "Easing": "Mitigación de volumen",
-  "EasingHint": "Ajuste el nivel de volumen del audio a medida que las fichas se acercan al origen.",
-  "Hidden": "Deshabilitado",
-  "HiddenHint": "Conmutar para deshabilitar temporalmente.",
-  "MaxVol": "Volumen máximo",
-  "MaxVolHint": "Defina el volumen máximo del audio en su punto de origen (si se usa la opción de mitigación) o en cualquier lugar del área.",
   "New": "Nuevo audio",
-  "DarknessRange": "Rango de activación de oscuridad",
-  "DarknessRangeHint": "Debe especificar un el rango de niveles de oscuridad en el que se podrá escuchar el audio ambiente.",
-  "PositionHint": "Configure la posición del origen, la elevación y el radio de la fuente de audio. La elevación aún no se usa, pero se incluye por referencia.",
-  "Walls": "Restringida por paredes",
-  "WallsHint": "Configura si el área de efecto de esta fuente de sonido está restringida por las paredes cercanos.",
-  "BaseEffectType": "Efecto base",
-  "BaseEffectIntensity": "Intensidad base",
-  "BaseEffectHint": "Aplicar un efecto de audio al sonido que filtra o transforma el sonido.",
-  "MuffledEffectType": "Efecto amortiguado",
-  "MuffledEffectIntensity": "Intensidad amortiguada",
-  "MuffledEffectHint": "Aplicar un efecto de audio al sonido que reemplaza el efecto base cuando el sonido es amortitiguado por los muros. Un sonido solo puede ser amortiguado si está restringido por los muros.",
-  "SECTIONS": {
-    "SOURCE": "Fuente",
-    "PLACEMENT": "Posición",
-    "VOLUME": "Volumen",
-    "ACTIVATION": "Activación",
-    "EFFECTS": "Efectos epeciales"
-  },
   "EFFECTS": {
     "LOWPASS": "Filtro en bajos (Lowpass)",
     "HIGHPASS": "Filtro en altos (Highpass)",
@@ -2178,6 +2232,10 @@
     "behaviors": {
       "label": "Reglas",
       "hint": "Las reglas de la Región."
+    },
+    "visibility": {
+      "label": "Visibilidad",
+      "hint": "Configura la visibilidad de la Región."
     }
   },
   "ACTIONS": {
@@ -2195,17 +2253,48 @@
     "behaviorEnable": "Habilitar Regla",
     "behaviorDisable": "Deshabilitar Regla"
   },
+  "VISIBILITY": {
+    "LAYER": {
+      "label": "Solo en la capa de la Región"
+    },
+    "GAMEMASTER": {
+      "label": "Siempre para el Gamemaster"
+    },
+    "ALWAYS": {
+      "label": "Siempre para todos"
+    }
+  },
   "EVENTS": {
-    "regionBoundary": "Los límites de la Región han cambiado",
-    "behaviorStatus": "El estado de la Regla ha cambiado",
-    "tokenEnter": "Icono entra",
-    "tokenExit": "Icono sale",
-    "tokenMove": "Después de que el icono se mueva",
-    "tokenPreMove": "Antes de que el icono se mueva",
-    "tokenTurnStart": "El icono comienza el Turno",
-    "tokenTurnEnd": "El icono termina el Turno",
-    "tokenRoundStart": "El icono comienza el Asalto",
-    "tokenRoundEnd": "El icono termina el asalto"
+    "regionBoundary": {
+      "label": "Los límites de la Región han cambiado"
+    },
+    "behaviorStatus": {
+      "label": "El estado de la Regla ha cambiado"
+    },
+    "tokenEnter": {
+      "label": "Icono entra"
+    },
+    "tokenExit": {
+      "label": "Icono sale"
+    },
+    "tokenMove": {
+      "label": "Después de que el icono se mueva"
+    },
+    "tokenPreMove": {
+      "label": "Antes de que el icono se mueva"
+    },
+    "tokenTurnStart": {
+      "label": "El icono comienza el Turno"
+    },
+    "tokenTurnEnd": {
+      "label": "El icono termina el Turno"
+    },
+    "tokenRoundStart": {
+      "label": "El icono comienza el Asalto"
+    },
+    "tokenRoundEnd": {
+      "label": "El icono termina el asalto"
+    }
   },
   "SHAPES": {
     "rectangle": "Rectángulo",
@@ -2264,6 +2353,33 @@
         }
       }
     },
+    "adjustDarknessLevel": {
+      "FIELDS": {
+        "mode": {
+          "label": "Modo",
+          "hint": "Como se modifica el nivel de oscuridad en la Región."
+        },
+        "modifier": {
+          "label": "Modificador",
+          "hint": "Un modificador numérico que se aplica al nivel de oscuridad de acuerdo al modo."
+        },
+        "blur": {
+          "label": "Difuminar",
+          "hint": "¿Deben los niveles de oscuridad tener una transición suave en los límites de esta forma, o cambiar inmediatamente?"
+        }
+      },
+      "MODES": {
+        "OVERRIDE": {
+          "label": "Sobrescribir"
+        },
+        "BRIGHTEN": {
+          "label": "Clarear"
+        },
+        "DARKEN": {
+          "label": "Oscurecer"
+        }
+      }
+    },
     "executeMacro": {
       "FIELDS": {
         "uuid": {
@@ -2288,25 +2404,12 @@
         }
       }
     },
-    "adjustDarknessLevel": {
+    "teleportToken": {
       "FIELDS": {
-        "mode": {
-          "label": "Modo",
-          "hint": "Como se modifica el nivel de oscuridad en la Región."
-        },
-        "modifier": {
-          "label": "Modificador",
-          "hint": "Un modificador numérico que se aplica al nivel de oscuridad de acuerdo al modo."
-        },
-        "blur": {
-          "label": "Difuminar",
-          "hint": "¿Deben los niveles de oscuridad tener una transición suave en los límites de esta forma, o cambiar inmediatamente?"
+        "destination": {
+          "label": "Destino",
+          "hint": "El destino al que se teleporta el Icono una vez entra en la Región."
         }
-      },
-      "MODES": {
-        "override": "Sobrescribir",
-        "brighten": "Clarear",
-        "darken": "Oscurecer"
       }
     }
   }
@@ -2685,11 +2788,12 @@
 "TYPES.JournalEntryPage.video": "Vídeo",
 "TYPES.Macro.chat": "Chat",
 "TYPES.Macro.script": "Script",
+"TYPES.RegionBehavior.adjustDarknessLevel": "Ajustar nivel de oscuridad",
 "TYPES.RegionBehavior.executeMacro": "Ejecutar Macro",
 "TYPES.RegionBehavior.executeScript": "Ejecutar Script",
 "TYPES.RegionBehavior.pauseGame": "Pausar juego",
 "TYPES.RegionBehavior.suppressWeather": "Parar clima",
-"TYPES.RegionBehavior.adjustDarknessLevel": "Ajustar nivel de oscuridad",
+"TYPES.RegionBehavior.teleportToken": "Teleportar Icono",
 
 "DETECTION.LightPerception": "Percepción de la luz",
 "DETECTION.BasicSight": "Visión en la oscuridad",
