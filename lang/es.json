@@ -132,6 +132,48 @@
 
 "APP.NavigateBackConfirm": "¿Está seguro de que desea salir de FoundryVTT?",
 
+"AMBIENT_LIGHT": {
+  "ACTIONS": {
+    "CREATE": "Crear luz ambiente",
+    "UPDATE": "Actualizar luz ambiente",
+    "RESET": "Reinicializar opciones avanzadas"
+  },
+  "FIELDS": {
+    "x": {
+      "label": "X"
+    },
+    "y": {
+      "label": "Y"
+    },
+    "elevation": {
+      "label": "Elevación"
+    },
+    "rotation": {
+      "label": "Ángulo de rotación"
+    },
+    "vision": {
+      "label": "Da visión",
+      "hint": "Esta fuente de luz cuenta como fuente de visión, revelando nuevas áreas de la Escena incluso si no está en la linea-de-visión de un Icono controlado."
+    },
+    "walls": {
+      "label": "Bloqueada por muros",
+      "hint": "Configura si el área de efecto de esta fuente de luz está bloqueada por muros."
+    }
+  },
+  "LABELS": {
+    "radius": "Radio de luz",
+    "radiusHint": "Configura la distancia de emisión de la luz de esta fuente donde el radio de luz brillante está incluido en el de luz tenue."
+  },
+  "SECTIONS": {
+    "BASIC": "Configuración básica",
+    "ADVANCED": "Opciones avanzadas",
+    "ANIMATION": "Animación de la luz",
+    "APPEARANCE": "Apariencia de la luz",
+    "PLACEMENT": "Colocación de la luz"
+  }
+},
+
+
 "AMBIENT_SOUND": {
   "ACTIONS": {
     "CREATE": "Crear sonido ambiente",
@@ -660,6 +702,8 @@
 "CONTROLS.UndoCreateObjects": "Se ha revertido la creación de {count} objeto(s) tipo {type}.",
 "CONTROLS.UndoDeleteObjects": "Se ha revertido la eliminación de {count} objeto(s) tipo {type}.",
 "CONTROLS.EmptyUndoHistory": "¡Historial de objetos tipo {type} vacío!",
+"CONTROLS.ObjectIsLocked": "No puede realizar esta acción mientras el objeto tipo {type} esté bloqueado.",
+"CONTROLS.ObjectConfigured": "No puede realizar esta acción mientras configura otro objeto.",
 
 "DICE.ErrorNonNumeric": "La fórmula de tirada de dados {formula} no produjo un resultado numérico.",
 "DICE.ManualRoll": "Tirada manual",
@@ -965,6 +1009,10 @@
   "DOCUMENT_TAGS": {
     "Add": "Añadir documento",
     "Remove": "Quitar documento"
+  },
+  "TAGS": {
+    "Add": "Añadir etiqueta",
+    "Remove": "Quitar etiqueta"
   }
 },
 
@@ -1007,6 +1055,7 @@
 "FILES.BrowseTooltip": "Examinar archivos",
 "FILES.InPixels": "En píxeles",
 "FILES.UnitPixels": "(píxeles)",
+"FILES.ErrorDisallowedExtension": "El fichero \"{name}\" tiene una extensión no válida \"{ext}\" que no permite este tipo de selector de ficheros.\nLas extensiones permitidas son: {allowed}.",
 
 "FONTS.AddFont": "Añadir fuente",
 "FONTS.Type": "Tipo de fuente",
@@ -1157,43 +1206,82 @@
 "KEYBINDINGS.ErrorReservedModifier": "No se puede asignar la tecla \"{key}\" como atajo, ya que es un modificador reservado para la asignación de atajos.",
 "KEYBINDINGS.FocusChat": "Foco del chat",
 
-"LIGHT.ConfigTitle": "Configuración de fuentes de luz",
-"LIGHT.NavLabel": "Pestaña de configuración de fuentes de luz",
-"LIGHT.HeaderBasic": "Configuración básica",
-"LIGHT.HeaderAdvanced": "Opciones avanzadas",
-"LIGHT.HeaderAnimation": "Animación de la luz",
-"LIGHT.Create": "Crear fuente de luz",
-"LIGHT.Update": "Actualizar fuente de luz",
-"LIGHT.Alpha": "Insensidad de color",
-"LIGHT.Angle": "Ángulo de emisión",
-"LIGHT.AngleHint": "Limita el ángulo de emisión de esta fuente de luz, y configura su rotación.",
-"LIGHT.Bright": "Brillante",
-"LIGHT.Color": "Color de la luz",
-"LIGHT.ColorHint": "Aplica coloración a esta fuente de luz y configura su intensidad.",
-"LIGHT.Coordinates": "Coordenadas",
-"LIGHT.Contrast": "Contraste",
-"LIGHT.ContrastHint": "Ajusta el contraste de las superficies iluminadas por esta fuente de luz. El valor por defecto de una luz estándar es 0.",
-"LIGHT.DarknessRange": "Rango de activación de oscuridad",
-"LIGHT.DarknessRangeHint": "Puede especificar un rango de niveles de oscuridad en el que la fuente de luz será visible.",
-"LIGHT.Dim": "Tenue",
-"LIGHT.Attenuation": "Atenuación",
-"LIGHT.AttenuationHint": "Mostrar transición gradual en la iluminación entre brillante, tenue y oscuro.",
-"LIGHT.Luminosity": "Luminosidad",
-"LIGHT.LuminosityHint": "Ajusta el brillo de esta fuente de luz. Cuanto más luminosa, menos se disminuye la luz con la oscuridad. El valor por defecto de una luz estándar es 0.5.",
-"LIGHT.Radius": "Radio de luz",
-"LIGHT.RadiusHint": "Configura la distancia de emisión de luz de esta fuente, donde el radio de luz brillante se incluye en el radio de luz tenue.",
-"LIGHT.ResetAdvanced": "Reiniciar opciones avanzadas",
-"LIGHT.Rotation": "Ángulo de rotación",
-"LIGHT.Saturation": "Saturación",
-"LIGHT.SaturationHint": "Ajusta la saturación de las superficies que son iluminadas por esta fuente de luz. El valor por defecto de una luz estándar es 0.",
-"LIGHT.Shadows": "Sombras",
-"LIGHT.ShadowsHint": "Mejora la intensidad de los colores oscuros iluminados por esta fuente de luz. El valor por defecto de una luz estándar es 0.",
-"LIGHT.Vision": "Proporciona visión",
-"LIGHT.VisionHint": "Proporciona una fuente adicional de visión a las fichas controladas.",
-"LIGHT.Walls": "Restringido por paredes",
-"LIGHT.WallsHint": "Configura si el área de efecto de esta fuente de luz está restringida por las paredes cercanos.",
-"LIGHT.ColorationTechnique": "Técnica de coloración",
-"LIGHT.ColorationTechniqueHint": "La técnica de coloración que se aplica a la fuente de luz añade renderizado aditivo a la apariencia final.",
+"LIGHT.FIELDS": {
+  "alpha": {
+    "label": "Intensidad de color",
+    "hint": "Modifica la intensidad del color emitido por la fuente de luz."
+  },
+  "animation": {
+    "label": "Animación de luz",
+    "type": {
+      "label": "Tipo de animación de luz"
+    },
+    "speed": {
+      "label": "Velocidad de animación",
+      "hint": "Aumentar la velocidad hace que la animación se reproduzca más rápido."
+    },
+    "intensity": {
+      "label": "Intensidad de animación",
+      "hint": "Aumentar la intensidad hace que la animación sea más pronunciada."
+    },
+    "reverse": {
+      "label": "Dirección contraria"
+    }
+  },
+  "angle": {
+    "label": "Ángulo de emisión",
+    "hint": "Limita el ángulo de emisión de esta fuente de luz, y configura su rotación."
+  },
+  "attenuation": {
+    "label": "Atenuación",
+    "hint": "Mostrar transición gradual en la iluminación entre brillante, tenue y oscuro."
+  },
+  "color": {
+    "label": "Color de la luz",
+    "hint": "Aplica coloración a esta fuente de luz y configura su intensidad."
+  },
+  "coloration": {
+    "label": "Técnica de coloración",
+    "hint": "La técnica de coloración que se aplica a la fuente de luz añade renderizado aditivo a la apariencia final."
+  },
+  "contrast": {
+    "label": "Contraste",
+    "hint": "Ajusta el contraste de las superficies iluminadas por esta fuente de luz. El valor por defecto de una luz estándar es 0."
+  },
+  "dim": {
+    "label": "Tenue"
+  },
+  "bright": {
+    "label": "Brillante"
+  },
+  "luminosity": {
+    "label": "Luminosidad",
+    "hint": "Ajusta el brillo de esta fuente de luz. Cuanto más luminosa, menos se disminuye la luz con la oscuridad. El valor por defecto de una luz estándar es 0.5."
+  },
+  "negative": {
+    "label": "Es fuente de oscuridad",
+    "hint": "Una fuente de oscuridad bloquea las fuentes de luz y la visión que estén dentro de su área de efecto."
+  },
+  "saturation": {
+    "label": "Saturación",
+    "hint": "Ajusta la saturación de las superficies que son iluminadas por esta fuente de luz. El valor por defecto de una luz estándar es 0."
+  },
+  "shadows": {
+    "label": "Sombras",
+    "hint": "Mejora la intensidad de los colores oscuros iluminados por esta fuente de luz. El valor por defecto de una luz estándar es 0."
+  },
+  "darkness": {
+    "label": "Rango de activación de oscuridad",
+    "hint": "Puede especificar un rango de niveles de oscuridad en el que la fuente de luz será visible.",
+    "min": {
+      "label": "Entre"
+    },
+    "max": {
+      "label": "y"
+    }
+  }
+},
+
 "LIGHT.LegacyColoration": "Coloración heredada",
 "LIGHT.AdaptiveLuminance": "Luminosidad adaptativa",
 "LIGHT.InternalHalo": "Halo interno",
@@ -1205,15 +1293,8 @@
 "LIGHT.HighAbsorption": "Amortiguación alta",
 "LIGHT.InvertAbsorption": "Invertir amortiguación",
 "LIGHT.NaturalLight": "Luz natural",
-"LIGHT.Negative": "Es fuente de oscuridad",
-"LIGHT.NegativeHint": "Una fuente de oscuridad bloquea las fuentes de luz y la visión que estén dentro de su área de efecto.",
-"LIGHT.Priority": "Prioridad",
-"LIGHT.PriorityHint": "Configurar la prioridad entre las fuentes de luz. Por defecto las fuentes de oscuridad sobrescribe las fuentes de luz, pero si se les asigna una prioridad mayor permitirá que la luz se muestre por encima de una fuente de oscuridad.",
-"LIGHT.AnimationType": "Tipo de animación de luz",
-"LIGHT.AnimationHint": "Un incremento en la velocidad de animación hace que se reproduzca más rápido a la vez que hace más pronunciada su intensidad.",
-"LIGHT.AnimationSpeed": "Velocidad de animación",
-"LIGHT.AnimationIntensity": "Intensidad de animación",
-"LIGHT.AnimationReverse": "Dirección contraria",
+
+
 "LIGHT.AnimationTorch": "Luz parpadeante",
 "LIGHT.AnimationPulse": "Pulso",
 "LIGHT.AnimationChroma": "Croma",
@@ -2292,12 +2373,18 @@
     "tokenExit": {
       "label": "Icono sale"
     },
-    "tokenMove": {
-      "label": "Después de que el icono se mueva"
-    },
     "tokenPreMove": {
       "label": "Antes de que el icono se mueva"
     },
+    "tokenMove": {
+      "label": "Después de que el icono se mueva"
+    },
+    "tokenMoveIn": {
+      "label": "El icono entró"
+    },
+    "tokenMoveOut": {
+      "label": "El icono salió"
+    },    
     "tokenTurnStart": {
       "label": "El icono comienza el Turno"
     },
@@ -2337,7 +2424,7 @@
   },
   "NOTIFICATIONS": {
     "ControlWalls": "Controle un grupo de muros para definir los límites de la Forma.",
-    "ControlledRegionIsLocked": "¡La Región controlada está bloqueada!",
+    "DrawingMultipleRegionsControlled": "¡Solo debe controlar una Región (o no controlar ninguna) cuando dibuje una forma!",
     "EmptyEnclosedArea": "¡El área definida por los Muros controlados está vacía! Asegúrese de que los Muros exteriores forman un área cerrada y que se conectan en los extremos.",
     "NoControlledWalls": "¡No controla ningún Muro!"
   }
@@ -2429,6 +2516,18 @@
           "hint": "El destino al que se teleporta el Icono una vez entra en la Región."
         }
       }
+    },
+    "toggleBehavior": {
+      "FIELDS": {
+        "enable": {
+          "label": "Habilitar reglas",
+          "hint": "Las reglas que son habilitadas cuando sucede uno de los eventos."
+        },
+        "disable": {
+          "label": "Deshabilitar reglas",
+          "hint": "Las reglas que se deshabilitan cuando suecede uno de los eventos."
+        }
+      }
     }
   }
 },
@@ -2475,6 +2574,7 @@
 "SUPPORT.Client": "Cliente",
 "SUPPORT.GPU": "GPU",
 "SUPPORT.MaxTextureSize": "Tamaño máx texturas",
+"SUPPORT.LargestTexture": "Textura máxima",
 "SUPPORT.NoViewedScene": "Sin escena abierta",
 "SUPPORT.DocumentIssues": "Problemas con documentos",
 "SUPPORT.ClientIssues": "Problemas con los clientes",
@@ -2482,6 +2582,12 @@
 "SUPPORT.ModuleSubTypesUnavailableName": "<strong>{count}</strong> {document} are unavailable because the '{name}' module is inactive",
 "SUPPORT.ModuleSubTypesUnavailableNoName": "<strong>{count}</strong> documentos tipo {document} no están disponibles porque el módulo de ID '{name}' no está activo",
 "SUPPORT.UnavailableDocuments": "{count} documentos tipo {document} no disponibles",
+"SUPPORT.WorldScripts": "Scripts del mundo",
+"SUPPORT.GenerateFullReport": "Generar informe completo",
+"SUPPORT.GenerateFullReportHint": "Crear un informe completo con información detallada de los módulos y compendios instalados puede llevar su tiempo.",
+"SUPPORT.WorldData": "Datos del mundo",
+"SUPPORT.CompendiumData": "Datos del compendio",
+"SUPPORT.ActiveModules": "Módulos activos",
 
 "TABLE.AnimateSetting": "Animar tablas dinámicas",
 "TABLE.AnimateSettingHint": "Muestra una animación tipo ruleta cuando se extraen valores de una tabla.",
@@ -2626,7 +2732,7 @@
 "TOKEN.VisionBrightness": "Brillo de la visión",
 "TOKEN.VisionBrightnessHint": "Ajuste el brillo de esta fuente de visión. Cuanto mayor sea, mejor podrá ver el personaje en la oscuridad (por defecto 0).",
 "TOKEN.WarningNoActor": "Esta ficha referencia a un actor que ya no existe en el mundo actual.",
-"TOKEN.WarningNoVision": "No posee ninguna ficha con visión en esta escena",
+"TOKEN.WarningNoVision": "No hay ningún icono en le escena que te de visión en el área.",
 "TOKEN.VisionMode": "Modo de visión",
 "TOKEN.VisionModeHint": "Aplica un efecto visual a la visión que representa sentidos especiales (por defecto visión básica).",
 
@@ -2758,8 +2864,8 @@
 "TOKEN.DetectionAdd": "Añadir modo de detección",
 "TOKEN.DetectionRemove": "Quitar modo de detección",
 
-"TOKEN.RING": {
-  "FIELDS": {
+"TOKEN.FIELDS": {
+  "ring": {
     "colors": {
       "ring": {
         "label": "Color del Anillo",
@@ -2785,7 +2891,10 @@
         "hint": "Especifica explícitamente la ruta del arte que se sobrepone al anillo de icono dinámico. Si no se especifica, el material del anillo es el mismo que la textura estándar del icono."
       }
     }
-  },
+  }
+},
+
+"TOKEN.RING": {
   "EFFECTS": {
     "BACKGROUND_WAVE": "Ola de fondo",
     "RING_GRADIENT": "Gradiente del Anillo",
@@ -2812,6 +2921,7 @@
 "TYPES.RegionBehavior.pauseGame": "Pausar juego",
 "TYPES.RegionBehavior.suppressWeather": "Parar clima",
 "TYPES.RegionBehavior.teleportToken": "Teleportar Icono",
+"TYPES.RegionBehavior.toggleBehavior": "Conmutar Regla",
 
 "DETECTION.LightPerception": "Percepción de la luz",
 "DETECTION.BasicSight": "Visión en la oscuridad",
