@@ -132,10 +132,11 @@
 
 "APP.NavigateBackConfirm": "Are you sure you want to exit the Foundry Virtual Tabletop game?",
 
-"AMBIENT_SOUND": {
+"AMBIENT_LIGHT": {
   "ACTIONS": {
-    "CREATE": "Create Ambient Sound",
-    "UPDATE": "Update Ambient Sound"
+    "CREATE": "Create Ambient Light",
+    "UPDATE": "Update Ambient Light",
+    "RESET": "Reset Advanced Options"
   },
   "FIELDS": {
     "x": {
@@ -147,68 +148,109 @@
     "elevation": {
       "label": "Elevation"
     },
-    "path": {
-      "label": "Source File Path",
-      "hint": "Configure the ambient sound to play an audio file when tokens move within its radius."
+    "rotation": {
+      "label": "Rotation Angle"
     },
-    "radius": {
-      "label": "Effect Radius"
-    },
-    "volume": {
-      "label": "Maximum Volume",
-      "hint": "Define the maximum volume of the sound at its origin point (if easing) or everywhere in the area."
-    },
-    "easing": {
-      "label": "Volume Easing",
-      "hint": "Adjust the volume level of the sound as Tokens move closer to the origin."
-    },
-    "hidden": {
-      "label": "Hidden",
-      "hint": "Toggle whether this sound source is temporarily disabled."
+    "vision": {
+      "label": "Provides Vision",
+      "hint": "This light source counts as a source of vision, revealing additional areas of the Scene even if it is not within line-of-sight of a controlled Token."
     },
     "walls": {
       "label": "Constrained By Walls",
-      "hint": "Configure whether area of effect for this audio source is constrained by nearby walls."
-    },
-    "darkness": {
-      "label": "Darkness Activation Range",
-      "hint": "You may specify a range of darkness levels during which this ambient sound will be audible.",
-      "min": {
-        "label": "Between"
-      },
-      "max": {
-        "label": "and"
-      }
-    },
-    "effects": {
-      "base": {
-        "type": {
-          "label": "Base Effect"
-        },
-        "intensity": {
-          "label": "Base Effect Intensity"
-        },
-        "hint": "Apply an audio effect to the sound which filters or transforms its sound."
-      },
-      "muffled": {
-        "type": {
-          "label": "Muffled Effect"
-        },
-        "intensity": {
-          "label": "Muffled Effect Intensity"
-        },
-        "hint": "Apply an audio effect to the sound which replaces the base effect when the sound is muffled by intervening walls. A sound can only be muffled if it is not constrained by walls."
-      }
+      "hint": "Configure whether area of effect for this light source is constrained by nearby walls."
     }
   },
+  "LABELS": {
+    "radius": "Light Radius",
+    "radiusHint": "Configure the distance of light emission from this source where the radius of bright light is included within the radius of dim light."
+  },
   "SECTIONS": {
-    "SOURCE": "Source",
-    "PLACEMENT": "Placement",
-    "PLACEMENT_HINT": "Configure the origin position, elevation, and radius of the audio source. Elevation is not yet used and is provided only for reference.",
-    "VOLUME": "Volume",
-    "ACTIVATION": "Activation",
-    "EFFECTS": "Special Effects"
+    "BASIC": "Basic Configuration",
+    "ADVANCED": "Advanced Options",
+    "ANIMATION": "Light Animation",
+    "APPEARANCE": "Light Appearance",
+    "PLACEMENT": "Light Placement"
   }
+},
+
+
+"AMBIENT_SOUND": {
+"ACTIONS": {
+  "CREATE": "Create Ambient Sound",
+  "UPDATE": "Update Ambient Sound"
+},
+"FIELDS": {
+  "x": {
+    "label": "X"
+  },
+  "y": {
+    "label": "Y"
+  },
+  "elevation": {
+    "label": "Elevation"
+  },
+  "path": {
+    "label": "Source File Path",
+    "hint": "Configure the ambient sound to play an audio file when tokens move within its radius."
+  },
+  "radius": {
+    "label": "Effect Radius"
+  },
+  "volume": {
+    "label": "Maximum Volume",
+    "hint": "Define the maximum volume of the sound at its origin point (if easing) or everywhere in the area."
+  },
+  "easing": {
+    "label": "Volume Easing",
+    "hint": "Adjust the volume level of the sound as Tokens move closer to the origin."
+  },
+  "hidden": {
+    "label": "Hidden",
+    "hint": "Toggle whether this sound source is temporarily disabled."
+  },
+  "walls": {
+    "label": "Constrained By Walls",
+    "hint": "Configure whether area of effect for this audio source is constrained by nearby walls."
+  },
+  "darkness": {
+    "label": "Darkness Activation Range",
+    "hint": "You may specify a range of darkness levels during which this ambient sound will be audible.",
+    "min": {
+      "label": "Between"
+    },
+    "max": {
+      "label": "and"
+    }
+  },
+  "effects": {
+    "base": {
+      "type": {
+        "label": "Base Effect"
+      },
+      "intensity": {
+        "label": "Base Effect Intensity"
+      },
+      "hint": "Apply an audio effect to the sound which filters or transforms its sound."
+    },
+    "muffled": {
+      "type": {
+        "label": "Muffled Effect"
+      },
+      "intensity": {
+        "label": "Muffled Effect Intensity"
+      },
+      "hint": "Apply an audio effect to the sound which replaces the base effect when the sound is muffled by intervening walls. A sound can only be muffled if it is not constrained by walls."
+    }
+  }
+},
+"SECTIONS": {
+  "SOURCE": "Source",
+  "PLACEMENT": "Placement",
+  "PLACEMENT_HINT": "Configure the origin position, elevation, and radius of the audio source. Elevation is not yet used and is provided only for reference.",
+  "VOLUME": "Volume",
+  "ACTIVATION": "Activation",
+  "EFFECTS": "Special Effects"
+}
 },
 
 "APPLICATION": {
@@ -659,7 +701,9 @@
 "CONTROLS.DeletedObjects": "Deleted {count} {type} object(s).",
 "CONTROLS.UndoCreateObjects": "Reverted creation of {count} {type} object(s).",
 "CONTROLS.UndoDeleteObjects": "Reverted deletion of {count} {type} object(s).",
-"CONTROLS.EmptyUndoHistory": "No more tracked history for {type} objects to undo!",
+"CONTROLS.EmptyUndoHistory": "No more tracked history for {type} objects to undo.",
+"CONTROLS.ObjectIsLocked": "You cannot take this action while the {type} object is locked.",
+"CONTROLS.ObjectConfigured": "You cannot take this action while configuring another object.",
 
 "DICE.ErrorNonNumeric": "The dice roll formula {formula} did not produce a numeric outcome.",
 "DICE.ManualRoll": "Manual Roll",
@@ -965,6 +1009,10 @@
   "DOCUMENT_TAGS": {
     "Add": "Add Document",
     "Remove": "Remove Document"
+  },
+  "TAGS": {
+    "Add": "Add Tag",
+    "Remove": "Remove Tag"
   }
 },
 
@@ -1007,6 +1055,7 @@
 "FILES.BrowseTooltip": "Browse Files",
 "FILES.InPixels": "In Pixels",
 "FILES.UnitPixels": "(pixels)",
+"FILES.ErrorDisallowedExtension": "File \"{name}\" has an invalid extension \"{ext}\" which is not allowed for this FilePicker type.\nAllowed extensions include: {allowed}.",
 
 "FONTS.AddFont": "Add font",
 "FONTS.Type": "Font Type",
@@ -1157,43 +1206,82 @@
 "KEYBINDINGS.ErrorReservedModifier": "Cannot set \"{key}\" as a Binding, as it is a reserved modifier for this Keybinding Action",
 "KEYBINDINGS.FocusChat": "Focus Chat",
 
-"LIGHT.ConfigTitle": "Light Source Configuration",
-"LIGHT.NavLabel": "Light Configuration Tabs",
-"LIGHT.HeaderBasic": "Basic Configuration",
-"LIGHT.HeaderAdvanced": "Advanced Options",
-"LIGHT.HeaderAnimation": "Light Animation",
-"LIGHT.Create": "Create Light Source",
-"LIGHT.Update": "Update Light Source",
-"LIGHT.Alpha": "Color Intensity",
-"LIGHT.Angle": "Emission Angle",
-"LIGHT.AngleHint": "Limit the angle of emission for this light source, and configure its rotation.",
-"LIGHT.Bright": "Bright",
-"LIGHT.Color": "Light Color",
-"LIGHT.ColorHint": "Apply coloration to this light source and configure its intensity.",
-"LIGHT.Coordinates": "Coordinates",
-"LIGHT.Contrast": "Contrast",
-"LIGHT.ContrastHint": "Adjust the contrast of surfaces that are illuminated by this light source. The default value for a standard light source is 0.",
-"LIGHT.DarknessRange": "Darkness Activation Range",
-"LIGHT.DarknessRangeHint": "You may specify a range of darkness levels during which this light source will be visible.",
-"LIGHT.Dim": "Dim",
-"LIGHT.Attenuation": "Attenuation",
-"LIGHT.AttenuationHint": "Transition illumination gradually between bright, dim, and dark.",
-"LIGHT.Luminosity": "Luminosity",
-"LIGHT.LuminosityHint": "Adjust the brightness of this light source. More luminous lights are less diminished by darkness. The default value for a standard light source is 0.5.",
-"LIGHT.Radius": "Light Radius",
-"LIGHT.RadiusHint": "Configure the distance of light emission from this source where the radius of bright light is included within the radius of dim light.",
-"LIGHT.ResetAdvanced": "Reset Advanced Options",
-"LIGHT.Rotation": "Rotation Angle",
-"LIGHT.Saturation": "Saturation",
-"LIGHT.SaturationHint": "Adjust the saturation of surfaces that are illuminated by this light source. The default value for a standard light source is 0.",
-"LIGHT.Shadows": "Shadows",
-"LIGHT.ShadowsHint": "Enhance or the intensity of dark colors illuminated by this light source. The default value for a standard light source is 0.",
-"LIGHT.Vision": "Provides Vision",
-"LIGHT.VisionHint": "Provide an additional source of vision for controlled Tokens.",
-"LIGHT.Walls": "Constrained By Walls",
-"LIGHT.WallsHint": "Configure whether area of effect for this light source is constrained by nearby walls.",
-"LIGHT.ColorationTechnique": "Coloration Technique",
-"LIGHT.ColorationTechniqueHint": "The coloration technique applied to the light source contributes additive blending to the resulting appearance.",
+"LIGHT.FIELDS": {
+  "alpha": {
+    "label": "Color Intensity",
+    "hint": "Modify the intensity of color emitted by this light source."
+  },
+  "animation": {
+    "label": "Light Animation",
+    "type": {
+      "label": "Light Animation Type"
+    },
+    "speed": {
+      "label": "Animation Speed",
+      "hint": "Increases to animation speed make the animation play faster."
+    },
+    "intensity": {
+      "label": "Animation Intensity",
+      "hint": "Increases to animation intensity make the animation more pronounced."
+    },
+    "reverse": {
+      "label": "Reverse Direction"
+    }
+  },
+  "angle": {
+    "label": "Emission Angle",
+    "hint": "Limit the angle of emission for this light source, and configure its rotation."
+  },
+  "attenuation": {
+    "label": "Attenuation",
+    "hint": "Transition illumination gradually between bright, dim, and dark."
+  },
+  "color": {
+    "label": "Light Color",
+    "hint": "Apply coloration to this light source and configure its intensity."
+  },
+  "coloration": {
+    "label": "Coloration Technique",
+    "hint": "The coloration technique applied to the light source contributes additive blending to the resulting appearance."
+  },
+  "contrast": {
+    "label": "Contrast",
+    "hint": "Adjust the contrast of surfaces that are illuminated by this light source. The default value for a standard light source is 0."
+  },
+  "dim": {
+    "label": "Dim"
+  },
+  "bright": {
+    "label": "Bright"
+  },
+  "luminosity": {
+    "label": "Luminosity",
+    "hint": "Adjust the brightness of this light source. More luminous lights are less diminished by darkness. The default value for a standard light source is 0.5."
+  },
+  "negative": {
+    "label": "Is Darkness Source",
+    "hint": "A darkness source blocks light and vision and suppresses lights or vision sources which are inside its area of effect."
+  },
+  "saturation": {
+    "label": "Saturation",
+    "hint": "Adjust the saturation of surfaces that are illuminated by this light source. The default value for a standard light source is 0."
+  },
+  "shadows": {
+    "label": "Shadows",
+    "hint": "Enhance or the intensity of dark colors illuminated by this light source. The default value for a standard light source is 0."
+  },
+  "darkness": {
+    "label": "Darkness Activation Range",
+    "hint": "You may specify a range of darkness levels during which this light source will be visible.",
+    "min": {
+      "label": "Between"
+    },
+    "max": {
+      "label": "and"
+    }
+  }
+},
+
 "LIGHT.LegacyColoration": "Legacy Coloration",
 "LIGHT.AdaptiveLuminance": "Adaptive Luminance",
 "LIGHT.InternalHalo": "Internal Halo",
@@ -1205,15 +1293,8 @@
 "LIGHT.HighAbsorption": "High Absorption",
 "LIGHT.InvertAbsorption": "Invert Absorption",
 "LIGHT.NaturalLight": "Natural Light",
-"LIGHT.Negative": "Is Darkness Source",
-"LIGHT.NegativeHint": "A darkness source blocks light and vision and suppresses lights or vision sources which are inside its area of effect.",
-"LIGHT.Priority": "Priority",
-"LIGHT.PriorityHint": "Configure the precedence of this light source relative to others. By default darkness sources override light sources but assigning a higher priority allows a light source to supercede darkness.",
-"LIGHT.AnimationType": "Light Animation Type",
-"LIGHT.AnimationHint": "Increases to animation speed make the animation play faster while increases to animation intensity make the animation more pronounced.",
-"LIGHT.AnimationSpeed": "Animation Speed",
-"LIGHT.AnimationIntensity": "Animation Intensity",
-"LIGHT.AnimationReverse": "Reverse Direction",
+
+
 "LIGHT.AnimationTorch": "Flickering Light",
 "LIGHT.AnimationPulse": "Pulse",
 "LIGHT.AnimationChroma": "Chroma",
@@ -2292,11 +2373,17 @@
     "tokenExit": {
       "label": "Token Exits"
     },
+    "tokenPreMove": {
+      "label": "Before Token Moves"
+    },
     "tokenMove": {
       "label": "After Token Moved"
     },
-    "tokenPreMove": {
-      "label": "Before Token Moves"
+    "tokenMoveIn": {
+      "label": "Token Moved In"
+    },
+    "tokenMoveOut": {
+      "label": "Token Moved Out"
     },
     "tokenTurnStart": {
       "label": "Token Starts Turn"
@@ -2337,7 +2424,7 @@
   },
   "NOTIFICATIONS": {
     "ControlWalls": "Control a group of walls which define the boundary of your desired shape.",
-    "ControlledRegionIsLocked": "The controlled Region is locked!",
+    "DrawingMultipleRegionsControlled": "You must control only one or no Region when you draw a shape!",
     "EmptyEnclosedArea": "The area enclosed by the controlled Walls is empty! Make sure that the outer Walls form a closed loop and are connected endpoint to endpoint.",
     "NoControlledWalls": "You are not controlling any Walls!"
   }
@@ -2429,6 +2516,18 @@
           "hint": "The destination Region the Token is teleported to once it enters the Region."
         }
       }
+    },
+    "toggleBehavior": {
+      "FIELDS": {
+        "enable": {
+          "label": "Enable Behaviors",
+          "hint": "The behaviors that are enabled when one of the events occurs."
+        },
+        "disable": {
+          "label": "Disable Behaviors",
+          "hint": "The behaviors that are disabled when one of the events occurs."
+        }
+      }
     }
   }
 },
@@ -2475,6 +2574,7 @@
 "SUPPORT.Client": "Client",
 "SUPPORT.GPU": "GPU",
 "SUPPORT.MaxTextureSize": "Max Texture Size",
+"SUPPORT.LargestTexture": "Largest Texture",
 "SUPPORT.NoViewedScene": "No viewed scene",
 "SUPPORT.DocumentIssues": "Document Issues",
 "SUPPORT.ClientIssues": "Client Issues",
@@ -2482,6 +2582,12 @@
 "SUPPORT.ModuleSubTypesUnavailableName": "<strong>{count}</strong> {document} are unavailable because the '{name}' module is inactive",
 "SUPPORT.ModuleSubTypesUnavailableNoName": "<strong>{count}</strong> {document} are unavailable because a module with the ID '{name}' is inactive",
 "SUPPORT.UnavailableDocuments": "{count} unavailable {document} documents",
+"SUPPORT.WorldScripts": "World Scripts",
+"SUPPORT.GenerateFullReport": "Generate Full Report",
+"SUPPORT.GenerateFullReportHint": "A full report contains more detailed information about your installed modules and compendiums and can take some time to generate.",
+"SUPPORT.WorldData": "World Data",
+"SUPPORT.CompendiumData": "Compendium Data",
+"SUPPORT.ActiveModules": "Active Modules",
 
 "TABLE.AnimateSetting": "Animate Roll Tables",
 "TABLE.AnimateSettingHint": "Display a roulette-style animation when drawing from a Roll Table.",
@@ -2626,7 +2732,7 @@
 "TOKEN.VisionBrightness": "Vision Brightness",
 "TOKEN.VisionBrightnessHint": "Adjust the brightness of this vision source. The greater the brightness, the better the character is able to see in darkness (default is 0).",
 "TOKEN.WarningNoActor": "This Token references an Actor which no longer exists within the World.",
-"TOKEN.WarningNoVision": "You do not own any Token with vision in this Scene",
+"TOKEN.WarningNoVision": "There is no Token in this Scene which gives you visibility of the area.",
 "TOKEN.VisionMode": "Vision Mode",
 "TOKEN.VisionModeHint": "Applies a visual effect to the vision to represent special senses (default is Basic Vision).",
 
@@ -2758,8 +2864,8 @@
 "TOKEN.DetectionAdd": "Add Detection Mode",
 "TOKEN.DetectionRemove": "Remove Detection Mode",
 
-"TOKEN.RING": {
-  "FIELDS": {
+"TOKEN.FIELDS": {
+  "ring": {
     "colors": {
       "ring": {
         "label": "Ring Color",
@@ -2785,7 +2891,10 @@
         "hint": "Explicitly specify a path for the artwork placed over the dynamic token ring. If not provided, the ring subject is the same as the standard token texture."
       }
     }
-  },
+  }
+},
+
+"TOKEN.RING": {
   "EFFECTS": {
     "BACKGROUND_WAVE": "Background Wave",
     "RING_GRADIENT": "Ring Gradient",
@@ -2812,6 +2921,7 @@
 "TYPES.RegionBehavior.pauseGame": "Pause Game",
 "TYPES.RegionBehavior.suppressWeather": "Suppress Weather",
 "TYPES.RegionBehavior.teleportToken": "Teleport Token",
+"TYPES.RegionBehavior.toggleBehavior": "Toggle Behavior",
 
 "DETECTION.LightPerception": "Light Perception",
 "DETECTION.BasicSight": "Darkvision",
