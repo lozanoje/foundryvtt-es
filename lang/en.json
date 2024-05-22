@@ -15,6 +15,7 @@
 "Confirm": "Confirm",
 "Command": "Command",
 "Collapse": "Collapse",
+"Coordinates": "Coordinates",
 "Close": "Close",
 "Deactivate": "Deactivate",
 "Degrees": "Degrees",
@@ -162,7 +163,8 @@
   },
   "LABELS": {
     "radius": "Light Radius",
-    "radiusHint": "Configure the distance of light emission from this source where the radius of bright light is included within the radius of dim light."
+    "radiusHint": "Configure the distance of light emission from this source where the radius of bright light is included within the radius of dim light.",
+    "darknessAdvancedWarning": "Advanced configuration options are only supported for non-darkness sources."
   },
   "SECTIONS": {
     "BASIC": "Basic Configuration",
@@ -458,7 +460,6 @@
 "COMPENDIUM.Delete": "Delete Compendium",
 "COMPENDIUM.DeleteWarning": "This Compendium Pack will be permanently deleted and cannot be recovered.",
 "COMPENDIUM.DeleteEntry": "Delete Entry",
-"COMPENDIUM.DeleteEntryWarning": "This Compendium entry and its data will be permanently deleted.",
 "COMPENDIUM.Duplicate": "Duplicate Compendium",
 "COMPENDIUM.DuplicateTitle": "New Compendium Title",
 "COMPENDIUM.DuplicateHint": "You may duplicate this compendium into your World to have a local copy of its content which is safe to edit.",
@@ -2178,7 +2179,7 @@
 "SHEETS.DocumentSheetPrivate": "You do not have sufficient permission to view the sheet for this {type}.",
 "SHEETS.Save": "Save Sheet Configuration",
 "SHEETS.FormNavLabel": "Form Tab Navigation",
-"SHEETS.CopyId": "Copy Document ID",
+"SHEETS.CopyUuid": "Copy Document UUID",
 
 "SOUND": {
   "ConfigTitle": "Ambient Sound Configuration",
@@ -2462,7 +2463,7 @@
       "FIELDS": {
         "mode": {
           "label": "Mode",
-          "hint": "How the darkness level is modified within this region."
+          "hint": "How the darkness level is modified within this region. This Behavior respects the Scene's Global Illumination Threshold. If the total darkness level of an area exceeds the threshold value, then Global Illumination is prevented within that area."
         },
         "modifier": {
           "label": "Modifier",
@@ -2612,6 +2613,9 @@
 "TABLE.Roll": "Roll",
 "TABLE.ToggleDrawn": "Toggle Drawn Status",
 "TABLE.Update": "Update",
+"TABLE.RESULT_TYPES.TEXT.label": "Text",
+"TABLE.RESULT_TYPES.DOCUMENT.label": "Document",
+"TABLE.RESULT_TYPES.COMPENDIUM.label": "Compendium",
 
 "TEMPLATE.BorderColor": "Border Color",
 "TEMPLATE.ConeTypeSetting": "Cone Template Shape",
@@ -2717,7 +2721,7 @@
 "TOKEN.TintColor": "Tint Color",
 "TOKEN.Update": "Update Token",
 "TOKEN.VisionEnabled": "Vision Enabled",
-"TOKEN.VisionEnabledHint": "Allows the token to see illuminated spaces within its line of sight.",
+"TOKEN.VisionEnabledHint": "A light source with this option enabled serves as an additional vision point for tokens. Activate this option to allow tokens to always see the area it illuminates, even if that area is behind a wall or outside a token's field of view.",
 "TOKEN.VisionRange": "Vision Range",
 "TOKEN.VisionRangeHint": "The distance a token can see without any light.",
 "TOKEN.VisionAngle": "Vision Angle",
@@ -2905,10 +2909,10 @@
   }
 },
 
+"TYPES.Base": "Base",
 "TYPES.Cards.deck": "Deck",
 "TYPES.Cards.hand": "Hand",
 "TYPES.Cards.pile": "Pile",
-"TYPES.Card.base": "Base",
 "TYPES.JournalEntryPage.image": "Image",
 "TYPES.JournalEntryPage.pdf": "PDF",
 "TYPES.JournalEntryPage.text": "Text",

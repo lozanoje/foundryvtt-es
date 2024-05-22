@@ -15,6 +15,7 @@
 "Confirm": "Confirmar",
 "Command": "Comando",
 "Collapse": "Contraer",
+"Coordinates": "Coordenadas",
 "Close": "Cerrar",
 "Deactivate": "Desactivar",
 "Degrees": "Grados",
@@ -162,7 +163,8 @@
   },
   "LABELS": {
     "radius": "Radio de luz",
-    "radiusHint": "Configura la distancia de emisión de la luz de esta fuente donde el radio de luz brillante está incluido en el de luz tenue."
+    "radiusHint": "Configura la distancia de emisión de la luz de esta fuente donde el radio de luz brillante está incluido en el de luz tenue.",
+    "darknessAdvancedWarning": "Solo las fuentes distintas de la Oscuridad permiten opciones de configuración avanzadas."
   },
   "SECTIONS": {
     "BASIC": "Configuración básica",
@@ -458,7 +460,6 @@
 "COMPENDIUM.Delete": "Eliminar compendio",
 "COMPENDIUM.DeleteWarning": "Este compendio se eliminará definitivamente y no se podrá recuperar.",
 "COMPENDIUM.DeleteEntry": "Eliminar entrada",
-"COMPENDIUM.DeleteEntryWarning": "Esta entrada de compendio y los datos que contiene se eliminarán definitivamente.",
 "COMPENDIUM.Duplicate": "Duplicar compendio",
 "COMPENDIUM.DuplicateTitle": "Nuevo título del compendio",
 "COMPENDIUM.DuplicateHint": "Puede duplicar este compendio en su mundo para editar de manera segura una copia local.",
@@ -2178,7 +2179,7 @@
 "SHEETS.DocumentSheetPrivate": "No tiene permisos suficientes para ver hojas del tipo {type}.",
 "SHEETS.Save": "Guardar configuración de la hoja",
 "SHEETS.FormNavLabel": "Navegación de pestañas de formularios",
-"SHEETS.CopyId": "Copiar ID del documento",
+"SHEETS.CopyUuid": "Copiar UUID del documento",
 
 "SOUND": {
   "ConfigTitle": "Configuración de audio ambiental",
@@ -2462,7 +2463,7 @@
       "FIELDS": {
         "mode": {
           "label": "Modo",
-          "hint": "Como se modifica el nivel de oscuridad en la Región."
+          "hint": "Como se modifica el nivel de oscuridad en la Región. Esta Regla respeta el umbral de iluminación global de la Escena. Si el nivel de oscuridad total de un área excede el valor del umbral, entonces se bloqueará la iluminación global de esa área."
         },
         "modifier": {
           "label": "Modificador",
@@ -2612,6 +2613,9 @@
 "TABLE.Roll": "Tirar",
 "TABLE.ToggleDrawn": "Alternar resultado robado",
 "TABLE.Update": "Actualizar",
+"TABLE.RESULT_TYPES.TEXT.label": "Texto",
+"TABLE.RESULT_TYPES.DOCUMENT.label": "Documento",
+"TABLE.RESULT_TYPES.COMPENDIUM.label": "Compendio",
 
 "TEMPLATE.BorderColor": "Color del borde",
 "TEMPLATE.ConeTypeSetting": "Forma de la plantilla cono",
@@ -2717,7 +2721,7 @@
 "TOKEN.TintColor": "Tono",
 "TOKEN.Update": "Actualizar ficha",
 "TOKEN.VisionEnabled": "Habilitar visión",
-"TOKEN.VisionEnabledHint": "Permite a la ficha ver espacios iluminados dentro de su rango de visión.",
+"TOKEN.VisionEnabledHint": "Una fuente de luz con esta opción habilitada sirve como punto de visión adicional para los iconos. Activar esta opción permite a los iconos siempre ver el área que ilumina, incluso si el área está tras un muro o fuera del campo de visión del icono.",
 "TOKEN.VisionRange": "Rango de visión",
 "TOKEN.VisionRangeHint": "La distancia que puede ver una ficha sin ninguna fuente de luz.",
 "TOKEN.VisionAngle": "Ángulo de visión",
@@ -2905,10 +2909,10 @@
   }
 },
 
+"TYPES.Base": "Base",
 "TYPES.Cards.deck": "Baraja",
 "TYPES.Cards.hand": "Mano",
 "TYPES.Cards.pile": "Pila",
-"TYPES.Card.base": "Base",
 "TYPES.JournalEntryPage.image": "Imagen",
 "TYPES.JournalEntryPage.pdf": "PDF",
 "TYPES.JournalEntryPage.text": "Texto",
