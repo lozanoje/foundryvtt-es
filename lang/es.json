@@ -154,7 +154,7 @@
     },
     "vision": {
       "label": "Da visión",
-      "hint": "Esta fuente de luz cuenta como fuente de visión, revelando nuevas áreas de la Escena incluso si no está en la linea-de-visión de un Icono controlado."
+      "hint": "Una fuente de luz con esta opción habilitada sirve como punto de visión adicional a los iconos. Active esta opción para permitir a los iconos ver siempre el área que ilumina, incluso si tal área está tras un muro o fuera del rango de visión del icono."
     },
     "walls": {
       "label": "Bloqueada por muros",
@@ -920,7 +920,7 @@
 "ERROR.CantWhisper": "No tiene permisos para enviar mensajes susurrados a otros usuarios.",
 "ERROR.RendererNotDetected": "No se pudo identificar el renderizador de su GPU, es posible que experimente algunos problemas de rendimiento inesperados.",
 "ERROR.NoHardwareAcceleration": "Su navegador no tiene habilitada la aceleración de hardware. Esto tendrá un impacto grave en el rendimiento de Foundry Virtual Tabletop y producirá errores y anomalías gráficas. Compruebe que la aceleración por hardware está habilitada en los ajustes de su navegador.",
-"ERROR.UpdateRequiresManualInstall": "La versión {version} de Foundry Virtual Tabletop ya está disponible, pero no se puede instalar desde la aplicación ya que requiere actualizar dependencias fundamentales que solo estarán disponibles si se vuelve a instalar el programa desde la página de <a href=\"https://foundryvtt/com/me/licenses\" target=\"_blank\">foundryvtt.com</a>.",
+"ERROR.UpdateRequiresManualInstall": "La versión {version} de Foundry Virtual Tabletop ya está disponible, pero no se puede instalar desde la aplicación ya que requiere actualizar dependencias fundamentales que solo estarán disponibles si se vuelve a instalar el programa desde la página de <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a>.",
 
 "WARNING.GridConfigNoBG": "Está utilizando la herramienta de configuración de rejilla para una escena sin imagen de fondo. Esto no es recomendable y puede producir resultados impredecibles.",
 "WARNING.ForegroundDimensionsMismatch": "Las dimensiones de la capa en primer plano que ha configurado no concuerdan con la imagen de la capa de fondo de esta escena. La principal ha sido redimensionada, lo que puede producir resultados inesperados.",
@@ -1949,7 +1949,7 @@
 "SETUP.Telemetry": "Compartir datos de uso",
 "SETUP.TelemetryHint": "Permite que compartas datos de uso con nosotros para ayudarnos a mejorar Foundry Virtual Tabletop. Todo lo que recogemos está documentado en la <a href=\"https://foundryvtt.com/article/privacy-policy/\" target=\"_blank\">Política de Privacidady</a> y no contiene información privada ni método alguno de identificación. Tampoco será compartido con terceros. Este tipo de información permite resolver dudas del tipo \"cuáles son las versiones de Foundry Virtual Tabletop mas usadas\", \"qué sistemas son los más jugados\" y \"qué versiones de módulos son los más instalados\". Lo usamos para mejorar la compatibilidad del software, dar mejor soporte y compartir información agregada con la comunidad. Si se deshabilita, no se compartirá ninguna información.",
 "SETUP.TelemetryRequestTitle": "Permitir compartir datos de uso",
-"SETUP.TelemetryRequest1": "La versión 11 de Foundry Virtual Tabletop permite recoger información, solo con su consentimiento, de datos de uso anónimos que nos permite mejorar la plataforma.",
+"SETUP.TelemetryRequest1": "Si da su consentimiento, Foundry Virtual Tabletop recopilará algunos datos básicos de uso con la web foundry.vtt que nos permitirá al equipo de desarrollo comprender cómo se usa Foundry VTT y nos ayudará a mejorar el programa.",
 "SETUP.TelemetryRequest2": "Este mensaje solo se mostrará una vez, puede cambiar las preferencias acerca de la recogida de datos de uso en cualquier momento en el menú de configuración de la aplicación haciendo clic en el icono <i class=\"fas fa-cogs\"></i> de la parte superior derecha de esta pantalla.",
 "SETUP.TelemetryAllow": "Permitir compartir",
 "SETUP.TelemetryDecline": "No permitir compartir",
@@ -2270,6 +2270,8 @@
 "PERMISSION.JournalCreateHint": "Permite que los usuarios con este rol creen nuevas entradas en la barra lateral del diario.",
 "PERMISSION.MacroScript": "Usar macros script",
 "PERMISSION.MacroScriptHint": "Permitir a los usuarios con este rol usar macros de JavaScript que acceden a la API.",
+"PERMISSION.ManualRolls": "Tiradas manuales",
+"PERMISSION.ManualRollsHint": "Permite a los usuarios con este rol la opción de introducir manualmente las tiradas.",
 "PERMISSION.MessageWhisper": "Susurrar mensajes privados",
 "PERMISSION.MessageWhisperHint": "Permitir a los usuarios con este rol susurrar mensajes privados que el Gamemaster no puede ver.",
 "PERMISSION.NoteCreate": "Crear notas de mapa",
@@ -2491,6 +2493,10 @@
         "uuid": {
           "label": "Macro",
           "hint": "Macro que se ejecuta cuando uno de los eventos occurre."
+        },
+        "everyone": {
+          "label": "Todos",
+          "hint": "Configura si la macro se puede ejecutar por todos los usuarios conectados en lugar de un único usuario con los permisos suficientes."
         }
       }
     },
@@ -2721,7 +2727,7 @@
 "TOKEN.TintColor": "Tono",
 "TOKEN.Update": "Actualizar ficha",
 "TOKEN.VisionEnabled": "Habilitar visión",
-"TOKEN.VisionEnabledHint": "Una fuente de luz con esta opción habilitada sirve como punto de visión adicional para los iconos. Activar esta opción permite a los iconos siempre ver el área que ilumina, incluso si el área está tras un muro o fuera del campo de visión del icono.",
+"TOKEN.VisionEnabledHint": "Permite al icono ver espacios iluminados dentro de su linea de visión.",
 "TOKEN.VisionRange": "Rango de visión",
 "TOKEN.VisionRangeHint": "La distancia que puede ver una ficha sin ninguna fuente de luz.",
 "TOKEN.VisionAngle": "Ángulo de visión",
@@ -2888,7 +2894,8 @@
     },
     "subject": {
       "scale": {
-        "label": "Corrección de escala del material"
+        "label": "Corrección de escala del material",
+        "hint": "Ajusta el tamaño relativo de la textura del material al anillo. Incrementar este valor hará que la textura del material sea mayor en comparación al anillo. Valores menores reducirá el tamaño de la textura del material si destaca demasiado."
       },
       "texture": {
         "label": "Textura del material",
@@ -2900,9 +2907,10 @@
 
 "TOKEN.RING": {
   "EFFECTS": {
-    "BACKGROUND_WAVE": "Ola de fondo",
+    "BKG_WAVE": "Ola de fondo",
     "RING_GRADIENT": "Gradiente del Anillo",
-    "RING_PULSE": "Pulso del Anillo"
+    "RING_PULSE": "Pulso del Anillo",
+    "INVISIBILITY": "Pulso Espectral"
   },
   "SHEET": {
     "legend": "Anillo de Icono dinámico"

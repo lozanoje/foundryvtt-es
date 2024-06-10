@@ -154,7 +154,7 @@
     },
     "vision": {
       "label": "Provides Vision",
-      "hint": "This light source counts as a source of vision, revealing additional areas of the Scene even if it is not within line-of-sight of a controlled Token."
+      "hint": "A light source with this option enabled serves as an additional vision point for tokens. Activate this option to allow tokens to always see the area it illuminates, even if that area is behind a wall or outside a token's field of view."
     },
     "walls": {
       "label": "Constrained By Walls",
@@ -920,7 +920,7 @@
 "ERROR.CantWhisper": "You do not have permission to send whispered chat messages to other users.",
 "ERROR.RendererNotDetected": "Your GPU renderer was unable to be identified, unexpected performance issues may occur.",
 "ERROR.NoHardwareAcceleration": "Your web browser does not have hardware acceleration enabled. This will severely impair the performance of Foundry Virtual Tabletop and cause graphical errors and anomalies. Be sure to enable hardware acceleration in your browser settings.",
-"ERROR.UpdateRequiresManualInstall": "Foundry Virtual Tabletop Version {version} is now available but cannot be installed from within the Foundry Virtual Tabletop application because it requires updates to core dependencies which are only available by re-installing the software from the <a href=\"https://foundryvtt/com/me/licenses\" target=\"_blank\">foundryvtt.com</a> website.",
+"ERROR.UpdateRequiresManualInstall": "Foundry Virtual Tabletop Version {version} is now available but cannot be installed from within the Foundry Virtual Tabletop application because it requires updates to core dependencies which are only available by re-installing the software from the <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a> website.",
 
 "WARNING.GridConfigNoBG": "You are using the grid configuration tool for a scene with no background image. This is not currently recommended and may produce unpredictable results.",
 "WARNING.ForegroundDimensionsMismatch": "The dimensions of your configured Foreground Layer image do not match the dimensions of the Background Layer image for this scene. The foreground has been resized which may have undesired results.",
@@ -1949,7 +1949,7 @@
 "SETUP.Telemetry": "Share Usage Data",
 "SETUP.TelemetryHint": "Allow sharing usage data with us that helps us to improve Foundry Virtual Tabletop. The data collected if this option is enabled is documented in our <a href=\"https://foundryvtt.com/article/privacy-policy/\" target=\"_blank\">Privacy Policy</a> and does not contain any personally identifying information and is not shared with any other party. Sharing usage data helps us to answer questions like \"which Foundry Virtual Tabletop software versions are most heavily used\", \"which Game Systems are most played\", and \"which Module versions are frequently installed\". We use insights from this data to help us improve software compatibility, provide better customer support, and share aggregate insights with our community. If this option is disabled, no data will be shared.",
 "SETUP.TelemetryRequestTitle": "Allow Sharing Usage Data",
-"SETUP.TelemetryRequest1": "Foundry Virtual Tabletop Version 11 adds the capability for us to collect, only with your permission, anonymous usage data that helps us to improve the platform.",
+"SETUP.TelemetryRequest1": "If you provide your permission, Foundry Virtual Tabletop will share a small amount of anonymous usage data with the foundryvtt.com website that allows our team to better understand how Foundry VTT is being used and helps us to improve the software.",
 "SETUP.TelemetryRequest2": "This prompt will only be displayed once, you can change your preferences regarding sharing usage data at any time in the Application Configuration menu by clicking the <i class=\"fas fa-cogs\"></i> icon at the top-right of this screen.",
 "SETUP.TelemetryAllow": "Allow Sharing",
 "SETUP.TelemetryDecline": "Decline Sharing",
@@ -2270,6 +2270,8 @@
 "PERMISSION.JournalCreateHint": "Allow users with this role to create new Journal Entries in the Journal sidebar.",
 "PERMISSION.MacroScript": "Use Script Macros",
 "PERMISSION.MacroScriptHint": "Allow users with this role to use JavaScript macros which access the API.",
+"PERMISSION.ManualRolls": "Make Manual Rolls",
+"PERMISSION.ManualRollsHint": "Allow users with this role the option to manually input rolls.",
 "PERMISSION.MessageWhisper": "Whisper Private Messages",
 "PERMISSION.MessageWhisperHint": "Allow users with this role whisper private messages that the Game Master cannot see.",
 "PERMISSION.NoteCreate": "Create Map Notes",
@@ -2491,6 +2493,10 @@
         "uuid": {
           "label": "Macro",
           "hint": "The Macro that is executed when one of the events occurs."
+        },
+        "everyone": {
+          "label": "Everyone",
+          "hint": "Configure whether the Macro is executed by all connected Users instead of a single User with sufficient permissions."
         }
       }
     },
@@ -2721,7 +2727,7 @@
 "TOKEN.TintColor": "Tint Color",
 "TOKEN.Update": "Update Token",
 "TOKEN.VisionEnabled": "Vision Enabled",
-"TOKEN.VisionEnabledHint": "A light source with this option enabled serves as an additional vision point for tokens. Activate this option to allow tokens to always see the area it illuminates, even if that area is behind a wall or outside a token's field of view.",
+"TOKEN.VisionEnabledHint": "Allows the token to see illuminated spaces within its line of sight.",
 "TOKEN.VisionRange": "Vision Range",
 "TOKEN.VisionRangeHint": "The distance a token can see without any light.",
 "TOKEN.VisionAngle": "Vision Angle",
@@ -2888,7 +2894,8 @@
     },
     "subject": {
       "scale": {
-        "label": "Subject Scale Correction"
+        "label": "Subject Scale Correction",
+        "hint": "Adjust the relative size of the subject texture to the ring. Increasing this value will make the subject texture larger compared to the ring. Use lower values to reduce the subject texture size if it appears too dominant."
       },
       "texture": {
         "label": "Subject Texture",
@@ -2900,9 +2907,10 @@
 
 "TOKEN.RING": {
   "EFFECTS": {
-    "BACKGROUND_WAVE": "Background Wave",
+    "BKG_WAVE": "Background Wave",
     "RING_GRADIENT": "Ring Gradient",
-    "RING_PULSE": "Ring Pulse"
+    "RING_PULSE": "Ring Pulse",
+    "INVISIBILITY": "Spectral Pulse"
   },
   "SHEET": {
     "legend": "Dynamic Token Ring"
