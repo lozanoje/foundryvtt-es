@@ -477,6 +477,20 @@
 "COMPENDIUM.CannotViewWarning": "You do not have sufficient permission to view this Compendium pack.",
 "COMPENDIUM.OwnershipInheritBelow": "Inherit from below",
 "COMPENDIUM.OwnershipReset": "Reset to Default",
+"COMPENDIUM.ART": {
+  "CONFIG": {
+    "Hint": "Use the arrows to adjust the priority of the art sources. When a single Actor has art provided by multiple sources, the one with the highest priority will be used.",
+    "Portraits": "Portraits",
+    "PriorityDecrease": "Decrease Priority",
+    "PriorityIncrease": "Increase Priority",
+    "Tokens": "Tokens"
+  },
+  "SETTING": {
+    "Hint": "Configure which system- and module-provided art should be used.",
+    "Label": "Configure Art",
+    "Title": "Compendium Art"
+  }
+},
 
 "CONTROLS.Title": "Game Controls Reference",
 "CONTROLS.NavLabel": "Canvas Controls Palette",
@@ -842,6 +856,8 @@
 "DRAWING.RoleHint": "A Drawing which represents an \"Object\" is rendered in the Primary Canvas Group and is affected by lighting and fog of war exploration. A Drawing which conveys \"Information\" is rendered in the Interface Group and is visible to all players unless hidden.",
 "DRAWING.Object": "Object",
 "DRAWING.Information": "Information",
+"DRAWING.JointValidationError": "Drawings must have visible text, a visible fill, or a visible line.",
+"DRAWING.JointValidationErrorUI": "Drawings must have visible text, a visible fill, or a visible line. Please check the default Drawings configuration settings.",
 
 "EFFECT.MODE_CUSTOM": "Custom",
 "EFFECT.MODE_MULTIPLY": "Multiply",
@@ -1102,6 +1118,8 @@
 "HUD.TilePlay": "Play Tile Video",
 "HUD.TilePause": "Pause Tile Video",
 "HUD.WarningEffectNoActor": "You cannot assign status effects to a Token which has no associated Actor.",
+
+"HTMLDocumentTagsElement.PLACEHOLDER": "Enter UUID or Drop {type}",
 
 "JOURNAL.ModeText": "Text",
 "JOURNAL.ModeImage": "Image",
@@ -1482,6 +1500,7 @@
 "SCENES.ForegroundElevationHint": "An elevation in distance units which configures the height of the foreground image and overhead tiles.",
 "SCENES.BackgroundScale": "Background Image Scale",
 "SCENES.BackgroundScaleHint": "Use SHIFT+Mousewheel or SHIFT+Up Arrow and SHIFT+Down Arrow to adjust the background image size.",
+"SCENES.CaptureInitialViewPosition": "Captured canvas position as initial view in the Scene configuration form.",
 "SCENES.Configure": "Configure",
 "SCENES.ConfigTitle": "Configure Scene",
 "SCENES.Darkness": "Darkness Level",
@@ -1577,10 +1596,10 @@
 "Hue":"Hue",
 "HueHint":"Choose a hue (color) to blend into the entire scene. To activate the color slider, you must have an intensity greater than 0.",
 "Intensity":"Hue Intensity",
-"IntensityHint":"Adjust how intensly the chosen hue is blended into the scene. A high hue intensity saturates the scene with the color, possibly overhelming existing colors. A lower hue intensity blends in the chosen color more subtly.",
+"IntensityHint":"Adjust how intensely the chosen hue is blended into the scene. A high hue intensity saturates the scene with the color, possibly overwhelming existing colors. A lower hue intensity blends in the chosen color more subtly.",
 "ResetEnvironment":"Reset to Default Options",
-"EnableCycling": "Enable Cycling",
-"EnableCyclingHint": "When this option is unchecked, only the base ambience is applied, without blending values between base and darkness according to darkness level.",
+"BlendAmbience": "Blend Ambience",
+"BlendAmbienceHint": "When this option is checked, the base ambience values are merged with the darkness ambience values according to darkness level.",
 "BaseAmbience": "Base Ambience",
 "DarkAmbience": "Dark Ambience",
 "DarknessLock": "Darkness Level Lock",
@@ -1736,7 +1755,7 @@
 "SETUP.UpdateChannel": "Software Update Channel",
 "SETUP.UpdateChannelHint": "You may choose an update channel to control the types of updates you wish to receive for the core Foundry Virtual Tabletop software. If you do not have a specific reason to change this, it is recommended to consume the Stable channel.",
 "SETUP.UpdateCheck": "Update",
-"SETUP.UpdateCheckFor": "Check For Update",
+"SETUP.UpdateCheckFor": "Perform Update If Available",
 "SETUP.UpdateHint": "You may update your Foundry Virtual Tabletop software to a new version by checking for update on your preferred Software Update Channel.",
 "SETUP.UpdatePrototype": "Prototype",
 "SETUP.UpdatePrototypeHint": "Prototype: Releases for previewing the design of experimental features which are not yet fully developed.",
@@ -2268,8 +2287,8 @@
 "PERMISSION.FilesUploadHint": "Allow users with this role to upload content to the server using the File Browser.",
 "PERMISSION.JournalCreate": "Create Journal Entries",
 "PERMISSION.JournalCreateHint": "Allow users with this role to create new Journal Entries in the Journal sidebar.",
-"PERMISSION.MacroScript": "Use Script Macros",
-"PERMISSION.MacroScriptHint": "Allow users with this role to use JavaScript macros which access the API.",
+"PERMISSION.MacroScript": "Use Script Macros and Execute Script Region Behaviors",
+"PERMISSION.MacroScriptHint": "Allow users with this role to use JavaScript macros which access the API and Execute Script Region Behaviors.",
 "PERMISSION.ManualRolls": "Make Manual Rolls",
 "PERMISSION.ManualRollsHint": "Allow users with this role the option to manually input rolls.",
 "PERMISSION.MessageWhisper": "Whisper Private Messages",
@@ -2458,6 +2477,10 @@
         "events": {
           "label": "Events",
           "hint": "The events that this behavior subscribes to."
+        },
+        "once": {
+          "label": "Once",
+          "hint": "Disable the behavior after the first time it's triggered."
         }
       }
     },
@@ -2488,6 +2511,33 @@
         }
       }
     },
+    "displayScrollingText": {
+      "FIELDS": {
+        "color": {
+          "label": "Color",
+          "hint": "The color of the scrolling text."
+        },
+        "text": {
+          "label": "Text",
+          "hint": "The text that is displayed when the behavior is triggered."
+        },
+        "visibility": {
+          "label": "Visibility",
+          "hint": "Configure which Users will see the scrolling text based on permission level."
+        }
+      },
+      "VISIBILITY_MODES": {
+        "GAMEMASTER": {
+          "label": "Gamemaster"
+        },
+        "OBSERVER": {
+          "label": "Observer"
+        },
+        "ANYONE": {
+          "label": "Anyone"
+        }
+      }
+    },
     "executeMacro": {
       "FIELDS": {
         "uuid": {
@@ -2508,21 +2558,19 @@
         }
       }
     },
-    "pauseGame": {
-      "FIELDS": {
-        "once": {
-          "label": "Once",
-          "hint": "Disable the behavior once a player-controlled Token enters the Region."
-        }
-      }
-    },
     "teleportToken": {
       "FIELDS": {
         "destination": {
           "label": "Destination",
-          "hint": "The destination Region the Token is teleported to once it enters the Region."
+          "hint": "The destination Region the Token is teleported to once it is moved into the Region."
+        },
+        "choice": {
+          "label": "Allow Choice",
+          "hint": "Allow the User that moved the Token to choose whether to teleport it."
         }
-      }
+      },
+      "Confirm": "Do you want to teleport {token}?",
+      "ConfirmGM": "Do you want to teleport {token} to {region} in {scene}?"
     },
     "toggleBehavior": {
       "FIELDS": {
@@ -2914,6 +2962,11 @@
   },
   "SHEET": {
     "legend": "Dynamic Token Ring"
+  },
+  "SETTINGS": {
+    "label": "Dynamic Token Rings",
+    "hint": "Choose an available dynamic token ring visualization. Changing it requires a reload.",
+    "defaultConfigLabel": "Foundry VTT Default Ring"
   }
 },
 
@@ -2928,6 +2981,7 @@
 "TYPES.Macro.chat": "Chat",
 "TYPES.Macro.script": "Script",
 "TYPES.RegionBehavior.adjustDarknessLevel": "Adjust Darkness Level",
+"TYPES.RegionBehavior.displayScrollingText": "Display Scrolling Text",
 "TYPES.RegionBehavior.executeMacro": "Execute Macro",
 "TYPES.RegionBehavior.executeScript": "Execute Script",
 "TYPES.RegionBehavior.pauseGame": "Pause Game",

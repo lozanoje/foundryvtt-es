@@ -477,6 +477,20 @@
 "COMPENDIUM.CannotViewWarning": "No tiene permisos suficientes para ver este compendio.",
 "COMPENDIUM.OwnershipInheritBelow": "Heredar del rol inferior",
 "COMPENDIUM.OwnershipReset": "Reiniciar permisos",
+"COMPENDIUM.ART": {
+  "CONFIG": {
+    "Hint": "Use las flechas para ajustar la prioridad de las fuentes de arte. Cuando un Actor tiene arte que proviene de varias fuentes, se usa el que tenga mayor prioridad.",
+    "Portraits": "Retratos",
+    "PriorityDecrease": "Decrementar prioridad",
+    "PriorityIncrease": "Incrementar prioridad",
+    "Tokens": "Fichas"
+  },
+  "SETTING": {
+    "Hint": "Configure qué arte -proporcionado por el sistema o módulo- debe usarse.",
+    "Label": "Configurar Arte",
+    "Title": "Compendio de Arte"
+  }
+},
 
 "CONTROLS.Title": "Controles del juego",
 "CONTROLS.NavLabel": "Paleta de controles del lienzo",
@@ -842,6 +856,8 @@
 "DRAWING.RoleHint": "Un dibujo que representa un \"Objecto\" se genera en el Grupo Principal del Lienzo y se ve afectado por la iluminación y la exploración de la niebla de guerra. Un dibujo que expresa \"Información\" se genera en el Grupo Interfaz y es visible para todos los jugadores a no ser que se oculte.",
 "DRAWING.Object": "Objecto",
 "DRAWING.Information": "Información",
+"DRAWING.JointValidationError": "Los dibujos deben tener un texto visible, un relleno visible o una línea visible.",
+"DRAWING.JointValidationErrorUI": "Los dibujos deben tener un texto visible, un relleno visible o una línea visible. Por favor, compruebe los ajustes por defecto de los Dibujos.",
 
 "EFFECT.MODE_CUSTOM": "Personalizado",
 "EFFECT.MODE_MULTIPLY": "Multiplicar",
@@ -1102,6 +1118,8 @@
 "HUD.TilePlay": "Reproducir vídeo de baldosa",
 "HUD.TilePause": "Pausar vídeo de baldosa",
 "HUD.WarningEffectNoActor": "No puede asignar un efecto de estado a un Icono que no esté asociado a un Actor.",
+
+"HTMLDocumentTagsElement.PLACEHOLDER": "Introduzca UUID o Suelte {type}",
 
 "JOURNAL.ModeText": "Texto",
 "JOURNAL.ModeImage": "Imagen",
@@ -1482,6 +1500,7 @@
 "SCENES.ForegroundElevationHint": "Elevación como distancia en unidades que configura la altura de la imagen en primer plano y las baldosas superiores.",
 "SCENES.BackgroundScale": "Escala de la imagen de fondo",
 "SCENES.BackgroundScaleHint": "Utilíce MAYÚS+rueda del ratón o MAYÚS+fecha arriba y MAYÚS+fecha abajo para ajustar el tamaño de la imagen de fondo.",
+"SCENES.CaptureInitialViewPosition": "La posición capturada como vista inicial del lienzo en el formulario de configuración de la Escena.",
 "SCENES.Configure": "Configurar",
 "SCENES.ConfigTitle": "Configurar escena",
 "SCENES.Darkness": "Nivel de oscuridad",
@@ -1575,12 +1594,12 @@
 "Shadows":"Sombras",
 "ShadowsHint":"Cuanto mayor es este valor hace que las sombras y los elementos oscuros sean más oscuros y profundos.",
 "Hue":"Tono",
-"HueHint":"Escoja un tono (color) para incorporar a la escena. Para activar el control de color, debe tener una intensidad mayor de 0.",
+"HueHint":"Escoja un tono (color) para mezclar en la escena. Para activar el control de color, debe tener una intensidad mayor de 0.",
 "Intensity":"Intensidad de tono",
 "IntensityHint":"Ajusta la intensidad en la que el tono se incorpora a la escena. Un valor alto satura la escena de color, sobrescribiendo los colores existentes. Un valor bajo actúa de manera más sutil.",
 "ResetEnvironment":"Reiniciar a los valores por defecto",
-"EnableCycling": "Habilitar ciclos",
-"EnableCyclingHint": "Cuando se deshabilita, solo se usa el ambiente base, sin incorporar valores entre base y oscuro de acuerdo al nivel de oscuridad.",
+"BlendAmbience": "Mezclar ambiente",
+"BlendAmbienceHint": "Cuando se habilita, los valores de ambiente base se mezclan con los valores de oscuridad ambiente de acuerdo al nivel de oscuridad.",
 "BaseAmbience": "Ambiente base",
 "DarkAmbience": "Ambiente oscuro",
 "DarknessLock": "Bloquear nivel de oscuridad",
@@ -1736,7 +1755,7 @@
 "SETUP.UpdateChannel": "Canal de actualización de software",
 "SETUP.UpdateChannelHint": "Puede elegir un canal de actualización para controlar el tipo de actualizaciones que desea recibir para el programa principal de Foundry Virtual Tabletop. Si no tiene una razón específica para cambiarlo, se recomienda mantenerse en el canal público.",
 "SETUP.UpdateCheck": "Actualizar",
-"SETUP.UpdateCheckFor": "Buscar actualizaciones",
+"SETUP.UpdateCheckFor": "Si existe alguna, realizar actualización",
 "SETUP.UpdateHint": "Puede actualizar Foundry Virtual Tabletop a una nueva versión comprobando actualizaciones en su canal preferido.",
 "SETUP.UpdatePrototype": "Prototipo",
 "SETUP.UpdatePrototypeHint": "Prototipo: versiones para mostrar el diseño de las nuevas características experimentales que se están implementando pero que no han sido terminadas aún.",
@@ -2268,8 +2287,8 @@
 "PERMISSION.FilesUploadHint": "Permitir a los usuarios con este rol cargar contenido al servidor utilizando el selector de archivos.",
 "PERMISSION.JournalCreate": "Crear entrada en el diario",
 "PERMISSION.JournalCreateHint": "Permite que los usuarios con este rol creen nuevas entradas en la barra lateral del diario.",
-"PERMISSION.MacroScript": "Usar macros script",
-"PERMISSION.MacroScriptHint": "Permitir a los usuarios con este rol usar macros de JavaScript que acceden a la API.",
+"PERMISSION.MacroScript": "Usar macros script y ejecutar script de reglas en regiones",
+"PERMISSION.MacroScriptHint": "Permitir a los usuarios con este rol usar macros de JavaScript que acceden a la API y ejecutar script de reglas en regiones.",
 "PERMISSION.ManualRolls": "Tiradas manuales",
 "PERMISSION.ManualRollsHint": "Permite a los usuarios con este rol la opción de introducir manualmente las tiradas.",
 "PERMISSION.MessageWhisper": "Susurrar mensajes privados",
@@ -2458,6 +2477,10 @@
         "events": {
           "label": "Eventos",
           "hint": "The events that this behavior subscribes to."
+        },
+        "once": {
+          "label": "Una vez",
+          "hint": "Deshabilitar regla después de ser activada por primera vez."
         }
       }
     },
@@ -2488,6 +2511,33 @@
         }
       }
     },
+    "displayScrollingText": {
+      "FIELDS": {
+        "color": {
+          "label": "Color",
+          "hint": "Color del texto desplazable."
+        },
+        "text": {
+          "label": "Texto",
+          "hint": "Texto que se mostrará cuando se activa una regla."
+        },
+        "visibility": {
+          "label": "Visibilidad",
+          "hint": "Configure qué Usuarios verán el texto desplazable basado en el nivel de permisos."
+        }
+      },
+      "VISIBILITY_MODES": {
+        "GAMEMASTER": {
+          "label": "Gamemaster"
+        },
+        "OBSERVER": {
+          "label": "Espectador"
+        },
+        "ANYONE": {
+          "label": "Cualquiera"
+        }
+      }
+    },
     "executeMacro": {
       "FIELDS": {
         "uuid": {
@@ -2508,21 +2558,19 @@
         }
       }
     },
-    "pauseGame": {
-      "FIELDS": {
-        "once": {
-          "label": "Una vez",
-          "hint": "Deshabilita la regla una vez un icono controlado por un juegador entra en la Región."
-        }
-      }
-    },
     "teleportToken": {
       "FIELDS": {
         "destination": {
           "label": "Destino",
           "hint": "El destino al que se teleporta el Icono una vez entra en la Región."
+        },
+        "choice": {
+          "label": "Permitir elegir",
+          "hint": "Permitir que el Usuario que movió la Ficha elegir si quiere teleportarla."
         }
-      }
+      },
+      "Confirm": "¿Quiere teleportar {token}?",
+      "ConfirmGM": "¿Quiere teleportar la ficha {token} a la región {region} en la escena {scene}?"
     },
     "toggleBehavior": {
       "FIELDS": {
@@ -2914,6 +2962,11 @@
   },
   "SHEET": {
     "legend": "Anillo de Icono dinámico"
+  },
+  "SETTINGS": {
+    "label": "Anillo dinámico de fichas",
+    "hint": "Elija una visualización disponible de anillo dinámico de fichas. Si cambia esta opción necesitará recargar.",
+    "defaultConfigLabel": "Anillo por defecto de Foundry VTT"
   }
 },
 
@@ -2928,6 +2981,7 @@
 "TYPES.Macro.chat": "Chat",
 "TYPES.Macro.script": "Script",
 "TYPES.RegionBehavior.adjustDarknessLevel": "Ajustar nivel de oscuridad",
+"TYPES.RegionBehavior.displayScrollingText": "Mostrar texto desplazable",
 "TYPES.RegionBehavior.executeMacro": "Ejecutar Macro",
 "TYPES.RegionBehavior.executeScript": "Ejecutar Script",
 "TYPES.RegionBehavior.pauseGame": "Pausar juego",
