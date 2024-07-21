@@ -775,6 +775,7 @@
 "DOCUMENT.Combatant": "Combatant",
 "DOCUMENT.Combatants": "Combatants",
 "DOCUMENT.CopyOf": "{name} (Copy)",
+"DOCUMENT.Document": "Document",
 "DOCUMENT.Drawing": "Drawing",
 "DOCUMENT.Drawings": "Drawings",
 "DOCUMENT.Folder": "Folder",
@@ -1029,7 +1030,9 @@
   },
   "TAGS": {
     "Add": "Add Tag",
-    "Remove": "Remove Tag"
+    "Remove": "Remove Tag",
+    "ErrorBlank": "Tags in an HTMLStringTagsElement may not be blank.",
+    "ErrorNonUnique": "Tag \"{tag}\" is already set."
   }
 },
 
@@ -1755,7 +1758,8 @@
 "SETUP.UpdateChannel": "Software Update Channel",
 "SETUP.UpdateChannelHint": "You may choose an update channel to control the types of updates you wish to receive for the core Foundry Virtual Tabletop software. If you do not have a specific reason to change this, it is recommended to consume the Stable channel.",
 "SETUP.UpdateCheck": "Update",
-"SETUP.UpdateCheckFor": "Perform Update If Available",
+"SETUP.UpdateCheckFor": "Check For Update",
+"SETUP.UpdatePerformIfAvailable": "Perform Update If Available",
 "SETUP.UpdateHint": "You may update your Foundry Virtual Tabletop software to a new version by checking for update on your preferred Software Update Channel.",
 "SETUP.UpdatePrototype": "Prototype",
 "SETUP.UpdatePrototypeHint": "Prototype: Releases for previewing the design of experimental features which are not yet fully developed.",
@@ -2236,8 +2240,8 @@
 "FOLDER.ExportWarningNone": "There are no unlocked compendium packs available for {type} Documents which you can export to.",
 "FOLDER.ExportExistingFolder": "Existing Folder",
 "FOLDER.ExportNewFolder": "New Folder",
-"FOLDER.Exporting": "Exporting {type}s to Compendium {compendium}.",
-"FOLDER.ExportDone": "Finished exporting {type}s to Compendium {compendium}.",
+"FOLDER.Exporting": "Exporting {type} to Compendium {compendium}.",
+"FOLDER.ExportDone": "Finished exporting {type} to Compendium {compendium}.",
 "FOLDER.CreateTable": "Create Rollable Table",
 "FOLDER.CreateTableConfirm": "Create a new Rollable Table document using the contents of this Folder as table results?",
 "FOLDER.InvalidDocumentType": "Invalid Document type \"{type}\" provided for this Folder.",
@@ -2966,7 +2970,8 @@
   "SETTINGS": {
     "label": "Dynamic Token Rings",
     "hint": "Choose an available dynamic token ring visualization. Changing it requires a reload.",
-    "defaultConfigLabel": "Foundry VTT Default Ring"
+    "coreSteel": "Foundry VTT Steel Ring",
+    "coreBronze": "Foundry VTT Bronze Ring"
   }
 },
 

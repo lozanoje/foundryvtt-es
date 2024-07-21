@@ -775,6 +775,7 @@
 "DOCUMENT.Combatant": "Contendiente",
 "DOCUMENT.Combatants": "Contendientes",
 "DOCUMENT.CopyOf": "{name} (copia)",
+"DOCUMENT.Document": "Documento",
 "DOCUMENT.Drawing": "Dibujo",
 "DOCUMENT.Drawings": "Dibujos",
 "DOCUMENT.Folder": "Carpeta",
@@ -1029,7 +1030,9 @@
   },
   "TAGS": {
     "Add": "Añadir etiqueta",
-    "Remove": "Quitar etiqueta"
+    "Remove": "Quitar etiqueta",
+    "ErrorBlank": "Las etiquetas en un HTMLStringTagsElement no pueden estar vacías.",
+    "ErrorNonUnique": "Ya se ha establecido la etiqueta \"{tag}\"."
   }
 },
 
@@ -1755,7 +1758,8 @@
 "SETUP.UpdateChannel": "Canal de actualización de software",
 "SETUP.UpdateChannelHint": "Puede elegir un canal de actualización para controlar el tipo de actualizaciones que desea recibir para el programa principal de Foundry Virtual Tabletop. Si no tiene una razón específica para cambiarlo, se recomienda mantenerse en el canal público.",
 "SETUP.UpdateCheck": "Actualizar",
-"SETUP.UpdateCheckFor": "Si existe alguna, realizar actualización",
+"SETUP.UpdateCheckFor": "Comprobar actualizaciones",
+"SETUP.UpdatePerformIfAvailable": "Actualizar si existe una nueva versión",
 "SETUP.UpdateHint": "Puede actualizar Foundry Virtual Tabletop a una nueva versión comprobando actualizaciones en su canal preferido.",
 "SETUP.UpdatePrototype": "Prototipo",
 "SETUP.UpdatePrototypeHint": "Prototipo: versiones para mostrar el diseño de las nuevas características experimentales que se están implementando pero que no han sido terminadas aún.",
@@ -2236,8 +2240,8 @@
 "FOLDER.ExportWarningNone": "No hay ningún paquete de compendios no bloqueados disponible al que exportar las entidades {type}.",
 "FOLDER.ExportExistingFolder": "Directorio existente",
 "FOLDER.ExportNewFolder": "Directorio nuevo",
-"FOLDER.Exporting": "Exportando tipo {type}s al compendio {compendium}.",
-"FOLDER.ExportDone": "Finalizada exportación de los documentos tipo {type} al compendio {compendium}.",
+"FOLDER.Exporting": "Exportando tipo {type} al compendio {compendium}.",
+"FOLDER.ExportDone": "Finalizada exportación documento tipo {type} al compendio {compendium}.",
 "FOLDER.CreateTable": "Crear tabla de tiradas",
 "FOLDER.CreateTableConfirm": "¿Crear una nueva tabla de tiradas usando el contenido de esta carpeta como resultados de la misma?",
 "FOLDER.InvalidDocumentType": "Tipo de documento inválido \"{type}\" para este directorio.",
@@ -2966,7 +2970,8 @@
   "SETTINGS": {
     "label": "Anillo dinámico de fichas",
     "hint": "Elija una visualización disponible de anillo dinámico de fichas. Si cambia esta opción necesitará recargar.",
-    "defaultConfigLabel": "Anillo por defecto de Foundry VTT"
+    "coreSteel": "Anillo Acero de Foundry VTT",
+    "coreBronze": "Anillo Bronce de Foundry VTT"
   }
 },
 
