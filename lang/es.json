@@ -587,7 +587,7 @@
 "CONTROLS.RegionEllipse": "Dibujar elipse",
 "CONTROLS.RegionPolygon": "Dibujar polígono",
 "CONTROLS.RegionHole": "Crear agujeros",
-"CONTROLS.RegionHoleP": "Cuando esté activo, cualquier forma que dibuje en una región usando cualquiera de las herramientas de forma creará un agujero donde las reglas de la región no se aplicarán.",
+"CONTROLS.RegionHoleP": "Cuando esté activo, cualquier forma que dibuje en una región usando cualquiera de las herramientas de forma creará un agujero donde los comportamientos de la región no se aplicarán.",
 "CONTROLS.RegionSnap": "Cuando esté activo, cualquier forma que dibuje en una región usando cualquiera de las herramientas de forma se ajustará a la cuadrícula.",
 "CONTROLS.RegionClear": "Borrar regiones",
 "CONTROLS.RegionPerformance": "<em>Nota de rendimiento:</em> Cada dibujo es su propia forma. Tenga cuidado de no colocar múltiples formas completamente una dentro de la otra. En lugar de combinar formas simples para crear una forma compleja, considere usar la herramienta de polígono de región.",
@@ -804,8 +804,8 @@
 "DOCUMENT.RollTables": "Tablas de tiradas",
 "DOCUMENT.Region": "Región",
 "DOCUMENT.Regions": "Regiones",
-"DOCUMENT.RegionBehavior": "Regla de región",
-"DOCUMENT.RegionBehaviors": "Reglas de región",
+"DOCUMENT.RegionBehavior": "Comportamiento de región",
+"DOCUMENT.RegionBehaviors": "Comportamientos de región",
 "DOCUMENT.TableResult": "Resultado de tabla",
 "DOCUMENT.TableResults": "Resultados de tablas",
 "DOCUMENT.Tile": "Baldosa",
@@ -2325,7 +2325,7 @@
   "SECTIONS": {
     "identity": "Identidad",
     "shapes": "Formas",
-    "behaviors": "Reglas"
+    "behaviors": "Comportamientos"
   },
   "FIELDS": {
     "color": {
@@ -2351,8 +2351,8 @@
       }
     },
     "behaviors": {
-      "label": "Reglas",
-      "hint": "Las reglas de la región."
+      "label": "Comportamientos",
+      "hint": "Los comportamientos de la región."
     },
     "visibility": {
       "label": "Visibilidad",
@@ -2369,11 +2369,11 @@
     "shapeMoveUp": "Mover forma arriba",
     "shapeMoveDown": "Mover forma abajo",
     "shapeRemove": "Eliminar forma",
-    "behaviorCreate": "Crear regla",
-    "behaviorEdit": "Editar regla",
-    "behaviorDelete": "Eliminar regla",
-    "behaviorEnable": "Habilitar regla",
-    "behaviorDisable": "Deshabilitar regla"
+    "behaviorCreate": "Crear comportamiento de región",
+    "behaviorEdit": "Editar comportamiento",
+    "behaviorDelete": "Eliminar comportamiento",
+    "behaviorEnable": "Habilitar comportamiento",
+    "behaviorDisable": "Deshabilitar comportamiento"
   },
   "VISIBILITY": {
     "LAYER": {
@@ -2391,7 +2391,7 @@
       "label": "Límite de la región cambiado"
     },
     "behaviorStatus": {
-      "label": "Estado de la regla cambiado"
+      "label": "Estado del comportamiento cambiado"
     },
     "tokenEnter": {
       "label": "Ficha entra"
@@ -2430,7 +2430,7 @@
     "ellipse": "Elipse",
     "polygon": "Polígono"
   },
-  "Behavior": "Regla",
+  "Behavior": "Comportamiento",
   "Shape": "Forma",
   "LEGEND": {
     "control": "Controlar región",
@@ -2458,19 +2458,19 @@
 
 "BEHAVIOR": {
   "SECTIONS": {
-    "identity": "Identidad de la regla",
-    "status": "Estado de la regla"
+    "identity": "Identidad del comportamiento",
+    "status": "Estado del comportamiento"
   },
   "FIELDS": {
     "disabled": {
       "label": "Deshabilitado",
-      "hint": "Alterna si esta regla está temporalmente deshabilitada."
+      "hint": "Alterna si este comportamiento está temporalmente deshabilitado."
     }
   },
   "ACTIONS": {
-    "create": "Crear regla de región",
-    "update": "Actualizar regla de región",
-    "delete": "Eliminar regla de región"
+    "create": "Crear comportamiento de región",
+    "update": "Actualizar comportamiento de región",
+    "delete": "Eliminar comportamiento de región"
   },
   "TYPES": {
     "base": {
@@ -2480,11 +2480,11 @@
       "FIELDS": {
         "events": {
           "label": "Eventos",
-          "hint": "Los eventos a los que esta regla se suscribe."
+          "hint": "Los eventos a los que este comportamiento se suscribe."
         },
         "once": {
           "label": "Una vez",
-          "hint": "Deshabilita la regla después de la primera vez que se activa."
+          "hint": "Deshabilita el comportamiento después de la primera vez que se activa."
         }
       }
     },
@@ -2523,7 +2523,7 @@
         },
         "text": {
           "label": "Texto",
-          "hint": "El texto que se muestra cuando se activa la regla."
+          "hint": "El texto que se muestra cuando se activa el comportamiento."
         },
         "visibility": {
           "label": "Visibilidad",
@@ -2579,12 +2579,12 @@
     "toggleBehavior": {
       "FIELDS": {
         "enable": {
-          "label": "Habilitar reglas",
-          "hint": "Las reglas que se habilitan cuando ocurre uno de los eventos."
+          "label": "Habilitar comportamientos",
+          "hint": "Los comportamientos que se habilitan cuando ocurre uno de los eventos."
         },
         "disable": {
-          "label": "Deshabilitar reglas",
-          "hint": "Las reglas que se deshabilitan cuando ocurre uno de los eventos."
+          "label": "Deshabilitar comportamientos",
+          "hint": "Los comportamientos que se deshabilitan cuando ocurre uno de los eventos."
         }
       }
     }
@@ -2992,7 +2992,7 @@
 "TYPES.RegionBehavior.pauseGame": "Pausar partida",
 "TYPES.RegionBehavior.suppressWeather": "Suprimir clima",
 "TYPES.RegionBehavior.teleportToken": "Teletransportar ficha",
-"TYPES.RegionBehavior.toggleBehavior": "Alternar regla",
+"TYPES.RegionBehavior.toggleBehavior": "Alternar comportamiento",
 
 "DETECTION.LightPerception": "Percepción de luz",
 "DETECTION.BasicSight": "Visión básica",
