@@ -587,7 +587,7 @@
 "CONTROLS.RegionEllipse": "Dibujar elipse",
 "CONTROLS.RegionPolygon": "Dibujar polígono",
 "CONTROLS.RegionHole": "Crear agujeros",
-"CONTROLS.RegionHoleP": "Cuando esté activo, cualquier forma que dibuje en una región usando cualquiera de las herramientas de forma creará un agujero donde los comportamientos de la región no se aplicarán.",
+"CONTROLS.RegionHoleP": "Cuando esté activo, cualquier forma que dibuje en una región usando cualquiera de las herramientas de forma creará un agujero donde las reglas de la región no se aplicarán.",
 "CONTROLS.RegionSnap": "Cuando esté activo, cualquier forma que dibuje en una región usando cualquiera de las herramientas de forma se ajustará a la cuadrícula.",
 "CONTROLS.RegionClear": "Borrar regiones",
 "CONTROLS.RegionPerformance": "<em>Nota de rendimiento:</em> Cada dibujo es su propia forma. Tenga cuidado de no colocar múltiples formas completamente una dentro de la otra. En lugar de combinar formas simples para crear una forma compleja, considere usar la herramienta de polígono de región.",
@@ -804,8 +804,8 @@
 "DOCUMENT.RollTables": "Tablas de tiradas",
 "DOCUMENT.Region": "Región",
 "DOCUMENT.Regions": "Regiones",
-"DOCUMENT.RegionBehavior": "Comportamiento de región",
-"DOCUMENT.RegionBehaviors": "Comportamientos de región",
+"DOCUMENT.RegionBehavior": "Regla de región",
+"DOCUMENT.RegionBehaviors": "Reglas de región",
 "DOCUMENT.TableResult": "Resultado de tabla",
 "DOCUMENT.TableResults": "Resultados de tablas",
 "DOCUMENT.Tile": "Baldosa",
@@ -932,7 +932,7 @@
 "ERROR.NoWebGL2": "Su navegador no admite actualmente la renderización WebGL versión 2 requerida para que Foundry funcione correctamente. Se pueden producir errores o anomalías gráficas.",
 "ERROR.BackgroundTextureSize": "Está usando una textura de fondo de escena con dimensiones de {width}px por {height}px. Una o ambas de estas dimensiones exceden el tamaño máximo para texturas de {max}px admitido por su dispositivo.",
 "ERROR.InvalidAdminKey": "La contraseña del administrador del servidor proporcionada no es válida. Si ha olvidado su contraseña, deberá eliminar manualmente el archivo <strong>Config/admin.txt</strong> de la ubicación de sus datos de usuario.",
-"ERROR.LoadPackages": "La solicitud para explorar módulos existentes falló al conectarse con el servidor de Foundry. Asegúrese de que la aplicación tenga permiso para realizar conexiones salientes.",
+"ERROR.LoadPackages": "La solicitud para explorar paquetes existentes falló al conectarse con el servidor de Foundry. Asegúrese de que la aplicación tenga permiso para realizar conexiones salientes.",
 "ERROR.NoTargetUsersForWhisper": "No existe el usuario al que intenta susurrar el mensaje. Compruebe que está bien escrito o pruebe con \"/w [nombre de usuario]\".",
 "ERROR.CantWhisper": "No tiene permisos para enviar mensajes susurrados a otros usuarios.",
 "ERROR.RendererNotDetected": "No se pudo identificar el renderizador de su GPU, es posible que experimente problemas de rendimiento inesperados.",
@@ -1382,7 +1382,7 @@
 "MODMANAGE.DepOptionalEnable": "Este módulo tiene {number} dependencias inactivas que se pueden habilitar para mejorarlo:",
 "MODMANAGE.DepEnableCheck": "¿Habilitar el módulo y las dependencias seleccionadas?",
 "MODMANAGE.DepDisable": "Este módulo tiene {number} dependencias que se pueden deshabilitar:",
-"MODMANAGE.DepDisableCheck": "¿Desea deshabilitar también los módulos seleccionados?",
+"MODMANAGE.DepDisableCheck": "¿Desea deshabilitar también los paquetes seleccionados?",
 "MODMANAGE.DepNotInstalled": "¡La dependencia requerida {missing} no está instalada!",
 "MODMANAGE.DepMissing": "¡Ha habilitado el módulo {module}, pero sus {missing} dependencias no están habilitadas!",
 "MODMANAGE.FilterAll": "Todos los módulos",
@@ -1394,7 +1394,7 @@
 "MODMANAGE.SystemCompatibilityIssueMinimum": "Este módulo requiere una versión mínima del sistema de {minimum}, pero su versión es {version}. Por favor, actualice el sistema.",
 "MODMANAGE.SystemCompatibilityIssueMaximum": "Este módulo requiere una versión máxima del sistema de {maximum}, pero su versión es {version}.",
 "MODMANAGE.NavLabel": "Navegación de gestión de módulos",
-"MODMANAGE.UpstreamPackages": "Hay {number} módulos que requiere(n) que este módulo esté activo. Al deshabilitar este módulo también deshabilitará esos módulos.",
+"MODMANAGE.UpstreamPackages": "Hay {number} paquetes que requiere(n) que este paquete esté activo. Al deshabilitar este paquete también deshabilitará esos paquetes.",
 "MODMANAGE.UnavailableDocuments": "Documentos no disponibles",
 
 "NOTE.AnchorPoint": "Punto de anclaje del texto",
@@ -1839,11 +1839,11 @@
 "SETUP.SystemFilter": "Filtrar sistemas",
 "SETUP.ModuleFilter": "Filtrar módulos",
 "SETUP.PackageFilterHint": "Puede filtrar los paquetes disponibles por su nombre o título.",
-"SETUP.PackageCategories": "Categorías de módulos",
+"SETUP.PackageCategories": "Categorías de paquetes",
 "SETUP.PackageInstalled": "Instalado",
 "SETUP.PackageNotOwned": "No adquirido",
-"SETUP.PackageName": "Nombre del módulo",
-"SETUP.PackageVisAll": "Todos los módulos",
+"SETUP.PackageName": "Nombre del paquete",
+"SETUP.PackageVisAll": "Todos los paquetes",
 "SETUP.PackageVisInst": "Instalados",
 "SETUP.PackageVisUnin": "No instalados",
 "SETUP.PackageVisCompatible": "Compatible",
@@ -1851,14 +1851,14 @@
 "SETUP.PackageVisUnverified": "No verificado",
 "SETUP.PremiumContent": "Contenido premium",
 "SETUP.ExclusiveContent": "Contenido exclusivo",
-"SETUP.ViewPackagePage": "Ver página del módulo",
+"SETUP.ViewPackagePage": "Ver página del paquete",
 "SETUP.ViewPackageChangelog": "Ver registro de cambios",
 
 "SETUP.PackageHasDependenciesSingular": "{title} tiene una dependencia que aún no se ha instalado.",
 "SETUP.PackageHasDependenciesPlural": "{title} tiene {number} dependencias que aún no se han instalado.",
 "SETUP.PackageRequiredDependencies": "Estas dependencias son requeridas y el paquete no funcionará sin ellas:",
 "SETUP.PackageOptionalDependencies": "Estas dependencias son opcionales, pero mejorarán las funcionalidades del paquete si se instalan:",
-"SETUP.PackageDependenciesTitle": "Instalar dependencias de módulos",
+"SETUP.PackageDependenciesTitle": "Instalar dependencias de paquetes",
 "SETUP.PackageInstallDependencies": "Es posible que no pueda utilizar este módulo si las dependencias no están instaladas. ¿Desea instalarlas automáticamente?",
 "SETUP.PackageDependenciesAutomaticSingular": "Instalar dependencia automáticamente",
 "SETUP.PackageDependenciesAutomaticPlural": "Instalar dependencias seleccionadas automáticamente",
@@ -2325,7 +2325,7 @@
   "SECTIONS": {
     "identity": "Identidad",
     "shapes": "Formas",
-    "behaviors": "Comportamientos"
+    "behaviors": "Reglas"
   },
   "FIELDS": {
     "color": {
@@ -2351,8 +2351,8 @@
       }
     },
     "behaviors": {
-      "label": "Comportamientos",
-      "hint": "Los comportamientos de la región."
+      "label": "Reglas",
+      "hint": "Las reglas de la región."
     },
     "visibility": {
       "label": "Visibilidad",
@@ -2369,11 +2369,11 @@
     "shapeMoveUp": "Mover forma arriba",
     "shapeMoveDown": "Mover forma abajo",
     "shapeRemove": "Eliminar forma",
-    "behaviorCreate": "Crear comportamiento de región",
-    "behaviorEdit": "Editar comportamiento",
-    "behaviorDelete": "Eliminar comportamiento",
-    "behaviorEnable": "Habilitar comportamiento",
-    "behaviorDisable": "Deshabilitar comportamiento"
+    "behaviorCreate": "Crear regla",
+    "behaviorEdit": "Editar regla",
+    "behaviorDelete": "Eliminar regla",
+    "behaviorEnable": "Habilitar regla",
+    "behaviorDisable": "Deshabilitar regla"
   },
   "VISIBILITY": {
     "LAYER": {
@@ -2391,7 +2391,7 @@
       "label": "Límite de la región cambiado"
     },
     "behaviorStatus": {
-      "label": "Estado del comportamiento cambiado"
+      "label": "Estado de la regla cambiado"
     },
     "tokenEnter": {
       "label": "Ficha entra"
@@ -2430,7 +2430,7 @@
     "ellipse": "Elipse",
     "polygon": "Polígono"
   },
-  "Behavior": "Comportamiento",
+  "Behavior": "Regla",
   "Shape": "Forma",
   "LEGEND": {
     "control": "Controlar región",
@@ -2458,19 +2458,19 @@
 
 "BEHAVIOR": {
   "SECTIONS": {
-    "identity": "Identidad del comportamiento",
-    "status": "Estado del comportamiento"
+    "identity": "Identidad de la regla",
+    "status": "Estado de la regla"
   },
   "FIELDS": {
     "disabled": {
       "label": "Deshabilitado",
-      "hint": "Alterna si este comportamiento está temporalmente deshabilitado."
+      "hint": "Alterna si esta regla está temporalmente deshabilitada."
     }
   },
   "ACTIONS": {
-    "create": "Crear comportamiento de región",
-    "update": "Actualizar comportamiento de región",
-    "delete": "Eliminar comportamiento de región"
+    "create": "Crear regla de región",
+    "update": "Actualizar regla de región",
+    "delete": "Eliminar regla de región"
   },
   "TYPES": {
     "base": {
@@ -2480,11 +2480,11 @@
       "FIELDS": {
         "events": {
           "label": "Eventos",
-          "hint": "Los eventos a los que este comportamiento se suscribe."
+          "hint": "Los eventos a los que esta regla se suscribe."
         },
         "once": {
           "label": "Una vez",
-          "hint": "Deshabilita el comportamiento después de la primera vez que se activa."
+          "hint": "Deshabilita la regla después de la primera vez que se activa."
         }
       }
     },
@@ -2523,7 +2523,7 @@
         },
         "text": {
           "label": "Texto",
-          "hint": "El texto que se muestra cuando se activa el comportamiento."
+          "hint": "El texto que se muestra cuando se activa la regla."
         },
         "visibility": {
           "label": "Visibilidad",
@@ -2579,12 +2579,12 @@
     "toggleBehavior": {
       "FIELDS": {
         "enable": {
-          "label": "Habilitar comportamientos",
-          "hint": "Los comportamientos que se habilitan cuando ocurre uno de los eventos."
+          "label": "Habilitar reglas",
+          "hint": "Las reglas que se habilitan cuando ocurre uno de los eventos."
         },
         "disable": {
-          "label": "Deshabilitar comportamientos",
-          "hint": "Los comportamientos que se deshabilitan cuando ocurre uno de los eventos."
+          "label": "Deshabilitar reglas",
+          "hint": "Las reglas que se deshabilitan cuando ocurre uno de los eventos."
         }
       }
     }
@@ -2992,7 +2992,7 @@
 "TYPES.RegionBehavior.pauseGame": "Pausar partida",
 "TYPES.RegionBehavior.suppressWeather": "Suprimir clima",
 "TYPES.RegionBehavior.teleportToken": "Teletransportar ficha",
-"TYPES.RegionBehavior.toggleBehavior": "Alternar comportamiento",
+"TYPES.RegionBehavior.toggleBehavior": "Alternar regla",
 
 "DETECTION.LightPerception": "Percepción de luz",
 "DETECTION.BasicSight": "Visión básica",
