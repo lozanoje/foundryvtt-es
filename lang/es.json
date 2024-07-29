@@ -2449,7 +2449,7 @@
     "title": "Configurar región"
   },
   "NOTIFICATIONS": {
-    "ControlWalls": "Controla un grupo de paredes que definen el límite de la forma deseada.",
+    "ControlWalls": "Controle un grupo de paredes que defina el límite de la forma deseada.",
     "DrawingMultipleRegionsControlled": "¡Debe controlar solo una región o ninguna cuando dibuje una forma!",
     "EmptyEnclosedArea": "¡El área encerrada por las paredes controladas está vacía! Asegúrese de que las paredes exteriores formen un bucle cerrado y estén conectadas de extremo a extremo.",
     "NoControlledWalls": "¡No está controlando ninguna pared!"
