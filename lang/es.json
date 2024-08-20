@@ -2971,7 +2971,13 @@
     "label": "Anillos de ficha dinámica",
     "hint": "Elige una visualización de anillo de ficha dinámica disponible. Cambiarlo requiere una recarga.",
     "coreSteel": "Foundry VTT Anillo de acero",
-    "coreBronze": "Foundry VTT Anillo de bronce"
+    "coreBronze": "Foundry VTT Anillo de bronce",
+    "FIT_MODES": {
+      "label": "Modos de ajuste de anillos de ficha dinámica",
+      "hint": "Escoja el modo de ajuste de los anillos dinámicos.",
+      "subject": "Estándar",
+      "grid": "Rejilla"
+    }
   }
 },
 
