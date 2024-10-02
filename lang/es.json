@@ -2951,7 +2951,7 @@
       },
       "texture": {
         "label": "Textura del sujeto",
-        "hint": "Especifique explícitamente una ruta para la ilustración colocada sobre el anillo de ficha dinámico. Si no se proporciona, el sujeto del anillo es el mismo que la textura estándar de la ficha."
+        "hint": "Especifique explícitamente una ruta para la ilustración colocada sobre el anillo dinámico de ficha. Si no se proporciona, el sujeto del anillo es el mismo que la textura estándar de la ficha."
       }
     }
   }
@@ -2965,16 +2965,16 @@
     "INVISIBILITY": "Pulso espectral"
   },
   "SHEET": {
-    "legend": "Anillo de ficha dinámica"
+    "legend": "Anillo dinámico de ficha"
   },
   "SETTINGS": {
-    "label": "Anillos de ficha dinámica",
-    "hint": "Elige una visualización de anillo de ficha dinámica disponible. Cambiarlo requiere una recarga.",
+    "label": "Anillos dinámicos de ficha",
+    "hint": "Elige una visualización de anillo dinámico de ficha disponible. Cambiarlo requiere una recarga.",
     "coreSteel": "Foundry VTT Anillo de acero",
     "coreBronze": "Foundry VTT Anillo de bronce",
     "FIT_MODES": {
-      "label": "Modos de ajuste de anillos de ficha dinámica",
-      "hint": "Escoja el modo de ajuste de los anillos dinámicos.",
+      "label": "Modos de ajuste de anillos dinámicos de ficha",
+      "hint": "Elige el modo de ajuste para los anillos dinámicos.",
       "subject": "Estándar",
       "grid": "Rejilla"
     }
