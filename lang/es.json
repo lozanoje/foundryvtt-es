@@ -107,7 +107,7 @@
 "ADVENTURE.ImportContent": "Importar {label}",
 
 "ADVENTURE.Name": "Nombre de la aventura",
-"ADVENTURE.NameHint": "Elige un nombre para esta aventura que sea único dentro del paquete que la contiene.",
+"ADVENTURE.NameHint": "Elija un nombre para esta aventura que sea único dentro del paquete que la contiene.",
 "ADVENTURE.Image": "Imagen del cartel",
 "ADVENTURE.ImageHint": "Proporcione una imagen de cartel para esta aventura con al menos un ancho de 768px y una altura de 300px.",
 "ADVENTURE.Caption": "Texto del cartel",
@@ -287,7 +287,7 @@
 "CARDS.DeckPresetPokerDark": "Mazo de póquer (oscuro)",
 "CARDS.DeckPresetPokerLight": "Mazo de póquer (claro)",
 "CARDS.Deal": "Repartir",
-"CARDS.DealHint": "Elige un grupo de manos o pilas a las que se repartirán cartas. Se repartirá el mismo número de cartas a cada mano/pila.",
+"CARDS.DealHint": "Elija un grupo de manos o pilas a las que se repartirán cartas. Se repartirá el mismo número de cartas a cada mano/pila.",
 "CARDS.DealTitle": "Repartir cartas",
 "CARDS.DealTo": "Repartir a",
 "CARDS.DealWarnNoTargets": "Debe crear una mano o pila a la que repartir cartas.",
@@ -300,7 +300,7 @@
 "CARDS.Draw": "Robar",
 "CARDS.DrawFrom": "Robar de",
 "CARDS.DrawTitle": "Robar cartas",
-"CARDS.DrawHint": "Elige un mazo del cual robar un cierto número de cartas.",
+"CARDS.DrawHint": "Elija un mazo del cual robar un cierto número de cartas.",
 "CARDS.DrawMode": "Modo de robo",
 "CARDS.DrawModeTop": "Por arriba (primera)",
 "CARDS.DrawModeBottom": "Por abajo (última)",
@@ -410,7 +410,7 @@
 "COMBAT.PingCombatant": "Señalar contendiente",
 "COMBAT.WarnNonVisibleToken": "Este contendiente no es visible para ti.",
 "COMBAT.Resource": "Recurso a visualizar",
-"COMBAT.ResourceHint": "Elige un atributo a visualizar para cada contendiente.",
+"COMBAT.ResourceHint": "Elija un atributo a visualizar para cada contendiente.",
 "COMBAT.Round": "Asalto de combate",
 "COMBAT.Rounds": "Asaltos de combate",
 "COMBAT.RoundPrev": "Asalto anterior",
@@ -1597,7 +1597,7 @@
   "Shadows": "Sombras",
   "ShadowsHint": "Aumentar este deslizador hace que las sombras y los elementos más oscuros de la escena sean más oscuros y profundos.",
   "Hue": "Tono",
-  "HueHint": "Elige un tono (color) para mezclar en toda la escena. Para activar el deslizador de color, debes tener una intensidad mayor que 0.",
+  "HueHint": "Elija un tono (color) para mezclar en toda la escena. Para activar el deslizador de color, debes tener una intensidad mayor que 0.",
   "Intensity": "Intensidad del tono",
   "IntensityHint": "Ajusta cuán intensamente se mezcla el tono elegido en la escena. Una alta intensidad de tono satura la escena con el color, posiblemente abrumando los colores existentes. Una baja intensidad de tono mezcla el color elegido de manera más sutil.",
   "ResetEnvironment": "Restablecer a opciones por defecto",
@@ -1681,7 +1681,7 @@
 "SETTINGS.MipMapN": "Antialiasing de texturas con zoom",
 "SETTINGS.MipMapL": "Calcula mipmaps para suavizar las texturas de sprites en niveles de zoom más bajos. Esta es una configuración del cliente, ya que cada usuario puede preferir diferentes estilos visuales.",
 "SETTINGS.PerformanceModeN": "Modo rendimiento",
-"SETTINGS.PerformanceModeL": "Elige un modo de rendimiento que afectará la calidad de renderizado del lienzo y el rendimiento de la aplicación. Los modos de rendimiento más bajos funcionarán mejor en ordenadores poco potentes.",
+"SETTINGS.PerformanceModeL": "Elija un modo de rendimiento que afectará la calidad de renderizado del lienzo y el rendimiento de la aplicación. Los modos de rendimiento más bajos funcionarán mejor en ordenadores poco potentes.",
 "SETTINGS.PerformanceModeLow": "Bajo",
 "SETTINGS.PerformanceModeMed": "Medio",
 "SETTINGS.PerformanceModeHigh": "Alto",
@@ -1795,7 +1795,7 @@
 "SETUP.FullListOfReleaseNotes": "Para conocer la lista completa de cambios de la versión, consulte {url}",
 "SETUP.Verified": "Paquete verificado para esta versión de Foundry",
 "SETUP.CSSTheme": "Seleccionar tema",
-"SETUP.CSSThemeHint": "Elige entre varios temas visuales que modifican la apariencia del menú de configuración de la aplicación.",
+"SETUP.CSSThemeHint": "Elija entre varios temas visuales que modifican la apariencia del menú de configuración de la aplicación.",
 "SETUP.ErrorTimeout": "La solicitud a {url} expiró después de {timeout} segundos.",
 
 "SETUP.WarningsTitle": "Avisos de paquetes",
@@ -2154,7 +2154,7 @@
 "PACKAGE.ModuleCreate": "Crear módulo",
 "PACKAGE.ModuleCreateHint": "Puede usar este formulario para crear un módulo que se puede compartir entre varios mundos o empaquetar para distribuirlo a otros usuarios. Este formulario permite editar parte de la configuración del paquete. Podrá editarlo completamente después de crearlo modificando su archivo de manifiesto JSON.",
 "PACKAGE.ModuleCreateSuccess": "Se ha creado el nuevo módulo \"{id}\" que ahora está disponible para su uso.",
-"PACKAGE.ModuleCreateErrorAlreadyExists": "El módulo \"{id}\" ya existe. Elige un identificador de paquete diferente.",
+"PACKAGE.ModuleCreateErrorAlreadyExists": "El módulo \"{id}\" ya existe. Elija un identificador de paquete diferente.",
 "PACKAGE.ModuleEdit": "Editar módulo",
 "PACKAGE.ModuleEditHint": "Puede usar este formulario para actualizar las propiedades de los datos del manifiesto del módulo.",
 "PACKAGE.ModuleEditWarning": "Está editando los datos del manifiesto de un módulo instalado. Los cambios realizados en estos datos pueden romper la funcionalidad del módulo o la capacidad de actualizarlo. Procede con precaución.",
@@ -2951,7 +2951,7 @@
       },
       "texture": {
         "label": "Textura del sujeto",
-        "hint": "Especifique explícitamente una ruta para la ilustración colocada sobre el anillo de ficha dinámico. Si no se proporciona, el sujeto del anillo es el mismo que la textura estándar de la ficha."
+        "hint": "Especifique explícitamente una ruta para la ilustración colocada sobre el anillo dinámico de ficha. Si no se proporciona, el sujeto del anillo es el mismo que la textura estándar de la ficha."
       }
     }
   }
@@ -2965,16 +2965,16 @@
     "INVISIBILITY": "Pulso espectral"
   },
   "SHEET": {
-    "legend": "Anillo de ficha dinámica"
+    "legend": "Anillo dinámico de ficha"
   },
   "SETTINGS": {
-    "label": "Anillos de ficha dinámica",
-    "hint": "Elige una visualización de anillo de ficha dinámica disponible. Cambiarlo requiere una recarga.",
+    "label": "Anillos dinámicos de ficha",
+    "hint": "Elija una visualización de anillo dinámico de ficha disponible. Cambiarlo requiere una recarga.",
     "coreSteel": "Foundry VTT Anillo de acero",
     "coreBronze": "Foundry VTT Anillo de bronce",
     "FIT_MODES": {
-      "label": "Modos de ajuste de anillos de ficha dinámica",
-      "hint": "Escoja el modo de ajuste de los anillos dinámicos.",
+      "label": "Modos de ajuste de anillos dinámicos de ficha",
+      "hint": "Elija el modo de ajuste para los anillos dinámicos.",
       "subject": "Estándar",
       "grid": "Rejilla"
     }
@@ -3192,7 +3192,7 @@
 "WEBRTC.TooltipPopout": "Nueva pestaña",
 "WEBRTC.PTTKeyWarn": "El atajo de pulsar para hablar está usando un valor antiguo y puede no funcionar correctamente, por favor reconfigúrelo.",
 "WEBRTC.VoiceMode": "Modo de transmisión de voz",
-"WEBRTC.VoiceModeNotes": "Elige cómo se transmite su voz en las llamadas audio/vídeo.",
+"WEBRTC.VoiceModeNotes": "Elija cómo se transmite su voz en las llamadas audio/vídeo.",
 "WEBRTC.VoiceModeAlways": "Siempre habilitado",
 "WEBRTC.VoiceModeActivity": "Activación por voz",
 "WEBRTC.VoiceModePtt": "Pulsar para hablar",
