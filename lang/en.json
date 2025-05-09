@@ -2076,6 +2076,17 @@
 "SETUP.COMPAT.RISK.Latest": "The latest version of this package was last verified for core software version {verified}",
 "SETUP.COMPAT.RISK.World": "This world's system was last verified for core software version {verified}",
 
+"SETUP.INSTALL_PACKAGE": {
+  "ManifestIncompatible": {
+    "Title": "Compatibility Warning",
+    "Warning": [
+      "The {packageType} at the provided URL is not compatible with the current version of Foundry Virtual Tabletop.",
+      "Are you sure you wish to proceed with the installation?"
+    ]
+  },
+  "ManifestWrongPackageType": "The provided URL does not appear to point to a {packageType}."
+},
+
 "THEME.foundry": "Foundry Virtual Tabletop",
 "THEME.fantasy": "Classic Fantasy",
 "THEME.scifi": "Science Fiction",

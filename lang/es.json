@@ -2076,6 +2076,17 @@
 "SETUP.COMPAT.RISK.Latest": "La última versión de este paquete fue verificada con la versión {verified} del núcleo.",
 "SETUP.COMPAT.RISK.World": "El sistema de este mundo fue verificado con la versión {verified} de núcleo.",
 
+"SETUP.INSTALL_PACKAGE": {
+  "ManifestIncompatible": {
+    "Title": "Aviso de compatibilidad",
+    "Warning": [
+      "El paquete {packageType} que ha devuelto la dirección URL no es compatible con la versión actual de Foundry Virtual Tabletop.",
+      "¿Está seguro que desea continuar con la instalación?"
+    ]
+  },
+  "ManifestWrongPackageType": "La dirección URL no parece apuntar a {packageType}."
+},
+
 "THEME.foundry": "Foundry Virtual Tabletop",
 "THEME.fantasy": "Fantasía clásica",
 "THEME.scifi": "Ciencia ficción",
