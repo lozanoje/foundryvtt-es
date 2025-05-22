@@ -2057,9 +2057,10 @@
       "label": "Default Language",
       "hint": "You may choose a default language for the application by choosing a module which provides the core translation files for that language."
     },
+    "upnp.label": "Enable UPnP",
     "port": {
       "label": "Port",
-      "hint": "You may choose which port Foundry Virtual Tabletop uses for TCP connection traffic and enable or disable Universal Plug and Play (UPnP)."
+      "hint": "Choose which port Foundry Virtual Tabletop uses for TCP connection traffic and enable or disable Universal Plug and Play (UPnP)."
     },
     "compressStatic": {
       "label": "Compress Static Files",
@@ -2577,6 +2578,16 @@
         "Latest": "The latest version of this package was last verified for core software version {verified}",
         "World": "This world's system was last verified for core software version {verified}"
     }
+  },
+  "INSTALL_PACKAGE": {
+    "ManifestIncompatible": {
+      "Title": "Compatibility Warning",
+      "Warning": [
+        "The {packageType} at the provided URL is not compatible with the current version of Foundry Virtual Tabletop.",
+        "Are you sure you wish to proceed with the installation?"
+      ]
+    },
+    "ManifestWrongPackageType": "The provided URL does not appear to point to a {packageType}."
   },
   "UPDATE_NOTES": {
     "Title": "Release Notes: {release}",
