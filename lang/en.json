@@ -2587,6 +2587,17 @@
   }
 },
 
+"SETUP.INSTALL_PACKAGE": {
+  "ManifestIncompatible": {
+    "Title": "Compatibility Warning",
+    "Warning": [
+      "The {packageType} at the provided URL is not compatible with the current version of Foundry Virtual Tabletop.",
+      "Are you sure you wish to proceed with the installation?"
+    ]
+  },
+  "ManifestWrongPackageType": "The provided URL does not appear to point to a {packageType}."
+},
+
 "THEME.foundry": "Foundry Virtual Tabletop",
 "THEME.fantasy": "Classic Fantasy",
 "THEME.scifi": "Science Fiction",
