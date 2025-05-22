@@ -2055,6 +2055,7 @@
         "label": "Idioma por defecto",
         "hint": "Puede elegir un idioma por defecto para la aplicación eligiendo un módulo que proporcione los archivos de traducción del núcleo para ese idioma."
       },
+      "upnp.label": "Activar UPnP",
       "port": {
         "label": "Puerto",
         "hint": "Permite elegir el puerto que Foundry Virtual Tabletop usará para el tráfico de conexión TCP y habilitar o deshabilitar el protocolo Universal Plug and Play (UPnP)."
@@ -2575,6 +2576,16 @@
         "Latest": "La última versión de este paquete fue verificada con la versión {verified} del núcleo.",
         "World": "El sistema de este mundo fue verificado con la versión {verified} de núcleo."
       }
+    },
+    "INSTALL_PACKAGE": {
+      "ManifestIncompatible": {
+        "Title": "Aviso de compatibilidad",
+        "Warning": [
+          "El {packageType} de la URL no es compatible con la versión actual de Foundry Virtual Tabletop.",
+          "¿Desea continuar con la instalación?"
+        ]
+      },
+      "ManifestWrongPackageType": "La URL parece que no apunta a ningún {packageType}."
     },
     "UPDATE_NOTES": {
       "Title": "Notas de la versión: {release}",
