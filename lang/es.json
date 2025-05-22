@@ -449,9 +449,11 @@
       "drawn.label": "Robada",
       "face.label": "Anverso",
       "faces": {
-        "name.label": "Nombre del anverso",
-        "img.label": "Imagen del anverso",
-        "text.label": "Texto del anverso"
+        "element": {
+          "name.label": "Nombre del anverso",
+          "img.label": "Imagen del anverso",
+          "text.label": "Texto del anverso"
+        }
       },
       "back": {
         "name.label": "Nombre del reverso",
@@ -632,7 +634,8 @@
   "COMPENDIUM.ToggleLocked": {
     "Option": "Alternar bloqueo de edición",
     "Title": "Alternar bloqueo de edición: {compendium}",
-    "Warning": "Está intentando desbloquear la edición de un compendio que no pertenece a este mundo. Cualquier cambio que realice en este compendio podría perderse si el sistema o módulo al que pertenece se actualiza. Puede que desee duplicar el compendio en el mundo en su lugar. ¿Desea continuar?"
+    "Unlock": "Desbloquear",
+    "Warning": "Está intentando desbloquear la edición de un compendio que no pertenece a este mundo. Cualquier cambio que realice en este compendio podría perderse si el sistema o módulo al que pertenece se actualiza. Puede que desee duplicar el compendio en el mundo en su lugar. ¿Cómo quiere proceder?"
   },
   "COMPENDIUM.CannotViewWarning": "No tiene permisos suficientes para ver este compendio.",
   "COMPENDIUM.OwnershipInheritBelow": "Heredar del rol inferior",
@@ -663,7 +666,6 @@
     "TargetSelect": "Seleccionar objetivos",
     "TargetSelectP": "Seleccione cualquier ficha que pueda ver como objetivo.",
     "BasicMeasure": "Medir distancia",
-    "BasicMeasureWaypoints": "Colocar puntos de ruta",
     "GroupMeasure": "Controles de medición",
     "MeasureType": "Tipo de plantilla",
     "MeasureConfigHint": "Configura la ubicación y el aspecto de la plantilla de medición.",
@@ -822,11 +824,8 @@
     "KeyPaste": "Pegar objetos en el lienzo",
     "KeyUndo": "Deshacer operación en el lienzo",
     "KeyHotbar": "Activar ranura de la barra de macros",
-    "RulerTitle": "Medición con regla",
-    "RulerMeasure": "Medir distancia con la regla",
-    "RulerWaypoint": "Colocar punto de medición",
-    "RulerMove": "Mover ficha por la ruta medida",
-    "RulerWhile": "mientras se mide desde una ficha",
+    "RulerPlaceWaypoint": "Colocar punto de medición",
+    "RulerRemoveWaypoint": "Quitar punto de medición",
     "ObjectSheet": "Abrir hoja del objeto referenciado",
     "ObjectHUD": "Mostrar HUD del objeto (si corresponde)",
     "ObjectConfig": "Abrir hoja de configuración del objeto",
@@ -838,6 +837,7 @@
     "MouseWheel": "Rueda del ratón",
     "DragDrop": "Arrastrar y soltar",
     "UnconstrainedMovement": "Movimiento libre",
+    "UnconstrainedMovementP": "Cuando se activa, puede mover fichas a través de pareces y terreno impracticable.",
     "TokenHeader": "Controles de ficha",
     "TokenPlaceHidden": "Colocar ficha oculta (GM)",
     "TokenTarget": "Establecer ficha (no propia) como objetivo",
@@ -1148,9 +1148,9 @@
     "RequiresGenerationReinstall": "La versión {version} de Foundry Virtual Tabletop ya está disponible, pero no se podrá instalar desde la aplicación porque se trata de una actualización de nueva generación y debe ser instalada manualmente, reinstalando el programa desde la página de <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a>.",
     "RequiresElectronReinstall": "La versión {version} de Foundry Virtual Tabletop ya está disponible, pero no se podrá instalar desde la aplicación porque incluye una nueva versión del cliente Electron y debe ser instalada manualmente, reinstalando el programa desde la página de <a href=\"https://foundryvtt.com/me/licenses\" target=\"_blank\">foundryvtt.com</a>.",
     "RESOLUTION": {
-      "Window": "Foundry Virtual Tabletop requiere una resolución de pantalla de {reqWidth}px por {reqHeight}px o superior. Su pantalla tiene una resolución de {curWidth}px por {curHeight}px. You must increase your resolution or use a different display device, or else some features of the software will not work properly.",
-      "Scale": "Foundry Virtual Tabletop requiere una dimensión de pantalla efectiva de {reqWidth}px por {reqHeight}px o superior. Las dimensiones de esta ventana son de {curWidth}px por {curHeight}px. Tiene aplicado un factor de escalado, bien a nivel de sistema operativo o de su navegador, lo que está reduciendo el tamaño efectivo de su ventana. Debe agrandar el tamaño de la ventana o reducir el factor de escalado aplicado a su navegador o de lo contrario algunas de las características del programa no funcionarán correctamente.",
-      "Screen": "Foundry Virtual Tabletop requiere una dimensión de pantalla efectiva de {reqWidth}px por {reqHeight}px o superior. Las dimensiones actuales de esta ventana son de {curWidth}px por {curHeight}. Debe agrandar el tamaño de su ventana o de lo contrario algunas de las características del programa no funcionarán correctamente."
+      "Screen": "Foundry Virtual Tabletop requiere una resolución de pantalla de {reqWidth}px por {reqHeight}px o superior. Su pantalla tiene una resolución de {curWidth}px por {curHeight}px. You must increase your resolution or use a different display device, or else some features of the software will not work properly.",
+      "Scale": "Foundry Virtual Tabletop requiere una dimensión de ventana efectiva de {reqWidth}px por {reqHeight}px o superior. Las dimensiones de esta ventana son de {curWidth}px por {curHeight}px. Tiene aplicado un factor de escalado, bien a nivel de sistema operativo o de su navegador, lo que está reduciendo el tamaño efectivo de su ventana. Debe agrandar el tamaño de la ventana o reducir el factor de escalado aplicado a su navegador o de lo contrario algunas de las características del programa no funcionarán correctamente.",
+      "Window": "Foundry Virtual Tabletop requiere una dimensión de ventana efectiva de {reqWidth}px por {reqHeight}px o superior. Las dimensiones actuales de esta ventana son de {curWidth}px por {curHeight}. Debe agrandar el tamaño de su ventana o de lo contrario algunas de las características del programa no funcionarán correctamente."
     }
   },
 
@@ -1278,6 +1278,7 @@
     "TraverseBack": "Ir atrás",
     "NoResults": "No se encontraron resultados coincidentes en esta ubicación.",
     "Upload": "Subir",
+    "CannotUpload": "No se permiten las subidas a este directorio.",
     "Search": "Buscar",
     "ErrorTooLarge": "El archivo que ha intentado subir es demasiado grande para que lo maneje su servidor proxy.",
     "ErrorSomethingWrong": "Algo salió mal con la subida del archivo especificado.",
@@ -1406,6 +1407,7 @@
   "JOURNAL.ConfigureCategoriesTitle": "categorías {name}",
   "JOURNAL.CategoryName": "Nombre de categoría",
   "JOURNAL.Uncategorized": "Sin categoría",
+  "JOURNAL.UnnamedCategory": "<Categoría sin nombre>",
 
   "JOURNALENTRYPAGE.DefaultPageSheet": "Hoja de página de {page} por defecto",
   "JOURNALENTRYPAGE.Format": "Formato",
@@ -2452,7 +2454,7 @@
     "WorldCoreMigrationRequired": "<p>Cargar el mundo <strong>{world}</strong> migrará su modelo de datos desde una versión anterior del núcleo (<code>{oldVersion}</code>) a la versión actualmente instalada <strong>{newVersion}</strong>.</p>",
     "WorldSystemMigrationRequired": "<p>Este mundo fue cargado por última vez con una versión del sistema más antigua (<code>{oldVersion}</code>) que la versión del sistema actualmente instalada <strong>{newVersion}</strong> y puede requerir una migración del sistema.</p>",
     "WorldMigrationSystemUnavailable": "<p>La versión instalada del sistema de juego <strong>{system}</strong> (<code>{systemVersion}</code>) no ha sido verificada como compatible con esta versión del núcleo. No se podrá garantizar una migración exitosa.</p>",
-    "WorldMigrationDisableModules": "<p>Asegúrese de actualizar los sistemas de juego y los módulos instalados antes de migrar el mundo. Como parte de la migración a una nueva versión del núcleo, todos los módulos se deshabilitarán. Puede volver a habilitarlos vez se complete la migración.</p>",
+    "WorldMigrationDisableModules": "<p>Asegúrese de actualizar los sistemas de juego y los módulos instalados antes de migrar el mundo. Como parte de la migración a una nueva versión del núcleo, todos los módulos y escenas activas se deshabilitarán y dejará de reproducirse el audio. Puede volver a habilitarlos vez se complete la migración.</p>",
     "WorldMigrationBackupPrompt": "<p><strong>Este proceso no se podrá deshacer</strong>. Se recomienda hacer una copia de seguridad de los datos del mundo antes de proceder. La necesitará si quiere restaurar a la versión anterior.</p>",
     "WorldMigrationCreateBackup": "¿Crear una copia de seguridad antes de migrar?",
     "WorldMigrationBegin": "Comenzar migración",
@@ -2699,22 +2701,26 @@
         "hint": "Dirección URL al sitio web donde se pueden encontrar más información sobre el paquete."
       },
       "authors": {
-        "name.label": "Nombre del autor",
-        "discord.label": "Usuario de discord",
-        "email.label": "Correo electrónico",
-        "url.label": "Dirección URL"
+        "element": {
+          "name.label": "Nombre del autor",
+          "discord.label": "Usuario de discord",
+          "email.label": "Correo electrónico",
+          "url.label": "Dirección URL"
+        }
       },
       "packs": {
-        "name": {
-          "label": "Nombre",
-          "hint": "Una cadena alfanumérica única sin caracteres especiales que identifica el compendio.",
-          "disabledHint": "No puede cambiar el nombre de este compendio porque ya existe."
-        },
-        "label.label": "Etiqueta",
-        "type.label": "Tipo de documento",
-        "system": {
-          "label": "Sistema requerido",
-          "hint": "Los compendios de actores, objetos o aventuras (que contienen actores u objetos) deben declarar para qué sistema de juego específico están diseñados."
+        "element": {
+          "name": {
+            "label": "Nombre",
+            "hint": "Una cadena alfanumérica única sin caracteres especiales que identifica el compendio.",
+            "disabledHint": "No puede cambiar el nombre de este compendio porque ya existe."
+          },
+          "label.label": "Etiqueta",
+          "type.label": "Tipo de documento",
+          "system": {
+            "label": "Sistema requerido",
+            "hint": "Los compendios de actores, objetos o aventuras (que contienen actores u objetos) deben declarar para qué sistema de juego específico están diseñados."
+          }
         }
       },
       "compatibility": {
