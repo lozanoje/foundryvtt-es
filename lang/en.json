@@ -838,7 +838,7 @@
   "MouseWheel": "Mouse-Wheel",
   "DragDrop": "Drag and Drop",
   "UnconstrainedMovement": "Unconstrained Movement",
-  "UnconstrainedMovementP": "When active, you can move Tokens through Walls and impassible terrain.",
+  "UnconstrainedMovementP": "When active, you can move Tokens through Walls and impassable terrain.",
   "TokenHeader": "Token Controls",
   "TokenPlaceHidden": "Place Hidden Token",
   "TokenTarget": "Set (non-Owned) Token as Target",
@@ -885,7 +885,8 @@
 },
 
 "DICE": {
-  "ErrorNonNumeric": "The dice roll formula {formula} did not produce a numeric outcome.",
+  "ErrorNonNumeric": "The dice roll formula \"{formula}\" did not produce a numeric outcome.",
+  "ErrorNotParsable": "The dice roll formula \"{formula}\" is not a string.",
   "ManualRoll": "Manual Roll",
   "RollResolution": "Roll Resolution",
   "SubmitRoll": "Submit Roll",
@@ -1253,10 +1254,10 @@
 },
 
 "FILES": {
-  "CreateDirectory": "Create Directory",
+  "CreateDirectory": "Create Folder",
   "CreateSubfolder": "Create Subfolder",
   "DirectoryName": {
-      "Label": "Directory Name",
+      "Label": "Folder Name",
       "Placeholder": "my-folder"
   },
   "TogglePrivacy": "Toggle Privacy Mode",
@@ -1268,25 +1269,25 @@
   "FavoritesLabel": "Favorites",
   "AddFavorite": "Add Current Folder to Favorites",
   "RemoveFavorite": "Remove Folder from Favorites",
-  "DirectoryPathLabel": "Directory Path",
+  "DirectoryPathLabel": "Folder Path",
   "FilterLabel": "Filter Results",
   "S3Label": "S3 Bucket",
   "Selected": "Selected",
   "SelectFile": "Select File",
-  "SelectFolder": "Select Directory",
+  "SelectFolder": "Select Folder",
   "TileSize": "Asset Grid Size",
   "TileSizeHint": "Specify the pixel grid size of source tile artwork so it will be automatically resized when placed onto your active Scene.",
   "TraverseBack": "Traverse Back",
   "NoResults": "No matching results found in this location.",
   "Upload": "Upload",
-  "CannotUpload": "Uploads to this directory are not permitted.",
+  "CannotUpload": "Uploads to this folder are prohibited. If needed, create a new top-level folder for your uploads.",
   "Search": "Search",
   "ErrorTooLarge": "The file you have attempted to upload is too large for your proxy server to handle.",
   "ErrorSomethingWrong": "Something went wrong with your file upload request.",
-  "WarnUploadModules": "You have uploaded files into a module or system directory. This is generally <strong>unsafe</strong> because updates to the system or module will delete your files.",
+  "WarnUploadModules": "You have uploaded files into a module or system folder. This is generally <strong>unsafe</strong> because updates to the system or module will delete your files.",
   "AlreadyFavorited": "{path} is already in your favorites.",
   "TitleAny": "File Browser",
-  "TitleFolder": "Directory Browser",
+  "TitleFolder": "Folder Browser",
   "TitleFont": "Font Browser",
   "TitleImageVideo": "Image or Video Browser",
   "TitleImage": "Image Browser",
@@ -2082,12 +2083,12 @@
     },
     "sslCert": {
       "label": "Certificate",
-      "hint": "You may run the server using secure socket layer (SSL) encryption by providing paths to certificate and key files. Paths are absolute or relative to the Config subdirectory in user data."
+      "hint": "You may run the server using secure socket layer (SSL) encryption by providing paths to certificate and key files. Paths are absolute or relative to the Config subfolder in user data."
     },
     "sslKey.label": "Key",
     "awsConfig": {
       "label": "AWS Configuration Path",
-      "hint": "You may provide an AWS configuration file for S3 integration. The path is absolute or relative to the Config subdirectory of user data."
+      "hint": "You may provide an AWS configuration file for S3 integration. The path is absolute or relative to the Config subfolder of user data."
     },
     "fullscreen": {
       "label": "Full-Screen Mode",
