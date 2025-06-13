@@ -2603,8 +2603,8 @@
   },
 
   "THEME.foundry": "Foundry Virtual Tabletop",
-  "THEME.fantasy": "Fantasía Clásica",
-  "THEME.scifi": "Ciencia Ficción",
+  "THEME.fantasy": "Fantasía clásica",
+  "THEME.scifi": "Ciencia ficción",
 
   "PACKAGE": {
     "Type": {
@@ -2619,7 +2619,7 @@
     "Create": "Crear paquete",
     "Compatibility": {
       "Label": "Compatibilidad",
-      "Hint": "Opcionalmente, puede indicar que este paquete es compatible solo con un rango de versiones de Foundry VTT. La compatibilidad se puede declarar para una compilación específica como \"13.339\" o para una generación amplia como \"13\"."
+      "Hint": "Opcionalmente, puedes indicar que este paquete solo es compatible con un rango de versiones de Foundry VTT. La compatibilidad se puede declarar para una compilación específica como \"13.339\" o para una generación amplia como \"13\"."
     },
     "TagJavaScript": "JavaScript",
     "TagCSS": "CSS",
@@ -2843,7 +2843,7 @@
     "HintDocument": "Configura el acceso a este documento específico, permitiendo que a cada usuario se le asigne un nivel de visibilidad diferente.",
     "Configure": "Configurar acceso",
     "ShowGM": "Mostrar usuarios GM",
-    "Legend": "Propiedad",
+    "Legend": "Acceso",
     "Save": "Guardar cambios"
   },
 
@@ -3238,7 +3238,7 @@
   },
 
   "SIDEBAR.COMPENDIUM.LABELS": {
-    "Ownership": "Propiedad no predeterminada",
+    "Ownership": "Acceso no predeterminado",
     "Locked": "Bloqueado"
   },
 
