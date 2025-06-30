@@ -203,7 +203,6 @@
     }
   },
 
-
   "AMBIENT_SOUND": {
     "ACTIONS": {
       "CREATE": "Crear audio ambiental",
@@ -1593,7 +1592,6 @@
   "LIGHT.InvertAbsorption": "Invertir absorción",
   "LIGHT.NaturalLight": "Luz natural",
 
-
   "LIGHT.AnimationTorch": "Luz parpadeante",
   "LIGHT.AnimationPulse": "Pulso",
   "LIGHT.AnimationReactivePulse": "Pulso reactivo al sonido",
@@ -2007,12 +2005,12 @@
   },
 
   "GRID.STYLES": {
-  "SolidLines": "Líneas sólidas",
-  "DashedLines": "Líneas discontinuas",
-  "DottedLines": "Líneas punteadas",
-  "SquarePoints": "Puntos cuadrados",
-  "DiamondPoints": "Puntos romboidales",
-  "RoundPoints": "Puntos redondos"
+    "SolidLines": "Líneas sólidas",
+    "DashedLines": "Líneas discontinuas",
+    "DottedLines": "Líneas punteadas",
+    "SquarePoints": "Puntos cuadrados",
+    "DiamondPoints": "Puntos romboidales",
+    "RoundPoints": "Puntos redondos"
   },
 
   "SERVER_SETTINGS": {
@@ -2463,7 +2461,7 @@
       "Label": "Actualizaciones desactivadas",
       "Hint": "No se le permite actualizar esta instancia de Foundry Virtual Tabletop porque ha sido iniciada en el modo --noupdate."
     },
-	
+
     "Package": "Paquete",
     "VersionChange": "Cambio de versión",
 
@@ -2748,7 +2746,6 @@
       "dataPath.label": "Ruta de datos"
     }
   },
-
 
   "PACKAGECONFIG": {
     "All": "Todos",
@@ -3457,7 +3454,6 @@
     }
   },
 
-
   "TIME": {
     "Day": {
       "one": "Día",
@@ -3953,7 +3949,6 @@
   "USERS.NoGMError": "Debe tener al menos un usuario Game Master en su mundo.",
   "USERS.DeleteWarning": "Se eliminará definitivamente este usuario del mundo.",
   "USERS.DeleteGMWarning": "¡Está a punto de eliminar un usuario Game Master!",
-
 
   "VISION.ModeBlindness": "Ceguera",
   "VISION.ModeBasicVision": "Visión básica",
