@@ -1,10 +1,10 @@
 {
   "title": "Translation: Spanish [Core]",
   "description": "Traducción al Español (Spanish) de FoundryVTT",
-  "version": "13.345.1",
+  "version": "13.346.1",
   "compatibility": {
     "minimum": "13",
-    "verified": "13.345",
+    "verified": "13.346",
     "maximum": "13"
   },
   "languages": [{

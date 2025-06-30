@@ -1062,8 +1062,8 @@
   "EFFECT.MODE_OVERRIDE": "Anular",
   "EFFECT.TransferLegacy": "Transferir efecto al actor",
   "EFFECT.TransferHintLegacy": "Si está marcado, este efecto se copiará al actor cuando el objeto predecesor de este efecto se cree en un actor, y se eliminará si ese objeto es quitado.",
-  "EFFECT.DurationTurns": "Duración del efecto (turnos)",
-  "EFFECT.StartTurns": "Turno de inicio del efecto",
+  "EFFECT.DurationTurns": "Duración del efecto (combate)",
+  "EFFECT.StartTurns": "Inicio del efecto",
   "EFFECT.ChangeKey": "Clave de atributo",
   "EFFECT.ChangeMode": "Cambiar modo",
   "EFFECT.ChangeValue": "Valor del efecto",
@@ -1279,7 +1279,7 @@
     "TraverseBack": "Ir atrás",
     "NoResults": "No se encontraron resultados coincidentes en esta ubicación.",
     "Upload": "Subir",
-    "CannotUpload": "No se permiten las subidas a este directorio. Si es necesario, cree un directorio de nivel superior para las subidas.",
+    "CannotUpload": "No se permiten las subidas a este directorio porque el contenido se sobrescribirá en las actualizaciones. Realice las subidas a un directorio \"recursos\" o a cualquier otra localización a la que tenga permisos.",
     "Search": "Buscar",
     "ErrorTooLarge": "El archivo que ha intentado subir es demasiado grande para que lo maneje su servidor proxy.",
     "ErrorSomethingWrong": "Algo salió mal con la subida del archivo especificado.",
@@ -2027,6 +2027,11 @@
       "yes": "Permitir compartir",
       "no": "Declinar compartir"
     },
+    "ChangePassword": {
+      "label": "Cambiar contraseña",
+      "hint": "Introduzca la contraseña de administrador actual.",
+      "title": "Contraseña actual"
+    },
     "SECTIONS": {
       "FVTTConfig": "Configuración Foundry VTT",
       "ServerConfig": "Configuración servidor",
@@ -2194,6 +2199,9 @@
   "SETTINGS.GridDiagonalsAlternating1": "Alternante (1/2/1)",
   "SETTINGS.GridDiagonalsAlternating2": "Alternante (2/1/2)",
   "SETTINGS.GridDiagonalsIllegal": "Ilegal (∞)",
+
+  "SETTINGS.UniversalKeybindingsN": "Atajos de teclado universales (experimental)",
+  "SETTINGS.UniversalKeybindingsL": "Crea atajos en base al caracter que escribe en lugar de la posición física de la tecla. Mejora el soporte a distribuciones AZERTY, QWERTZ, Kana y otras. Esta característica es experimental. Requiere reiniciar.",
 
   "SETTINGS.UI": {
     "MENU": {
@@ -2448,6 +2456,11 @@
     "UpdateNoArchive": "No existe archivo de actualización que instalar",
     "UpdateLicenseInvalid": "La clave de licencia de Foundry Virtual Tabletop no es válida.",
     "UpdatedPackages": "Registro de actualizaciones de paquetes",
+    "NoUpdateMode": {
+      "Label": "Actualizaciones desactivadas",
+      "Hint": "No se le permite actualizar esta instancia de Foundry Virtual Tabletop porque ha sido iniciada en el modo --noupdate."
+    },
+	
     "Package": "Paquete",
     "VersionChange": "Cambio de versión",
 
@@ -2595,7 +2608,7 @@
       "FullList": "Consulte la <a href=\"{url}\" target=\"_blank\">lista completa</a> de las notas de esta versión.",
       "BeginDownload": "Comenzar descarga",
       "NewGenerationHint": "Considere tomar una instantánea de todos los paquetes instalados antes de actualizar en caso de que necesite revertir la actualización.",
-      "PreviewCompatibilityHint": "Usando el botón 'Previsualizar compatibilidad', puede comprobar si todos sus mundos, sistemas y módulos son compatibles con la versión {version} de Foundry Virtual Tabletop."
+      "PreviewCompatibilityHint": "Usando el botón \"Previsualizar compatibilidad\", puede comprobar si todos sus mundos, sistemas y módulos son compatibles con la versión {version} de Foundry Virtual Tabletop."
     }
   },
 
