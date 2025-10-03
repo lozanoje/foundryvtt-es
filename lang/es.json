@@ -203,6 +203,7 @@
     }
   },
 
+
   "AMBIENT_SOUND": {
     "ACTIONS": {
       "CREATE": "Crear audio ambiental",
@@ -487,83 +488,106 @@
   "CHAT.PrivateRollContent": "{user} ha tirado los dados en privado",
   "CHAT.UnknownUser": "Usuario desconocido",
 
-  "COMBAT.NavLabel": "Navegador de encuentros de combate",
-  "COMBAT.Begin": "Comenzar combate",
-  "COMBAT.Create": "Crear encuentro",
-  "COMBAT.Delete": "Eliminar encuentro",
-  "COMBAT.Encounter": "Encuentro",
-  "COMBAT.EncounterPrevious": "Activar encuentro anterior",
-  "COMBAT.EncounterNext": "Activar encuentro siguiente",
-  "COMBAT.End": "Fin. combate",
-  "COMBAT.InitiativeRoll": "Tirar iniciativa",
-  "COMBAT.InitiativeReset": "Restablecer iniciativa",
-  "COMBAT.ClearMovementHistories": "Borrar historiales de movimiento",
-  "COMBAT.InitiativeScore": "Puntuación de iniciativa",
-  "COMBAT.EndTitle": "¿Finalizar encuentro de combate?",
-  "COMBAT.EndConfirmation": "¿Deseas finalizar este encuentro de combate y vaciar el asistente de combate?",
-  "COMBAT.Linked": "Vinculado a la escena, haga clic para desvincular.",
-  "COMBAT.None": "Sin encuentro de combate",
-  "COMBAT.NoneActive": "No hay encuentros de combate en la escena visible actualmente.",
-  "COMBAT.NoneRemaining": "No quedan contendientes en este encuentro que no estén derrotados.",
-  "COMBAT.NotStarted": "No iniciado",
-  "COMBAT.PanToCombatant": "Desplazar a contendiente",
-  "COMBAT.PingCombatant": "Señalar contendiente",
-  "COMBAT.WarnNonVisibleToken": "Este contendiente no es visible para ti.",
-  "COMBAT.Round": "Asalto {round}",
-  "COMBAT.Rounds": "Asaltos de combate",
-  "COMBAT.RoundPrev": "Asalto anterior",
-  "COMBAT.RoundNext": "Asalto siguiente",
-  "COMBAT.RollNPC": "Tirar iniciativa para PNJs",
-  "COMBAT.RollAll": "Tirar iniciativa para todos",
-  "COMBAT.RollsInitiative": "¡{name} ha tirando iniciativa!",
-  "COMBAT.Settings": "Ajustes del asistente de combate",
-  "COMBAT.SettingsSave": "Guardar ajustes del asistente",
-  "COMBAT.SidebarTitle": "Asistente de combate",
-  "COMBAT.Sounds.Epic": "Épico",
-  "COMBAT.Sounds.MC": "Comentarista de lucha",
-  "COMBAT.ToggleVis": "Alternar visibilidad",
-  "COMBAT.ToggleDead": "Marcar como derrotado",
-  "COMBAT.Turn": "Turno",
-  "COMBAT.Turns": "Turnos",
-  "COMBAT.TurnEnd": "Finalizar turno",
-  "COMBAT.TurnNext": "Turno siguiente",
-  "COMBAT.TurnPrev": "Turno anterior",
-  "COMBAT.UnknownCombatant": "Contendiente desconocido",
-  "COMBAT.Unlinked": "Combate no vinculado, haga clic para vincularlo a la escena.",
-  "COMBAT.CannotLinkToScene": "No puedes vincular el combate a una escena que no contenga a todos sus contendientes.",
-
-  "COMBAT.CombatantActor": "Actor representado",
-  "COMBAT.CombatantCreate": "Crear contendiente",
-  "COMBAT.CombatantDefeated": "Derrotado",
-  "COMBAT.CombatantHidden": "Oculto",
-  "COMBAT.CombatantImage": "Imagen de miniatura",
-  "COMBAT.CombatantInitiative": "Valor de iniciativa",
-  "COMBAT.CombatantStatus": "Estado",
-  "COMBAT.CombatantUpdate": "Actualizar contendiente",
-  "COMBAT.CombatantUpdateNamed": "Actualizar contendiente: {name}",
-  "COMBAT.CombatantName": "Nombre mostrado",
-  "COMBAT.CombatantRemove": "Quitar contendiente",
-  "COMBAT.CombatantClear": "Borrar iniciativa",
-  "COMBAT.CombatantReroll": "Volver a tirar iniciativa",
-  "COMBAT.CombatantClearMovementHistory": "Borrar historial de movimiento",
-  "COMBAT.CombatantMovementHistoryCleared": "Historial de movimiento borrado para la ficha \"{name}\".",
-  "COMBAT.CombatantToken": "Ficha representada",
-  "COMBAT.CombatantScene": "Escena del contendiente",
-  "COMBAT.CombatantNotInScene": "El contendiente {name} no se encuentra en la escena visible actualmente.",
-
-  "COMBAT.FIELDS": {
-    "round.label": "Asalto",
-    "turn.label": "Turno"
+"COMBAT": {
+  "NavLabel": "Navegador de encuentros de combate",
+  "Begin": "Comenzar combate",
+  "Create": "Crear encuentro",
+  "Delete": "Eliminar encuentro",
+  "Encounter": "Encuentro",
+  "EncounterPrevious": "Activar encuentro anterior",
+  "EncounterNext": "Activar encuentro siguiente",
+  "End": "Fin. combate",
+  "InitiativeRoll": "Tirar iniciativa",
+  "InitiativeReset": "Restablecer iniciativa",
+  "ClearMovementHistories": "Borrar historiales de movimiento",
+  "InitiativeScore": "Puntuación de iniciativa",
+  "EndTitle": "¿Finalizar encuentro de combate?",
+  "EndConfirmation": "¿Deseas finalizar este encuentro de combate y vaciar el asistente de combate?",
+  "None": "Sin encuentro de combate",
+  "NoneActive": "No hay encuentros de combate en la escena visible actualmente.",
+  "NoneRemaining": "No quedan contendientes en este encuentro que no estén derrotados.",
+  "NotStarted": "No iniciado",
+  "PanToCombatant": "Desplazar a contendiente",
+  "PingCombatant": "Señalar contendiente",
+  "WarnNonVisibleToken": "Este contendiente no es visible para ti.",
+  "Round": "Asalto {round}",
+  "Rounds": "Asaltos de combate",
+  "RoundPrev": "Asalto anterior",
+  "RoundNext": "Asalto siguiente",
+  "RollNPC": "Tirar iniciativa para PNJs",
+  "RollAll": "Tirar iniciativa para todos",
+  "RollsInitiative": "¡{name} ha tirando iniciativa!",
+  "Settings": "Ajustes del asistente de combate",
+  "SettingsSave": "Guardar ajustes del asistente",
+  "SidebarTitle": "Asistente de combate",
+  "Sounds": {
+  "Epic": "Épico",
+  "MC": "Comentarista de lucha"
   },
-
-  "COMBAT.TURN_MARKERS": {
+  "ToggleVis": "Alternar visibilidad",
+  "ToggleDead": "Marcar como derrotado",
+  "Turn": "Turno",
+  "Turns": "Turnos",
+  "TurnEnd": "Finalizar turno",
+  "TurnNext": "Turno siguiente",
+  "TurnPrev": "Turno anterior",
+  "UnknownCombatant": "Contendiente desconocido",
+  "CannotLinkToScene": "No puedes vincular el combate a una escena que no contenga a todos sus contendientes.",
+  "CombatantActor": "Actor representado",
+  "CombatantCreate": "Crear contendiente",
+  "CombatantDefeated": "Derrotado",
+  "CombatantHidden": "Oculto",
+  "CombatantImage": "Imagen de miniatura",
+  "CombatantInitiative": "Valor de iniciativa",
+  "CombatantStatus": "Estado",
+  "CombatantUpdate": "Actualizar contendiente",
+  "CombatantUpdateNamed": "Actualizar contendiente: {name}",
+  "CombatantName": "Nombre mostrado",
+  "CombatantRemove": "Quitar contendiente",
+  "CombatantClear": "Borrar iniciativa",
+  "CombatantReroll": "Volver a tirar iniciativa",
+  "CombatantClearMovementHistory": "Borrar historial de movimiento",
+  "CombatantMovementHistoryCleared": "Historial de movimiento borrado para la ficha \"{name}\".",
+  "CombatantToken": "Ficha representada",
+  "CombatantScene": "Escena del contendiente",
+  "CombatantNotInScene": "El contendiente {name} no se encuentra en la escena visible actualmente.",
+  "ACTIONS": {
+    "LinkToScene": "Vincular a la escena actual",
+    "UnlinkFromScene": "Desvincular de la escena"
+  },
+  "DURATION": {
+    "ROUNDS": {
+      "one": "Asalto",
+      "two": "Asaltos",
+      "few": "Asaltos",
+      "many": "Asaltos",
+      "other": "Asaltos"
+    },
+    "TURNS": {
+      "one": "Turno",
+      "two": "Turnos",
+      "few": "Turnos",
+      "many": "Turnos",
+      "other": "Turnos"
+    },
+    "None": "Ninguno"
+  },
+  "FIELDS": {
+    "round": {
+      "label": "Asalto"
+    },
+    "turn": {
+      "label": "Turno"
+    }
+  },
+  "TURN_MARKERS": {
     "ANIMATIONS": {
       "SPIN": "Giro",
       "SPIN_PULSE": "Giro y pulso",
       "PULSE": "Pulso"
     }
   },
-  "COMBAT.CONFIG": {
+  "CONFIG": {
     "SHEET": {
       "TURN_MARKERS": "Marcadores de turno de ficha"
     },
@@ -598,6 +622,12 @@
       }
     }
   },
+  "PingInvisibleToken": "No puedes ver la ficha de este participante.",
+  "ResourceHint": "Selecciona qué atributo seguir de cada participante.",
+  "SkipDefeatedHint": "¿Pasar los participantes marcados como derrotados?",
+  "TargetedBy": "Objetivo de {list}",
+  "ToggleTargeting": "Conmutar objetivo"
+},
 
   "COMPENDIUM.Name": "Nombre del compendio",
   "COMPENDIUM.Create": "Crear compendio",
@@ -628,6 +658,10 @@
   },
   "COMPENDIUM.ImportEntry": "Importar entrada",
   "COMPENDIUM.Locked": "{title} [Bloqueado]",
+"COMPENDIUM.Migration": {
+  "Begin": "Iniciando migración de los compendios {collection}, por favor, espere.",
+  "Complete": "Migrados con éxito los compendios {collection}."
+},
   "COMPENDIUM.SidebarTitle": "Compendios",
   "COMPENDIUM.Type": "Tipo de documento",
   "COMPENDIUM.TypeHint": "Cada compendio contiene un tipo específico de documento.",
@@ -871,7 +905,7 @@
     "CommonSelect": "Selección",
     "CommonSelectMultiple": "Selección múltiple",
     "CommonOpenSheet": "Abrir hoja",
-    "DisableToolclips": "Deshabilita las ayudas de herramientas en los ajustes",
+    "DisableToolclips": "Puede deshabilitar las ayudas de herramientas en los ajustes",
     "CutObjects": "Se han cortado {count} objeto(s) {type}.",
     "CopiedObjects": "Se han copiado {count} objeto(s) {type}.",
     "PastedObjects": "Se han pegado {count} objeto(s) {type}.",
@@ -1353,6 +1387,7 @@
     "UNLOCK": "Desbloquear barra de macros",
     "PAGE_NEXT": "Página siguiente",
     "PAGE_PREV": "Página anterior",
+  "EMPTY": "Hueco vacío",
     "CLEAR": "Borrar barra de macros",
     "CLEAR_CONFIRM": "¿Borrar todas las macros asignadas de tu barra de macros?"
   },
@@ -1469,6 +1504,7 @@
     "Paste": "Pegar objetos",
     "Target": "Ficha objetivo",
     "Ruler": "Alternar regla de distancia",
+  "UnconstrainedMovement": "Conmutar movimiento libre",
     "SendToBack": "Enviar objetos al fondo",
     "BringToFront": "Traer objetos al frente",
     "ToggleCharacterSheet": "Alternar hoja de personaje",
@@ -2452,7 +2488,6 @@
     "UpdateWarningWillDisable": "Esta actualización es una nueva versión principal del núcleo de Foundry VTT. Al instalar esta actualización se deshabilitará algunos módulos instalados que aún no sean compatibles.",
     "UpdateButtonDownload": "Descargar actualización {display}",
     "UpdateInfoAvailable": "¡Hay una actualización disponible para Foundry Virtual Tabletop {display}!",
-    "UpdateNoUpdateMode": "No se le permite actualizar esta instancia de Foundry Virtual Tabletop porque fue cargada en modo --noupdate.",
     "UpdateNotAvailable": "No hay ninguna actualización disponible en el canal de actualización seleccionado.",
     "UpdateNoArchive": "No existe archivo de actualización a instalar",
     "UpdateLicenseInvalid": "La clave de licencia de Foundry Virtual Tabletop no es válida.",
@@ -2746,6 +2781,7 @@
       "dataPath.label": "Ruta de datos"
     }
   },
+
 
   "PACKAGECONFIG": {
     "All": "Todos",
@@ -3454,6 +3490,7 @@
     }
   },
 
+
   "TIME": {
     "Day": {
       "one": "Día",
@@ -3949,6 +3986,7 @@
   "USERS.NoGMError": "Debe tener al menos un usuario Game Master en su mundo.",
   "USERS.DeleteWarning": "Se eliminará definitivamente este usuario del mundo.",
   "USERS.DeleteGMWarning": "¡Está a punto de eliminar un usuario Game Master!",
+
 
   "VISION.ModeBlindness": "Ceguera",
   "VISION.ModeBasicVision": "Visión básica",
