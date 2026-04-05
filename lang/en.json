@@ -619,7 +619,6 @@
   "TileSelect": "Select Tiles",
   "TilePlace": "Place Tile",
   "TilePlaceHeading": "Place",
-  "TileForeground": "Foreground Layer",
   "TileBrowser": "Tile Browser",
   "GroupDrawing": "Drawing Tools",
   "DrawingSelect": "Select Drawings",
@@ -631,31 +630,29 @@
   "DrawingText": "Draw Text",
   "DrawingClear": "Clear Drawings",
   "DrawingConfig": "Configure Drawing",
-  "DrawingRole": "Toggle Information Drawings",
   "GroupWall": "Wall Controls",
-  "WallDraw": "Draw Walls",
-  "WallBasic": "Basic Walls",
-  "WallBasicBlocks": "Movement, vision, and hearing",
-  "WallInvisible": "Invisible Walls",
+  "WallDraw": "Draw Wall",
+  "WallSolid": "Solid Wall",
+  "WallSolidBlocks": "Movement, vision, and hearing",
+  "WallInvisible": "Invisible Wall",
   "WallInvisibleBlocks": "Movement",
-  "WallTerrain": "Terrain Walls",
+  "WallTerrain": "Terrain Wall",
   "WallTerrainBlocks": "Sight beyond the second wall, movement, and hearing",
-  "WallEthereal": "Ethereal Walls",
+  "WallEthereal": "Ethereal Wall",
   "WallEtherealBlocks": "Sight and hearing",
-  "WallDoors": "Draw Doors",
-  "DoorBlocks": "Movement, vision, and hearing unless opened",
-  "WallSecret": "Secret Doors",
+  "WallDoor": "Door",
+  "WallDoorBlocks": "Movement, vision, and hearing unless opened",
+  "WallSecret": "Secret Door",
   "WallSecretHidden": "Hidden",
   "WallSecretHiddenP": "Secret Doors can't be seen by players",
-  "WallSelect": "Rectangular Select Walls",
+  "WallSelect": "Select Walls",
   "CommonMoveWithoutSnapping": "Move Without Snapping",
   "WallSelectEdit": "<span class=\"reference\">Double Click</span>",
   "WallSnapP": "Wall points snap to nearest grid vertex when active",
-  "WallClone": "Clone Walls",
   "WallCloseDoors": "Close all Doors",
   "WallDoorsClosed": "Closed {number} doors",
   "WallClear": "Clear Walls",
-  "WallWindow": "Window Walls",
+  "WallWindow": "Window",
   "WallWindowBlocks": "Sight, movement, and hearing beyond a certain distance",
   "GroupLighting": "Lighting Controls",
   "LightSelect": "Select Light Sources",
@@ -688,6 +685,7 @@
   "RegionSelect": "Select Regions",
   "RegionSelectP": "Select one or more Regions in the Scene. A selected Region is a solid color and unselected Regions are striped.",
   "RegionTemplateMode": "Measured Template Mode",
+  "RegionTemplateModeP": "When enabled, the palette is ignored and each shape you draw creates a new Region. Shapes cannot be added to existing Regions.",
   "RegionRectangle": "Draw Rectangle",
   "RegionCircle": "Draw Circle",
   "RegionEllipse": "Draw Ellipse",
@@ -702,7 +700,10 @@
   "RegionClear": "Clear Regions",
   "RegionPerformance": "<em>Performance Note:</em> Each drawing is its own Shape. Be careful not to place multiple Shapes entirely within each other. Rather than combining simple Shapes to create a complex Shape, consider using the Region Polygon tool.",
   "ClearAll": "Clear All Objects",
-  "ClearAllHint": "Permanently delete all {type} objects from this Scene?",
+  "ClearAllOwned": "Clear All Owned Objects",
+  "ClearAllHint": "Permanently delete all viewed {type} objects?",
+  "ClearAllOwnedHint": "Permanently delete all viewed {type} objects that you own?",
+  "DeleteLockedObjects": "Delete Locked Objects",
   "HeaderGame": "General Game Controls",
   "HeaderGameNotes": "These controls generally apply across all aspects of Foundry functionality.",
   "HeaderCanvas": "Canvas Layer Controls",
@@ -795,7 +796,6 @@
   "TooltipDismiss": "Dismiss locked tooltip",
   "TooltipLock": "Lock tooltip",
   "WallHeader": "Walls Layer Controls",
-  "WallChain": "Chain Wall Creation",
   "WallSelectChain": "Select Chained Segments",
   "DrawingHeader": "Drawing Tool Controls",
   "DrawingTextConfirm": "Confirm Drawing Text",
@@ -1117,12 +1117,26 @@
       "many": "{rounds} Rounds",
       "other": "{rounds} Rounds"
     },
+    "ROUNDS_AGO": {
+      "one": "1 Round Ago",
+      "two": "2 Rounds Ago",
+      "few": "{rounds} Rounds Ago",
+      "many": "{rounds} Rounds Ago",
+      "other": "{rounds} Rounds Ago"
+    },
     "TURNS": {
       "one": "1 Turn",
       "two": "2 Turns",
       "few": "{turns} Turns",
       "many": "{turns} Turns",
       "other": "{turns} Turns"
+    },
+    "TURNS_AGO": {
+      "one": "1 Turn Ago",
+      "two": "2 Turns Ago",
+      "few": "{turns} Turns Ago",
+      "many": "{turns} Turns Ago",
+      "other": "{turns} Turns Ago"
     },
     "EXPIRY_EVENTS": {
       "combatStart": "Combat Start",
@@ -1336,8 +1350,12 @@
   },
   "TAGS": {
     "Add": "Add Tag",
+    "AddGridOffset": "Add Grid Offset",
     "Remove": "Remove Tag",
+    "RemoveGridOffset": "Remove Grid Offset",
     "ErrorBlank": "Tags in an HTMLStringTagsElement may not be blank.",
+    "ErrorInvalidGridOffset2D": "A 2D grid offset must have two integer coordinates, which are separated by a dot.",
+    "ErrorInvalidGridOffset3D": "A 3D grid offset must have three integer coordinates, which are separated by dots.",
     "ErrorNonUnique": "Tag \"{tag}\" is already set."
   }
 },
@@ -1676,7 +1694,9 @@
     "animation": {
       "label": "Light Animation",
       "type": {
-        "label": "Light Animation Type"
+        "label": "Light Animation Type",
+        "any": "Any",
+        "none": "No Animation"
       },
       "speed": {
         "label": "Animation Speed",
@@ -1778,7 +1798,6 @@
   "Angle": "Angle",
   "Coordinates": "Coordinates",
   "Degrees": "Degrees",
-  "Depth": "Depth",
   "Direction": "Direction",
   "Distance": "Distance",
   "GridSpaces": "Grid Spaces",
@@ -1957,8 +1976,8 @@
 "SCENE.AccessibilityAll" : "All Players",
 "SCENE.Activate": "Activate",
 "SCENE.Audio": "Audio",
-"SCENE.BackgroundScale": "Background Image Scale",
-"SCENE.BackgroundScaleHint": "Use SHIFT+Mousewheel or SHIFT+Up Arrow and SHIFT+Down Arrow to adjust the background image size.",
+"SCENE.BackgroundScale": "Scene Scale",
+"SCENE.BackgroundScaleHint": "Use SHIFT+Mousewheel or SHIFT+Up Arrow and SHIFT+Down Arrow to adjust the scene scale.",
 "SCENE.CaptureInitialViewPosition": "Captured canvas position as initial view in the Scene configuration form.",
 "SCENE.Configure": "Configure",
 "SCENE.CurrentLevel": "Current Level",
@@ -1969,6 +1988,7 @@
 "SCENE.DimensionChangeTitle": "Change Scene Dimensions?",
 "SCENE.DimensionChangeWarning": "You are changing the underlying dimensions of this Scene, if you have already placed objects in this Scene this operation may cause those objects to shift position relative to the background image.",
 "SCENE.DimensionLinked": "Scene dimensions are currently linked: changing one will change the other to maintain aspect ratio. Click to unlink.",
+"SCENE.DeterminingDimensions": "Determining Scene dimensions.",
 "SCENE.DimensionUnlinked": "Scene dimensions are currently unlinked, changing one will not change the other. Click to link.",
 "SCENE.DistortedDimensionsTitle": "Distorted Scene Dimensions",
 "SCENE.DistortedDimensionsWarning": "You have chosen new dimensions that are of a different aspect ratio than the original. Do you wish to automatically reposition placed objects such as Tokens? The result may end up appearing distorted.",
@@ -1986,7 +2006,7 @@
 "SCENE.GridAppearance": "Appearance",
 "SCENE.GridAppearanceHint": "Configure the appearance of the grid lines.",
 "SCENE.GridConfigTool": "Grid Configuration Tool",
-"SCENE.GridConfigToolHint": "Configure the grid and background image position using the mousewheel and arrow keys, or by manually setting the following fields.",
+"SCENE.GridConfigToolHint": "Configure the grid and scene offset using the mousewheel and arrow keys, or by manually setting the following fields.",
 "SCENE.GridGridless": "Gridless",
 "SCENE.GridSquare": "Square",
 "SCENE.GridHexOddR": "Hexagonal Rows - Odd",
@@ -1997,8 +2017,8 @@
 "SCENE.GridMechanics": "Mechanics",
 "SCENE.GridSizeError": "This resize would reduce the grid size under the minimum of 50px. If you would like to reduce to this size, please swap to gridless first and resetup a new grid after resize.",
 "SCENE.GridResizeHint" : "Use ALT+Mousewheel or ALT+Up Arrow and ALT+Down Arrow to adjust the grid size.",
-"SCENE.GridPosition": "Background Image Offset",
-"SCENE.GridPositionHint": "Use the Arrow Keys to shift the background image offset.",
+"SCENE.GridPosition": "Scene Offset",
+"SCENE.GridPositionHint": "Use the Arrow Keys to adjust the scene offset.",
 "SCENE.GridReset": "Reset Changes",
 "SCENE.InheritedField": "This field's value is being inherited from the '{level}' level. Click here to edit it directly.",
 "SCENE.InitialLevel": "Initial Level",
@@ -2044,7 +2064,7 @@
   "transition": {
     "type": {
       "label": "Transition Type",
-      "hint": "The type of transition animation that is played when the Scene is loaded."
+      "hint": "The type of transition animation that is played when the Scene is viewed."
     },
     "duration": {
       "label": "Duration",
@@ -2070,14 +2090,6 @@
     "offsetY.label": "Vertical"
   },
   "backgroundColor.label": "Background Color",
-  "foreground": {
-    "label": "Foreground Image",
-    "hint": "An optional foreground image which is drawn above other objects in the Scene."
-  },
-  "foregroundElevation": {
-    "label": "Foreground Elevation",
-    "hint": "An elevation in distance units which configures the height of the foreground image and overhead tiles."
-  },
   "initial.scale.label": "Zoom",
   "grid": {
     "type.label": "Grid Type",
@@ -2225,7 +2237,10 @@
       "src.label": "Texture",
       "color.label": "Color",
       "tint.label": "Tint",
-      "alphaThreshold.label": "Alpha Threshold"
+      "alphaThreshold": {
+        "label": "Alpha Threshold",
+        "hint": "Pixels in the background texture with alpha values below this threshold do not restrict light or weather."
+      }
     },
     "elevation": {
       "label": "Elevation Range",
@@ -2336,7 +2351,11 @@
     "upnp.label": "Enable UPnP",
     "port": {
       "label": "Port",
-      "hint": "Choose which port Foundry Virtual Tabletop uses for TCP connection traffic and enable or disable Universal Plug and Play (UPnP)."
+      "hint": "Choose a port number that Foundry Virtual Tabletop will use for TCP connections. You can also enable or disable Universal Plug and Play (UPnP)."
+    },
+    "unixSocket": {
+      "label": "Unix Socket",
+      "hint": "Instead of a port number, a file path to a Unix domain socket can be entered. If both a port and socket are entered, the socket path will be used."
     },
     "compressStatic": {
       "label": "Compress Static Files",
@@ -2585,6 +2604,8 @@
   "WorldCreating": "Creating World...",
   "WorldCreateCancel": "Cancel World Creation",
   "WorldCreateDependencyFail": "The World could not be created as required dependencies were not installed.",
+  "WorldCreateNoSystem": "You must select a Game System for the World before continuing.",
+  "WorldCreateNoTitle": "You must provide a title for the World before continuing.",
   "WorldCreateSuccess": "Creation successful, launching...",
   "WorldDelete": "Delete World",
   "WorldEdit": "World Configuration",
@@ -3244,7 +3265,8 @@
   "FIELDS": {
     "color": {
       "label": "Color",
-      "hint": "The color applied to the visualization of the Region."
+      "hint": "The color applied to the visualization of the Region.",
+      "placeholder": "Random Color"
     },
     "shapes": {
       "label": "Shapes",
@@ -3262,9 +3284,11 @@
         "hint": "The top of the elevation range."
       }
     },
-    "attachedToken": {
-      "label": "Attached Token",
-      "hint": "The Token the Region is attached to. When this Token is moved, the Region is moved with it."
+    "attachment": {
+      "token": {
+        "label": "Attached Token",
+        "hint": "The Token the Region is attached to. When this Token is moved, the Region is moved with it."
+      }
     },
     "restriction": {
       "enabled": {
@@ -3405,6 +3429,7 @@
   },
   "NOTIFICATIONS": {
     "PlacedRegionRotationNotAllowed": "You are not allowed to rotate the shape of the placed Region.",
+    "PlacedRegionNotAttachedToToken": "The placed Region must be attached to a Token.",
     "CopiedShape": "Copied Region shape.",
     "CutShape": "Cut Region shape.",
     "PastedShape": "Pasted Region shape.",
@@ -3412,7 +3437,7 @@
   },
   "TOOLTIPS": {
     "CannotChangeLevelsIfAttached": "The Region must be on the same Level as the Token it's attached to.",
-    "CannotSelectMultipleLevelsIfRestricted": "This Region can't be included in multiple Regions while it's restricted.",
+    "CannotSelectMultipleLevelsIfRestricted": "This Region can't be included in multiple Levels while it's restricted.",
     "CannotEnableRestriction": "This Region can't be restricted because it's included in more than one Level."
   }
 },
@@ -3702,7 +3727,8 @@
     "Visible": "Visible"
   },
   "Categories": {
-    "NoAuthor": "No Author"
+    "NoAuthor": "No Author",
+    "NoLevel": "No Level"
   },
   "Meta": {
     "empty": "Empty",
@@ -3716,7 +3742,8 @@
     },
     "Bottom": "Bottom",
     "Title": "Advanced Filter",
-    "Tooltip": "Advanced Filters. Right-click to clear",
+    "Level": "Filter by Level",
+    "Tooltip": "Advanced Filters. Right-click to clear.",
     "Top": "Top"
   },
   "Search": {
@@ -3725,6 +3752,7 @@
   "WALLS": {
     "door": "Doors",
     "ethereal": "Ethereal Walls",
+    "filterByCategory": "Filter by Category",
     "invisible": "Invisible Walls",
     "normal": "Normal Walls",
     "secret": "Secret Doors",
@@ -3890,18 +3918,30 @@
     "src.label": "Tile Image or Video",
     "scaleX.label": "Horizontal",
     "scaleY.label": "Vertical",
-    "tint.label": "Tint Color"
+    "tint.label": "Tint Color",
+    "alphaThreshold": {
+      "label": "Alpha Threshold",
+      "hint": "Pixels in the Tile image with alpha values below this threshold do not restrict light or weather and do not trigger hover fading."
+    }
   },
   "alpha.label": "Tile Opacity",
   "name": {
-    "hint": "An optional name to help identify the tile.",
+    "hint": "An optional name to help identify the Tile.",
     "label": "Name"
   },
   "occlusion": {
     "modes.label": "Occlusion Modes",
     "alpha.label": "Occlusion Alpha"
   },
+  "OCCLUSION_MODES": {
+    "FADE.label": "Fade",
+    "NONE.label": "None",
+    "RADIAL.label": "Radial",
+    "SURFACE.label": "Surface",
+    "VISION.label": "Vision"
+  },
   "restrictions": {
+    "label": "Restrictions",
     "light": {
       "label": "Restricts Light",
       "hint": "Are light sources blocked based on their elevation relative to the elevation of this Tile?"
@@ -3978,7 +4018,7 @@
 "TOKEN.BarValues": "Single Values",
 "TOKEN.DeleteCombatantWarning": "You are deleting a Token that is in Combat. Its Combatant will be permanently deleted.",
 "TOKEN.DeleteAttachedRegionWarning": "You are deleting a Token that has a Region attached to it. Its attached Region(s) will be permanently deleted.",
-"TOKEN.Dimensions": "Dimensions",
+"TOKEN.Size": "Size",
 "TOKEN.Anchor": "Anchor",
 "TOKEN.AnchorHint": "The default anchor (0.5, 0.5) is the center of the Token image.",
 "TOKEN.ImageAlts": "Alternate Actor Tokens",
@@ -4006,9 +4046,16 @@
   "animation": "Light Animation",
   "advanced": "Advanced Options"
 },
+"TOKEN.NOTIFICATIONS": {
+  "PlacedTokenRotationNotAllowed": "You are not allowed to rotate the placed Token."
+},
 "TOKEN.FIELDS": {
   "name.label": "Token Name",
   "sort.label": "Sort",
+  "width.label": "X-Size",
+  "height.label": "Y-Size",
+  "depth.label": "Z-Size",
+  "level.label": "Level",
   "movementAction.label": "Movement Action",
   "actorId.label": "Represented Actor",
   "actorLink.label": "Link Actor Data",
@@ -4304,6 +4351,15 @@
     "fly.label": "Fly",
     "swim.label": "Swim",
     "walk.label": "Walk"
+  },
+  "NOTIFICATIONS": {
+    "PLAN": {
+      "DirectViolation": "You are not allowed to place waypoints while planning this movement.",
+      "MinCostViolation": "The planned movement path does not meet the minimum required cost.",
+      "MaxCostViolation": "The planned movement path exceeds the maximum allowed cost.",
+      "MinDistanceViolation": "The planned movement path does not meet the minimum required distance.",
+      "MaxDistanceViolation": "The planned movement path exceeds the maximum allowed distance."
+    }
   }
 },
 
@@ -4449,6 +4505,8 @@
 "USERS.KeyShow": "Show Password",
 "USERS.Create": "Create Additional User",
 "USERS.Delete": "Delete User",
+"USERS.LoginAs": "Login as User",
+"USERS.LoginAsGMRequired": "You must be a Gamemaster to log in as another user.",
 "USERS.DeleteName": "Delete User: {name}",
 "USERS.Launch": "Save and Return",
 "USERS.FirstLaunch": "Save and Continue",
@@ -4722,8 +4780,8 @@
     "rectangle": {
       "name": "Rectangle",
       "FIELDS": {
-        "width.label": "Width",
-        "height.label": "Height",
+        "width.label": "X-Size",
+        "height.label": "Y-Size",
         "anchorX.label": "X-Anchor",
         "anchorY.label": "Y-Anchor"
       },
@@ -4794,7 +4852,14 @@
         "shape.label": "Shape"
       },
       "position.label": "Position",
-      "dimensions.label": "Dimensions"
+      "size.label": "Size"
+    },
+    "grid": {
+      "name": "Grid Spaces",
+      "FIELDS": {
+        "offsets.label": "Grid Offsets",
+        "origin.label": "Origin"
+      }
     }
   },
   "ACTIONS": {
@@ -4808,7 +4873,7 @@
     "removeAll": "Remove All Shapes"
   },
   "NOTIFICATIONS": {
-    "DrawingMultipleObjectsControlled": "You must control only one or no {type} when you draw a shape!",
+    "DrawingMultipleObjectsControlled": "You must control or configure only one or no {type} when you draw a shape!",
     "ControlWalls": "Control a group of Walls which define the boundary of your desired shape.",
     "EmptyEnclosedArea": "The area enclosed by the controlled Walls is empty! Make sure that the outer Walls form a closed loop and are connected endpoint to endpoint.",
     "NoControlledWalls": "You are not controlling any Walls!"
