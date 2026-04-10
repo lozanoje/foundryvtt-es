@@ -3525,7 +3525,7 @@
         "sound.label": "Restricts Sound",
         "occlusion": {
           "label": "Occlusion",
-          "hint": "When an occludable Token is beneath the surface, Tiles with occlusion mode set to SURFACE, and any foreground or background Level textures at the same elevation or higher, will be occluded."
+          "hint": "When an occludable Token is beneath the surface, Tiles with occlusion mode set to Surface, and any foreground or background Level textures at the same elevation or higher, will be occluded."
         },
         "exposure": {
           "label": "Reveal Elevated Surface",
@@ -4769,7 +4769,7 @@
         "hole.label": "Is Hole",
         "gridBased": {
           "label": "Is Grid-Based",
-          "hint": "A grid-based shape is conforming to the grid's metric."
+          "hint": "A grid-based shape follows the grid's distance rules, as defined by the Grid Diagonals game setting."
         },
         "x.label": "X-Origin",
         "y.label": "Y-Origin",

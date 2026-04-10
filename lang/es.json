@@ -4769,7 +4769,7 @@
         "hole.label": "Es agujero",
         "gridBased": {
           "label": "Está basado en rejilla",
-          "hint": "Una forma basada en rejilla se conforma a la métrica de la misma."
+          "hint": "Una forma basada en rejilla sigue las reglas de distancia de la rejilla, tal y como se define en el ajuste de diagonales de la rejilla en el sistema de juego."
         },
         "x.label": "Origen-X",
         "y.label": "Origen-Y",
