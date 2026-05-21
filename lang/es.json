@@ -403,20 +403,18 @@
 "COMBAT": {
   "NavLabel": "Navegador de encuentros de combate",
   "Begin": "Comenzar combate",
-  "Create": "Crear encuentro",
-  "Delete": "Eliminar encuentro",
-  "Encounter": "Encuentro",
-  "EncounterPrevious": "Activar encuentro anterior",
-  "EncounterNext": "Activar encuentro siguiente",
+  "Create": "Crear combate",
+  "EncounterPrevious": "Activar combate anterior",
+  "EncounterNext": "Activar combate siguiente",
   "End": "Fin. combate",
   "InitiativeRoll": "Tirar iniciativa",
   "InitiativeReset": "Restablecer iniciativa",
-  "ClearMovementHistories": "Borrar historiales de movimiento",
-  "EndTitle": "¿Finalizar encuentro de combate?",
-  "EndConfirmation": "¿Deseas finalizar este encuentro de combate y vaciar el asistente de combate?",
-  "None": "Sin encuentro de combate",
+  "ClearMovementHistories": "Borrar historial de movimiento",
+  "EndTitle": "Finalizar encuentro",
+  "EndConfirmation": "¿Deseas finalizar este combate y vaciar el asistente?",
+  "None": "Sin combate",
   "NoneActive": "No hay encuentros de combate en la escena visible actualmente.",
-  "NoneRemaining": "No quedan contendientes en este encuentro que no estén derrotados.",
+  "NoneRemaining": "No quedan contendientes en este encuentro de combate que no estén derrotados.",
   "NotStarted": "No iniciado",
   "Round": "Asalto {round}",
   "Rounds": "Asaltos de combate",
@@ -437,12 +435,18 @@
   "TurnEnd": "Finalizar turno",
   "TurnNext": "Turno siguiente",
   "TurnPrev": "Turno anterior",
-  "CannotLinkToScene": "No puedes vincular el combate a una escena que no contenga a todos sus contendientes.",
+  "CannotLinkToScene": "No puedes vincular el encuentro de combate a una escena que no contenga a todos sus contendientes.",
   "ACTIONS": {
+    "EditName": "Editar nombre",
+    "EditNameTitle": "Editar nombre del encuentro de combate",
     "LinkToScene": "Vincular a la escena actual",
     "UnlinkFromScene": "Desvincular de la escena"
   },
   "FIELDS": {
+    "name": {
+      "label": "Nombre de combate",
+      "hint": "Escribe un nombre corto para este encuentro de combate que ayude a identificarlo."
+    },
     "round": {
       "label": "Asalto"
     },
@@ -500,8 +504,10 @@
   "Unknown": "Contendiente desconocido",
   "PanTo": "Enfocar contendiente",
   "Ping": "Resaltar ficha",
-  "ToggleVis": "Conmutar Visibilidad",
-  "ToggleDead": "Marcar derrotado",
+  "Hide": "Ocultar",
+  "Show": "Mostrar",
+  "MarkDefeated": "Marcar derrotado",
+  "UnmarkDefeated": "Desmarcar derrotado",
   "MovementHistoryCleared": "Se ha limpiado el historial de movimiento de la ficha \"{name}\".",
   "WarnNonVisibleToken": "No puedes ver a este contendiente.",
 
@@ -547,13 +553,13 @@
   "FilterDocuments": "Filtrar documentos por tipo",
   "ClearFilters": "Borrar filtros",
   "Delete": {
-    "Option": "Eliminar compendio",
+    "Option": "Eliminar",
     "Title": "Eliminar compendio: {compendium}",
     "Warning": "Este compendio se eliminará definitivamente y no se podrá recuperar."
   },
   "DeleteEntry": "Eliminar entrada",
   "Duplicate": {
-    "Option": "Duplicar compendio",
+    "Option": "Duplicar",
     "Title": "Duplicar compendio: {compendium}",
     "Label": "Nuevo título del compendio",
     "Hint": "Puede duplicar este compendio en el mundo para editar de manera segura una copia local de su contenido.",
@@ -578,8 +584,8 @@
   "Type": "Tipo de documento",
   "TypeHint": "Cada compendio contiene un tipo específico de documento.",
   "ToggleLocked": {
-    "Option": "Alternar bloqueo de edición",
     "Title": "Alternar bloqueo de edición: {compendium}",
+    "Lock": "Bloquear",
     "Unlock": "Desbloquear",
     "Warning": "Está intentando desbloquear la edición de un compendio que no pertenece a este mundo. Cualquier cambio que realice en este compendio podría perderse si el sistema o módulo al que pertenece se actualiza. Puede que desee duplicar el compendio en el mundo en su lugar. ¿Cómo desea continuar?"
   },
@@ -1399,6 +1405,7 @@
   "TitleImageVideo": "Explorador de imágenes o vídeos",
   "TitleImage": "Explorador de imágenes",
   "TitleVideo": "Explorador de vídeos",
+  "TitleTexture": "Explorador de texturas",
   "TitleAudio": "Explorador de audios",
   "TitleText": "Explorador de documentos",
   "TitleGraphics": "Exporador de 3D",
@@ -1475,13 +1482,17 @@
   "OpenConfig": "Abrir configuración",
   "AssignStatusEffects": "Asignar efectos de estado",
   "SelectMovementAction": "Seleccionar acción de movimiento",
-  "ToggleTargetState": "Alternar estado de objetivo",
-  "ToggleCombatState": "Alternar estado de combate",
-  "ToggleVis": "Alternar estado de visibilidad",
-  "ToggleLock": "Alternar estado de bloqueo",
-  "ToFrontOrBack": "Traer al frente / Enviar al fondo",
-  "TilePlay": "Reproducir vídeo de baldosa",
-  "TilePause": "Pausar vídeo de baldosa",
+  "Target": "Marcar objetivo",
+  "Untarget": "Desmarcar objetivo",
+  "EnterCombat": "Entrar en combate",
+  "ExitCombat": "Salir del combate",
+  "Hide": "Ocultar",
+  "Show": "Mostrar",
+  "Lock": "Bloquear",
+  "Unlock": "Desbloquear",
+  "ToFrontOrBack": "Al frente/fondo",
+  "TilePlay": "Reproducir vídeo",
+  "TilePause": "Pausar vídeo",
   "WarningEffectNoActor": "No puedes asignar efectos de estado a una ficha que no tiene un actor asociado."
 },
 
@@ -1818,7 +1829,10 @@
 "MODMANAGE": {
   "Bugs": "Informes de errores o problemas",
   "DeactivateAll": "Desactivar todos los módulos",
-  "Readme": "Documentación del módulo",
+  "Readme": "Documentación",
+  "Author": "Autor",
+  "Authors": "Autores",
+  "URL": "URL",
   "Title": "Gestión de módulos",
   "Instructions": "Use este formulario para configurar qué módulos están activos en su mundo actual. Cambiar los módulos activos causará que la sesión actual se recargue.",
   "View": "Los módulos listados a continuación están actualmente activos en este mundo.",
@@ -1902,7 +1916,7 @@
   "PlayerColor": "Color del jugador",
   "PlayerAvatar": "Avatar del jugador",
   "PlayerPronouns": "Pronombres del jugador",
-  "PullToScene": "Atraer a la escena actual",
+  "PullToScene": "Traer a la escena actual",
   "ViewAvatar": "Ver avatar del jugador",
   "Kick": "Expulsar jugador",
   "Ban": "Bloquear jugador",
@@ -1911,8 +1925,6 @@
   "FPS": "FPS"
 },
 
-"PLAYLIST.Delete": "Eliminar lista de reproducción",
-"PLAYLIST.Edit": "Editar lista de reproducción",
 "PLAYLIST.DefaultChannel": "Canal de audio de la lista de reproducción",
 "PLAYLIST.CurrentlyPlaying": "Reproducción en curso",
 "PLAYLIST.ModeDisabled": "Solo tablero de audio",
@@ -1929,7 +1941,7 @@
 "PLAYLIST.Update": "Actualizar lista de reproducción",
 "PLAYLIST.SortAlphabetical": "Alfabético",
 "PLAYLIST.SortManual": "Manual",
-"PLAYLIST.SoundCreate": "Crear audio",
+"PLAYLIST.SoundAdd": "Añadir audio",
 "PLAYLIST.SoundEdit": "Editar audio",
 "PLAYLIST.SoundDelete": "Eliminar audio",
 "PLAYLIST.SoundLoop": "Repetir en bucle",
@@ -1939,6 +1951,7 @@
 "PLAYLIST.SoundPreload": "Precargar audio",
 "PLAYLIST.SoundResume": "Reanudar audio",
 "PLAYLIST.SoundStop": "Detener audio",
+"PLAYLIST.Preload": "Precargar audios",
 "PLAYLIST.BulkImport": {
   "Title": "Importación masiva de audios",
   "Hint": "Selecciona una carpeta que contenga los audios a importar.",
@@ -1960,7 +1973,8 @@
   "TOOLTIP": "Volumen: {volume}%"
 },
 
-"PLAYLIST_SOUND.Update": "Actualizar pista",
+"PLAYLIST_SOUND.Create": "Crear audio",
+"PLAYLIST_SOUND.Update": "Actualizar audio",
 "PLAYLIST_SOUND.FIELDS": {
   "name.label": "Nombre de la pista",
   "path.label": "Origen del audio",
@@ -1979,7 +1993,6 @@
 "SCENE.BackgroundScale": "Escala de la escena",
 "SCENE.BackgroundScaleHint": "Usa MAYÚS+Rueda ratón o MAYÚS+Flecha arriba y MAYÚS+Flecha abajo para ajustar la escala de la escena",
 "SCENE.CaptureInitialViewPosition": "Posición de la vista del lienzo capturada como vista inicial en el formulario de configuración de la escena.",
-"SCENE.Configure": "Configurar",
 "SCENE.CurrentLevel": "Nivel actual",
 "SCENE.Darkness": "Oscuridad",
 "SCENE.Details": "Detalles",
@@ -2029,11 +2042,12 @@
 "SCENE.Loading": "Cargando {name}",
 "SCENE.Notes": "Notas de la escena",
 "SCENE.Perception": "Percepción",
-"SCENE.Preload": "Precargar escena",
+"SCENE.Preload": "Precargar",
 "SCENE.Presentation": "Presentación",
 "SCENE.Properties": "Propiedades de la escena",
-"SCENE.View": "Ver escena",
+"SCENE.View": "Ver",
 "SCENE.ShiftBG": "Desplazamiento del fondo",
+"SCENE.PullEveryone": "Traer a todos",
 "SCENE.ToggleNav": "Alternar navegación",
 "SCENE.FogModeChangeMessage": "El modo de exploración de niebla ha cambiado. Se recargará la niebla de exploración y se reiniciará la visión.",
 "SCENE.Transition": {
@@ -2225,10 +2239,7 @@
       "hint": "Las escenas soportan más de un nivel vertical. Añade un nuevo nivel para convertir esta escena en una escena multi-nivel.",
       "label": "Añadir nivel"
     },
-    "Down": "Bajar un nivel",
     "Edit": "Editar nivel",
-    "Remove": "Quitar nivel",
-    "Up": "Subir un nivel",
     "View": "Ver nivel"
   },
   "FIELDS": {
@@ -2279,7 +2290,8 @@
         "hint": "Configure un conjunto de otros niveles que son total o parcialmente visibles desde este."
       }
     }
-  }
+  },
+  "CannotDeleteOnlyLevel": "No puedes borrar el único nivel de esta escena."
 },
 
 "SCENE_NAVIGATION": {
@@ -2389,7 +2401,7 @@
   }
 },
 
-"SETTINGS.CombatConfigL": "Configurar el asistente de combate",
+"SETTINGS.CombatConfigL": "Asistente de combate",
 "SETTINGS.CombatConfigH": "Ajustes relacionados con el combate y el asistente.",
 "SETTINGS.CombatThemeN": "Tema de combate",
 "SETTINGS.CombatThemeL": "El conjunto de audios que se reproducirán al comenzar el combate, cuando tu turno sea el siguiente y cuando sea tu turno.",
@@ -3246,6 +3258,7 @@
 
 "PLACEABLE_PALETTE": {
   "Apply": "Aplicar",
+  "CannotApplyToLocked": "No puedes aplicar la paleta a los objetos bloqueados.",
   "CloneSettings": "Clonar",
   "MultipleValues": "<Multiple Values>",
   "Selected": "{document} Paleta [{count}]",
@@ -3282,6 +3295,10 @@
       "top": {
         "label": "Parte superior",
         "hint": "La parte superior del rango de elevación."
+      },
+      "topInclusive": {
+        "label": "Parte superior incluída",
+        "hint": "¿Se incluye la parte superior en el rango de elevación?"
       }
     },
     "attachment": {
@@ -3319,7 +3336,7 @@
     "create": "Crear región",
     "update": "Actualizar región",
     "delete": "Eliminar región",
-    "behaviorCreate": "Crear comportamiento",
+    "behaviorAdd": "Añadir comportamiento",
     "behaviorEdit": "Editar comportamiento",
     "behaviorDelete": "Eliminar comportamiento",
     "behaviorEnable": "Habilitar comportamiento",
@@ -3510,11 +3527,21 @@
       }
     },
     "changeLevel": {
+      "FIELDS": {
+        "movementActions": {
+          "label": "Acciones de movimiento permitidas",
+          "hint": "Determina que acciones de movimiento puede usar la ficha para cambiar de nivel. Si no se selecciona ninguna acción, se permiten todas las acciones."
+        }
+      },
+      "Level": "Nivel destino",
+      "MovementAction": "Acción de movimiento",
       "Confirm": "¿Quieres movel {token} a {level}?",
       "ConfirmSelect": "Selecciona el nivel al que quieres mover {token}.",
+      "ConfirmDisabled": "{token} no se puede mover a otro nivel desde su posición actual.",
       "Move": "Mover",
       "MoveDown": "Mover abajo",
-      "MoveUp": "Mover arriba"
+      "MoveUp": "Mover arriba",
+      "DoNotMove": "No mover"
     },
     "defineSurface": {
       "FIELDS": {
@@ -3525,11 +3552,15 @@
         "sound.label": "Restringe el sonido",
         "occlusion": {
           "label": "Oclusión",
-          "hint": "Cuando una ficha oclusionable está bajo la superficie, las baldosas con modo oclusión establecido en SUPERFICIE, y cualquier textura de nivel superior o de fondo en la misma elevación o superior serán oclusionadas."
+          "hint": "Cuando una ficha controlada o detectada está bajo una superficie, las baldosas que usan el modo de oclusión \"Superficie\" se desvanecerán cuando estén en o sobre esa superficie, del mismo modo que harán las texturas de frente y fondo. Para las superficies en lo alto de una región tridimensional, el desvanecimiento solo se aplica si la ficha también está en o sobre la elevación inferior de la región. Pasar el ratón sobre una región o pulsando la tecla de acceso rápido de \"Resaltar objetos\" también desencadenará este efecto."
         },
         "exposure": {
           "label": "Revelar superficie elevada",
           "hint": "Revela parcialmente el área visible de esta superficie elevad a los espectadores por debajo y fuera de la misma. El área revelada depende del ángulo entre el espectador y los límites de la superficie, este área disminuye a medida que el ángulo es más pronunciado. Esta opción es útil para tejados, balcones u otras plataformas elevadas."
+        },
+        "culling": {
+          "label": "Descartar fichas",
+          "hint": "Oculta fichas no controladas fuera del nivel actualmente visible en la vista de GM o cuando se deshabilita la visión de ficha. Las superficies en el fondo ocultan fichas debajo de ellas, mientras que las superficies al frente oculta fichas en o sobre ellas."
         }
       },
       "PLACEMENTS": {
@@ -3637,10 +3668,13 @@
         "relative.label": "Relativo"
       },
       "Confirm": "¿Desea teletransportar a token}?",
+      "ConfirmDisabled": "{token} no se puede teleportar desde su posición actual.",
       "ConfirmRevealed": "¿Quieres teleportar {token} a {region} en {scene}?",
       "ConfirmSelectSameScene": "Selecciona el destino en {scene} al que quieres teleportar {token}.",
       "ConfirmSelectDifferentScene": "Selecciona el destino al que quieres teleportar {token}.",
-      "ConfirmSelectOption": "{region} en {scene}"
+      "ConfirmSelectOption": "{region} en {scene}",
+      "Teleport": "Teleportar",
+      "DoNotTeleport": "No teleportar"
     },
     "toggleBehavior": {
       "FIELDS": {
@@ -3667,7 +3701,7 @@
 "SIDEBAR.TabJournal": "Diario",
 "SIDEBAR.TabCompendium": "Compendios",
 "SIDEBAR.TabPlaceables": "Colocables",
-"SIDEBAR.TabSettings": "Ajustes de la partida",
+"SIDEBAR.TabSettings": "Ajustes",
 "SIDEBAR.TabTables": "Tablas de tiradas",
 "SIDEBAR.TokenArt": "Ver ilustración de la ficha",
 "SIDEBAR.SearchModeName": "Buscar solo por nombre",
@@ -3679,6 +3713,7 @@
 "SIDEBAR.CollapseToggle": "Contraer o expandir",
 "SIDEBAR.Delete": "Eliminar",
 "SIDEBAR.DeleteWarning": "Este {type} se eliminará definitivamente y no podrá recuperarse.",
+"SIDEBAR.DeleteManyWarning": "{count} {type} se eliminarán y no se podrán recuperar.",
 "SIDEBAR.Duplicate": "Duplicar",
 "SIDEBAR.Edit": "Editar",
 "SIDEBAR.Export": "Exportar datos",
@@ -3712,9 +3747,6 @@
   "ACTIONS": {
     "ChangeLevel": "Cambiar nivel",
     "Clear": "Limpiar",
-    "Configure": "Configurar",
-    "Create": "Crear {name}",
-    "Delete": "Eliminar",
     "Hidden": "Oculto",
     "Hide": "Ocultar",
     "InLevel": "Incluido en nivel",
@@ -3757,7 +3789,8 @@
     "normal": "Paredes normales",
     "secret": "Puertas secretas",
     "terrain": "Paredes de terreno",
-    "window": "Ventanas"
+    "window": "Ventanas",
+    "blank": "Muros vacíos"
   }
 },
 
@@ -4016,12 +4049,16 @@
 "TOKEN.AssignSuccess": "Se ha actualizado la configuración de ficha prototipo para {name}.",
 "TOKEN.BarAttributes": "Barras de atributos",
 "TOKEN.BarValues": "Valores individuales",
-"TOKEN.DeleteCombatantWarning": "Estás eliminando una Ficha que está en Combate. Su contendiente será eliminado permanentemente.",
+"TOKEN.DeleteCombatantWarning": "Estás eliminando una ficha que está en combate. Su contendiente será eliminado permanentemente.",
 "TOKEN.DeleteAttachedRegionWarning": "Estás borrando una ficha que tiene una región conectada. Su(s) region(es) conectadas se borrarán permanentemente.",
 "TOKEN.Size": "Tamaño",
 "TOKEN.Anchor": "Anclaje",
 "TOKEN.AnchorHint": "El anclaje por defecto (0.5, 0.5) es el centro de la imagen de la ficha.",
 "TOKEN.ImageAlts": "Fichas de actor alternativas",
+"TOKEN.ImageCycleNext": "Imagen de ficha siguiente",
+"TOKEN.ImageCyclePrev": "Imagen de ficha anterior",
+"TOKEN.ImagePreview": "Previsualizar imagen de ficha",
+"TOKEN.ImagePathOverridden": "Esta imagen se sobrescribe por la textura gobernada del anillo de fichas dinámico.",
 "TOKEN.Mirror": "Reflejar imagen",
 "TOKEN.MirrorX": "Horizontalmente",
 "TOKEN.MirrorY": "Verticalmente",
@@ -4109,10 +4146,10 @@
     "subject": {
       "scale": {
         "label": "Corrección de escala del sujeto",
-        "hint": "Ajusta el tamaño relativo de la textura del sujeto al anillo. Aumentar este valor hará que la textura del sujeto sea más grande en comparación con el anillo. Use valores más bajos para reducir el tamaño de la textura del sujeto si parece demasiado dominante."
+        "hint": "Ajusta el tamaño relativo de la textura gobernada al anillo. Aumentar este valor hará que la textura gobernada sea más grande en comparación con el anillo. Use valores más bajos para reducir el tamaño de la textura gobernada si parece demasiado dominante."
       },
       "texture": {
-        "label": "Textura del sujeto",
+        "label": "Textura gobernada",
         "hint": "Especifique explícitamente una ruta para la ilustración colocada sobre el anillo dinámico de ficha. Si no se proporciona, el sujeto del anillo es el mismo que la textura estándar de la ficha."
       }
     }
