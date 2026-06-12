@@ -1,5 +1,4 @@
 {
-"Foundry Virtual Tabletop": "Foundry Virtual Tabletop",
 "ADVENTURE": {
   "ImportSubmit": "Importar aventura",
   "ImportProgress": "Importando",
@@ -537,6 +536,7 @@
   "Confirm": "Confirmar",
   "Default": "Por defecto",
   "Delete": "Borrar",
+  "FoundryVirtualTabletop": "Foundry Virtual Tabletop",
   "Invalid": "Inválido",
   "No": "No",
   "None": "Ninguno",
@@ -574,6 +574,10 @@
     "Start": "Importando {number} documentos de tipo {type} y {folderNumber} carpetas a la carpeta {folder}. Por favor, espere.",
     "Finish": "Importados con éxito {number} documentos de tipo {type} y {folderNumber} carpetas a la carpeta {folder}."
   },
+  "ImportFolder": {
+    "InvalidDocument": "No puedes importar un documento {type} en la colección de directorios del compendio {collection}.",
+    "InvalidDocuments": "Solo puedes importar documentos de directorio en la colección de directorios del compendio {collection}."
+  },
   "ImportEntry": "Importar entrada",
   "Locked": "{title} [Bloqueado]",
   "Migration": {
@@ -590,6 +594,8 @@
     "Warning": "Está intentando desbloquear la edición de un compendio que no pertenece a este mundo. Cualquier cambio que realice en este compendio podría perderse si el sistema o módulo al que pertenece se actualiza. Puede que desee duplicar el compendio en el mundo en su lugar. ¿Cómo desea continuar?"
   },
   "CannotViewWarning": "No tiene permisos suficientes para ver este compendio.",
+  "ModifyLocked": "No puedes modificar el contenido de este compendio ya que está bloqueado.",
+  "ModifyPermissionDenied": "No tienes permisos para modificar este compendio.",
   "OwnershipInheritBelow": "Heredar del rol inferior",
   "OwnershipReset": "Restablecer valores",
   "ART": {
@@ -1093,7 +1099,7 @@
       "subtract": "Restar",
       "downgrade": "Degradar",
       "upgrade": "Mejorar",
-      "override": "Anular"
+      "override": "Sobrescribir"
     }
   },
   "DURATION": {
@@ -2049,7 +2055,7 @@
 "SCENE.ShiftBG": "Desplazamiento del fondo",
 "SCENE.PullEveryone": "Traer a todos",
 "SCENE.ToggleNav": "Alternar navegación",
-"SCENE.FogModeChangeMessage": "El modo de exploración de niebla ha cambiado. Se recargará la niebla de exploración y se reiniciará la visión.",
+"SCENE.FogModeChangeMessage": "La niebla de guerra ha cambiado. Se recargará la niebla de exploración y se reiniciará la visión.",
 "SCENE.Transition": {
   "Animation": "Animación de transición",
   "Preview": "Previsualizar",
@@ -2141,8 +2147,8 @@
       "hint" : "Controla el modo de Niebla de Guerra: \"Ninguna\" deshabilita la exploración (las fichas solo ven lo que pueden ver en cada momento), \"Individual\" registra la exploración por separado para cada usuario, y \"Compartida\" usa un único estado de exploración al que contribuyen todos los usuarios."
     },
     "overlay": {
-      "label" : "Imagen de la niebla de guerra",
-      "hint": "Una imagen opcional usada como niebla de guerra que se muestra sobre las partes sin explorar de la escena."
+      "label" : "Imagen sin explorar",
+      "hint": "Una imagen opcional usada como niebla de guerra que se muestra sobre las partes sin explorar de la escena. Si se configura un color sin explorar, la imagen se dibuja por encima."
     },
     "colors": {
       "explored": {
@@ -2265,9 +2271,8 @@
       "alphaThreshold.label": "Umbral alfa"
     },
     "fog": {
-      "label": "Exploración de niebla",
-      "src.label": "Textura no explorado",
-      "tint.label": "Tono de la textura"
+      "label": "Niebla de guerra",
+      "src.label": "Imagen sin explorar"
     },
     "textures": {
       "label": "Posicionamiento",
@@ -3261,8 +3266,8 @@
   "CannotApplyToLocked": "No puedes aplicar la paleta a los objetos bloqueados.",
   "CloneSettings": "Clonar",
   "MultipleValues": "<Multiple Values>",
-  "Selected": "{document} Paleta [{count}]",
-  "Title": "{document} Paleta"
+  "Selected": " Paleta {document}: Editar [{count}]",
+  "Title": " Paleta {document}: Predeterminada"
 },
 
 "REGION": {
@@ -3776,7 +3781,8 @@
     "Title": "Filtro avanzado",
     "Level": "Filtro por nivel",
     "Tooltip": "Filtros avanzados. Clic-derecho para limpiar.",
-    "Top": "Arriba"
+    "Top": "Arriba",
+    "Viewed": "Solo vistos"
   },
   "Search": {
     "placeholder": "Filtro {name}"
@@ -3867,7 +3873,9 @@
   "AnimateSettingHint": "Muestra una animación estilo ruleta al sacar un resultado de una tabla de tiradas.",
   "DrawFlavor": "Saca un resultado de la tabla {name}",
   "DrawFlavorPlural": "Saca {number} resultados de la tabla {name}",
+  "DrawMaximumIterations": "No se ha podido extraer un resultado de la tabla {name}, alcanzado número máximo de iteraciones.",
   "NoAvailableResults": "No hay resultados disponibles que se puedan sacar de esta tabla.",
+  "NoPossibleResults": "No se pueden extraer resultados con esta formula de esta tabla.",
   "Result": "Resultado",
   "ResultDescription": "Descripción del resultado",
   "SHEETS": {
@@ -4094,6 +4102,7 @@
   "depth.label": "Tamaño-Z",
   "level.label": "Nivel",
   "movementAction.label": "Acción de movimiento",
+  "movementAction.hint": "Cuando se selecciona por defecto, es la acción seleccionada automáticamente para esta ficha.",
   "actorId.label": "Actor representado",
   "actorLink.label": "Vincular datos del actor",
   "displayName.label": "Mostrar nombre",
