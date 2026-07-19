@@ -600,7 +600,8 @@
   "OwnershipReset": "Restablecer valores",
   "ART": {
     "CONFIG": {
-      "Hint": "Use las flechas para ajustar la prioridad de las fuentes de arte. Cuando un solo actor tiene arte proporcionado por múltiples fuentes, se usará el de mayor prioridad.",
+      "Hint": "Use las flechas para ajustar la prioridad de las fuentes de arte. Cuando un solo documento tiene arte proporcionado por múltiples fuentes, se usará el de mayor prioridad.",
+      "Items": "Objetos",
       "Portraits": "Retratos",
       "PriorityDecrease": "Disminuir prioridad",
       "PriorityIncrease": "Aumentar prioridad",
@@ -1082,6 +1083,7 @@
   "StatusUpgrade": "Potenciado",
   "Submit": "Enviar cambios",
   "CHANGES": {
+    "Unregistered": "Cambio de tipo \"{type}\" no registrada.",
     "PHASES": {
       "initial": {
         "label": "Inicial",
