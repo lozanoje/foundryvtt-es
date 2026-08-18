@@ -1227,7 +1227,7 @@
   "NoWebGL": "Tu navegador actualmente no soporta el renderizado WebGL requerido por Foundry Virtual Tabletop. Asegúrate de tener activado el renderizado por hardware y WebGL en tu navegador.",
   "NoWebGL2": "Tu navegador actualmente no soporta el renderizado WebGL versión 2 requerido para que Foundry funcione correctamente. Pueden ocurrir errores o anomalías gráficas.",
   "BackgroundTextureSize": "Estás usando una textura de fondo de escena con dimensiones de {width}px por {height}px. Una o ambas dimensiones superan el tamaño máximo de textura de {max}px compatible con tu dispositivo.",
-  "InvalidAdminKey": "La contraseña de administrador del servidor proporcionada no es válida. Si olvidaste tu contraseña, deberás eliminar manualmente el archivo <strong>Config/admin.txt</strong> de tu carpeta de datos de usuario.",
+  "InvalidAdminCredentials": "El usuario o la contraseña de administrador del servidor proporcionada no es válida. Si olvidaste tus credenciales, deberás eliminar manualmente el archivo <strong>Config/admin.txt</strong> de tu carpeta de datos de usuario.",
   "LoadPackages": "La solicitud para explorar los paquetes existentes falló al conectarse con el servidor de Foundry. Asegúrate de que la aplicación tenga permiso para realizar conexiones salientes.",
   "NoTargetUsersForWhisper": "No existe el usuario al que intenta susurrar el mensaje. Verifica que está bien escrito o prueba con \"/w [nombre de usuario]\".",
   "CantWhisper": "No tienes permiso para enviar mensajes susurrados a otros usuarios.",
@@ -1458,6 +1458,7 @@
 "INVITATIONS.Copied": "Enlace de invitación a la partida copiado al portapapeles",
 "INVITATIONS.Instructions": "Comparte los siguientes enlaces de invitación con los usuarios que desees que se unan a tu partida. El enlace de 'Red local' es para usuarios en tu red, mientras que el enlace de 'Internet' es para usuarios que se conectan a través de internet en el puerto configurado.",
 "INVITATIONS.Internet": "Internet",
+"INVITATIONS.InternetV6": "Internet (IPv6)",
 "INVITATIONS.Local": "Red local",
 "INVITATIONS.Title": "Enlaces de invitación a la partida",
 "INVITATIONS.OpenConnection": "Su conexión parece estar abierta",
@@ -2304,7 +2305,12 @@
 "SCENE_NAVIGATION": {
   "COLLAPSE": "Contraer navegación",
   "EXPAND": "Expandir navegación",
-  "LABEL": "Navegación de escena"
+  "LABEL": "Navegación de escena",
+  "SCENE": {
+    "Viewing": "Viéndose",
+    "Active": "Activa",
+    "Hidden": "Oculta"
+  }
 },
 
 "GRID.STYLES":{
@@ -2343,6 +2349,10 @@
     "OtherSettings": "Otros ajustes"
   },
   "FIELDS": {
+    "adminUsername": {
+      "label": "Usuario de administrador",
+      "hint": "El usuario de administrador se utiliza para proteger el acceso a la configuración de ajustes de Foundry VTT. Aunque establecer un usuario de administración es opcional, es recomendable."
+    },
     "adminPassword": {
       "label": "Contraseña de administrador",
       "hint": "La contraseña de administrador se utiliza para proteger el acceso a la configuración de ajustes de Foundry VTT. Se recomienda encarecidamente establecer una para su servidor."
@@ -2549,6 +2559,10 @@
         "hint": "Especifica si prefieres que los elementos de la interfaz de usuario se rendericen usando un tema claro o un tema oscuro."
       }
     },
+    "chatBackground": {
+      "hint": "Mosta el registro del chat con un fondo en lugar de las tarjetas del chat sobre el lienzo.",
+      "label": "Fondo del chat"
+    },
     "chatNotifications": {
       "label": "Notificaciones de chat",
       "hint": "Elige si las notificaciones de nuevos mensajes de chat aparecen como tarjetas de chat completas, o solo como un punto en la pestaña de chat.",
@@ -2651,16 +2665,18 @@
   "FavoritePackage": "Favorito",
   "Verified": "Paquete verificado para esta versión de Foundry",
   "ErrorTimeout": "La solicitud a {url} expiró después de {timeout} segundos.",
+  "GoBack": "Ir atrás",
+
+  "ShuttingDown": {
+    "Confirm": "¿Estás seguro de que quieres apagar el servidor?",
+    "Title": "Apagando",
+    "Message": "Se está apagando el servidor. Para acceder de nuevo se deberá reiniciar.",
+    "Unavailable": "Servidor no disponible. Verifica que se ha reiniciado, o inténtalo de nuevo en unos segundos."
+  },
 
   "WarningsTitle": "Avisos de paquetes",
   "WarningsNone": "¡No tiene avisos!",
   "WarningsManage": "Gestionar paquete",
-
-  "ManifestUpdate": "- Actualización disponible en una nueva URL de instalación",
-  "ManifestUpdateAvailable": "Una versión más reciente de \"{package}\" está disponible en una URL de instalación diferente. Esto ocurre cuando el autor o la ubicación del paquete ha cambiado.",
-  "PriorManifestUrl": "URL del manifiesto anterior (version {version})",
-  "UpdatedManifestUrl": "URL del manifiesto actualizado (version {version})",
-  "SwapToTheUpdatedManifest": "¿Desea cambiar a la nueva URL del manifiesto? (recomendado)",
 
   "CurrentVersion": "Versión actual",
   "ForceUpdate": "¿Forzar actualización?",
@@ -2691,12 +2707,15 @@
   "PackageInstalled": "Instalado",
   "PackageNotOwned": "No adquirido",
   "PackageName": "Nombre del paquete",
+  "PackageOwnershipUnknown": "Propiedad desconocida",
+  "PackageOwnershipUnknownHint": "No se ha podido obtener la titularidad de este paquete de foundryvtt.com, de modo que no sabemos si lo posees.",
   "PackageProtected": "Protegido",
   "PackageRequiresDowngradeHint": "Debes bajar a la versión {vmax} de Foundry VTT para instalar este paquete.",
   "PackageRequiresDowngradeLabel": "Requiere versión anterior",
   "PackageRequiresUpgradeHint": "Debes actualizar a la versión {vmin} de Foundry VTT para instalar este paquete.",
   "PackageRequiresUpgradeLabel": "Requiere actualización",
   "PackageVisAll": "Todos los paquetes",
+  "PackageVisOwned": "Paquetes comprados",
   "PackageVisInst": "Instalados",
   "PackageVisUnin": "No instalados",
   "PackageVisCompatible": "Compatibles",
@@ -2777,8 +2796,8 @@
   "UpdateCompleteAuto": "Actualización completada con éxito. Reiniciando la aplicación de Foundry VTT.",
   "UpdateNoInternetError": "Foundry VTT requiere una conexión a internet activa para actualizarse.",
   "UpdateWebsiteUnreachableError": "No se puede acceder a https://foundryvtt.com en este momento, inténtelo de nuevo más tarde.",
+  "UpdateRequestRefusedError": "https://foundryvtt.com ha rechazado la petición de actualización. No es un problema con tu licencia. Inténtalo más tarde.",
   "UpdateWebsiteSlowWarning": "Parece que https://foundryvtt.com está saturado en este momento, inténtelo de nuevo más tarde.",
-  "UpdateWarningWillDisable": "Esta actualización es una nueva versión principal del núcleo de Foundry VTT. Al instalar esta actualización se deshabilitará algunos módulos instalados que aún no sean compatibles.",
   "UpdateButtonDownload": "Descargar actualización {display}",
   "UpdateInfoAvailable": "¡Hay una actualización disponible para Foundry Virtual Tabletop {display}!",
   "UpdateNotAvailable": "No hay ninguna actualización disponible en el canal de actualización seleccionado.",
@@ -2805,7 +2824,7 @@
 
   "AdminAccess": "Se requiere acceso de administrador",
   "AdminPasswordPrompt": "No hay ninguna partida activa en este servidor. Para acceder al menú de configuración, debe introducir la contraseña de administrador del servidor.",
-  "AdminPasswordForgot": "Si ha olvidado la contraseña de administrador, el administrador del servidor puede reiniciarla <a href='https://foundryvtt.com/article/reset-admin-password/' target='_blank'>siguiendo estas instrucciones</a>.",
+  "AdminCredentialsForgot": "Si ha olvidado el usuario o la contraseña de administrador, el administrador del servidor puede reiniciarla <a href=\"https://foundryvtt.com/article/reset-admin-password/\" target=\"_blank\">siguiendo estas instrucciones</a>.",
   "AdminLogIn": "Iniciar sesión",
   "AdminLogout": "Cerrar sesión de administrador",
 
@@ -2819,11 +2838,15 @@
     "Configure": "Configurar",
     "Logout": "Cerrar sesión",
     "Update": "Actualizar",
-    "Warnings": "Avisos"
+    "Warnings": "Avisos",
+    "ShutDownServer": "Apagar"
   },
 
   "BACKUPS": {
     "Backup": "Copia de seguridad",
+    "BackupBeforeRestore": "Hacer copia de seguridad del estado actual",
+    "BackupBeforeRestoreHint": "Hace una copia de seguridad del paquete tal y como está ahora, de modo que se puede volver atrás tras la restauración.",
+    "BackupBeforeRestoreNote": "Copia de seguridad automática antes de restaurar",
     "BackingUp": "Copia de seguridad en progreso",
     "BulkActions": "Acciones masivas",
     "Extracting": "Extrayendo copia de seguridad",
@@ -2871,7 +2894,8 @@
     "Restoring": "Restauración de copia de seguridad en progreso",
     "RestoreLatest": "Restaurar la más reciente",
     "RestoreLatestBackup": "Restaurar la copia de seguridad más reciente",
-    "RestoreBackupWarning": "Restaurar una copia de seguridad borrará el estado actual del paquete. Esta acción no se podrá deshacer. ¿Desea continuar?",
+    "RestoreBackupWarning": "Restaurar una copia de seguridad borrará el estado actual del paquete. A menos que hagas una copia de seguridad marcando la casilla de más abajo, esta acción no se podrá deshacer. ¿Desea continuar?",
+    "RestoreBackupWarningNoBackups": "Restaurar una copia de seguridad borrará el estado actual del paquete. Esta acción no se podrá deshacer. ¿Desea continuar?",
     "RestoreBackupTitle": "Restaurando copia de seguridad de {title}",
     "RestoreBackupFailure": "La restauración de la copia de seguridad de {title} falló. Consulte el registro de la consola (F12) para obtener más detalles.",
     "RestoreBackupComplete": "Restauración con éxito de {title} con la copia de seguridad creada el {date}",
@@ -2941,6 +2965,20 @@
     },
     "ManifestWrongPackageType": "La URL proporcionada no parece apuntar a un {packageType}."
   },
+  "PROVIDER_FILTER": {
+    "Label": "Proveedores",
+    "Placeholder": "Proveedores de búsqueda"
+  },
+  "SYSTEM_FILTER": {
+    "Label": "Sistemas",
+    "Systems": "Requiere sistema",
+    "RequiresN": "{count} sistemas",
+    "MODES": {
+      "installed": "Disponible para los sistemas instalados",
+      "none": "Sin restricciones",
+      "specific": "Requiere sistema específico"
+    }
+  },
   "UPDATE_NOTES": {
     "Title": "Notas de la versión: {release}",
     "FullList": "Consulta la <a href=\"{url}\" target=\"_blank\">lista completa</a> de las notas de la versión.",
@@ -2968,6 +3006,30 @@
   "Compatibility": {
     "Label": "Compatibilidad",
     "Hint": "Opcionalmente, puedes indicar que este paquete solo es compatible con un rango de versiones de Foundry VTT. La compatibilidad se puede declarar para una compilación específica como \"13.339\" o para una generación amplia como \"13\"."
+  },
+  "TAGS": {
+    "adventures": "Aventuras",
+    "ai-content": "Con contenido de IA",
+    "ai-tools": "Herramientas de IA",
+    "analytics": "Analíticas y rastreo",
+    "archived": "Archivado",
+    "audio": "Mejoras de audio",
+    "automation": "Automatizaciones",
+    "chat": "Registro del chat y mensajes",
+    "combat": "Mejoras del combate",
+    "content": "Paquetes de contenido",
+    "dice": "Tiradas de dados",
+    "importer": "Importadores de contenido",
+    "integration": "Integraciones externas",
+    "journal": "Diarios y notas",
+    "overhaul": "Revisiones o paquetes de características",
+    "paid-features": "Contiene características de pago",
+    "patches": "Parches o correcciones de errores",
+    "sheets": "Hojas de actores y objetos",
+    "tools": "Herramientas y controles",
+    "translation": "Tradución y localización",
+    "visuals": "Efectos visuales",
+    "zero-ai": "Libre de contenido IA"
   },
   "TagJavaScript": "JavaScript",
   "TagCSS": "CSS",
@@ -3115,7 +3177,7 @@
   "UserKey": "Contraseña del usuario",
   "AuthAdmin": "Se ha autenticado como administrador del servidor.",
   "ErrorMustSelectUser": "Debes seleccionar un usuario para iniciar sesión.",
-  "ErrorUserDoesNotExist": "¡El usuario especificado, \"{user}\", no existe!",
+  "ErrorUserDoesNotExist": "El usuario especificado, \"{user}\", no existe.",
   "ErrorInvalidPassword": "¡La contraseña proporcionada para {user} es inválida!",
   "ErrorBanned": "¡{user} no tiene permiso para acceder a este mundo!",
   "LoginSuccess": "Se ha autentificado como {user} con éxito, ¡uniéndose a la partida!",
@@ -3453,7 +3515,6 @@
   },
   "NOTIFICATIONS": {
     "PlacedRegionRotationNotAllowed": "No puedes rotar la forma de una región ya colocada.",
-    "PlacedRegionNotAttachedToToken": "La región colocada debe estar conectada a una ficha.",
     "CopiedShape": "Copiada forma de región.",
     "CutShape": "Cortada forma de región.",
     "PastedShape": "Pegada forma de región.",
