@@ -1473,6 +1473,7 @@
   "Empty": "Hueco vacío",
   "ToggleSheet": "Mostrar {document}",
   "ClearConfirm": "¿Borrar todas las macros asignadas de tu barra de macros?",
+  "IsLocked": "No se puede realizar esta acción mientras la barra de macros esté bloqueada.",
   "ACTIONS": {
     "Clear": "Borrar barra de macros",
     "Mute": "Silenciar volumen",
@@ -2330,6 +2331,16 @@
     "warning": "Modificar estas opciones de configuración requerirá que reinicie el servidor para que surtan efecto. ¿Desea continuar?",
     "restart": "La configuración de la aplicación ha sido cambiada. Debe reiniciar el servidor para que los cambios surtan efecto."
   },
+  "SSL": {
+    "Content": {
+      "Warning": "Un certificado autofirmado es una forma sencilla de añadir encriptación SSL a tu instancia de Foundry Virtual Tabletop que te permitirá beneficiarte de APIs de navegadores modernos. Sin embargo, los navegadores no confían plenamente en certificados autofirmados y mostrarán un mensaje visible cuando tú o tus jugadores intenten conectarse a tu instancia.",
+      "Ignore": "Es seguro ignorar este aviso. La conexión seguirá estando encriptada.",
+      "DoNotShare": "No compartas el fichero generado <code>fvtt-key.pem</code> con nadie.",
+      "Continue": "¿Quieres proceder?"
+    },
+    "Title": "Genear certificado autofirmado",
+    "Tooltip": "(Re)generar automáticamente certificados SSL y claves."
+  },
   "SSLCert": "Certificado SSL",
   "Telemetry": {
     "request1": "Si das tu permiso, Foundry Virtual Tabletop compartirá una pequeña cantidad de datos de uso anónimos con el sitio web foundryvtt.com que permite a nuestro equipo entender mejor cómo se utiliza Foundry VTT y nos ayuda a mejorar el software.",
@@ -2742,6 +2753,8 @@
   "PackageDependenciesCouldInstallSingular": "Una dependencia puede ser instalada automáticamente.",
   "PackageDependenciesCouldInstallPlural": "{number} dependencias pueden ser instaladas automáticamente.",
   "PackageDependenciesDecline": "Ha elegido no instalar las dependencias necesarias para {title}. Deberá instalarlos manualmente.",
+  "PackageDependenciesUnavailable": "No se puede crear este mundo porque no cumple las siguientes dependencias requeridas y no están disponibles para su instalación:",
+  "PackageDependencyUnlisted": "Este paquete no está listado.",
   "PackageDependenciesSuccess": "Se ha instalado con éxito {title} y {number} dependencias.",
   "PackageUpdateCoreUpdateNeeded": "Hay una actualización disponible para {title} pero no se puede instalar porque requiere que el software principal se actualice al menos a la versión {vmin}. Actualmente está usando la versión {vcur}.",
   "PackageUpdateCoreUnstable": "Hay una actualización disponible para {title}, pero no se puede instalar porque requiere una versión del software principal ({vmin}) que aún no es estable.",
@@ -3176,6 +3189,7 @@
   "SelectUser": "Seleccionar usuario",
   "UserKey": "Contraseña del usuario",
   "AuthAdmin": "Se ha autenticado como administrador del servidor.",
+  "AuthRequired": "Se te requerirá que te autentiques como administrador del servidor.",
   "ErrorMustSelectUser": "Debes seleccionar un usuario para iniciar sesión.",
   "ErrorUserDoesNotExist": "El usuario especificado, \"{user}\", no existe.",
   "ErrorInvalidPassword": "¡La contraseña proporcionada para {user} es inválida!",
