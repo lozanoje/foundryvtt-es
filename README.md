@@ -6,7 +6,7 @@ Si encuentra algún error, o tiene alguna recomendación, puede abrir un issue e
 
 # Créditos
 
-El módulo ha sido creado por José Lozano (Viriato139ac), que mantiene actualmente la traducción, para el canal de discord de FoundryVTT Español.
+El módulo ha sido creado por José Lozano (Viriato139ac), que mantiene actualmente la traducción, para el canal de discord de [FoundryVTT Español](https://discord.gg/MHCerwd).
 
 Sin embargo, han colaborado otras personas:
 
