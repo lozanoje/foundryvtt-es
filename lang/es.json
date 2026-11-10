@@ -70,6 +70,10 @@
       "hint": "Nombre opcional para ayudar a identificar la fuente de luz.",
       "label": "Nombre"
     },
+    "hidden": {
+      "label": "Oculto",
+      "hint": "Deshabilita temporalmente esta fuente de luz."
+    },
     "rotation": {
       "label": "Ángulo de rotación"
     },
@@ -638,7 +642,7 @@
   "DrawingRect": "Dibujar rectángulo",
   "DrawingEllipse": "Dibujar elipse",
   "DrawingPoly": "Dibujar polígono",
-  "DrawingPolyP": "<span class=\"reference\">Clic + arrastrar</span> para iniciar y luego <span class=\"reference\">clic</span> para añadir puntos. <span class=\"reference\">Doble clic</span> para finalizar.",
+  "DrawingPolyP": "<span class=\"reference\">Clic + arrastrar</span> para iniciar y luego <span class=\"reference\">clic</span> para añadir puntos. <span class=\"reference\">Clic-derecho</span> para quitar el último punto. <span class=\"reference\">Doble clic</span> para finalizar.",
   "DrawingFree": "Dibujar a mano alzada",
   "DrawingText": "Dibujar cuadro de texto",
   "DrawingClear": "Borrar dibujos",
@@ -707,6 +711,8 @@
   "RegionCone": "Dibujar cono",
   "RegionLine": "Dibujar línea",
   "RegionPolygon": "Dibujar polígono",
+  "RegionGrid": "Dibujar espacios de rejilla",
+  "RegionGridP": "<span class=\"reference\">Clic</span> para añadir espacios de rejilla. <span class=\"reference\">Clic-derecho</span> para quitar el último espacio de rejilla. <span class=\"reference\">Doble clic</span> para finalizar.",
   "RegionHole": "Crear agujeros",
   "RegionHoleP": "Cuando está activo, cualquier forma que dibujes en una región usando cualquiera de las herramientas de forma creará un agujero donde los comportamientos de la región no se aplicarán.",
   "RegionSnap": "Cuando está activo, cualquier forma que dibujes en una región usando cualquiera de las herramientas de forma se ajustará a la cuadrícula.",
@@ -969,6 +975,10 @@
     "width.label": "Anchura",
     "height.label": "Altura",
     "hidden.label": "Oculto",
+    "locked": {
+      "label": "Bloqueado",
+      "hint": "Evita que se manipule el lienzo o se edite usando la paleta."
+    },
     "elevation.label": "Elevación",
     "rotation.label": "Rotación",
     "sort": {
@@ -1011,6 +1021,10 @@
     "bezierFactor": {
       "label": "Factor de suavizado",
       "hint": "Para dibujo a mano alzada, el factor de suavizado controla la fuerza del suavizado por Splines."
+    },
+    "hidden": {
+      "label": "Ocultp",
+      "hint": "Oculta este dibujo para todo el mundo excepto su creador."
     },
     "fillAlpha.label": "Opacidad de relleno",
     "fillColor.label": "Color de relleno",
@@ -1401,7 +1415,7 @@
   "TraverseBack": "Retroceder",
   "NoResults": "No se encontraron resultados coincidentes en esta ubicación.",
   "Upload": "Subir",
-  "CannotUpload": "Las subidas a esta carpeta están prohibidas porque el contenido se sobrescribirá en las actualizaciones. Realice las subidas a un directorio \"recursos\" o a cualquier otra localización a la que tenga permisos.",
+  "CannotUpload": "Las subidas a esta carpeta están prohibidas. Realice las subidas a tu directorio de recursos \"assets\" o a cualquier otra localización a la que tenga permisos.",
   "Search": "Buscar",
   "ErrorTooLarge": "El archivo que ha intentado subir es demasiado grande para que lo maneje su servidor proxy.",
   "ErrorSomethingWrong": "Algo salió mal con la subida del archivo especificado.",
@@ -1452,19 +1466,23 @@
 "GAME.ReturnSetup": "Volver a la configuración",
 "GAME.ReturnSetupActiveUser": "Hay otro usuario activo en este mundo y será desconectado. ¿Deseas continuar?",
 "GAME.ReturnSetupActiveUsers": "Hay otros {number} usuarios activos en este mundo y serán desconectados. ¿Deseas continuar?",
+"GAME.WorldShuttingDown": "Se va a cerrar el mundo de juego y se te devolverá a la página principal del servidor.",
 
 "INFO.SceneViewCanvasDisabled": "La escena \"{name}\" ahora es visible pero no se muestra porque el lienzo del juego está deshabilitado.",
 
-"INVITATIONS.Copied": "Enlace de invitación a la partida copiado al portapapeles",
-"INVITATIONS.Instructions": "Comparte los siguientes enlaces de invitación con los usuarios que desees que se unan a tu partida. El enlace de 'Red local' es para usuarios en tu red, mientras que el enlace de 'Internet' es para usuarios que se conectan a través de internet en el puerto configurado.",
-"INVITATIONS.Internet": "Internet",
-"INVITATIONS.InternetV6": "Internet (IPv6)",
-"INVITATIONS.Local": "Red local",
-"INVITATIONS.Title": "Enlaces de invitación a la partida",
-"INVITATIONS.OpenConnection": "Su conexión parece estar abierta",
-"INVITATIONS.ClosedConnection": "Su conexión parece estar cerrada",
-"INVITATIONS.UnknownConnection": "No pudimos detectar el estado de tu conexión",
-"INVITATIONS.DiscoveryFailed": "Nuestro servicio de detección de IPs falló al identificar su dirección IP correcta. Es posible que estés usando IPv6 o no tengas conexión a Internet.",
+"INVITATIONS": {
+  "Copied": "Enlace de invitación a la partida copiado al portapapeles",
+  "Instructions": "Comparte los siguientes enlaces de invitación con los usuarios que desees que se unan a tu partida. El enlace de 'Red local' es para usuarios en tu red, mientras que el enlace de 'Internet' es para usuarios que se conectan a través de internet en el puerto configurado.",
+  "Internet": "Internet (IPv4)",
+  "InternetV6": "Internet (IPv6)",
+  "Recheck": "Comprobar conectividad",
+  "Local": "Red local",
+  "Title": "Enlaces de invitación a la partida",
+  "OpenConnection": "Su conexión parece estar abierta",
+  "ClosedConnection": "Su conexión parece estar cerrada",
+  "UnknownConnection": "No pudimos detectar el estado de tu conexión",
+  "DiscoveryFailed": "Nuestro servicio de detección de IPs falló al identificar su dirección IP correcta. Es posible que estés usando IPv6 o no tengas conexión a Internet."
+},
 
 "ITEM.ViewArt": "Ver ilustración del objeto",
 
@@ -2333,13 +2351,30 @@
   },
   "SSL": {
     "Content": {
-      "Warning": "Un certificado autofirmado es una forma sencilla de añadir encriptación SSL a tu instancia de Foundry Virtual Tabletop que te permitirá beneficiarte de APIs de navegadores modernos. Sin embargo, los navegadores no confían plenamente en certificados autofirmados y mostrarán un mensaje visible cuando tú o tus jugadores intenten conectarse a tu instancia.",
-      "Ignore": "Es seguro ignorar este aviso. La conexión seguirá estando encriptada.",
-      "DoNotShare": "No compartas el fichero generado <code>fvtt-key.pem</code> con nadie.",
-      "Continue": "¿Quieres proceder?"
+      "Attempt": "Foundry Virtual Tabletop intentará obtener un certificado del servicio de terceros Let's Encrypt. Los navegadores confían automáticamente en estos certificados así que es el mejor método para habilitar el SSL en tu servidor. Para objeter estos certificados se necesita que tu servidor tenga el puerto 80 abierto y cualquiera pueda acceder a él, lo cual en determinadas circunstancias no será posible.",
+      "Fallback": "Si no se puede obtener un certificado de confianza, se generará un certificado auto-firmado. Esto encriptará la conexión y habilitará las APIs modernas de los navegadores, pero los navegadores no confían implícitamente en estos certificados, por lo que mostrarán un mensaje de aviso tanto a ti como a tus jugadores. Puedes ignorarlo.",
+      "DoNotShare": "Ten cuidado de no compartir con nadie la clave privada generada (termina en <code>-key.pem</code>) que está en el directorio Config.",
+      "Terms": "Solicitar un certificado a Let's Encrypt necesita que aceptes su <a href=\"https://letsencrypt.org/repository/\">Acuerdo de subscripción</a>. ¿Deseas continuar?"
     },
-    "Title": "Genear certificado autofirmado",
-    "Tooltip": "(Re)generar automáticamente certificados SSL y claves."
+    "ERRORS": {
+      "CertificateGenerationFailed": "Falló la generación del certificado, consulta los registros del servidor para conocer más detalles.",
+      "CouldNotBind": "No se puede responder al desafío de la autoridad de certificación porque se rechazó la petición de enlazarse al puerto 80.",
+      "NoCandidates": "No se puede descubrir ninguna dirección candidata para la generación del certificado.",
+      "NoChallenge": "Let's Encrypt no devolvió un desafío http-01 de la dirección especificada.",
+      "PortUnreachable": "No se puede alcanzar públicamente el puerto 80.",
+      "ProxySSL": "Esta instancia no requiere un certificado SSL ya que se haya bajo un proxy reverso que ya administra el SSL."
+    },
+    "RenewalFailed": "Fallo en la renovación del certificado SSL: {error}",
+    "RenewalFailedInGame": "La renovación del certificado SSL ha fallado. Probablemente ahora mismo no sea un problema, pero tienes que volver a la configuración y generar un nuevo certificado, o contactar con quien te administra tu instancia de Foundry Virtual Tabletop.",
+    "SelfSigned": "No se ha podido obtener un certificado de Let's Encrypt, por lo que se ha generado un certificado auto-firmado: {error}",
+    "Title": "Generar certificado automáticamente",
+    "Tooltip": "Generar automáticamente certificados SSL y claves.",
+    "Trusted": "Se ha obtenido un certificado de confianza y se renovará automáticamente. Reinicia el servidor para usarlo.",
+    "Unlock": {
+      "Title": "Pausar la renovación automática",
+      "Tooltip": "Parar de administrar automáticamente este certificado.",
+      "Warning": "Actualmente Foundry Virtual Tabletop administra el certificado y lo renueva automáticamente antes de que caduque. Si continúas, el certificado se borrará y la renovación automática se parará, permitiendo que generes los certificados SSL manualmente. ¿Quieres continuar?"
+    }
   },
   "SSLCert": "Certificado SSL",
   "Telemetry": {
@@ -2415,7 +2450,7 @@
     },
     "sslCert": {
       "label": "Certificado",
-      "hint": "Permite ejecutar el servidor con cifrado Secure Sockets Layer (SSL) proporcionando las rutas a los archivos de certificado y clave. Las rutas son absolutas o relativas a la subcarpeta Config en los datos de usuario."
+      "hint": "Se debe configurar el Secure Sockets Layer (SSL) para usar ciertas características de los navegadores modernos como el WebRTC (para usar el audio y el vídeo), o WebBluetooth (para los datos bluetooth). Puedes generar personalmente tus certificados para habilitar el SSL, o puedes dejar que se creen automáticamente. La ruta es absoluta, o relativa al sudirectorio Config en el directorio de datos de usuario. Consulta el artículo de <a href=\"https://foundryvtt.com/article/ssl/\" target=\"_blank\">Certificados SSL</a> para más detalles."
     },
     "sslKey.label": "Clave",
     "awsConfig": {
@@ -2606,7 +2641,7 @@
   "Modules": "Módulos",
   "Systems": "Sistemas de juego",
   "GettingStarted": "Primeros pasos",
-  "NoSystemsMessage": "Para crear su primer mundo, primero debe instalar un <a class=\"system-install\" data-query=\"\" title=\"Sistema de juego\">sistema de juego</a>. Por favor, explore todos los sistemas disponibles y elige el que desee instalar. Si no sabe qué sistema escoger, o su sistema que busca no está disponible, le recomendamos que instale el sistema <a class=\"system-install\" data-query=\"Simple Worldbuilding\" title=\"Simple Worldbuilding\">Simple Worldbuilding</a>. ",
+  "NoSystemsMessage": "Para crear su primer mundo, primero debe instalar un <a class=\"system-install\" data-query=\"\" title=\"Sistema de juego\">sistema de juego</a>. Por favor, explore todos los sistemas disponibles y elige el que desee instalar.",
   "NoWorldsMessage": "Ahora que dispone de un sistema de juego que proporciona las reglas de juego, querrá crear un mundo. Los mundos de juego son espacios que contienen todos los personajes, hojas, diarios y mapas utilizados para jugar, ya sea una partida única o una campaña completa.",
   "NueWorldDescription": "<p>Para más información sobre la configuración de mundos, consulte la documentación acerca de los <a href='https://foundryvtt.com/article/game-worlds/' target='_blank'>mundos</a>.</p>",
   "SeeTutorial": "Para consultar  una guía más detallada sobre cómo iniciarse en Foundry Virtual Tabletop, puede revisar la serie de <a href=\"https://foundryvtt.com/article/tutorial/\" target=\"_blank\" title=\"Tutoriales para el Gamemaster\">Tutoriales para el Gamemaster</a> en nuestra <a href=\"https://foundryvtt.com/kb/\" target=\"_blank\" title=\"Documentación\">documentación</a>.",
@@ -2912,6 +2947,7 @@
     "RestoreBackupTitle": "Restaurando copia de seguridad de {title}",
     "RestoreBackupFailure": "La restauración de la copia de seguridad de {title} falló. Consulte el registro de la consola (F12) para obtener más detalles.",
     "RestoreBackupComplete": "Restauración con éxito de {title} con la copia de seguridad creada el {date}",
+    "RestoreBackupConfirmCodeInvalid": "Debes escribir el código exacto para confirmar la restauración de la copia de seguridad.",
     "RestoringSnapshot": "Restaurando instantánea",
     "RestoreSnapshotFailure": "La restauración de la instantánea falló. Consulte el registro de la consola (F12) para obtener más detalles.",
     "RestoreSnapshotComplete": "Restauración con éxito de la instantánea creada el {date}.",
@@ -2919,6 +2955,7 @@
     "RestoreSnapshotWarning": "Restaurar una instantánea reinicia el estado de su instalación de Foundry VTT al estado en el que se creó la instantánea. Todas los mundos se revertirán a su estado anterior. Este proceso no se podrá deshacer.",
     "RestoreSnapshotUnchangedPackages": "Se añadió <strong>1</strong> paquete después de crear la instantánea y permanecerá sin cambios después de restaurar la instantánea.",
     "RestoreSnapshotUnchangedPackagesPl": "Se añadieron <strong>{count}</strong> paquetes después de crear la instantánea y permanecerán sin cambios después de restaurar la instantánea.",
+    "RestoreSnapshotConfirmCodeInvalid": "Debes escribir el código exacto para confirmar la restauración de la instantánea.",
     "SelectAll": "Seleccionar todo",
     "Snapshot": "Instantánea",
     "TakeBackup": "Realizar copia de seguridad",
@@ -3406,6 +3443,14 @@
       "label": "Visibilidad",
       "hint": "Configura la visibilidad de la región."
     },
+    "hidden": {
+      "label": "Oculta",
+      "hint": "Oculta la región a los jugadores y desactiva sus comportamientos."
+    },
+    "locked": {
+      "label": "Bloqueada",
+      "hint": "Previene la interacción con el lienzo y las ediciones de la paleta, y oculta región cuando la visibilidad está configurada en mostrar solo regiones no bloqueadas."
+    },
     "highlightMode": {
       "label": "Modo de resaltado",
       "hint": "Configura si se resalta la forma real o los espacios de rejilla cubiertos por la región."
@@ -3821,7 +3866,7 @@
 },
 
 "SIDEBAR.COMPENDIUM.LABELS": {
-  "Ownership": "Acceso no predeterminado",
+  "Ownership": "Oculto a los jugadores",
   "Locked": "Bloqueado"
 },
 
@@ -3841,6 +3886,8 @@
     "Visible": "Visible"
   },
   "Categories": {
+    "Player": "Pertenece a jugador",
+    "Gamemaster": "Pertenece a Gamemaster",
     "NoAuthor": "Sin autor",
     "NoLevel": "Sin nivel"
   },
@@ -3854,6 +3901,9 @@
     "ACTIONS": {
       "Clear": "Limpiar"
     },
+    "Any": "Cualquiera",
+    "Yes": "Sí",
+    "No": "No",
     "Bottom": "Abajo",
     "Title": "Filtro avanzado",
     "Level": "Filtro por nivel",
@@ -4001,7 +4051,8 @@
     "img.label": "Icono del resultado",
     "documentUuid.label": "Documento referenciado",
     "weight.label": "Peso",
-    "range.label": "Rango"
+    "range.label": "Rango",
+    "description.label": "Descripción"
   }
 },
 
@@ -4031,6 +4082,10 @@
   "video": "Vídeo"
 },
 "TILE.FIELDS": {
+  "hidden": {
+    "label": "Oculta",
+    "hint": "Oculta la baldosa a los jugadores."
+  },
   "sort.label": "Ordenar",
   "texture": {
     "src.label": "Imagen o vídeo de la baldosa",
@@ -4173,6 +4228,14 @@
 },
 "TOKEN.FIELDS": {
   "name.label": "Nombre de la ficha",
+  "hidden": {
+    "label": "Oculta",
+    "hint": "Oculta esta ficha a los jugadores."
+  },
+  "locked": {
+    "label": "Bloqueada",
+    "hint": "Previene que esta ficha que quite del lienzo."
+  },
   "sort.label": "Ordenar",
   "width.label": "Tamaño-X",
   "height.label": "Tamaño-Y",
@@ -4597,22 +4660,35 @@
     "character": {
       "label": "Personaje del jugador",
       "hint": "Seleccione un actor del conjunto sobre el que tenga al menos permiso de OBSERVADOR que represente al personaje principal para este usuario."
+    },
+    "password": {
+      "label": "Contraseña del jugador",
+      "hint": "Cambiar la contraseña de este usuario le desconectará de la sesión actual asociada."
     }
   },
   "SHEET": {
     "HEADERS": {
       "INFO": "Información del jugador",
-      "CHAR": "Personaje del jugador"
+      "CHAR": "Personaje del jugador",
+      "PASS": "Cambiar contraseña"
     },
-    "BUTTONS": {
-      "SAVE": "Guardar configuración del jugador",
-      "RELEASE": "Liberar personaje"
-    }
+    "PASSWORD": {
+      "Current": "Contraseña (Actual)",
+      "New": "Contraseña (Nueva)",
+      "Wipe": {
+        "label": "Quitar",
+        "hint": "Quita la contraseña actual en lugar de establecer una nueva."
+      }
+    },
+    "Submit": "Guardar configuración del jugador"
   },
   "MESSAGES": {
     "KICKED": "El usuario {user} ha sido <strong>expulsado</strong> del mundo.",
     "BANNED": "El usuario {user} ha sido <strong>bloqueado</strong> del mundo.",
     "UNBANNED": "El usuario {user} ha sido <strong>desbloqueado</strong> del mundo."
+  },
+  "ACTIONS": {
+    "releaseCharacter": "Liberar personaje"
   },
   "RoleNone": "Ninguno",
   "RolePlayer": "Jugador",
